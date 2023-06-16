@@ -7,15 +7,15 @@ const ap = new APlayer({
     listMaxHeight: 60,
     audio: [
         {
-            name: 'name1',
-            artist: 'artist1',
-            url: 'url1.mp3',
+            name: '我记得',
+            artist: '赵雷',
+            url: 'https://www.ytmp3.cn/down/78713.mp3',
             cover: 'cover1.jpg',
         },
         {
-            name: 'name2',
-            artist: 'artist2',
-            url: 'url2.mp3',
+            name: '向云端',
+            artist: '小霞/海洋BO',
+            url: 'http://music.163.com/song/media/outer/url?id=3778678.mp3',
             cover: 'cover2.jpg',
         }
     ]
