@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-14T09:54:44.879Z</updated>
+  <updated>2023-05-23T16:41:29.431Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://example.com/2023/06/16/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2023/06/16/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2023-06-16T10:42:28.390Z</published>
+    <updated>2023-05-23T16:41:29.431Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、编程语言的执行方式&quot;&gt;&lt;a href=&quot;#一、编程语言的执行方式&quot; class=&quot;headerlink&quot; title=&quot;一、编程语言的执行方式&quot;&gt;&lt;/a&gt;一、编程语言的执行方式&lt;/h1&gt;&lt;p&gt;编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>PyQt5学习</title>
     <link href="http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/"/>
     <id>http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</id>
     <published>2023-06-14T09:47:01.000Z</published>
-    <updated>2023-06-14T09:54:44.879Z</updated>
+    <updated>2023-06-16T10:45:07.339Z</updated>
     
     
       
@@ -31,8 +49,8 @@
     
     
     
+    <category term="PyQt5学习" scheme="http://example.com/categories/PyQt5%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="一" scheme="http://example.com/tags/%E4%B8%80/"/>
     
   </entry>
   

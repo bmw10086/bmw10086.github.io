@@ -1,6 +1,428 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/06/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/06/16/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="一、编程语言的执行方式"><a href="#一、编程语言的执行方式" class="headerlink" title="一、编程语言的执行方式"></a>一、编程语言的执行方式</h1><p>编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念之前，先介绍以下几种概念：</p>
+<p><strong>源代码：</strong>采用某种编程语言编写的计算机程序，人类可读，例如：res &#x3D; 1 + 1；</p>
+<p><strong>目标代码：</strong>指计算机可以执行，但人类不可读（专家除外），例如一组由0和1组成的字符串。</p>
+<p>而怎么把人类编写的程序，变成机器可以执行的目标代码呢？ 这里就出现了程序执行的两种方式：编译和解释。</p>
+<h1 id="解释与编译"><a href="#解释与编译" class="headerlink" title="解释与编译"></a>解释与编译</h1><p>解释器：一句一句翻译（类似：同声传译）python，逐条转换成目标代码同时逐条执行目标代码</p>
+<p>编译器：整体翻译（类似：一次性全文翻译）c语言，只解释成目标代码，并不运行</p>
+<p>java两种都可以</p>
+<h1 id="保留字"><a href="#保留字" class="headerlink" title="保留字"></a>保留字</h1><h1 id="二、print-函数"><a href="#二、print-函数" class="headerlink" title="二、print()函数"></a>二、print()函数</h1><h2 id="1-单引号"><a href="#1-单引号" class="headerlink" title="1.单引号"></a>1.单引号</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&#x27;我们一起去玩吧&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-双引号"><a href="#2-双引号" class="headerlink" title="2.双引号"></a>2.双引号</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&quot;我们一起去玩吧&quot;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-单引号、双引号的区别"><a href="#3-单引号、双引号的区别" class="headerlink" title="3.单引号、双引号的区别"></a>3.单引号、双引号的区别</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&#x27;jack said:&quot;i love you&quot;&#x27;)</span><br><span class="line">print(&quot;Let&#x27;s play&quot;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-三引号"><a href="#4-三引号" class="headerlink" title="4.三引号"></a>4.三引号</h2><p>#号注释一行</p>
+<p>两对三引号：注释多行（可以是单引号，也可以是双引号，一定要成对）</p>
+<p>三引号’‘’ ：跟print函数一起使用：可以输出带换行的多行文本</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&#x27;&#x27;&#x27;</span><br><span class="line">                .---- .</span><br><span class="line">               .       、</span><br><span class="line">            _·&#x27;__       ·</span><br><span class="line">        . --($) ($$)---/#\\</span><br><span class="line">      .`@             /###\\</span><br><span class="line">      :         ,     #####</span><br><span class="line">       `-..__.-&#x27;  _.- \###/</span><br><span class="line">           `;_:       `&quot;</span><br><span class="line">             .&#x27;&quot;&quot;&quot;&quot;&quot;&quot;`.</span><br><span class="line">            /,  hi,    \\\\</span><br><span class="line">           //  你好！    \\\\</span><br><span class="line">          `-._________.-&#x27;</span><br><span class="line">             __`.|.`__</span><br><span class="line">           (_____|_____)</span><br><span class="line">&#x27;&#x27;&#x27;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-转义字符总结"><a href="#5-转义字符总结" class="headerlink" title="5.转义字符总结"></a>5.转义字符总结</h2><p>使用最多：换行\n，斜杠符号\</p>
+<h2 id="6-占位符"><a href="#6-占位符" class="headerlink" title="6.占位符"></a>6.占位符</h2><p>先站住一个固定的位置，等着你往里面添加内容的符号</p>
+<p>%d 整型</p>
+<p>%s字符串</p>
+<p>%f浮点型</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=3</span><br><span class="line">s=&#x27;python&#x27;</span><br><span class="line">f=4.7</span><br><span class="line">print(&#x27;%d个月可以学好%s课程&#x27;%(a,s))</span><br><span class="line">print(&#x27;%f个月可以学好%s课程&#x27;%(f,s)) # %f是默认保留小数点后6位</span><br><span class="line">print(&#x27;%.4f个月可以学好%s课程&#x27;%(f,s)) # %.4f是保留小数点后4位</span><br><span class="line"></span><br><span class="line">name=&quot;曾庆玲&quot;</span><br><span class="line">age=36</span><br><span class="line">print(&#x27;我的名字：%s,我的年龄：%d&#x27;%(name,age))</span><br><span class="line">#单个数据：%特定的字母；多个数据：%(数据列表)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="三、数据类型"><a href="#三、数据类型" class="headerlink" title="三、数据类型"></a>三、数据类型</h1><h2 id="1-数字类型"><a href="#1-数字类型" class="headerlink" title="1.数字类型"></a>1.数字类型</h2><h3 id="整数int"><a href="#整数int" class="headerlink" title="整数int"></a>整数int</h3><p>不带小数点的数字</p>
+<p>整数类型有4种进制：</p>
+<p>二进制：引导符号 ：0b或者0B，例如：0b1010，0B1010</p>
+<p>八进制：引导符号：0o或者0O，0到7，例如0o1010，0O1010</p>
+<p>十进制：无引导符号</p>
+<p>十六进制：引导符号：0x或者0X，0到9，A，B，C，D，E，F，例如0x1010，0X1010</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(0x1010&gt;0o1010)</span><br><span class="line">输出：True</span><br><span class="line"></span><br><span class="line">print(0b1010+0x1010+0o1010+1010)</span><br><span class="line">输出：5652</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="浮点数float"><a href="#浮点数float" class="headerlink" title="浮点数float"></a>浮点数float</h3><p>带小数点的数字</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 10</span><br><span class="line">b = 3.5</span><br><span class="line">c = &#x27;xiamen&#x27;</span><br><span class="line">print(type(a))</span><br><span class="line">print(type(b))</span><br><span class="line">print(type(c))</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102191247279.png" alt="image-20230102191247279"></p>
+<p>1010是整数，1010.0是浮点数，值是相等，但是对他们进行幂运算的结果不同，pow(x,y)计算x的y次方</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(pow(1010,32))</span><br><span class="line">print(pow(1010.0,32))</span><br><span class="line"></span><br><span class="line">结果不同：</span><br><span class="line">1374940678531097054162291350571104044956417832049380936096496320100000000000000000000000000000000</span><br><span class="line">1.3749406785310972e+96</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="复数类型"><a href="#复数类型" class="headerlink" title="复数类型"></a>复数类型</h3><p>有一个基本单位元素j，它被定义为j&#x3D;-1开根号，叫做“虚数单位”</p>
+<p>复数可以看作二元有序实数对（a，b），表示a+bj，a是实数部分，b是虚数部分，j是一个变量</p>
+<p>复数类型中实部和虚部都是浮点类型</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print((1.23e4+5.67e4j).real)  #求复数的实数部分</span><br><span class="line">print((1.23e4+5.67e4j).imag)   #求复数的虚数部分</span><br><span class="line">结果：</span><br><span class="line">12300.0 </span><br><span class="line">56700.0</span><br><span class="line">是浮点类型</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-四则运算"><a href="#2-四则运算" class="headerlink" title="2.四则运算"></a>2.四则运算</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(20/30)  #除法</span><br><span class="line">print(30//20) #取商</span><br><span class="line">print(30%20)   #取余数</span><br><span class="line">print(3**2)   #3的2次方</span><br><span class="line">print((5025-525)/100+18*17) #四则运算</span><br></pre></td></tr></table></figure>
+
+<h2 id="数值运算函数"><a href="#数值运算函数" class="headerlink" title="数值运算函数"></a>数值运算函数</h2><p>abs(x)：x的绝对值</p>
+<p>divmod(x,y)：（x&#x2F;&#x2F;y,x%y），输出二元组形式</p>
+<p>pow(x,y)：幂运算，x的y次方</p>
+<p>round(x)，round(x,y)：对x四舍五入，保留y位小数，无参数y时则返回x的四舍五入的整数值</p>
+<p>max(x,y,z……)</p>
+<p>min(x,y,z……)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(divmod(100,9))</span><br><span class="line">结果：（11，1）</span><br></pre></td></tr></table></figure>
+
+<h2 id="真假无值或逻辑运算"><a href="#真假无值或逻辑运算" class="headerlink" title="真假无值或逻辑运算"></a>真假无值或逻辑运算</h2><h3 id="真假值：True与False"><a href="#真假值：True与False" class="headerlink" title="真假值：True与False"></a>真假值：True与False</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(0.0==False)</span><br><span class="line">print(0==False)</span><br><span class="line">print(0.1==False)</span><br><span class="line">结果：</span><br><span class="line">True</span><br><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+
+<h3 id="无值：None"><a href="#无值：None" class="headerlink" title="无值：None"></a>无值：None</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=print(&#x27;Hello world&#x27;)   #print()函数不返回任何内容，a的值是空，赋值为None</span><br><span class="line">print(a==None)</span><br><span class="line">结果：</span><br><span class="line">True</span><br></pre></td></tr></table></figure>
+
+<h3 id="逻辑运算：and-，or-，not"><a href="#逻辑运算：and-，or-，not" class="headerlink" title="逻辑运算：and ，or ，not"></a>逻辑运算：and ，or ，not</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(0 and True)</span><br><span class="line">print(not 2)</span><br><span class="line">print(0 or False)</span><br><span class="line"></span><br><span class="line">结果：</span><br><span class="line">0</span><br><span class="line">False</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3、字符串str"><a href="#3、字符串str" class="headerlink" title="3、字符串str"></a>3、字符串str</h2><p>字符串类型必须有【引号】的辅助：单引号和双引号均可，可以参照print()</p>
+<h3 id="eval-函数"><a href="#eval-函数" class="headerlink" title="eval()函数"></a>eval()函数</h3><p>eval(s)将去掉字符串s最外侧的引号</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># print(type(eval(&quot;python&quot;))),eval()函数处理字符串“python”时，去掉了引号后，python将其解释为一个变量</span><br><span class="line">python=123</span><br><span class="line">s=eval(&quot;python&quot;)</span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line">a=eval(&quot;1.2&quot;)</span><br><span class="line">print(type(a))</span><br></pre></td></tr></table></figure>
+
+<p>eval()函数经常与input()函数一起使用，用来获取用户输入的数字</p>
+<p>input()得到的结果是字符串，经过eval()就去掉了字符串的引号，变为数字保存在变量中</p>
+<h3 id="字符串的索引-同列表的索引一样"><a href="#字符串的索引-同列表的索引一样" class="headerlink" title="字符串的索引(同列表的索引一样)"></a>字符串的索引(同列表的索引一样)</h3><p>s&#x3D;“青青子衿，悠悠我心。”</p>
+<p>s[1:4]   青子衿</p>
+<p>s[8:4]  返回空字符串</p>
+<p>s[:4]    青青子衿</p>
+<p>s[5:]   悠悠我心。</p>
+<p>s[::4]   青，心</p>
+<p>s[8:1:-1]    步长为负数，反向方式：心我悠悠，衿子</p>
+<p>s[::-1]      步长为负数，反向方式：心我悠悠，衿子青青</p>
+<h3 id="字符串的基本格式化"><a href="#字符串的基本格式化" class="headerlink" title="字符串的基本格式化"></a>字符串的基本格式化</h3><p>使用方法：&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</p>
+<p>槽用大括号{}表示</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&quot;&#123;&#125;曰：学而时习之，不亦说乎。&quot;.format(&#x27;孔子&#x27;))</span><br><span class="line">print(&quot;&#123;&#125;曰：学而时习之，不亦&#123;&#125;。&quot;.format(&#x27;孔子&#x27;,&#x27;乐乎&#x27;))</span><br><span class="line">结果：</span><br><span class="line">孔子曰：学而时习之，不亦说乎。</span><br><span class="line"></span><br><span class="line">print(&quot;&#123;1&#125;曰：学而时习之，不亦&#123;0&#125;。&quot;.format(&#x27;乐乎&#x27;,&#x27;孔子&#x27;))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串的格式控制"><a href="#字符串的格式控制" class="headerlink" title="字符串的格式控制"></a>字符串的格式控制</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s=&#x27;等级考试&#x27;</span><br><span class="line">print(&#x27;&#123;:25&#125;&#x27;.format(s))   #默认，左对齐</span><br><span class="line">print(&#x27;&#123;:^25&#125;&#x27;.format(s))  #^是居中对齐，使用25个字符的宽度输出变量s</span><br><span class="line">print(&#x27;&#123;:&gt;25&#125;&#x27;.format(s))  #^是右对齐，使用25个字符的宽度输出变量s</span><br><span class="line">print(&#x27;&#123;:*^25&#125;&#x27;.format(s)) #^是居中对齐，并用*填充</span><br><span class="line">print(&#x27;&#123;:*&gt;25&#125;&#x27;.format(s)) #&gt;是右对齐，并用*填充</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串类型的操作"><a href="#字符串类型的操作" class="headerlink" title="字符串类型的操作"></a>字符串类型的操作</h3><h3 id="字符串的拼接"><a href="#字符串的拼接" class="headerlink" title="字符串的拼接"></a>字符串的拼接</h3><p>利用字符串拼接符号【+】，将需要拼接的变量连在一起</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name1=&#x27;我&#x27;</span><br><span class="line">name2=&#x27;是&#x27;</span><br><span class="line">name3=&#x27;孙悟空&#x27;</span><br><span class="line">print(name1,name2,name3) #使用空格间隔</span><br><span class="line">print(name1+name2+name3) #中间没有任何符号</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串的重复"><a href="#字符串的重复" class="headerlink" title="字符串的重复"></a>字符串的重复</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s=&#x27;等级考试&#x27;</span><br><span class="line">print(s*3)</span><br><span class="line">结果：</span><br><span class="line">等级考试等级考试等级考试</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串的子串in操作"><a href="#字符串的子串in操作" class="headerlink" title="字符串的子串in操作"></a>字符串的子串in操作</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s=&#x27;python语言程序设计&#x27;</span><br><span class="line">print(&#x27;python&#x27; in s)</span><br><span class="line">print(&#x27;C语言&#x27; in s)</span><br><span class="line">结果：</span><br><span class="line">True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h3><p>str.lower()：全部字符小写</p>
+<p>str.upper()：全部字符大写</p>
+<p>str.split(step&#x3D;None)：str根据step被分隔的部分构成</p>
+<p>str.count(sub)：sub在str中出现的次数</p>
+<p>str.replace(old,new)：所有的old被替换为new</p>
+<p>str.center(width,fillchar)：字符串居中函数，fillchar参数可选</p>
+<p>str.strip(chars)：从str去掉左侧和右侧chars</p>
+<p>str.join(a)：将a变量的每一个元素后增加一个str字符串</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s=&#x27;Python is an excellent language.&#x27;</span><br><span class="line">print(s.split())  #没有参数的时候就用空格分隔，有参数就用参数分隔，返回列表</span><br><span class="line">print(s.split(&#x27;a&#x27;))</span><br><span class="line">print(s.count(&#x27;a&#x27;))</span><br><span class="line">print(s.count(&#x27;an&#x27;))</span><br><span class="line">print(s.replace(&#x27;a&#x27;,&#x27;#&#x27;))  #a被#替换</span><br><span class="line">print(s.replace(&#x27;Python&#x27;,&#x27;C&#x27;))</span><br><span class="line">s2=&#x27;python&#x27;</span><br><span class="line">print(s2.center(20,&#x27;=&#x27;))</span><br><span class="line">print(s2.center(2,&#x27;=&#x27;))   #总长度&lt;字符串的长度，则返回字符串</span><br><span class="line">s3=&#x27;    ===Python===    &#x27;   #s3的左右各4个空格</span><br><span class="line">print(s3.strip(&#x27; &#x27;))        #strip将左右的空格去掉,并没有改变s3</span><br><span class="line">s3=s3.strip(&#x27; &#x27;)</span><br><span class="line">print(s3)</span><br><span class="line">print(s3.strip(&#x27;=&#x27;))</span><br><span class="line">s4=&#x27; &#x27;</span><br><span class="line">print(s4.join(&#x27;Python&#x27;))</span><br><span class="line">s5=&#x27;,&#x27;</span><br><span class="line">print(s5.join(&#x27;Python&#x27;))</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="数据类型的查询——type-函数"><a href="#数据类型的查询——type-函数" class="headerlink" title="数据类型的查询——type()函数"></a>数据类型的查询——type()函数</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name1=&#x27;我&#x27;</span><br><span class="line">name2=&#x27;是&#x27;</span><br><span class="line">name3=&#x27;孙悟空&#x27;</span><br><span class="line">name4=100</span><br><span class="line">name5=3.4</span><br><span class="line">print(type(name1))</span><br><span class="line">print(type(name4))</span><br><span class="line">print(type(name5))</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="数据转换"><a href="#数据转换" class="headerlink" title="数据转换"></a>数据转换</h2><p>负责转换数据类型的函数一共有3种：**str()**、 **int()<strong>和</strong>float()**。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">name1=&#x27;我&#x27;</span><br><span class="line">name2=&#x27;是&#x27;</span><br><span class="line">name3=&#x27;孙悟空&#x27;</span><br><span class="line">name4=100</span><br><span class="line">name5=3.4</span><br><span class="line">print(name1+name2+name3+str(name4))         #先将name4整数转换成字符串</span><br><span class="line">print(name1+name2+name3+str(int(name5)))    #先将name5浮点数转换成整数，再将整数转换成字符串</span><br></pre></td></tr></table></figure>
+
+<p>将字符串转换成整数，进行运算</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">number1 = &#x27;6&#x27;</span><br><span class="line">number2 = &#x27;1&#x27;</span><br><span class="line">print(int(number1)+int(number2))</span><br></pre></td></tr></table></figure>
+
+<p>将字符串转换成浮点型</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">height = 188.0</span><br><span class="line">weight = 180.0</span><br><span class="line">age = &#x27;89&#x27;</span><br><span class="line">print(float(height))</span><br><span class="line">print(float(weight))</span><br><span class="line">print(float(age))</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-列表list"><a href="#4-列表list" class="headerlink" title="4.列表list"></a>4.列表list</h2><h2 id="列表（list）的代码格式"><a href="#列表（list）的代码格式" class="headerlink" title="列表（list）的代码格式"></a>列表（list）的代码格式</h2><p>列表很包容，各种类型的数据（整数&#x2F;浮点数&#x2F;字符串）无所不能包。</p>
+<h2 id="从列表提取单个元素"><a href="#从列表提取单个元素" class="headerlink" title="从列表提取单个元素"></a>从列表提取单个元素</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list1 = [&#x27;小明&#x27;,18,1.70]</span><br><span class="line"># print(list1)</span><br><span class="line">print(list1[0])  #偏移量是从0开始的，而非我们习惯的从1开始</span><br><span class="line">print(list1[1])</span><br><span class="line">print(list1[2])</span><br></pre></td></tr></table></figure>
+
+<p>1.偏移量是从0开始的，而非我们习惯的从1开始；2.列表名后加带偏移量的中括号，就能取到相应位置的元素。</p>
+<h2 id="从列表提取多个元素"><a href="#从列表提取多个元素" class="headerlink" title="从列表提取多个元素"></a>从列表提取多个元素</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list2 = [1,2,3,4,5,6]</span><br><span class="line">print(list2[:])  #从头到尾，全部列表</span><br><span class="line">print(list2[2:])  #从第2位开始到尾，[n:]表示从第n位开始到结尾</span><br><span class="line">print(list2[:2])  #从第0位开始到第2位，不包括第2位</span><br><span class="line">print(list2[1:3])  #从第1位开始到第3位，不包括第3位</span><br><span class="line">print(list2[2:4])   #从第2位开始到第4位，不包括第4位</span><br><span class="line">print(list2[-1:-3])  #&lt;列表名&gt;[n:m:k],当起始位置n比终点位置m大(n&gt;m时)，则返回空列表</span><br><span class="line">print(list2[-3:-1])</span><br><span class="line">print(list2[0:4:2])  #k为步长，这里k=2</span><br><span class="line">print(list2[0:4:3])</span><br><span class="line"># 总结：左右空（只有冒号），取到头；左要取，右不取</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [&#x27;小明&#x27;,&#x27;小红&#x27;,5,&#x27;小田&#x27;]</span><br><span class="line">print(students[2])</span><br><span class="line">print(students[2:])  #取多个元素，还是列表</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195001094.png"></p>
+<h2 id="列表的基本操作"><a href="#列表的基本操作" class="headerlink" title="列表的基本操作"></a>列表的基本操作</h2><p>len(list):求列表的元素个数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x=[&#x27;python&#x27;,[&#x27;111&#x27;,111,[111,&#x27;python&#x27;]]]</span><br><span class="line">print(len(x))</span><br><span class="line">输出结果：2</span><br></pre></td></tr></table></figure>
+
+<p>min(list)：求列表中最小元素，列表中元素类型相同的时候才可以比较大小</p>
+<p>max(list)：求列表中最大元素</p>
+<p>list(ls)：将ls转变为列表类型，类似于int(),float()</p>
+<h3 id="给列表增加元素"><a href="#给列表增加元素" class="headerlink" title="给列表增加元素"></a>给列表增加元素</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list3 = [1,2]</span><br><span class="line">list3.append(3) #增加元素，使用append</span><br><span class="line">list3.append(5)</span><br><span class="line">list3.append(5,6)  #这句会出错，不能增加2个元素</span><br><span class="line">list3.append(&#x27;zeng&#x27;)</span><br><span class="line">list3.append([&#x27;a&#x27;,&#x27;b&#x27;])</span><br><span class="line">list3.append([1,2,3,4])</span><br><span class="line">print(list3)</span><br><span class="line">print(list3.index(1)) #检测括号中的字符串是否在list3列表中，如果存在，则返回字符串第一次出现的位置偏移量，如果不存在则报错</span><br><span class="line">print(list3.count(1)) #count方法是计算字符串在列表中出现的次数</span><br><span class="line">print(list3.reverse()) #reverse方法是将列表反向，没有返回值</span><br><span class="line">print(ls)</span><br></pre></td></tr></table></figure>
+
+<h3 id="给列表删除元素"><a href="#给列表删除元素" class="headerlink" title="给列表删除元素"></a>给列表删除元素</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [&#x27;小明&#x27;,&#x27;小红&#x27;,5,&#x27;小田&#x27;]</span><br><span class="line">del students[2]    #删除某个元素，用del</span><br><span class="line">print(students)</span><br></pre></td></tr></table></figure>
+
+<h3 id="列表操作的其他方法"><a href="#列表操作的其他方法" class="headerlink" title="列表操作的其他方法"></a>列表操作的其他方法</h3><p>ls.insert(i,x)：在列表ls里的第i位增加元素x，无返回值</p>
+<p>ls.clear()：删除ls的所有元素</p>
+<p>ls.pop(i)：将列表ls中的第i位元素取出来并删除</p>
+<p>ls.reverse()：将列表ls进行元素反转</p>
+<p>ls.copy()：复制ls中所有元素生成一个新列表</p>
+<p>ls.remove(x)：将列表的第一次出现的x元素进行删除</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list3 = [1,5]</span><br><span class="line">print(list3.index(1)) #检测括号中的字符串是否在list3列表中，如果存在，则返回字符串第一次出现的位置偏移量，如果不存在则报错</span><br><span class="line">print(list3.count(1)) #count方法是计算字符串在列表中出现的次数</span><br><span class="line">print(list3.reverse()) #reverse方法是将列表反向，没有返回值</span><br><span class="line">print(list3)</span><br><span class="line">print(list3.insert(1,3333))  #在列表的第1位增加元素3333，无返回值</span><br><span class="line">print(list3)</span><br><span class="line">print(list3.pop(2)) #删除列表中的第2个元素，因为把第2个元素取出来了，所以返回第二个元素</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-字典dictionary"><a href="#5-字典dictionary" class="headerlink" title="5.字典dictionary"></a>5.字典dictionary</h2><p>类似这种名字和数值（如分数、身高、体重等）两种数据存在一一对应的情况，用第二种数据类型——“字典”（dictionary）来存储</p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195137055.png" alt="image-20230109195137055"></p>
+<p>1.列表外层用的是中括号<code>[ ]</code>，字典的外层是大括号<code>&#123; &#125;</code></p>
+<p>2.列表中的元素是自成一体的，而字典的元素是由一个个键值对构成的，用英文冒号连接。如<code>&#39;小明&#39;:95</code>，其中我们把<code>&#39;小明&#39;</code>叫键（key），<code>95</code>叫值(value)。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;]</span><br><span class="line">scores = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:90&#125;  #键（key），值(value)，【键值对】</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;]</span><br><span class="line">scores = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:90&#125;</span><br><span class="line">print(len(students))  #len是计算数据类型的长度</span><br><span class="line">print(len(scores))</span><br></pre></td></tr></table></figure>
+
+<h2 id="从字典取元素"><a href="#从字典取元素" class="headerlink" title="从字典取元素"></a>从字典取元素</h2><p>从字典中提取对应的值的用法。和列表相似的是要用<code>[ ]</code>，不过因为字典没有偏移量，所以在中括号中应该写键的名称，即字典名[字典的键]。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">scores = &#123;&#x27;小明&#x27;: 95, &#x27;小红&#x27;: 90, &#x27;小刚&#x27;: 90&#125;</span><br><span class="line">print(scores[&#x27;小明&#x27;])</span><br></pre></td></tr></table></figure>
+
+<h2 id="给字典增加-x2F-删除元素"><a href="#给字典增加-x2F-删除元素" class="headerlink" title="给字典增加&#x2F;删除元素"></a>给字典增加&#x2F;删除元素</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">actor1 = &#123;&#x27;孙悟空&#x27;: &#x27;金箍棒&#x27;, &#x27;沙和尚&#x27;:&#x27;降妖宝杖&#x27;,&#x27;猪八戒&#x27;:&#x27;九齿钉耙&#x27;&#125;</span><br><span class="line">del actor1[&#x27;孙悟空&#x27;]   #删除元素del </span><br><span class="line">print(actor1)</span><br><span class="line">#增加元素&#x27;孙悟空&#x27;</span><br><span class="line">actor1[&#x27;孙悟空&#x27;]=&#x27;金箍棒&#x27;</span><br><span class="line">print(actor1)</span><br><span class="line">#增加元素&#x27;唐僧&#x27;</span><br><span class="line">actor1[&#x27;唐僧&#x27;]=&#x27;袈裟&#x27;</span><br><span class="line">print(actor1)</span><br><span class="line">#将小刚的成绩由90分修改位92</span><br><span class="line">scores = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:90&#125;</span><br><span class="line">scores[&#x27;小刚&#x27;] = 92</span><br><span class="line">print(scores)</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109201015805.png" alt="image-20230109201015805"></p>
+<h2 id="列表与字典的区别"><a href="#列表与字典的区别" class="headerlink" title="列表与字典的区别"></a>列表与字典的区别</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 如果==左右两边相等，值为True，不相等则为False。</span><br><span class="line">print(1 == 1)  </span><br><span class="line"># 1等于1，所以值为True</span><br><span class="line"></span><br><span class="line">print(1 == 2)</span><br><span class="line"># 1不等于2，所以为False</span><br><span class="line"></span><br><span class="line">students1 = [&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;]</span><br><span class="line">students2 = [&#x27;小刚&#x27;,&#x27;小明&#x27;,&#x27;小红&#x27;]</span><br><span class="line">print(students1 == students2)</span><br><span class="line"></span><br><span class="line">scores1 = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:100&#125;</span><br><span class="line">scores2 = &#123;&#x27;小刚&#x27;:100,&#x27;小明&#x27;:95,&#x27;小红&#x27;:90&#125;</span><br><span class="line">print(scores1 == scores2)</span><br></pre></td></tr></table></figure>
+
+<p>字典相比起来就显得随和很多，调动顺序也不影响。因为列表中的数据是有序排列的，而字典中的数据是随机排列的。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">list1 = [&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;,&#x27;小美&#x27;]</span><br><span class="line">list1[1] = &#x27;小蓝&#x27;</span><br><span class="line">print(list1)</span><br><span class="line"></span><br><span class="line">dict1 = &#123;&#x27;小明&#x27;:&#x27;男&#x27;&#125;</span><br><span class="line">dict1[&#x27;小明&#x27;] = &#x27;女&#x27;</span><br><span class="line">print(dict1)</span><br></pre></td></tr></table></figure>
+
+<p>第二个共同点其实之前已经略有提及，即支持任意嵌套</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [[&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;,&#x27;小美&#x27;],[&#x27;小强&#x27;,&#x27;小兰&#x27;,&#x27;小伟&#x27;,&#x27;小芳&#x27;]]</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [[&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;,&#x27;小美&#x27;],[&#x27;小强&#x27;,&#x27;小兰&#x27;,&#x27;小伟&#x27;,&#x27;小芳&#x27;]]</span><br><span class="line">print(students[1][3])</span><br></pre></td></tr></table></figure>
+
+<p>从列表中取出小兰，并打印出来</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [[&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;,&#x27;小美&#x27;],[&#x27;小强&#x27;,&#x27;小兰&#x27;,&#x27;小伟&#x27;,&#x27;小芳&#x27;]]</span><br><span class="line">print(students[1][1])</span><br></pre></td></tr></table></figure>
+
+<p>列表嵌套列表也是类似的，需要一层一层取出来，比如说要取出小芳的成绩，代码是这样写</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">scores = &#123;</span><br><span class="line">    &#x27;第一组&#x27;:&#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:100,&#x27;小美&#x27;:85&#125;,</span><br><span class="line">    &#x27;第二组&#x27;:&#123;&#x27;小强&#x27;:99,&#x27;小兰&#x27;:89,&#x27;小伟&#x27;:93,&#x27;小芳&#x27;:88&#125;</span><br><span class="line">    &#125;</span><br><span class="line">print(scores[&#x27;第二组&#x27;][&#x27;小芳&#x27;])</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-集合类型"><a href="#6-集合类型" class="headerlink" title="6.集合类型"></a>6.集合类型</h2><h2 id="集合的创建"><a href="#集合的创建" class="headerlink" title="集合的创建"></a>集合的创建</h2><p>1、集合时用大括号{}表示，但是，它没有索引和位置的概念，集合的元素可以动态增加或删除。</p>
+<p>2、集合中的元素是不可以重复，元素类型是固定数据类型。列表、字典、集合本身都是可变数据类型，所以不能作为集合的元素出现。</p>
+<p>3、type()返回集合的类型是set</p>
+<p>4、集合中元素没有顺序，不能做比较，不能排序</p>
+<h3 id="创建集合的两种方式方式"><a href="#创建集合的两种方式方式" class="headerlink" title="创建集合的两种方式方式"></a>创建集合的两种方式方式</h3><p>一是直接赋值创建</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s=&#123;2,&#x27;python&#x27;,5.3&#125;</span><br><span class="line">print(type(s))</span><br><span class="line">输出结果：&lt;class &#x27;set&#x27;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>二是使用set()函数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ss=set([10,11,12,13,14,15,11,12,13])  #set()函数创建集合，如果x中存在重复元素，创建集合会去除重复元素</span><br><span class="line">print(ss)</span><br><span class="line"></span><br><span class="line">s1=set()</span><br><span class="line">print(s1)  #空集合用set()表示</span><br><span class="line">输出：set()</span><br><span class="line"></span><br><span class="line">s2=set(&#x27;1112224445566&#x27;)</span><br><span class="line">print(s2)  #无序并无重复元素的集合</span><br><span class="line">输出：&#123;&#x27;1&#x27;, &#x27;4&#x27;, &#x27;5&#x27;, &#x27;2&#x27;, &#x27;6&#x27;&#125;</span><br><span class="line"></span><br><span class="line">s3=&#123;&#125;  #用&#123;&#125;定义空的元素，是dictionary</span><br><span class="line">print(type(s3)) </span><br><span class="line">输出：&lt;class &#x27;dict&#x27;&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="集合的操作"><a href="#集合的操作" class="headerlink" title="集合的操作"></a>集合的操作</h2><h3 id="集合类型的4个操作符"><a href="#集合类型的4个操作符" class="headerlink" title="集合类型的4个操作符"></a>集合类型的4个操作符</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s=&#123;1,2,3&#125;</span><br><span class="line">t=&#123;1,2,4,5,6&#125;</span><br><span class="line">print(s-t)   #差集：存在S中，但不在t中</span><br><span class="line">print(s|t)    #并集：（合集）</span><br><span class="line">print(s&amp;t)   #交集</span><br><span class="line">print(s^t)   #补集：合集的总元素减去交集的元素</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="集合的操作函数"><a href="#集合的操作函数" class="headerlink" title="集合的操作函数"></a>集合的操作函数</h3><p>s.add(x)：将某个元素x增加到s集合中</p>
+<p>s.clear()：清空s中的所有数据</p>
+<p>s.discard(x)：移除x元素，若x不存在不会报错</p>
+<p>s.pop()：随机移除某个元素并返回这个元素</p>
+<p>s.remove(x)：若x存在集合中，则移除x；若不存在则报错</p>
+<p>s.update(s1)：将一个集合s1中的元素加入到s中</p>
+<p>x in s：x是s的元素，则返回True；否则返回False</p>
+<p>x not in s：x不是s的元素，则返回True；否则返回False</p>
+<h2 id="7-元组tuple"><a href="#7-元组tuple" class="headerlink" title="7.元组tuple"></a>7.元组tuple</h2><p>用圆括号（）括起来，元素之间用逗号分隔，元素的数据类型可以不相同，但是元组的元素不能被修改，比如，一年12个月</p>
+<p>months&#x3D;（”January”,”February”,”March”）</p>
+<h1 id="四、条件判断if"><a href="#四、条件判断if" class="headerlink" title="四、条件判断if"></a>四、条件判断if</h1><h2 id="单向判断：if"><a href="#单向判断：if" class="headerlink" title="单向判断：if"></a>单向判断：if</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">stonenumber=7</span><br><span class="line">if stonenumber&gt;=6:</span><br><span class="line">    print(&#x27;你拥有了毁灭宇宙的力量&#x27;)</span><br><span class="line">    </span><br><span class="line">age=5</span><br><span class="line">if age&gt;=18:</span><br><span class="line">    print(&#x27;你成年了&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="双向判断：if…else…"><a href="#双向判断：if…else…" class="headerlink" title="双向判断：if…else…"></a>双向判断：if…else…</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">stonenumber=3</span><br><span class="line">if stonenumber&gt;=6:</span><br><span class="line">    print(&#x27;你拥有了毁灭宇宙的力量&#x27;)</span><br><span class="line">else: </span><br><span class="line">    print(&#x27;带着卡魔拉去沃弥尔星寻找灵魂宝石&#x27;)    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">age=5</span><br><span class="line">if age&gt;=18:</span><br><span class="line">    print(&#x27;你成年了&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;你是未成年人&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">myweigt=120</span><br><span class="line">if myweigt&gt;=100:</span><br><span class="line">    print(&#x27;不吃了&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;放心吃&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="多项判断：if-elif-else"><a href="#多项判断：if-elif-else" class="headerlink" title="多项判断：if  elif  else"></a>多项判断：if  elif  else</h2><p>判断成绩大于等于90分，优秀，小于90，大于等于80，良好，小于80大于等于60分，合格，剩下的不及格</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">myscore=32</span><br><span class="line">if myscore&gt;=90:</span><br><span class="line">    print(&#x27;优秀&#x27;)</span><br><span class="line">elif myscore&gt;=80 and myscore&lt;90:</span><br><span class="line">    print(&#x27;良好&#x27;)</span><br><span class="line">elif myscore&gt;=60 and myscore&lt;80:</span><br><span class="line">    print(&#x27;合格&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;不及格&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="if嵌套"><a href="#if嵌套" class="headerlink" title="if嵌套"></a>if嵌套</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if historyscore&gt;=60:</span><br><span class="line">    print(&#x27;你已经及格&#x27;)</span><br><span class="line">    if historyscore&gt;=90:</span><br><span class="line">        print(&#x27;你很优秀&#x27;)</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;你是合格的&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;不及格&#x27;)</span><br><span class="line">    if historyscore&lt;30:</span><br><span class="line">        print(&#x27;学渣&#x27;)</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;还能抢救一下&#x27;)</span><br><span class="line">print(&#x27;程序结束&#x27;)   #此句不是必须的</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="五、input-函数"><a href="#五、input-函数" class="headerlink" title="五、input()函数"></a>五、input()函数</h1><h2 id="input-函数的使用"><a href="#input-函数的使用" class="headerlink" title="input()函数的使用"></a>input()函数的使用</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input(&#x27;请问你最喜欢西游记里的哪个角色[唐僧、孙悟空、沙和尚、猪八戒]：&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="input-函数结果的赋值"><a href="#input-函数结果的赋值" class="headerlink" title="input()函数结果的赋值"></a>input()函数结果的赋值</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">b = input(&#x27;请问你的qq密码是多少：&#x27;)</span><br><span class="line">print(&#x27;密码是：&#x27;+b)</span><br></pre></td></tr></table></figure>
+
+<h2 id="input-函数的数据类型和强制转换"><a href="#input-函数的数据类型和强制转换" class="headerlink" title="input()函数的数据类型和强制转换"></a>input()函数的数据类型和强制转换</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">choice = input(&#x27;请输入你选择的数字：&#x27;)</span><br><span class="line">#choice是str，input()是str类型 ，可以改进程序choice = int(input(&#x27;请输入你选择的数字：&#x27;))</span><br><span class="line">if int(choice) == 1:</span><br><span class="line">    print(&#x27;你选择了1&#x27;)</span><br><span class="line">elif int(choice) == 2:</span><br><span class="line">    print(&#x27;你选择了2&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;你没选择1和2&#x27;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h1><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102202721791.png" alt="image-20230102202721791"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in [1, 2, 3, 4, 5]:</span><br><span class="line">       print(i)</span><br><span class="line"></span><br><span class="line">for number in [1,2]:</span><br><span class="line">    print(number)</span><br><span class="line"></span><br><span class="line">for LOVE in [1,2]:</span><br><span class="line">    print(LOVE)</span><br><span class="line">    </span><br><span class="line">#不管i，number，LOVE都是变量名字，不必拘束变量名</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dict = &#123;&#x27;日本&#x27;:&#x27;东京&#x27;,&#x27;英国&#x27;:&#x27;伦敦&#x27;,&#x27;法国&#x27;:&#x27;巴黎&#x27;&#125;</span><br><span class="line"></span><br><span class="line">for i in dict:</span><br><span class="line">    print(i)</span><br><span class="line">    </span><br><span class="line">#排队办业务的人：可以是列表[1, 2, 3, 4, 5]，可以是字典 &#123;&#x27;日本&#x27;:&#x27;东京&#x27;,&#x27;英国&#x27;:&#x27;伦敦&#x27;,&#x27;法国&#x27;:&#x27;巴黎&#x27;&#125;，可以是字符串，不可以是整数和浮点数</span><br><span class="line"></span><br><span class="line">for i in &#x27;zeng&#x27;:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+
+<h1 id="range-函数"><a href="#range-函数" class="headerlink" title="range()函数"></a>range()函数</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(3):</span><br><span class="line">    print(i)</span><br><span class="line">    </span><br><span class="line">for i in range(3):</span><br><span class="line">    print(&#x27;我很棒&#x27;)</span><br><span class="line">    </span><br><span class="line">for i in range(5):</span><br><span class="line">    print(&#x27;书恒走的第&#x27;+str(i)+&#x27;天，想他&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p>使用<code>range(a,b)</code> 函数，你可以生成了一个【取头不取尾】的整数序列</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(0,10,3):</span><br><span class="line">    print(i)</span><br><span class="line">#0是起始数据，10是终点，3是步长</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116191014028.png" alt="image-20230116191014028"></p>
+<p>请你用for循环完成1到100的整数分别乘以5的计算，并打印出来</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(1,101):</span><br><span class="line">    #print(i)</span><br><span class="line">    print(i*5)</span><br></pre></td></tr></table></figure>
+
+<p>假设你要做大采购，让小明买醋，小红买油，小白买盐，小张买米；我们先把这堆事情写成一个字典：&#96;d &#x3D; {‘小明’:’醋’,’小红’:’油’,’小白’:’盐’,’小张’:’米’}，如果我们把这四个人要买的东西依次print出来，要写4句print语句：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dict=&#123;&#x27;小明&#x27;:&#x27;醋&#x27;,&#x27;小红&#x27;:&#x27;油&#x27;,&#x27;小白&#x27;:&#x27;盐&#x27;,&#x27;小张&#x27;:&#x27;米&#x27;&#125;</span><br><span class="line">for i in dict:</span><br><span class="line">    print(dict[i])</span><br></pre></td></tr></table></figure>
+
+<h1 id="七、while循环"><a href="#七、while循环" class="headerlink" title="七、while循环"></a>七、while循环</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 0</span><br><span class="line">while a &lt; 5:</span><br><span class="line">    a = a + 1</span><br><span class="line">    print(a)</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192507944.png" alt="image-20230116192507944"></p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192542008.png" alt="image-20230116192542008"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password = &#x27;1&#x27;</span><br><span class="line">while password != &#x27;713&#x27;:</span><br><span class="line">    password = input(&#x27;请输入密码：&#x27;)</span><br><span class="line">print(&#x27;密码正确，请进！&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p>注意while循环的语句的缩进问题</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#打印出1，2，3，4，5</span><br><span class="line">a = 0</span><br><span class="line">while a &lt; 5:</span><br><span class="line">    a = a + 1</span><br><span class="line">    print(a)</span><br><span class="line">    </span><br><span class="line">#只打印最后的a值，5  </span><br><span class="line">a = 0</span><br><span class="line">while a &lt; 5:</span><br><span class="line">   a = a + 1</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">#有缩进的时候，print(a)也是循环中的“办事流程”，会将数字逐一打印。没有缩进的时候，循环中的“办事流程”就只有做加法，print(a)也就只会打印循环结束时的最后一个数字。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 0  # 定义了一个变量a</span><br><span class="line">while a &lt; 5:  # 当a小于5的时候，就自动执行后续缩进部分的语句</span><br><span class="line">    print(&#x27;现在a的值是：&#x27; + str(a)) #加一个print看看现在的a是多少</span><br><span class="line">    a = a + 1  # 每执行一次循环，变量a的值都加1</span><br><span class="line">    print(&#x27;加1后a的值是：&#x27; + str(a)) #加一个print看看加1后的a是多少</span><br><span class="line">print(&#x27;最终a的值是：&#x27; + str(a))</span><br></pre></td></tr></table></figure>
+
+<p>前面用for循环解过“1到100分别乘以5”的题目，请改为用while来做</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">i = 0</span><br><span class="line">while i &lt; 101:</span><br><span class="line">    print(i*5)</span><br><span class="line">    i =i+1</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例：验证素数"><a href="#实例：验证素数" class="headerlink" title="实例：验证素数"></a>实例：验证素数</h3><p>素数：只能被1或者自己整除，如：11，13，17，19……</p>
+<p>如：19&#x2F;1&#x3D;19,19&#x2F;2&#x3D;9.XXXX,19&#x2F;3&#x3D;6.XX……19&#x2F;19&#x3D;1</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">num = 19</span><br><span class="line">i = 2</span><br><span class="line">a = True</span><br><span class="line">while i &gt;= 2 and i &lt;= num :</span><br><span class="line">    if num % i == 0:   # %求模运算，结果是0的话，就是余数为0，就是能被整除</span><br><span class="line">        a = False</span><br><span class="line">        break</span><br><span class="line">    i=i+1</span><br><span class="line">print(num,a,i)</span><br></pre></td></tr></table></figure>
+
+<h3 id="实例：数组相加"><a href="#实例：数组相加" class="headerlink" title="实例：数组相加"></a>实例：数组相加</h3><p>常规思路：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=[[1,2,3],[4,5,6],[7,8,9]]</span><br><span class="line">b=[[7,8,9],[1,5,0],[6,4,3]]</span><br><span class="line">c=[[0,0,0],[0,0,0],[0,0,0]]</span><br><span class="line">#定义行为row，列为column</span><br><span class="line">row=0</span><br><span class="line">column=0</span><br><span class="line">while column &lt; 3:</span><br><span class="line">    c[row][column]=a[row][column]+b[row][column]</span><br><span class="line">    column=column+1</span><br><span class="line">print(c)</span><br><span class="line">row=1</span><br><span class="line">column=0</span><br><span class="line">while column &lt; 3:</span><br><span class="line">    c[row][column]=a[row][column]+b[row][column]</span><br><span class="line">    column=column+1</span><br><span class="line">print(c)</span><br><span class="line">row=2</span><br><span class="line">column=0</span><br><span class="line">while column &lt; 3:</span><br><span class="line">    c[row][column]=a[row][column]+b[row][column]</span><br><span class="line">    column=column+1</span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
+
+<p>改进思路：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=[[1,2,3],[4,5,6],[7,8,9]]</span><br><span class="line">b=[[7,8,9],[1,5,0],[6,4,3]]</span><br><span class="line">c=[[0,0,0],[0,0,0],[0,0,0]]</span><br><span class="line">#定义行为row，列为column</span><br><span class="line">row=0</span><br><span class="line">while row &lt; 3:</span><br><span class="line">    column=0</span><br><span class="line">    while column &lt; 3:</span><br><span class="line">        c[row][column] = a[row][column] + b[row][column]</span><br><span class="line">        column = column + 1</span><br><span class="line">    row=row +1</span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
+
+<h1 id="for和while两种循环对比"><a href="#for和while两种循环对比" class="headerlink" title="for和while两种循环对比"></a>for和while两种循环对比</h1><p>for循环和while循环最大的区别在于【循环的工作量是否确定】，for循环就像空房间依次办理业务，直到把【所有工作做完】才下班。</p>
+<p>但while循环就像哨卡放行，【满足条件就一直工作】，直到不满足条件就关闭哨卡。</p>
+<p>当我们【工作量确定】的时候，我们就可以让for循环来完成重复性工作。反之，要【工作量不确定时】可以让while循环来工作：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 适合用for...in...循环</span><br><span class="line">for i in &#x27;神雕侠侣&#x27;:</span><br><span class="line">​     print(i)</span><br><span class="line"></span><br><span class="line"># 适合用while循环</span><br><span class="line">password = &#x27;&#x27;</span><br><span class="line">while password != &#x27;816&#x27;:</span><br><span class="line">​     password = input(&#x27;请尝试输入密码：&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p>有一种情况for循环和while循环都可以解决问题，那就是【把一件事情做N遍】：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#用for循环把诗句打印3遍</span><br><span class="line">for i in range(1,4) :</span><br><span class="line">    print(&#x27;明日复明日，明日何其多。&#x27;)</span><br><span class="line"></span><br><span class="line">#用while循环把诗句打印3遍</span><br><span class="line">j = 1</span><br><span class="line">while j&lt;4 :</span><br><span class="line">    print (&#x27;明日何其多，明日何其多。&#x27;)</span><br><span class="line">    j =j+1</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116195549837.png" alt="image-20230116195549837"></p>
+<h1 id="用数据做判断：布尔值"><a href="#用数据做判断：布尔值" class="headerlink" title="用数据做判断：布尔值"></a>用数据做判断：布尔值</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(3&lt;5)</span><br><span class="line">print(3&gt;5)</span><br><span class="line">print(&#x27;长安&#x27;==&#x27;长安&#x27;)  </span><br><span class="line">print(&#x27;长安&#x27;!=&#x27;金陵&#x27;)</span><br><span class="line"></span><br><span class="line">if False:</span><br><span class="line">    print(&#x27;if False&#x27;)</span><br><span class="line"></span><br><span class="line">if True:</span><br><span class="line">    print(&#x27;if True&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200201034.png" alt="image-20230116200201034"></p>
+<p>用两个数值做比较的【布尔运算】，主要包含以下情况：</p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200243831.png" alt="image-20230116200243831"></p>
+<h2 id="直接用数值做运算"><a href="#直接用数值做运算" class="headerlink" title="直接用数值做运算"></a>直接用数值做运算</h2><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200431952.png" alt="image-20230116200431952"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if &#x27;开心&#x27;:         #字符串是true，所以会执行下面的print</span><br><span class="line">    print(&#x27;熊猫&#x27;)</span><br><span class="line">if &#x27;&#x27;:            #&#x27;&#x27;空字符串是false，所以不会执行下面的print</span><br><span class="line">    print(&#x27;熊猫&#x27;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&#x27;以下数据判断结果都是【假】：&#x27;)</span><br><span class="line">print(bool(False))</span><br><span class="line">print(bool(0))</span><br><span class="line">print(bool(&#x27;&#x27;))</span><br><span class="line">print(bool(None))</span><br></pre></td></tr></table></figure>
+
+<h2 id="布尔值之间的运算"><a href="#布尔值之间的运算" class="headerlink" title="布尔值之间的运算"></a>布尔值之间的运算</h2><p><code>and</code>、<code>or</code>、<code>not</code>、<code>in</code>、<code>not in</code>五种运算</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 1</span><br><span class="line">b = -1</span><br><span class="line"></span><br><span class="line">print(&#x27;以下是and运算&#x27;)</span><br><span class="line">if a==1 and b==1:    # 【b实际上是-1】，and必须两个条件都满足</span><br><span class="line">    print(&#x27;True&#x27;)    #不打印</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;False&#x27;)    #打印</span><br><span class="line"></span><br><span class="line">print(&#x27;以下是or运算&#x27;)</span><br><span class="line">if a==1 or b==1:  # 【b实际上是-1】，or一个条件满足即可</span><br><span class="line">    print(&#x27;True&#x27;)  #打印</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;False&#x27;) #不打印</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201034174.png" alt="image-20230116201034174"></p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201057342.png" alt="image-20230116201057342"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 5</span><br><span class="line">b = -1</span><br><span class="line">c = 0</span><br><span class="line">d = 7</span><br><span class="line"></span><br><span class="line">if a&lt;b and c&lt;d:</span><br><span class="line">    print(&#x27;True&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;False&#x27;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 直接运行代码即可</span><br><span class="line">list = [1,2,3,4,5]</span><br><span class="line">a = 1</span><br><span class="line"></span><br><span class="line"># 做一次布尔运算，判断“a是否在列表list之中”</span><br><span class="line">print(bool(a in list))</span><br><span class="line">print(bool(a not in list))</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201311422.png" alt="image-20230116201311422"></p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201329007.png" alt="image-20230116201329007"></p>
+<h1 id="break语句"><a href="#break语句" class="headerlink" title="break语句"></a>break语句</h1><p><code>if...break</code>的意思是如果满足了某一个条件，就提前结束循环。记住，这个只能在循环内部使用。</p>
+<p>用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># break语句搭配for循环</span><br><span class="line">for...in...:</span><br><span class="line">    ...</span><br><span class="line">    if ...:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line"># break语句搭配while循环</span><br><span class="line">while...(条件):</span><br><span class="line">    ...</span><br><span class="line">    if ...:</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(5):</span><br><span class="line">    print(&#x27;明日复明日&#x27;)</span><br><span class="line">    if i==3:  # 当i等于3的时候触发</span><br><span class="line">        break # 结束循环</span><br><span class="line">#for循环代码，本来会循环5次，但循环到第4次的时候，满足i==3，执行break，就被break语句打断，然后结束整个for循环了。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">i = 0</span><br><span class="line">while i&lt;5:</span><br><span class="line">    print(&#x27;明日复明日&#x27;)</span><br><span class="line">    i = i+1</span><br><span class="line">    if i==3:  # 当i等于3的时候触发</span><br><span class="line">        break # 结束循环   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">while True:    </span><br><span class="line">    print(&#x27;上供一对童男童女&#x27;)</span><br><span class="line">    t = input(&#x27;孙悟空来了吗&#x27;)</span><br><span class="line">    if t == &#x27;来了&#x27;:</span><br><span class="line">        break</span><br><span class="line">print(&#x27;孙悟空制服了鲤鱼精，陈家庄再也不用上供童男童女了&#x27;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#当有多层循环的时候，break是退出最内层循环</span><br><span class="line"></span><br><span class="line">while True:</span><br><span class="line">    s=input(&quot;请输入一个名字（按Q退出）：&quot;)</span><br><span class="line">    if s==&quot;Q&quot;:</span><br><span class="line">        break    #退出while循环</span><br><span class="line">    for i in s:</span><br><span class="line">        if i==&quot;曾&quot;:</span><br><span class="line">            break   #退出for循环，但是不退出while循环</span><br><span class="line">        print(i)    </span><br><span class="line">print(&quot;程序退出&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>continue语句</p>
+<p>在循环内部使用的。当某个条件被满足的时候，触发continue语句，将跳过之后的代码，直接回到循环的开始。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># continue语句搭配for循环</span><br><span class="line">for...in...:</span><br><span class="line">    ...</span><br><span class="line">    if ...:</span><br><span class="line">        continue</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line"># continue语句搭配while循环</span><br><span class="line">while...(条件):</span><br><span class="line">    ...</span><br><span class="line">    if ...:</span><br><span class="line">        continue</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(5):</span><br><span class="line">    print(&#x27;明日复明日&#x27;)</span><br><span class="line">    if i==3:  # 当i等于3的时候触发</span><br><span class="line">        continue # 回到循环开头</span><br><span class="line">    print(&#x27;这句话在i等于3的时候打印不出来&#x27;)</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">i = 0</span><br><span class="line">while i &lt; 5:</span><br><span class="line">    print(&#x27;明日复明日&#x27;)</span><br><span class="line">    i = i + 1</span><br><span class="line">    if i == 3:  # 当i等于3的时候触发</span><br><span class="line">        continue  # 回到循环开头</span><br><span class="line">    print(&#x27;这句话在i等于3的时候打印不出来&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p>continue是结束本次循环，但不终止整个循环，而break结束当前层次的整个循环（如果有多层循环，break是结束最内层的循环）</p>
+<h1 id="pass语句"><a href="#pass语句" class="headerlink" title="pass语句"></a>pass语句</h1><p>pass语句就非常简单了，它的英文意思是“跳过”。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = int(input(&#x27;请输入一个整数:&#x27;))</span><br><span class="line">if a &gt;= 100:</span><br><span class="line">    pass</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;你输入了一个小于100的数字&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="else语句"><a href="#else语句" class="headerlink" title="else语句"></a>else语句</h1><p>else不但可以和if配合使用，它还能跟for循环和while循环配合使用。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(5):</span><br><span class="line">    a = int(input(&#x27;请输入0来结束循环，你有5次机会:&#x27;))</span><br><span class="line">    if a == 0:</span><br><span class="line">        print(&#x27;你触发了break语句，循环结束，导致else语句不会生效。&#x27;)    </span><br><span class="line">        break</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;5次循环你都错过了，else语句生效了。&#x27;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">i = 0</span><br><span class="line">while i&lt;5: </span><br><span class="line">    a = int(input(&#x27;请输入0结束循环，你有5次机会:&#x27;))</span><br><span class="line">    i = i+1</span><br><span class="line">    if a == 0:</span><br><span class="line">        print(&#x27;你触发了break语句，导致else语句不会生效。&#x27;)    </span><br><span class="line">        break</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;5次循环你都错过了，else语句生效了。&#x27;)</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192036142.png" alt="image-20230130192036142"></p>
+<h3 id="实例：猜数字游戏"><a href="#实例：猜数字游戏" class="headerlink" title="实例：猜数字游戏"></a>实例：猜数字游戏</h3><p>思路：</p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192522717.png" alt="image-20230130192522717"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">secret = 24  #设定秘密数字</span><br><span class="line">while True:</span><br><span class="line">    guess = input(&#x27;你来猜猜我的秘密数字是多少:&#x27;)   #输入猜测数字</span><br><span class="line">    if int(guess)==secret:  #数字对比</span><br><span class="line">        print(&#x27;正确！你很棒哦。&#x27;)</span><br><span class="line">        break</span><br><span class="line">    elif int(guess)&gt;secret:</span><br><span class="line">        print(&#x27;你猜的太大了，请重新猜猜~&#x27;)</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;你猜的太小了，请重新猜猜~&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="八、函数"><a href="#八、函数" class="headerlink" title="八、函数"></a>八、函数</h1><h2 id="函数的定义和调用"><a href="#函数的定义和调用" class="headerlink" title="函数的定义和调用"></a>函数的定义和调用</h2><p>代码都是立即运行且只能被执行一次，而函数可以让我们整合打包好代码，以便这些代码能够随时被复用，这样能极大地减少代码冗余。</p>
+<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130200041345.png" alt="image-20230130200041345"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def math(x):</span><br><span class="line">    y = x ** 2 + x</span><br><span class="line">    return y</span><br><span class="line">print(math(20))</span><br><span class="line">print(math(30))</span><br></pre></td></tr></table></figure>
+
+<p>我们之前接触过的len()函数是Python的内置函数，功能之一是可以返回字符串的长度。那么，我们可不可以自己写一个具有相同功能的函数呢？</p>
+<h3 id="实例：设置计数器"><a href="#实例：设置计数器" class="headerlink" title="实例：设置计数器"></a>实例：设置计数器</h3><p>实现思路，1. 设置一个初始为0的计数器；2.遍历字符串，每遍历一次，计数器加一；3.返回计数器的值。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def my_len(words):</span><br><span class="line">    counter = 0</span><br><span class="line">    for i in words:</span><br><span class="line">        counter = counter + 1</span><br><span class="line">    return counter</span><br><span class="line"></span><br><span class="line">a = &#x27;三根皮带，四斤大豆&#x27;</span><br><span class="line">print(my_len(a))</span><br></pre></td></tr></table></figure>
+
+<p>函数的参数传递</p>
+<p>函数的参数是可选的，可以不带参数、一个参数、两个参数、多个参数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#定义一个函数test1，不带参数</span><br><span class="line">def test1():</span><br><span class="line">    print(&quot;this is test1&quot;)</span><br><span class="line">    pass</span><br><span class="line">#调用或使用函数test1</span><br><span class="line">test1()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#参数可以是任何数据类型，这是一个参数</span><br><span class="line">def test2(a):</span><br><span class="line">    print(&quot;this is test2&quot;,a)</span><br><span class="line">test2(1)</span><br><span class="line">test2(&quot;hello&quot;)</span><br><span class="line">test2(3.5)</span><br><span class="line">test2([1,3,5,7])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#参数可以是任何数据类型，这是两个参数</span><br><span class="line">def test3(a,b):</span><br><span class="line">    print(&quot;this is test3&quot;,a,b)</span><br><span class="line">test3(1,&quot;hello&quot;)</span><br><span class="line">test3(a=1,b=3.8)</span><br><span class="line"></span><br><span class="line">实例：两个数的乘法计算函数，将y作为可选参数</span><br><span class="line">def multiply(x,y=10):</span><br><span class="line">    print(x*y)</span><br><span class="line">multiply(99)</span><br><span class="line">multiply(99,2)</span><br><span class="line">multiply(x=99)</span><br><span class="line">multiply(x=99,y=2)</span><br><span class="line">multiply(y=2,x=99)</span><br><span class="line">#可选参数y都放在非可选参数x的后面，调用函数的时候是把值优先给非可选参数，参数之间的顺序可以任意调整</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h3><p>return语句可以出现在函数中的任何部分，同时可以返回0个，1个，多个值</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def multiply(x,y=10):</span><br><span class="line">    return x*y,x+y</span><br><span class="line">a=multiply(10,20)</span><br><span class="line">print(a)</span><br><span class="line">输出结果：（200，30）</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def multiply(x,y=10):</span><br><span class="line">    return x*y,x+y</span><br><span class="line">b,c=multiply(12,11)</span><br><span class="line">print(b)</span><br><span class="line">print(c)</span><br></pre></td></tr></table></figure>
+
+<h3 id="多个return语句"><a href="#多个return语句" class="headerlink" title="多个return语句"></a>多个return语句</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def aa(x):</span><br><span class="line">    try:</span><br><span class="line">        if x&gt;0:</span><br><span class="line">            return x+1</span><br><span class="line">        else:</span><br><span class="line">            return x-1</span><br><span class="line">    except:</span><br><span class="line">        return 0</span><br></pre></td></tr></table></figure>
+
+<h2 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h2><p>局部变量：函数内部定义和使用的变量，只作用在函数内部，函数退出时，变量不再存在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def multiply(x,y=10):</span><br><span class="line">    z=x*y  #z是局部变量</span><br><span class="line">    return z</span><br><span class="line">s=multiply(10,11)</span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def test(a):</span><br><span class="line">    print(a)</span><br><span class="line">    a=2   #a就是局部变量</span><br><span class="line">    print(a)</span><br><span class="line">b=3   #b就是全局变量</span><br><span class="line">test(b)</span><br><span class="line"></span><br><span class="line">def test2(a):</span><br><span class="line">    print(a)</span><br><span class="line">    a[0]=100  #a是局部变量</span><br><span class="line">    print(a)</span><br><span class="line">list=[1,2,3] #list是全局变量</span><br><span class="line">test2(list)</span><br><span class="line">print(&quot;调用函数后：&quot;,list)</span><br></pre></td></tr></table></figure>
+
+<p>全局变量：在函数外定义的变量，在程序执行全部过程中都有效，全局变量在函数内部可以使用，使用的语法是：global &lt;全局变量&gt;</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n=2  #n是全局变量</span><br><span class="line">def multiply(x,y=10):</span><br><span class="line">    global n    #n是全局变量，global是对全局变量进行声明</span><br><span class="line">    return x*y*n</span><br><span class="line">s=multiply(3,4)</span><br><span class="line">print(s)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">n=2  #n是全局变量</span><br><span class="line">def multiply(x,y=10):</span><br><span class="line">    n=x*y   #此处的n不是全局变量，而是局部变量</span><br><span class="line">    return n</span><br><span class="line">s=multiply(3,4)</span><br><span class="line">print(s)</span><br><span class="line">print(n)</span><br><span class="line">输出结果：12</span><br><span class="line">        2</span><br></pre></td></tr></table></figure>
+
+<h2 id="函数的递归"><a href="#函数的递归" class="headerlink" title="函数的递归"></a>函数的递归</h2><p>函数是代码封装，在函数定义中又调用函数自己成为递归</p>
+<h3 id="实例：计算阶乘"><a href="#实例：计算阶乘" class="headerlink" title="实例：计算阶乘"></a>实例：计算阶乘</h3><p>n！&#x3D; n(n-1)(n-2)……（1）</p>
+<p>另一种表达：</p>
+<p>​	当n&#x3D;0，n！&#x3D;1</p>
+<p>​	当n!&#x3D;0,  n!&#x3D;n(n-1)!</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def fmul(n):</span><br><span class="line">    if n==0:</span><br><span class="line">        return 1</span><br><span class="line">    else:</span><br><span class="line">        return n*fmul(n-1)</span><br><span class="line">s=eval(input(&quot;请输入一个整数：&quot;))</span><br><span class="line">print(fmul(abs(int(s))))</span><br></pre></td></tr></table></figure>
+
+<h1 id="九、文件操作"><a href="#九、文件操作" class="headerlink" title="九、文件操作"></a>九、文件操作</h1><p>文件：文本文件、二进制文件（由0，1组成）</p>
+<p>r只读</p>
+<p>w覆盖写入（文件不存在则创建，文件存在则覆盖写入）</p>
+<p>x创建写入（文件不存在则创建，文件存在就返回异常）</p>
+<p>a追加写入（文件不存在则创建，文件存在则追加写入）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f=open(&#x27;zeng.txt&#x27;,&#x27;w&#x27;)  #打开文件,采用w，写入模式，如果文件不存在，创建一个</span><br><span class="line">f.write(&#x27;hello&#x27;) #写入内容</span><br><span class="line">f.write(&#x27;i am zengqingling&#x27;) #写入内容</span><br><span class="line">f.write(&#x27;hello&#x27;) #写入内容</span><br><span class="line">f.close() #关闭文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f=open(&#x27;zeng.txt&#x27;,&#x27;w&#x27;)  #w的方式是覆盖写入</span><br><span class="line">f.write(&#x27;123456&#x27;) #写入内容</span><br><span class="line">f.close() #关闭文件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f=open(&#x27;b.txt&#x27;,&#x27;x&#x27;)  #打开文件,采用X，文件不存在则创建，文件存在就返回异常FileExistsError</span><br><span class="line">f.write(&#x27;abcv&#x27;) #写入内容</span><br><span class="line">f.close() #关闭文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="文件的读取"><a href="#文件的读取" class="headerlink" title="文件的读取"></a>文件的读取</h2><h3 id="按字符来读取"><a href="#按字符来读取" class="headerlink" title="按字符来读取"></a>按字符来读取</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;w&#x27;)</span><br><span class="line">f.write(&quot;hello,i am zengqingling&quot;)</span><br><span class="line">f.close()</span><br><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;r&#x27;)</span><br><span class="line">content=f.read(5)  #读取5个字符</span><br><span class="line">print(content)</span><br><span class="line">content=f.read(6)  #接上面的，继续读取6个字符</span><br><span class="line">print(content)</span><br><span class="line">content=f.read(3)</span><br><span class="line">print(content)</span><br></pre></td></tr></table></figure>
+
+<h3 id="按行读取"><a href="#按行读取" class="headerlink" title="按行读取"></a>按行读取</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;r&#x27;)</span><br><span class="line">content=f.readline()  #按行读取文件的内容，按行读取到的是字符串</span><br><span class="line">print(content)</span><br><span class="line">print(type(content))</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">输出结果：</span><br><span class="line">hello</span><br><span class="line"></span><br><span class="line">&lt;class &#x27;str&#x27;&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="取整个文件"><a href="#取整个文件" class="headerlink" title="取整个文件"></a>取整个文件</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;r&#x27;)</span><br><span class="line">content=f.readlines()  #一次性读取全部文件作为列表，文件中的每行作为列表的一个元素</span><br><span class="line">print(content)</span><br><span class="line">print(type(content))  #是列表类型</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">输出结果：</span><br><span class="line">[&#x27;hello\n&#x27;, &#x27;i am zengqingling\n&#x27;, &#x27;i am a  teacher&#x27;]</span><br><span class="line">&lt;class &#x27;list&#x27;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;r&#x27;)</span><br><span class="line">content=f.readlines()  #将整个文件读取出来，存为列表</span><br><span class="line">i=1</span><br><span class="line">for t in content:</span><br><span class="line">    print(&quot;第%d行:%s&quot;%(i,t),end=&#x27;&#x27;)  </span><br><span class="line">    i=i+1</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">输出结果：</span><br><span class="line">第1行:hello</span><br><span class="line">第2行:i am zengqingling</span><br><span class="line">第3行:i am a  teacher</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;r&#x27;)</span><br><span class="line">content=f.read()  #文件读取后，读取指针已经到了文件的末尾了</span><br><span class="line">print(content)</span><br><span class="line">content2=f.readlines()   #上面指针已经到文件末尾，再将整个文件读取出来，存为列表，那么读到的是空内容</span><br><span class="line">print(content2)</span><br><span class="line"></span><br><span class="line">输出结果：</span><br><span class="line">hello</span><br><span class="line">i am zengqingling</span><br><span class="line">i am a  teacher</span><br><span class="line">[]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f=open(&#x27;text.txt&#x27;,&#x27;r&#x27;)</span><br><span class="line">content=f.read()  #文件读取后，读取指针已经到了文件的末尾了</span><br><span class="line">print(content)</span><br><span class="line">f.seek(0) #将读取指针重置到文件开头</span><br><span class="line">content2=f.readlines()   #上面指针已经到文件末尾，再将整个文件读取出来，存为列表，那么读到的是空内容</span><br><span class="line">print(content2)</span><br><span class="line"></span><br><span class="line">输出结果：</span><br><span class="line">hello</span><br><span class="line">i am zengqingling</span><br><span class="line">i am a  teacher</span><br><span class="line">[&#x27;hello\n&#x27;, &#x27;i am zengqingling\n&#x27;, &#x27;i am a  teacher&#x27;]</span><br></pre></td></tr></table></figure>
+
+<p>f.seek(0)   #将读取指针重置到文件开头</p>
+<p>f.seek(2)    #将读取指针移动到文件结尾</p>
+<h3 id="引入文件操作库"><a href="#引入文件操作库" class="headerlink" title="引入文件操作库"></a>引入文件操作库</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import os   #引入os.py</span><br><span class="line">os.renames(&#x27;c.txt&#x27;,&#x27;ccc.txt&#x27;)</span><br><span class="line">os.remove(&#x27;ccc.txt&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="十、模块"><a href="#十、模块" class="headerlink" title="十、模块"></a>十、模块</h1><p>模块是最高级别的程序组织单元，一个py文件就是一个模块，比如os.py</p>
+<h2 id="模块的分类："><a href="#模块的分类：" class="headerlink" title="模块的分类："></a>模块的分类：</h2><p>1、标准模块（内置模块）：直接用import使用</p>
+<p>2、第三方模块：pip，install</p>
+<p>3、自定义模块：自己写的</p>
+<h2 id="引入标准库"><a href="#引入标准库" class="headerlink" title="引入标准库"></a>引入标准库</h2><h3 id="实例：猜数字游戏（随机数）"><a href="#实例：猜数字游戏（随机数）" class="headerlink" title="实例：猜数字游戏（随机数）"></a>实例：猜数字游戏（随机数）</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#请产生一个随机数1--1000之间的随机数，让对方猜你心里想的数字</span><br><span class="line">import random  #引入随机数的库</span><br><span class="line">target=random.randint(1,1000)</span><br><span class="line">count=0</span><br><span class="line">while True:</span><br><span class="line">    guess=eval(input(&#x27;请输入一个猜测的整数：&#x27;))</span><br><span class="line">    count=count+1 #count+=1</span><br><span class="line">    if guess &gt; target:</span><br><span class="line">        print(&#x27;猜大了&#x27;)</span><br><span class="line">    elif guess &lt; target:</span><br><span class="line">        print(&quot;猜小了&quot;)</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;猜对了&#x27;)</span><br><span class="line">        break</span><br><span class="line">print(&#x27;一共猜了%d次&#x27;%count)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import time  #从伦敦时间1970.1.1.0点开始计算到现在</span><br><span class="line">print(time.time())  #每次运行的时间不一样</span><br><span class="line">print(time.localtime())</span><br><span class="line"></span><br><span class="line">print(&#x27;hello&#x27;)</span><br><span class="line">time.sleep(5)</span><br><span class="line">print(&#x27;i am zengqingling&#x27;)</span><br></pre></td></tr></table></figure>
+
+<h1 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">if a.isdigit() and b.isdigit():</span><br><span class="line">    a = int(a)</span><br><span class="line">    b = int(b)</span><br><span class="line">    c = a / b</span><br><span class="line">    print(&quot;商为：%f&quot; % c)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;输入类型有误&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">if a.isdigit() and b.isdigit():</span><br><span class="line">    a = int(a)</span><br><span class="line">    b = int(b)</span><br><span class="line">    if b!= 0:</span><br><span class="line">        c = a / b</span><br><span class="line">        print(&quot;商为：%f&quot; % c)</span><br><span class="line">    else:</span><br><span class="line">        print(&quot;除数不能为0&quot;)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;输入类型有误&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">try:</span><br><span class="line">    a = int(a)</span><br><span class="line">    b = int(b)</span><br><span class="line">    c = a / b</span><br><span class="line">    print(&quot;商为：%f&quot; % c)</span><br><span class="line">except:</span><br><span class="line">    print(&quot;输入类型有误或者除数不能为0&quot;)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">try:</span><br><span class="line">    a = int(eval(a))</span><br><span class="line">    b = int(eval(b))</span><br><span class="line">    c = a/b</span><br><span class="line">    print(&quot;商为：%g&quot; % c)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入类型有误&quot;)</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;除数不能为0&quot;)</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -47,26 +469,8 @@
 <li>编写核心代码</li>
 </ol>
 ]]></content>
-      <tags>
-        <tag>一</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
+      <categories>
+        <category>PyQt5学习</category>
+      </categories>
   </entry>
 </search>
