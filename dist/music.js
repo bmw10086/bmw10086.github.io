@@ -15,7 +15,7 @@ const ap = new APlayer({
         {
             name: '向云端',
             artist: '小霞/海洋BO',
-            url: 'http://music.163.com/song/media/outer/url?id=3778678.mp3',
+            url: 'http://music.163.com/song/media/outer/url?id=2049512697.mp3',
             cover: 'cover2.jpg',
         }
     ]
