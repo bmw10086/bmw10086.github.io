@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PyQt5学习</title>
+    <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
+<p>[]: <a href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
+<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
+<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
+<p>自己：使用pip安装，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
+
+<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+
+<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
+<p>这里我们还是采用脚本安装的方式。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
+
+<p>使用镜像下载：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+
+<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
+<p><code>PyQt 5.15.x</code> 之前的版本：</p>
+<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
+<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
+<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
+<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
+<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
+<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
+<p><code>PyQt 5.15.x</code> 之前的版本：</p>
+<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
+<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
+<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
+<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
+<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
+<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
+<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
+<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204740522.png" alt="image-20230605204740522"></p>
+<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204807155.png" alt="image-20230605204807155"></p>
+<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204835064.png" alt="image-20230605204835064"></p>
+<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
+<li>架构的构建（需求文档）</li>
+<li>设计图出稿</li>
+<li>设计图复原（designer）</li>
+<li>编写核心代码</li>
+</ol>
+]]></content>
+      <categories>
+        <category>PyQt5学习</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/06/14/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -421,56 +472,5 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">try:</span><br><span class="line">    a = int(eval(a))</span><br><span class="line">    b = int(eval(b))</span><br><span class="line">    c = a/b</span><br><span class="line">    print(&quot;商为：%g&quot; % c)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入类型有误&quot;)</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;除数不能为0&quot;)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>PyQt5学习</title>
-    <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
-<p>[]: <a href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
-<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
-<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
-<p>自己：使用pip安装，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
-
-<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
-<p>这里我们还是采用脚本安装的方式。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
-
-<p>使用镜像下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
-<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
-<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
-<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
-<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
-<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
-<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
-<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
-<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204740522.png" alt="image-20230605204740522"></p>
-<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204807155.png" alt="image-20230605204807155"></p>
-<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204835064.png" alt="image-20230605204835064"></p>
-<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
-<li>架构的构建（需求文档）</li>
-<li>设计图出稿</li>
-<li>设计图复原（designer）</li>
-<li>编写核心代码</li>
-</ol>
-]]></content>
-      <categories>
-        <category>PyQt5学习</category>
-      </categories>
   </entry>
 </search>
