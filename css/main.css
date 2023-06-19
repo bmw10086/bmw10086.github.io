@@ -975,23 +975,24 @@ pre .javascript .function {
 }
 .brand {
   border-bottom: none;
-  color: var(--brand-color);
   display: inline-block;
   line-height: 1.375em;
   padding: 0 40px;
   position: relative;
+  color: #071012 !important;
 }
 .brand:hover {
   color: var(--brand-hover-color);
 }
 .site-title {
+  color: #000;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
 }
 .site-subtitle {
-  color: #999;
+  color: #000;
   font-size: 0.8125em;
   margin: 10px 0;
 }
@@ -1168,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff2d7e;
+  background: #b00075;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2501,7 +2502,7 @@ canvas {
 }
 body {
   background: url("/images/2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 100% 100%;
 }
