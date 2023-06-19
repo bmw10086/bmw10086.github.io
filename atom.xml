@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-23T16:41:29.431Z</updated>
+  <updated>2023-06-19T12:50:52.124Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tags</title>
+    <link href="http://example.com/2023/06/19/tags/"/>
+    <id>http://example.com/2023/06/19/tags/</id>
+    <published>2023-06-19T12:44:19.000Z</published>
+    <updated>2023-06-19T12:50:52.124Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;本人大二，正在学习阶段。&lt;/p&gt;
+&lt;p&gt;写博客的目的：&lt;/p&gt;
+&lt;p&gt;​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。&lt;/p&gt;
+&lt;p&gt;​	2、记录学习中遇到的问题，并解决总结解决问题的经验。&lt;/p&gt;
+&lt;p&gt;​	3、分享给他人，希望对你们有所帮助。&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="tags" scheme="http://example.com/tags/tags/"/>
+    
+  </entry>
   
   <entry>
     <title></title>
