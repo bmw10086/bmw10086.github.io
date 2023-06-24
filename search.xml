@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
+    <url>/2023/06/24/3-5%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="使用Github-Vercel无服务器搭建ChatGPT-3-5网站"><a href="#使用Github-Vercel无服务器搭建ChatGPT-3-5网站" class="headerlink" title="使用Github+Vercel无服务器搭建ChatGPT 3.5网站"></a>使用Github+Vercel无服务器搭建ChatGPT 3.5网站</h1><p>需要：</p>
+<ol>
+<li><h3 id="ChatGPT账号key"><a href="#ChatGPT账号key" class="headerlink" title="ChatGPT账号key"></a>ChatGPT账号key</h3></li>
+<li><h3 id="Github账号"><a href="#Github账号" class="headerlink" title="Github账号"></a>Github账号</h3></li>
+<li><h3 id="Vercel账号"><a href="#Vercel账号" class="headerlink" title="Vercel账号"></a>Vercel账号</h3></li>
+<li><h3 id="项目作者的GitHub"><a href="#项目作者的GitHub" class="headerlink" title="项目作者的GitHub"></a>项目作者的GitHub</h3></li>
+</ol>
+<p>开始搭建：</p>
+<p>1、打开项目，点击项目左下侧的Deploy进入Vercel页面</p>
+<p><img src="/.com//image-20230624164123512.png" alt="vercel页面"></p>
+<p>2、然后用github登录成功(需要验证手机号)，选择github，然后自定义一个自己的名称-点击创建</p>
+<p><img src="/.com//image-20230624164208507.png" alt="验证"></p>
+<p>3、填入自己的chatgpt的api-key，部署完成</p>
+<p><img src="/.com//image-20230624164239315.png" alt="成功"></p>
+<p>4、点击Continue To Dashboard进入管理页面</p>
+<p><img src="/.com//image-20230624164335295.png" alt="管理界面"></p>
+<p>5、访问vercel分配的网址即可，输入网址：</p>
+<p><img src="/.com//image-20230624164508859.png" alt="网页"></p>
+]]></content>
+      <categories>
+        <category>搭建教程</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>chatgpt</tag>
+        <tag>vercel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -37,9 +68,9 @@
 <p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
 <p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
 <p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204740522.png" alt="image-20230605204740522"></p>
-<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204807155.png" alt="image-20230605204807155"></p>
-<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204835064.png" alt="image-20230605204835064"></p>
+<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/.com//Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204740522.png" alt="image-20230605204740522"></p>
+<p><img src="/.com//Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204807155.png" alt="image-20230605204807155"></p>
+<p><img src="/.com//Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204835064.png" alt="image-20230605204835064"></p>
 <h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
 <li>架构的构建（需求文档）</li>
 <li>设计图出稿</li>
@@ -48,8 +79,12 @@
 </ol>
 ]]></content>
       <categories>
-        <category>PyQt5学习</category>
+        <category>工具学习</category>
       </categories>
+      <tags>
+        <tag>PyQt5</tag>
+        <tag>Qt Designer</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -70,8 +105,171 @@
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>hexo博客中next添加背景图片</title>
+    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/.com//Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617202559584.png" alt="image-20230617202559584"></p>
+<blockquote>
+<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
+</blockquote>
+<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
+
+<p>然后新建一个<code>styles.styl</code>文件</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
+
+<p>改完之后就会出现我上面的问题：</p>
+<p><img src="/.com//Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617203121562.png" alt="image-20230617203121562"></p>
+<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
+
+<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
+<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一样也行。</p>
+]]></content>
+      <categories>
+        <category>问题</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/2023/06/19/tags/</url>
+    <content><![CDATA[<hr>
+<p>本人大二，正在学习阶段。</p>
+<p>写博客的目的：</p>
+<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
+<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
+<p>​	3、分享给他人，希望对你们有所帮助。</p>
+<p>联系方式：</p>
+<p>邮箱：<a href="mailto:&#50;&#x37;&#x37;&#51;&#48;&#x37;&#x33;&#x35;&#x34;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;">&#50;&#x37;&#x37;&#51;&#48;&#x37;&#x33;&#x35;&#x34;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<hr>
+]]></content>
+      <tags>
+        <tag>tags</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>古诗</title>
+    <url>/2023/06/16/%E5%8F%A4%E8%AF%97/</url>
+    <content><![CDATA[<h1 id="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"><a href="#经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰" class="headerlink" title="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"></a><center>经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰</center></h1><div align="center">
+天上白玉京，十二楼五城。
+仙人抚我顶，结发受长生。
+误逐世间乐，颇穷理乱情。
+九十六圣君，浮云挂空名。
+天地赌一掷，未能忘战争。
+试涉霸王略，将期轩冕荣。
+时命乃大谬，弃之海上行。
+学剑翻自哂，为文竟何成。
+剑非万人敌，文窃四海声。
+儿戏不足道，五噫出西京。
+临当欲去时，慷慨泪沾缨。
+叹君倜傥才，标举冠群英。
+开筵引祖帐，慰此远徂征。
+鞍马若浮云，送余骠骑亭。
+歌钟不尽意，白日落昆明。
+十月到幽州，戈鋋若罗星。
+君王弃北海，扫地借长鲸。
+呼吸走百川，燕然可摧倾。
+心知不得语，却欲栖蓬瀛。
+弯弧惧天狼，挟矢不敢张。
+揽涕黄金台，呼天哭昭王。
+无人贵骏骨，騄耳空腾骧。
+乐毅倘再生，于今亦奔亡。
+蹉跎不得意，驱马还贵乡。
+逢君听弦歌，肃穆坐华堂。
+百里独太古，陶然卧羲皇。
+征乐昌乐馆，开筵列壶觞。
+贤豪间青娥，对烛俨成行。
+醉舞纷绮席，清歌绕飞梁。
+欢娱未终朝，秩满归咸阳。
+祖道拥万人，供帐遥相望。
+一别隔千里，荣枯异炎凉。
+炎凉几度改，九土中横溃。
+汉甲连胡兵，沙尘暗云海。
+草木摇杀气，星辰无光彩。
+白骨成丘山，苍生竟何罪。
+函关壮帝居，国命悬哥舒。
+长戟三十万，开门纳凶渠。
+公卿如犬羊，忠谠醢与菹。
+二圣出游豫，两京遂丘墟。
+帝子许专征，秉旄控强楚。
+节制非桓文，军师拥熊虎。
+人心失去就，贼势腾风雨。
+惟君固房陵，诚节冠终古。
+仆卧香炉顶，餐霞漱瑶泉。
+门开九江转，枕下五湖连。
+半夜水军来，浔阳满旌旃。
+空名适自误，迫胁上楼船。
+徒赐五百金，弃之若浮烟。
+辞官不受赏，翻谪夜郎天。
+夜郎万里道，西上令人老。
+扫荡六合清，仍为负霜草。
+日月无偏照，何由诉苍昊。
+良牧称神明，深仁恤交道。
+一忝青云客，三登黄鹤楼。
+顾惭祢处士，虚对鹦鹉洲。
+樊山霸气尽，寥落天地秋。
+江带峨眉雪，川横三峡流。
+万舸此中来，连帆过扬州。
+送此万里目，旷然散我愁。
+纱窗倚天开，水树绿如发。
+窥日畏衔山，促酒喜得月。
+吴娃与越艳，窈窕夸铅红。
+呼来上云梯，含笑出帘栊。
+对客小垂手，罗衣舞春风。
+宾跪请休息，主人情未极。
+览君荆山作，江鲍堪动色。
+清水出芙蓉，天然去雕饰。
+逸兴横素襟，无时不招寻。
+朱门拥虎士，列戟何森森。
+剪凿竹石开，萦流涨清深。
+登台坐水阁，吐论多英音。
+片辞贵白璧，一诺轻黄金。
+谓我不愧君，青鸟明丹心。
+五色云间鹊，飞鸣天上来。
+传闻赦书至，却放夜郎回。
+暖气变寒谷，炎烟生死灰。
+君登凤池去，忽弃贾生才。
+桀犬尚吠尧，匈奴笑千秋。
+中夜四五叹，常为大国忧。
+旌旆夹两山，黄河当中流。
+连鸡不得进，饮马空夷犹。
+安得羿善射，一箭落旄头。</div>
+
+
+
+<h3 id="译文："><a href="#译文：" class="headerlink" title="译文："></a>译文：</h3><h5 id="天上宫阙，白玉京城，有十二楼阁，五座城池。-仙人为我抚顶，结受长生命符。-突然想来人间一游，误逐世间的环乐，以尽前缘。-人间从开始到现在已经有九十六圣君，空名挂于浮云端。-以天地为赌注，一掷决定命运，一直战争不停。-我曾经学习霸王战略，希望能功成名就，锦衣返乡。-可是时运不佳，长期漂泊五湖四海。-曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？-剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。-这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。-不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。-叹君也是个倜傥之才，气质品格冠群英。-道旁设帐为我饯行，慰籍我此次远征的艰辛。-鞍马生涯如浮云，送我送在骠骑亭。-歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。-我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。-君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。-呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。-我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。-想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。-我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？-无人珍贵骏马之骨，天马空自腾骧，不得大用。-即使乐毅再生，到如今这样的形势，也只有逃命的份儿。-岁月蹉跎，不得人意，驱骑马儿来到贵乡。-正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。-你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。-行乐在昌乐馆，大开酒筵，罗列壶觞。-青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。-醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。-欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。-饮宴送行的有万人之多，帐蓬遥遥相望。-这一别，我俩各隔千里，荣枯不用，炎凉各自。-炎凉几度变化，九州几乎崩溃。-唐军抗战叛军，沙尘使云海昏暗无光。-连草木都摇着杀气，星辰更是无光。-白骨堆成丘山，苍生竟有何罪，遭此劫难。-潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。-不料长戟三十万的大军，竟然开关门投降元凶。-公卿官僚犹如犬羊，忠诚正直的人变为肉酱。-二圣逃离京城，两座京城变为废墟。-帝子永王受皇上诏命，军事管制楚地。-永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。-人心失去体统，贼势腾起风雨。-唯有你固守房陵郡，忠诚高节勇冠终古。-我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。-草堂门开九江流转，枕头下面五湖相连。-半夜永王的水军来浔阳，城里城外遍插旌旃。-我被空名自误，永王派兵迫胁我上了他的楼船。-他曾经赐与我五百两黄金，我把黄金视为浮烟。-我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。-夜郎离这里万里之遥道，西去令人衰老。-海内六合，扫荡清静，我却像负霜之草。-日月普照，并无私心，有什么办法可以诉冤给苍天听听。-你是神明的太守，深知仁心爱民。-惭愧作你的青云客，三次登上黄鹤楼。-惭愧不是祢衡处士，虚对鹦鹉洲。-樊山霸气已尽，天地一派寥落秋色。-长江漂流着峨眉山的雪水和三峡的急流。-万舸千舟江上往来，连帆一片过扬州。-登高极目，万里悠悠，旷然散我忧愁。-纱窗倚天而开，水树翠绿如少女青发。-看太阳，怕它马上落山，举起酒杯喜得明月。-吴越美女艳如花，窈窕婀娜，浓装艳抹。-呼来款款轻上云梯，含笑羞羞步出帘栊。-对着客人清唱小垂手，罗衣飘摇舞春风。-跪请宾客休息，主人情还未了。-浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。-宛如出清水的芙蓉，有大自然天然去雕饰。-逸兴满溢平素的襟怀，无时不想到你的招寻约请。-朱门拥立虎士，兵戟罗列森森。-剪竹凿石，溪流清深宛然而去。-登高楼坐水阁，吐论滔滔不绝，声音清朗。-言辞贵于白璧，一诺重于黄金。-称我不愧于你，宛如青鸟有丹心。-云间五色的喜鹊，飞鸣着从天上飞来。-传闻是大赦的文书到了，却被流放夜郎去。-顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。-贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。-桀犬吠尧，古来之理，别让匈奴千秋笑话我们。-我常常在中夜失眠，唉声叹气，为这大国忧愁啊。-旌旆飘飘夹两岸之山，黄河当中奔流。-群雄相互牵掣，不能一致行动，面对战场犹豫不决。-如何才有善射的后羿那样的良将，一箭射落敌军的元凶。"><a href="#天上宫阙，白玉京城，有十二楼阁，五座城池。-仙人为我抚顶，结受长生命符。-突然想来人间一游，误逐世间的环乐，以尽前缘。-人间从开始到现在已经有九十六圣君，空名挂于浮云端。-以天地为赌注，一掷决定命运，一直战争不停。-我曾经学习霸王战略，希望能功成名就，锦衣返乡。-可是时运不佳，长期漂泊五湖四海。-曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？-剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。-这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。-不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。-叹君也是个倜傥之才，气质品格冠群英。-道旁设帐为我饯行，慰籍我此次远征的艰辛。-鞍马生涯如浮云，送我送在骠骑亭。-歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。-我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。-君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。-呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。-我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。-想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。-我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？-无人珍贵骏马之骨，天马空自腾骧，不得大用。-即使乐毅再生，到如今这样的形势，也只有逃命的份儿。-岁月蹉跎，不得人意，驱骑马儿来到贵乡。-正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。-你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。-行乐在昌乐馆，大开酒筵，罗列壶觞。-青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。-醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。-欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。-饮宴送行的有万人之多，帐蓬遥遥相望。-这一别，我俩各隔千里，荣枯不用，炎凉各自。-炎凉几度变化，九州几乎崩溃。-唐军抗战叛军，沙尘使云海昏暗无光。-连草木都摇着杀气，星辰更是无光。-白骨堆成丘山，苍生竟有何罪，遭此劫难。-潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。-不料长戟三十万的大军，竟然开关门投降元凶。-公卿官僚犹如犬羊，忠诚正直的人变为肉酱。-二圣逃离京城，两座京城变为废墟。-帝子永王受皇上诏命，军事管制楚地。-永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。-人心失去体统，贼势腾起风雨。-唯有你固守房陵郡，忠诚高节勇冠终古。-我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。-草堂门开九江流转，枕头下面五湖相连。-半夜永王的水军来浔阳，城里城外遍插旌旃。-我被空名自误，永王派兵迫胁我上了他的楼船。-他曾经赐与我五百两黄金，我把黄金视为浮烟。-我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。-夜郎离这里万里之遥道，西去令人衰老。-海内六合，扫荡清静，我却像负霜之草。-日月普照，并无私心，有什么办法可以诉冤给苍天听听。-你是神明的太守，深知仁心爱民。-惭愧作你的青云客，三次登上黄鹤楼。-惭愧不是祢衡处士，虚对鹦鹉洲。-樊山霸气已尽，天地一派寥落秋色。-长江漂流着峨眉山的雪水和三峡的急流。-万舸千舟江上往来，连帆一片过扬州。-登高极目，万里悠悠，旷然散我忧愁。-纱窗倚天而开，水树翠绿如少女青发。-看太阳，怕它马上落山，举起酒杯喜得明月。-吴越美女艳如花，窈窕婀娜，浓装艳抹。-呼来款款轻上云梯，含笑羞羞步出帘栊。-对着客人清唱小垂手，罗衣飘摇舞春风。-跪请宾客休息，主人情还未了。-浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。-宛如出清水的芙蓉，有大自然天然去雕饰。-逸兴满溢平素的襟怀，无时不想到你的招寻约请。-朱门拥立虎士，兵戟罗列森森。-剪竹凿石，溪流清深宛然而去。-登高楼坐水阁，吐论滔滔不绝，声音清朗。-言辞贵于白璧，一诺重于黄金。-称我不愧于你，宛如青鸟有丹心。-云间五色的喜鹊，飞鸣着从天上飞来。-传闻是大赦的文书到了，却被流放夜郎去。-顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。-贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。-桀犬吠尧，古来之理，别让匈奴千秋笑话我们。-我常常在中夜失眠，唉声叹气，为这大国忧愁啊。-旌旆飘飘夹两岸之山，黄河当中奔流。-群雄相互牵掣，不能一致行动，面对战场犹豫不决。-如何才有善射的后羿那样的良将，一箭射落敌军的元凶。" class="headerlink" title="天上宫阙，白玉京城，有十二楼阁，五座城池。 仙人为我抚顶，结受长生命符。 突然想来人间一游，误逐世间的环乐，以尽前缘。 人间从开始到现在已经有九十六圣君，空名挂于浮云端。 以天地为赌注，一掷决定命运，一直战争不停。 我曾经学习霸王战略，希望能功成名就，锦衣返乡。 可是时运不佳，长期漂泊五湖四海。 曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？ 剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。 这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。 不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。 叹君也是个倜傥之才，气质品格冠群英。 道旁设帐为我饯行，慰籍我此次远征的艰辛。 鞍马生涯如浮云，送我送在骠骑亭。 歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。 我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。 君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。 呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。 我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。 想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。 我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？ 无人珍贵骏马之骨，天马空自腾骧，不得大用。 即使乐毅再生，到如今这样的形势，也只有逃命的份儿。 岁月蹉跎，不得人意，驱骑马儿来到贵乡。 正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。 你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。 行乐在昌乐馆，大开酒筵，罗列壶觞。 青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。 醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。 欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。 饮宴送行的有万人之多，帐蓬遥遥相望。 这一别，我俩各隔千里，荣枯不用，炎凉各自。 炎凉几度变化，九州几乎崩溃。 唐军抗战叛军，沙尘使云海昏暗无光。 连草木都摇着杀气，星辰更是无光。 白骨堆成丘山，苍生竟有何罪，遭此劫难。 潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。 不料长戟三十万的大军，竟然开关门投降元凶。 公卿官僚犹如犬羊，忠诚正直的人变为肉酱。 二圣逃离京城，两座京城变为废墟。 帝子永王受皇上诏命，军事管制楚地。 永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。 人心失去体统，贼势腾起风雨。 唯有你固守房陵郡，忠诚高节勇冠终古。 我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。 草堂门开九江流转，枕头下面五湖相连。 半夜永王的水军来浔阳，城里城外遍插旌旃。 我被空名自误，永王派兵迫胁我上了他的楼船。 他曾经赐与我五百两黄金，我把黄金视为浮烟。 我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。 夜郎离这里万里之遥道，西去令人衰老。 海内六合，扫荡清静，我却像负霜之草。 日月普照，并无私心，有什么办法可以诉冤给苍天听听。 你是神明的太守，深知仁心爱民。 惭愧作你的青云客，三次登上黄鹤楼。 惭愧不是祢衡处士，虚对鹦鹉洲。 樊山霸气已尽，天地一派寥落秋色。 长江漂流着峨眉山的雪水和三峡的急流。 万舸千舟江上往来，连帆一片过扬州。 登高极目，万里悠悠，旷然散我忧愁。 纱窗倚天而开，水树翠绿如少女青发。 看太阳，怕它马上落山，举起酒杯喜得明月。 吴越美女艳如花，窈窕婀娜，浓装艳抹。 呼来款款轻上云梯，含笑羞羞步出帘栊。 对着客人清唱小垂手，罗衣飘摇舞春风。 跪请宾客休息，主人情还未了。 浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。 宛如出清水的芙蓉，有大自然天然去雕饰。 逸兴满溢平素的襟怀，无时不想到你的招寻约请。 朱门拥立虎士，兵戟罗列森森。 剪竹凿石，溪流清深宛然而去。 登高楼坐水阁，吐论滔滔不绝，声音清朗。 言辞贵于白璧，一诺重于黄金。 称我不愧于你，宛如青鸟有丹心。 云间五色的喜鹊，飞鸣着从天上飞来。 传闻是大赦的文书到了，却被流放夜郎去。 顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。 贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。 桀犬吠尧，古来之理，别让匈奴千秋笑话我们。 我常常在中夜失眠，唉声叹气，为这大国忧愁啊。 旌旆飘飘夹两岸之山，黄河当中奔流。 群雄相互牵掣，不能一致行动，面对战场犹豫不决。 如何才有善射的后羿那样的良将，一箭射落敌军的元凶。"></a>天上宫阙，白玉京城，有十二楼阁，五座城池。 仙人为我抚顶，结受长生命符。 突然想来人间一游，误逐世间的环乐，以尽前缘。 人间从开始到现在已经有九十六圣君，空名挂于浮云端。 以天地为赌注，一掷决定命运，一直战争不停。 我曾经学习霸王战略，希望能功成名就，锦衣返乡。 可是时运不佳，长期漂泊五湖四海。 曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？ 剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。 这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。 不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。 叹君也是个倜傥之才，气质品格冠群英。 道旁设帐为我饯行，慰籍我此次远征的艰辛。 鞍马生涯如浮云，送我送在骠骑亭。 歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。 我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。 君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。 呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。 我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。 想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。 我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？ 无人珍贵骏马之骨，天马空自腾骧，不得大用。 即使乐毅再生，到如今这样的形势，也只有逃命的份儿。 岁月蹉跎，不得人意，驱骑马儿来到贵乡。 正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。 你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。 行乐在昌乐馆，大开酒筵，罗列壶觞。 青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。 醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。 欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。 饮宴送行的有万人之多，帐蓬遥遥相望。 这一别，我俩各隔千里，荣枯不用，炎凉各自。 炎凉几度变化，九州几乎崩溃。 唐军抗战叛军，沙尘使云海昏暗无光。 连草木都摇着杀气，星辰更是无光。 白骨堆成丘山，苍生竟有何罪，遭此劫难。 潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。 不料长戟三十万的大军，竟然开关门投降元凶。 公卿官僚犹如犬羊，忠诚正直的人变为肉酱。 二圣逃离京城，两座京城变为废墟。 帝子永王受皇上诏命，军事管制楚地。 永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。 人心失去体统，贼势腾起风雨。 唯有你固守房陵郡，忠诚高节勇冠终古。 我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。 草堂门开九江流转，枕头下面五湖相连。 半夜永王的水军来浔阳，城里城外遍插旌旃。 我被空名自误，永王派兵迫胁我上了他的楼船。 他曾经赐与我五百两黄金，我把黄金视为浮烟。 我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。 夜郎离这里万里之遥道，西去令人衰老。 海内六合，扫荡清静，我却像负霜之草。 日月普照，并无私心，有什么办法可以诉冤给苍天听听。 你是神明的太守，深知仁心爱民。 惭愧作你的青云客，三次登上黄鹤楼。 惭愧不是祢衡处士，虚对鹦鹉洲。 樊山霸气已尽，天地一派寥落秋色。 长江漂流着峨眉山的雪水和三峡的急流。 万舸千舟江上往来，连帆一片过扬州。 登高极目，万里悠悠，旷然散我忧愁。 纱窗倚天而开，水树翠绿如少女青发。 看太阳，怕它马上落山，举起酒杯喜得明月。 吴越美女艳如花，窈窕婀娜，浓装艳抹。 呼来款款轻上云梯，含笑羞羞步出帘栊。 对着客人清唱小垂手，罗衣飘摇舞春风。 跪请宾客休息，主人情还未了。 浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。 宛如出清水的芙蓉，有大自然天然去雕饰。 逸兴满溢平素的襟怀，无时不想到你的招寻约请。 朱门拥立虎士，兵戟罗列森森。 剪竹凿石，溪流清深宛然而去。 登高楼坐水阁，吐论滔滔不绝，声音清朗。 言辞贵于白璧，一诺重于黄金。 称我不愧于你，宛如青鸟有丹心。 云间五色的喜鹊，飞鸣着从天上飞来。 传闻是大赦的文书到了，却被流放夜郎去。 顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。 贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。 桀犬吠尧，古来之理，别让匈奴千秋笑话我们。 我常常在中夜失眠，唉声叹气，为这大国忧愁啊。 旌旆飘飘夹两岸之山，黄河当中奔流。 群雄相互牵掣，不能一致行动，面对战场犹豫不决。 如何才有善射的后羿那样的良将，一箭射落敌军的元凶。</h5>]]></content>
+      <categories>
+        <category>古文鉴赏</category>
+      </categories>
+      <tags>
+        <tag>李白</tag>
+        <tag>白玉京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文案</title>
+    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
+    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>]]></content>
+      <categories>
+        <category>文案</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>python学习</title>
+    <url>/2023/06/24/python%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="一、编程语言的执行方式"><a href="#一、编程语言的执行方式" class="headerlink" title="一、编程语言的执行方式"></a>一、编程语言的执行方式</h1><p>编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念之前，先介绍以下几种概念：</p>
 <p><strong>源代码：</strong>采用某种编程语言编写的计算机程序，人类可读，例如：res &#x3D; 1 + 1；</p>
 <p><strong>目标代码：</strong>指计算机可以执行，但人类不可读（专家除外），例如一组由0和1组成的字符串。</p>
@@ -114,7 +312,7 @@
 <h3 id="浮点数float"><a href="#浮点数float" class="headerlink" title="浮点数float"></a>浮点数float</h3><p>带小数点的数字</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 10</span><br><span class="line">b = 3.5</span><br><span class="line">c = &#x27;xiamen&#x27;</span><br><span class="line">print(type(a))</span><br><span class="line">print(type(b))</span><br><span class="line">print(type(c))</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102191247279.png" alt="image-20230102191247279"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102191247279.png" alt="image-20230102191247279"></p>
 <p>1010是整数，1010.0是浮点数，值是相等，但是对他们进行幂运算的结果不同，pow(x,y)计算x的y次方</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(pow(1010,32))</span><br><span class="line">print(pow(1010.0,32))</span><br><span class="line"></span><br><span class="line">结果不同：</span><br><span class="line">1374940678531097054162291350571104044956417832049380936096496320100000000000000000000000000000000</span><br><span class="line">1.3749406785310972e+96</span><br></pre></td></tr></table></figure>
 
@@ -209,7 +407,7 @@
 
 
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195001094.png"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195001094.png"></p>
 <h2 id="列表的基本操作"><a href="#列表的基本操作" class="headerlink" title="列表的基本操作"></a>列表的基本操作</h2><p>len(list):求列表的元素个数</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x=[&#x27;python&#x27;,[&#x27;111&#x27;,111,[111,&#x27;python&#x27;]]]</span><br><span class="line">print(len(x))</span><br><span class="line">输出结果：2</span><br></pre></td></tr></table></figure>
 
@@ -231,7 +429,7 @@
 
 
 <h2 id="5-字典dictionary"><a href="#5-字典dictionary" class="headerlink" title="5.字典dictionary"></a>5.字典dictionary</h2><p>类似这种名字和数值（如分数、身高、体重等）两种数据存在一一对应的情况，用第二种数据类型——“字典”（dictionary）来存储</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195137055.png" alt="image-20230109195137055"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195137055.png" alt="image-20230109195137055"></p>
 <p>1.列表外层用的是中括号<code>[ ]</code>，字典的外层是大括号<code>&#123; &#125;</code></p>
 <p>2.列表中的元素是自成一体的，而字典的元素是由一个个键值对构成的，用英文冒号连接。如<code>&#39;小明&#39;:95</code>，其中我们把<code>&#39;小明&#39;</code>叫键（key），<code>95</code>叫值(value)。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">students = [&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;]</span><br><span class="line">scores = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:90&#125;  #键（key），值(value)，【键值对】</span><br></pre></td></tr></table></figure>
@@ -243,7 +441,7 @@
 
 <h2 id="给字典增加-x2F-删除元素"><a href="#给字典增加-x2F-删除元素" class="headerlink" title="给字典增加&#x2F;删除元素"></a>给字典增加&#x2F;删除元素</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">actor1 = &#123;&#x27;孙悟空&#x27;: &#x27;金箍棒&#x27;, &#x27;沙和尚&#x27;:&#x27;降妖宝杖&#x27;,&#x27;猪八戒&#x27;:&#x27;九齿钉耙&#x27;&#125;</span><br><span class="line">del actor1[&#x27;孙悟空&#x27;]   #删除元素del </span><br><span class="line">print(actor1)</span><br><span class="line">#增加元素&#x27;孙悟空&#x27;</span><br><span class="line">actor1[&#x27;孙悟空&#x27;]=&#x27;金箍棒&#x27;</span><br><span class="line">print(actor1)</span><br><span class="line">#增加元素&#x27;唐僧&#x27;</span><br><span class="line">actor1[&#x27;唐僧&#x27;]=&#x27;袈裟&#x27;</span><br><span class="line">print(actor1)</span><br><span class="line">#将小刚的成绩由90分修改位92</span><br><span class="line">scores = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:90&#125;</span><br><span class="line">scores[&#x27;小刚&#x27;] = 92</span><br><span class="line">print(scores)</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109201015805.png" alt="image-20230109201015805"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109201015805.png" alt="image-20230109201015805"></p>
 <h2 id="列表与字典的区别"><a href="#列表与字典的区别" class="headerlink" title="列表与字典的区别"></a>列表与字典的区别</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 如果==左右两边相等，值为True，不相等则为False。</span><br><span class="line">print(1 == 1)  </span><br><span class="line"># 1等于1，所以值为True</span><br><span class="line"></span><br><span class="line">print(1 == 2)</span><br><span class="line"># 1不等于2，所以为False</span><br><span class="line"></span><br><span class="line">students1 = [&#x27;小明&#x27;,&#x27;小红&#x27;,&#x27;小刚&#x27;]</span><br><span class="line">students2 = [&#x27;小刚&#x27;,&#x27;小明&#x27;,&#x27;小红&#x27;]</span><br><span class="line">print(students1 == students2)</span><br><span class="line"></span><br><span class="line">scores1 = &#123;&#x27;小明&#x27;:95,&#x27;小红&#x27;:90,&#x27;小刚&#x27;:100&#125;</span><br><span class="line">scores2 = &#123;&#x27;小刚&#x27;:100,&#x27;小明&#x27;:95,&#x27;小红&#x27;:90&#125;</span><br><span class="line">print(scores1 == scores2)</span><br></pre></td></tr></table></figure>
 
 <p>字典相比起来就显得随和很多，调动顺序也不影响。因为列表中的数据是有序排列的，而字典中的数据是随机排列的。</p>
@@ -305,7 +503,7 @@
 
 
 
-<h1 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h1><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102202721791.png" alt="image-20230102202721791"></p>
+<h1 id="六、for循环"><a href="#六、for循环" class="headerlink" title="六、for循环"></a>六、for循环</h1><p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102202721791.png" alt="image-20230102202721791"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in [1, 2, 3, 4, 5]:</span><br><span class="line">       print(i)</span><br><span class="line"></span><br><span class="line">for number in [1,2]:</span><br><span class="line">    print(number)</span><br><span class="line"></span><br><span class="line">for LOVE in [1,2]:</span><br><span class="line">    print(LOVE)</span><br><span class="line">    </span><br><span class="line">#不管i，number，LOVE都是变量名字，不必拘束变量名</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dict = &#123;&#x27;日本&#x27;:&#x27;东京&#x27;,&#x27;英国&#x27;:&#x27;伦敦&#x27;,&#x27;法国&#x27;:&#x27;巴黎&#x27;&#125;</span><br><span class="line"></span><br><span class="line">for i in dict:</span><br><span class="line">    print(i)</span><br><span class="line">    </span><br><span class="line">#排队办业务的人：可以是列表[1, 2, 3, 4, 5]，可以是字典 &#123;&#x27;日本&#x27;:&#x27;东京&#x27;,&#x27;英国&#x27;:&#x27;伦敦&#x27;,&#x27;法国&#x27;:&#x27;巴黎&#x27;&#125;，可以是字符串，不可以是整数和浮点数</span><br><span class="line"></span><br><span class="line">for i in &#x27;zeng&#x27;:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
@@ -315,7 +513,7 @@
 <p>使用<code>range(a,b)</code> 函数，你可以生成了一个【取头不取尾】的整数序列</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(0,10,3):</span><br><span class="line">    print(i)</span><br><span class="line">#0是起始数据，10是终点，3是步长</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116191014028.png" alt="image-20230116191014028"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116191014028.png" alt="image-20230116191014028"></p>
 <p>请你用for循环完成1到100的整数分别乘以5的计算，并打印出来</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for i in range(1,101):</span><br><span class="line">    #print(i)</span><br><span class="line">    print(i*5)</span><br></pre></td></tr></table></figure>
 
@@ -324,8 +522,8 @@
 
 <h1 id="七、while循环"><a href="#七、while循环" class="headerlink" title="七、while循环"></a>七、while循环</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 0</span><br><span class="line">while a &lt; 5:</span><br><span class="line">    a = a + 1</span><br><span class="line">    print(a)</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192507944.png" alt="image-20230116192507944"></p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192542008.png" alt="image-20230116192542008"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192507944.png" alt="image-20230116192507944"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192542008.png" alt="image-20230116192542008"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">password = &#x27;1&#x27;</span><br><span class="line">while password != &#x27;713&#x27;:</span><br><span class="line">    password = input(&#x27;请输入密码：&#x27;)</span><br><span class="line">print(&#x27;密码正确，请进！&#x27;)</span><br></pre></td></tr></table></figure>
 
 <p>注意while循环的语句的缩进问题</p>
@@ -354,13 +552,13 @@
 <p>有一种情况for循环和while循环都可以解决问题，那就是【把一件事情做N遍】：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#用for循环把诗句打印3遍</span><br><span class="line">for i in range(1,4) :</span><br><span class="line">    print(&#x27;明日复明日，明日何其多。&#x27;)</span><br><span class="line"></span><br><span class="line">#用while循环把诗句打印3遍</span><br><span class="line">j = 1</span><br><span class="line">while j&lt;4 :</span><br><span class="line">    print (&#x27;明日何其多，明日何其多。&#x27;)</span><br><span class="line">    j =j+1</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116195549837.png" alt="image-20230116195549837"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116195549837.png" alt="image-20230116195549837"></p>
 <h1 id="用数据做判断：布尔值"><a href="#用数据做判断：布尔值" class="headerlink" title="用数据做判断：布尔值"></a>用数据做判断：布尔值</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(3&lt;5)</span><br><span class="line">print(3&gt;5)</span><br><span class="line">print(&#x27;长安&#x27;==&#x27;长安&#x27;)  </span><br><span class="line">print(&#x27;长安&#x27;!=&#x27;金陵&#x27;)</span><br><span class="line"></span><br><span class="line">if False:</span><br><span class="line">    print(&#x27;if False&#x27;)</span><br><span class="line"></span><br><span class="line">if True:</span><br><span class="line">    print(&#x27;if True&#x27;)</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200201034.png" alt="image-20230116200201034"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200201034.png" alt="image-20230116200201034"></p>
 <p>用两个数值做比较的【布尔运算】，主要包含以下情况：</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200243831.png" alt="image-20230116200243831"></p>
-<h2 id="直接用数值做运算"><a href="#直接用数值做运算" class="headerlink" title="直接用数值做运算"></a>直接用数值做运算</h2><p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200431952.png" alt="image-20230116200431952"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200243831.png" alt="image-20230116200243831"></p>
+<h2 id="直接用数值做运算"><a href="#直接用数值做运算" class="headerlink" title="直接用数值做运算"></a>直接用数值做运算</h2><p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200431952.png" alt="image-20230116200431952"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if &#x27;开心&#x27;:         #字符串是true，所以会执行下面的print</span><br><span class="line">    print(&#x27;熊猫&#x27;)</span><br><span class="line">if &#x27;&#x27;:            #&#x27;&#x27;空字符串是false，所以不会执行下面的print</span><br><span class="line">    print(&#x27;熊猫&#x27;)</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&#x27;以下数据判断结果都是【假】：&#x27;)</span><br><span class="line">print(bool(False))</span><br><span class="line">print(bool(0))</span><br><span class="line">print(bool(&#x27;&#x27;))</span><br><span class="line">print(bool(None))</span><br></pre></td></tr></table></figure>
@@ -368,14 +566,14 @@
 <h2 id="布尔值之间的运算"><a href="#布尔值之间的运算" class="headerlink" title="布尔值之间的运算"></a>布尔值之间的运算</h2><p><code>and</code>、<code>or</code>、<code>not</code>、<code>in</code>、<code>not in</code>五种运算</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 1</span><br><span class="line">b = -1</span><br><span class="line"></span><br><span class="line">print(&#x27;以下是and运算&#x27;)</span><br><span class="line">if a==1 and b==1:    # 【b实际上是-1】，and必须两个条件都满足</span><br><span class="line">    print(&#x27;True&#x27;)    #不打印</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;False&#x27;)    #打印</span><br><span class="line"></span><br><span class="line">print(&#x27;以下是or运算&#x27;)</span><br><span class="line">if a==1 or b==1:  # 【b实际上是-1】，or一个条件满足即可</span><br><span class="line">    print(&#x27;True&#x27;)  #打印</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;False&#x27;) #不打印</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201034174.png" alt="image-20230116201034174"></p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201057342.png" alt="image-20230116201057342"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201034174.png" alt="image-20230116201034174"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201057342.png" alt="image-20230116201057342"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 5</span><br><span class="line">b = -1</span><br><span class="line">c = 0</span><br><span class="line">d = 7</span><br><span class="line"></span><br><span class="line">if a&lt;b and c&lt;d:</span><br><span class="line">    print(&#x27;True&#x27;)</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;False&#x27;)</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 直接运行代码即可</span><br><span class="line">list = [1,2,3,4,5]</span><br><span class="line">a = 1</span><br><span class="line"></span><br><span class="line"># 做一次布尔运算，判断“a是否在列表list之中”</span><br><span class="line">print(bool(a in list))</span><br><span class="line">print(bool(a not in list))</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201311422.png" alt="image-20230116201311422"></p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201329007.png" alt="image-20230116201329007"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201311422.png" alt="image-20230116201311422"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201329007.png" alt="image-20230116201329007"></p>
 <h1 id="break语句"><a href="#break语句" class="headerlink" title="break语句"></a>break语句</h1><p><code>if...break</code>的意思是如果满足了某一个条件，就提前结束循环。记住，这个只能在循环内部使用。</p>
 <p>用法：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># break语句搭配for循环</span><br><span class="line">for...in...:</span><br><span class="line">    ...</span><br><span class="line">    if ...:</span><br><span class="line">        break</span><br><span class="line"></span><br><span class="line"># break语句搭配while循环</span><br><span class="line">while...(条件):</span><br><span class="line">    ...</span><br><span class="line">    if ...:</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
@@ -399,13 +597,13 @@
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">i = 0</span><br><span class="line">while i&lt;5: </span><br><span class="line">    a = int(input(&#x27;请输入0结束循环，你有5次机会:&#x27;))</span><br><span class="line">    i = i+1</span><br><span class="line">    if a == 0:</span><br><span class="line">        print(&#x27;你触发了break语句，导致else语句不会生效。&#x27;)    </span><br><span class="line">        break</span><br><span class="line">else:</span><br><span class="line">    print(&#x27;5次循环你都错过了，else语句生效了。&#x27;)</span><br></pre></td></tr></table></figure>
 
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192036142.png" alt="image-20230130192036142"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192036142.png" alt="image-20230130192036142"></p>
 <h3 id="实例：猜数字游戏"><a href="#实例：猜数字游戏" class="headerlink" title="实例：猜数字游戏"></a>实例：猜数字游戏</h3><p>思路：</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192522717.png" alt="image-20230130192522717"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192522717.png" alt="image-20230130192522717"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">secret = 24  #设定秘密数字</span><br><span class="line">while True:</span><br><span class="line">    guess = input(&#x27;你来猜猜我的秘密数字是多少:&#x27;)   #输入猜测数字</span><br><span class="line">    if int(guess)==secret:  #数字对比</span><br><span class="line">        print(&#x27;正确！你很棒哦。&#x27;)</span><br><span class="line">        break</span><br><span class="line">    elif int(guess)&gt;secret:</span><br><span class="line">        print(&#x27;你猜的太大了，请重新猜猜~&#x27;)</span><br><span class="line">    else:</span><br><span class="line">        print(&#x27;你猜的太小了，请重新猜猜~&#x27;)</span><br></pre></td></tr></table></figure>
 
 <h1 id="八、函数"><a href="#八、函数" class="headerlink" title="八、函数"></a>八、函数</h1><h2 id="函数的定义和调用"><a href="#函数的定义和调用" class="headerlink" title="函数的定义和调用"></a>函数的定义和调用</h2><p>代码都是立即运行且只能被执行一次，而函数可以让我们整合打包好代码，以便这些代码能够随时被复用，这样能极大地减少代码冗余。</p>
-<p><img src="C:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130200041345.png" alt="image-20230130200041345"></p>
+<p><img src="/.com//Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130200041345.png" alt="image-20230130200041345"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def math(x):</span><br><span class="line">    y = x ** 2 + x</span><br><span class="line">    return y</span><br><span class="line">print(math(20))</span><br><span class="line">print(math(30))</span><br></pre></td></tr></table></figure>
 
 <p>我们之前接触过的len()函数是Python的内置函数，功能之一是可以返回字符串的长度。那么，我们可不可以自己写一个具有相同功能的函数呢？</p>
@@ -472,119 +670,11 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">try:</span><br><span class="line">    a = int(eval(a))</span><br><span class="line">    b = int(eval(b))</span><br><span class="line">    c = a/b</span><br><span class="line">    print(&quot;商为：%g&quot; % c)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入类型有误&quot;)</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;除数不能为0&quot;)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>tags</title>
-    <url>/2023/06/19/tags/</url>
-    <content><![CDATA[<hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#x32;&#55;&#55;&#x33;&#48;&#55;&#x33;&#53;&#x34;&#x32;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;">&#x32;&#55;&#55;&#x33;&#48;&#55;&#x33;&#53;&#x34;&#x32;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#x6d;</a></p>
-<hr>
-]]></content>
+      <categories>
+        <category>编程语言学习</category>
+      </categories>
       <tags>
-        <tag>tags</tag>
+        <tag>python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>古诗</title>
-    <url>/2023/06/16/%E5%8F%A4%E8%AF%97/</url>
-    <content><![CDATA[<h1 id="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"><a href="#经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰" class="headerlink" title="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"></a><center>经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰</center></h1><div align = "center">
-天上白玉京，十二楼五城。
-仙人抚我顶，结发受长生。
-误逐世间乐，颇穷理乱情。
-九十六圣君，浮云挂空名。
-天地赌一掷，未能忘战争。
-试涉霸王略，将期轩冕荣。
-时命乃大谬，弃之海上行。
-学剑翻自哂，为文竟何成。
-剑非万人敌，文窃四海声。
-儿戏不足道，五噫出西京。
-临当欲去时，慷慨泪沾缨。
-叹君倜傥才，标举冠群英。
-开筵引祖帐，慰此远徂征。
-鞍马若浮云，送余骠骑亭。
-歌钟不尽意，白日落昆明。
-十月到幽州，戈鋋若罗星。
-君王弃北海，扫地借长鲸。
-呼吸走百川，燕然可摧倾。
-心知不得语，却欲栖蓬瀛。
-弯弧惧天狼，挟矢不敢张。
-揽涕黄金台，呼天哭昭王。
-无人贵骏骨，騄耳空腾骧。
-乐毅倘再生，于今亦奔亡。
-蹉跎不得意，驱马还贵乡。
-逢君听弦歌，肃穆坐华堂。
-百里独太古，陶然卧羲皇。
-征乐昌乐馆，开筵列壶觞。
-贤豪间青娥，对烛俨成行。
-醉舞纷绮席，清歌绕飞梁。
-欢娱未终朝，秩满归咸阳。
-祖道拥万人，供帐遥相望。
-一别隔千里，荣枯异炎凉。
-炎凉几度改，九土中横溃。
-汉甲连胡兵，沙尘暗云海。
-草木摇杀气，星辰无光彩。
-白骨成丘山，苍生竟何罪。
-函关壮帝居，国命悬哥舒。
-长戟三十万，开门纳凶渠。
-公卿如犬羊，忠谠醢与菹。
-二圣出游豫，两京遂丘墟。
-帝子许专征，秉旄控强楚。
-节制非桓文，军师拥熊虎。
-人心失去就，贼势腾风雨。
-惟君固房陵，诚节冠终古。
-仆卧香炉顶，餐霞漱瑶泉。
-门开九江转，枕下五湖连。
-半夜水军来，浔阳满旌旃。
-空名适自误，迫胁上楼船。
-徒赐五百金，弃之若浮烟。
-辞官不受赏，翻谪夜郎天。
-夜郎万里道，西上令人老。
-扫荡六合清，仍为负霜草。
-日月无偏照，何由诉苍昊。
-良牧称神明，深仁恤交道。
-一忝青云客，三登黄鹤楼。
-顾惭祢处士，虚对鹦鹉洲。
-樊山霸气尽，寥落天地秋。
-江带峨眉雪，川横三峡流。
-万舸此中来，连帆过扬州。
-送此万里目，旷然散我愁。
-纱窗倚天开，水树绿如发。
-窥日畏衔山，促酒喜得月。
-吴娃与越艳，窈窕夸铅红。
-呼来上云梯，含笑出帘栊。
-对客小垂手，罗衣舞春风。
-宾跪请休息，主人情未极。
-览君荆山作，江鲍堪动色。
-清水出芙蓉，天然去雕饰。
-逸兴横素襟，无时不招寻。
-朱门拥虎士，列戟何森森。
-剪凿竹石开，萦流涨清深。
-登台坐水阁，吐论多英音。
-片辞贵白璧，一诺轻黄金。
-谓我不愧君，青鸟明丹心。
-五色云间鹊，飞鸣天上来。
-传闻赦书至，却放夜郎回。
-暖气变寒谷，炎烟生死灰。
-君登凤池去，忽弃贾生才。
-桀犬尚吠尧，匈奴笑千秋。
-中夜四五叹，常为大国忧。
-旌旆夹两山，黄河当中流。
-连鸡不得进，饮马空夷犹。
-安得羿善射，一箭落旄头。</div>
-
-
-
-<h3 id="译文："><a href="#译文：" class="headerlink" title="译文："></a>译文：</h3><h5 id="天上宫阙，白玉京城，有十二楼阁，五座城池。-仙人为我抚顶，结受长生命符。-突然想来人间一游，误逐世间的环乐，以尽前缘。-人间从开始到现在已经有九十六圣君，空名挂于浮云端。-以天地为赌注，一掷决定命运，一直战争不停。-我曾经学习霸王战略，希望能功成名就，锦衣返乡。-可是时运不佳，长期漂泊五湖四海。-曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？-剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。-这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。-不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。-叹君也是个倜傥之才，气质品格冠群英。-道旁设帐为我饯行，慰籍我此次远征的艰辛。-鞍马生涯如浮云，送我送在骠骑亭。-歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。-我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。-君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。-呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。-我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。-想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。-我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？-无人珍贵骏马之骨，天马空自腾骧，不得大用。-即使乐毅再生，到如今这样的形势，也只有逃命的份儿。-岁月蹉跎，不得人意，驱骑马儿来到贵乡。-正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。-你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。-行乐在昌乐馆，大开酒筵，罗列壶觞。-青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。-醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。-欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。-饮宴送行的有万人之多，帐蓬遥遥相望。-这一别，我俩各隔千里，荣枯不用，炎凉各自。-炎凉几度变化，九州几乎崩溃。-唐军抗战叛军，沙尘使云海昏暗无光。-连草木都摇着杀气，星辰更是无光。-白骨堆成丘山，苍生竟有何罪，遭此劫难。-潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。-不料长戟三十万的大军，竟然开关门投降元凶。-公卿官僚犹如犬羊，忠诚正直的人变为肉酱。-二圣逃离京城，两座京城变为废墟。-帝子永王受皇上诏命，军事管制楚地。-永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。-人心失去体统，贼势腾起风雨。-唯有你固守房陵郡，忠诚高节勇冠终古。-我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。-草堂门开九江流转，枕头下面五湖相连。-半夜永王的水军来浔阳，城里城外遍插旌旃。-我被空名自误，永王派兵迫胁我上了他的楼船。-他曾经赐与我五百两黄金，我把黄金视为浮烟。-我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。-夜郎离这里万里之遥道，西去令人衰老。-海内六合，扫荡清静，我却像负霜之草。-日月普照，并无私心，有什么办法可以诉冤给苍天听听。-你是神明的太守，深知仁心爱民。-惭愧作你的青云客，三次登上黄鹤楼。-惭愧不是祢衡处士，虚对鹦鹉洲。-樊山霸气已尽，天地一派寥落秋色。-长江漂流着峨眉山的雪水和三峡的急流。-万舸千舟江上往来，连帆一片过扬州。-登高极目，万里悠悠，旷然散我忧愁。-纱窗倚天而开，水树翠绿如少女青发。-看太阳，怕它马上落山，举起酒杯喜得明月。-吴越美女艳如花，窈窕婀娜，浓装艳抹。-呼来款款轻上云梯，含笑羞羞步出帘栊。-对着客人清唱小垂手，罗衣飘摇舞春风。-跪请宾客休息，主人情还未了。-浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。-宛如出清水的芙蓉，有大自然天然去雕饰。-逸兴满溢平素的襟怀，无时不想到你的招寻约请。-朱门拥立虎士，兵戟罗列森森。-剪竹凿石，溪流清深宛然而去。-登高楼坐水阁，吐论滔滔不绝，声音清朗。-言辞贵于白璧，一诺重于黄金。-称我不愧于你，宛如青鸟有丹心。-云间五色的喜鹊，飞鸣着从天上飞来。-传闻是大赦的文书到了，却被流放夜郎去。-顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。-贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。-桀犬吠尧，古来之理，别让匈奴千秋笑话我们。-我常常在中夜失眠，唉声叹气，为这大国忧愁啊。-旌旆飘飘夹两岸之山，黄河当中奔流。-群雄相互牵掣，不能一致行动，面对战场犹豫不决。-如何才有善射的后羿那样的良将，一箭射落敌军的元凶。"><a href="#天上宫阙，白玉京城，有十二楼阁，五座城池。-仙人为我抚顶，结受长生命符。-突然想来人间一游，误逐世间的环乐，以尽前缘。-人间从开始到现在已经有九十六圣君，空名挂于浮云端。-以天地为赌注，一掷决定命运，一直战争不停。-我曾经学习霸王战略，希望能功成名就，锦衣返乡。-可是时运不佳，长期漂泊五湖四海。-曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？-剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。-这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。-不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。-叹君也是个倜傥之才，气质品格冠群英。-道旁设帐为我饯行，慰籍我此次远征的艰辛。-鞍马生涯如浮云，送我送在骠骑亭。-歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。-我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。-君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。-呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。-我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。-想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。-我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？-无人珍贵骏马之骨，天马空自腾骧，不得大用。-即使乐毅再生，到如今这样的形势，也只有逃命的份儿。-岁月蹉跎，不得人意，驱骑马儿来到贵乡。-正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。-你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。-行乐在昌乐馆，大开酒筵，罗列壶觞。-青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。-醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。-欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。-饮宴送行的有万人之多，帐蓬遥遥相望。-这一别，我俩各隔千里，荣枯不用，炎凉各自。-炎凉几度变化，九州几乎崩溃。-唐军抗战叛军，沙尘使云海昏暗无光。-连草木都摇着杀气，星辰更是无光。-白骨堆成丘山，苍生竟有何罪，遭此劫难。-潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。-不料长戟三十万的大军，竟然开关门投降元凶。-公卿官僚犹如犬羊，忠诚正直的人变为肉酱。-二圣逃离京城，两座京城变为废墟。-帝子永王受皇上诏命，军事管制楚地。-永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。-人心失去体统，贼势腾起风雨。-唯有你固守房陵郡，忠诚高节勇冠终古。-我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。-草堂门开九江流转，枕头下面五湖相连。-半夜永王的水军来浔阳，城里城外遍插旌旃。-我被空名自误，永王派兵迫胁我上了他的楼船。-他曾经赐与我五百两黄金，我把黄金视为浮烟。-我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。-夜郎离这里万里之遥道，西去令人衰老。-海内六合，扫荡清静，我却像负霜之草。-日月普照，并无私心，有什么办法可以诉冤给苍天听听。-你是神明的太守，深知仁心爱民。-惭愧作你的青云客，三次登上黄鹤楼。-惭愧不是祢衡处士，虚对鹦鹉洲。-樊山霸气已尽，天地一派寥落秋色。-长江漂流着峨眉山的雪水和三峡的急流。-万舸千舟江上往来，连帆一片过扬州。-登高极目，万里悠悠，旷然散我忧愁。-纱窗倚天而开，水树翠绿如少女青发。-看太阳，怕它马上落山，举起酒杯喜得明月。-吴越美女艳如花，窈窕婀娜，浓装艳抹。-呼来款款轻上云梯，含笑羞羞步出帘栊。-对着客人清唱小垂手，罗衣飘摇舞春风。-跪请宾客休息，主人情还未了。-浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。-宛如出清水的芙蓉，有大自然天然去雕饰。-逸兴满溢平素的襟怀，无时不想到你的招寻约请。-朱门拥立虎士，兵戟罗列森森。-剪竹凿石，溪流清深宛然而去。-登高楼坐水阁，吐论滔滔不绝，声音清朗。-言辞贵于白璧，一诺重于黄金。-称我不愧于你，宛如青鸟有丹心。-云间五色的喜鹊，飞鸣着从天上飞来。-传闻是大赦的文书到了，却被流放夜郎去。-顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。-贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。-桀犬吠尧，古来之理，别让匈奴千秋笑话我们。-我常常在中夜失眠，唉声叹气，为这大国忧愁啊。-旌旆飘飘夹两岸之山，黄河当中奔流。-群雄相互牵掣，不能一致行动，面对战场犹豫不决。-如何才有善射的后羿那样的良将，一箭射落敌军的元凶。" class="headerlink" title="天上宫阙，白玉京城，有十二楼阁，五座城池。 仙人为我抚顶，结受长生命符。 突然想来人间一游，误逐世间的环乐，以尽前缘。 人间从开始到现在已经有九十六圣君，空名挂于浮云端。 以天地为赌注，一掷决定命运，一直战争不停。 我曾经学习霸王战略，希望能功成名就，锦衣返乡。 可是时运不佳，长期漂泊五湖四海。 曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？ 剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。 这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。 不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。 叹君也是个倜傥之才，气质品格冠群英。 道旁设帐为我饯行，慰籍我此次远征的艰辛。 鞍马生涯如浮云，送我送在骠骑亭。 歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。 我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。 君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。 呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。 我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。 想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。 我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？ 无人珍贵骏马之骨，天马空自腾骧，不得大用。 即使乐毅再生，到如今这样的形势，也只有逃命的份儿。 岁月蹉跎，不得人意，驱骑马儿来到贵乡。 正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。 你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。 行乐在昌乐馆，大开酒筵，罗列壶觞。 青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。 醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。 欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。 饮宴送行的有万人之多，帐蓬遥遥相望。 这一别，我俩各隔千里，荣枯不用，炎凉各自。 炎凉几度变化，九州几乎崩溃。 唐军抗战叛军，沙尘使云海昏暗无光。 连草木都摇着杀气，星辰更是无光。 白骨堆成丘山，苍生竟有何罪，遭此劫难。 潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。 不料长戟三十万的大军，竟然开关门投降元凶。 公卿官僚犹如犬羊，忠诚正直的人变为肉酱。 二圣逃离京城，两座京城变为废墟。 帝子永王受皇上诏命，军事管制楚地。 永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。 人心失去体统，贼势腾起风雨。 唯有你固守房陵郡，忠诚高节勇冠终古。 我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。 草堂门开九江流转，枕头下面五湖相连。 半夜永王的水军来浔阳，城里城外遍插旌旃。 我被空名自误，永王派兵迫胁我上了他的楼船。 他曾经赐与我五百两黄金，我把黄金视为浮烟。 我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。 夜郎离这里万里之遥道，西去令人衰老。 海内六合，扫荡清静，我却像负霜之草。 日月普照，并无私心，有什么办法可以诉冤给苍天听听。 你是神明的太守，深知仁心爱民。 惭愧作你的青云客，三次登上黄鹤楼。 惭愧不是祢衡处士，虚对鹦鹉洲。 樊山霸气已尽，天地一派寥落秋色。 长江漂流着峨眉山的雪水和三峡的急流。 万舸千舟江上往来，连帆一片过扬州。 登高极目，万里悠悠，旷然散我忧愁。 纱窗倚天而开，水树翠绿如少女青发。 看太阳，怕它马上落山，举起酒杯喜得明月。 吴越美女艳如花，窈窕婀娜，浓装艳抹。 呼来款款轻上云梯，含笑羞羞步出帘栊。 对着客人清唱小垂手，罗衣飘摇舞春风。 跪请宾客休息，主人情还未了。 浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。 宛如出清水的芙蓉，有大自然天然去雕饰。 逸兴满溢平素的襟怀，无时不想到你的招寻约请。 朱门拥立虎士，兵戟罗列森森。 剪竹凿石，溪流清深宛然而去。 登高楼坐水阁，吐论滔滔不绝，声音清朗。 言辞贵于白璧，一诺重于黄金。 称我不愧于你，宛如青鸟有丹心。 云间五色的喜鹊，飞鸣着从天上飞来。 传闻是大赦的文书到了，却被流放夜郎去。 顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。 贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。 桀犬吠尧，古来之理，别让匈奴千秋笑话我们。 我常常在中夜失眠，唉声叹气，为这大国忧愁啊。 旌旆飘飘夹两岸之山，黄河当中奔流。 群雄相互牵掣，不能一致行动，面对战场犹豫不决。 如何才有善射的后羿那样的良将，一箭射落敌军的元凶。"></a>天上宫阙，白玉京城，有十二楼阁，五座城池。 仙人为我抚顶，结受长生命符。 突然想来人间一游，误逐世间的环乐，以尽前缘。 人间从开始到现在已经有九十六圣君，空名挂于浮云端。 以天地为赌注，一掷决定命运，一直战争不停。 我曾经学习霸王战略，希望能功成名就，锦衣返乡。 可是时运不佳，长期漂泊五湖四海。 曾经去山东学剑，没有什么结果，会写点文章，可那有什么用呢？ 剑术并非万人之敌，防防身的技术，文章倒是四海闻名，罕有人匹敌。 这些都是些儿戏，微不足道，所以我象梁鸿一样看破了世界，唱着五噫歌离开西京长安。 不过在临去之时，我还是流下了慷慨激扬的泪水，打湿了我的帽上红缨。 叹君也是个倜傥之才，气质品格冠群英。 道旁设帐为我饯行，慰籍我此次远征的艰辛。 鞍马生涯如浮云，送我送在骠骑亭。 歌声钟鼓声表达不尽你的情意，白日马上就要落在昆明池中。 我曾经在某年十月到达幽州，看见安禄山的军阵兵甲灿烂如群星。 君王唐玄宗放弃东北河北，整个地区都由安禄山横行无忌，犹如长鲸在海洋横行。 呼吸之间就走遍百川，燕然山也仿佛可被他摧毁。 我心知我在皇上那里不得意，说也无用，只好躲入桃花源，独善一身。 想弯弧射天狼，挟着弓却不敢张开，怕祸及自己。 我曾经在北京黄金台揽涕痛哭，呼天喊地：燕昭王啊你在那里啊，怎么没有人识用人才？ 无人珍贵骏马之骨，天马空自腾骧，不得大用。 即使乐毅再生，到如今这样的形势，也只有逃命的份儿。 岁月蹉跎，不得人意，驱骑马儿来到贵乡。 正逢你在悠闲地欣赏弦歌，肃穆地坐在华美的厅堂。 你如远古的百里之王候，陶然而卧如羲皇伏羲氏一般。 行乐在昌乐馆，大开酒筵，罗列壶觞。 青娥美女夹坐在贤豪之间，对着烛光俨然成双成行。 醉舞纷纷散满绮席，清歌袅袅绕飞尘梁。 欢娱完毕，你秩满（丧礼守孝期满）以后就要回归咸阳。 饮宴送行的有万人之多，帐蓬遥遥相望。 这一别，我俩各隔千里，荣枯不用，炎凉各自。 炎凉几度变化，九州几乎崩溃。 唐军抗战叛军，沙尘使云海昏暗无光。 连草木都摇着杀气，星辰更是无光。 白骨堆成丘山，苍生竟有何罪，遭此劫难。 潼关函谷关捍卫皇帝宫殿，国命悬于哥舒翰一身。 不料长戟三十万的大军，竟然开关门投降元凶。 公卿官僚犹如犬羊，忠诚正直的人变为肉酱。 二圣逃离京城，两座京城变为废墟。 帝子永王受皇上诏命，军事管制楚地。 永王节制并非是想做春秋五霸中齐桓公与晋文公，永王的军师却拥有勇猛的将士。 人心失去体统，贼势腾起风雨。 唯有你固守房陵郡，忠诚高节勇冠终古。 我那时云卧庐山香炉峰顶，学仙人餐霞漱瑶泉。 草堂门开九江流转，枕头下面五湖相连。 半夜永王的水军来浔阳，城里城外遍插旌旃。 我被空名自误，永王派兵迫胁我上了他的楼船。 他曾经赐与我五百两黄金，我把黄金视为浮烟。 我辞去永王的官却不受赏，反而远谪到夜郎那样的穷山恶水的地方。 夜郎离这里万里之遥道，西去令人衰老。 海内六合，扫荡清静，我却像负霜之草。 日月普照，并无私心，有什么办法可以诉冤给苍天听听。 你是神明的太守，深知仁心爱民。 惭愧作你的青云客，三次登上黄鹤楼。 惭愧不是祢衡处士，虚对鹦鹉洲。 樊山霸气已尽，天地一派寥落秋色。 长江漂流着峨眉山的雪水和三峡的急流。 万舸千舟江上往来，连帆一片过扬州。 登高极目，万里悠悠，旷然散我忧愁。 纱窗倚天而开，水树翠绿如少女青发。 看太阳，怕它马上落山，举起酒杯喜得明月。 吴越美女艳如花，窈窕婀娜，浓装艳抹。 呼来款款轻上云梯，含笑羞羞步出帘栊。 对着客人清唱小垂手，罗衣飘摇舞春风。 跪请宾客休息，主人情还未了。 浏览你在荆山的大作，堪与江淹鲍照的文笔媲美。 宛如出清水的芙蓉，有大自然天然去雕饰。 逸兴满溢平素的襟怀，无时不想到你的招寻约请。 朱门拥立虎士，兵戟罗列森森。 剪竹凿石，溪流清深宛然而去。 登高楼坐水阁，吐论滔滔不绝，声音清朗。 言辞贵于白璧，一诺重于黄金。 称我不愧于你，宛如青鸟有丹心。 云间五色的喜鹊，飞鸣着从天上飞来。 传闻是大赦的文书到了，却被流放夜郎去。 顿时就如没有暖气的寒谷，没有炎烟的死灰，没有希望了。 贤君你马上要登朝廷的凤凰池去了，别忘记了我这个被遗弃的贾谊，有机会推荐一下。 桀犬吠尧，古来之理，别让匈奴千秋笑话我们。 我常常在中夜失眠，唉声叹气，为这大国忧愁啊。 旌旆飘飘夹两岸之山，黄河当中奔流。 群雄相互牵掣，不能一致行动，面对战场犹豫不决。 如何才有善射的后羿那样的良将，一箭射落敌军的元凶。</h5>]]></content>
-  </entry>
-  <entry>
-    <title>你来了，进屋坐</title>
-    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
-    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>]]></content>
   </entry>
 </search>

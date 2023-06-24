@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-23T16:41:29.431Z</updated>
+  <updated>2023-06-24T12:19:01.218Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2023-06-24T07:24:03.907Z</published>
-    <updated>2023-05-23T16:41:29.431Z</updated>
+    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
+    <link href="http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/"/>
+    <id>http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/</id>
+    <published>2023-06-24T12:07:05.000Z</published>
+    <updated>2023-06-24T12:19:01.218Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用Github-Vercel无服务器搭建ChatGPT-3-5网站&quot;&gt;&lt;a href=&quot;#使用Github-Vercel无服务器搭建ChatGPT-3-5网站&quot; class=&quot;headerlink&quot; title=&quot;使用Github+Vercel无服务器搭建Cha</summary>
+      
+    
+    
+    
+    <category term="搭建教程" scheme="http://example.com/categories/%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="GitHub" scheme="http://example.com/tags/GitHub/"/>
+    
+    <category term="chatgpt" scheme="http://example.com/tags/chatgpt/"/>
+    
+    <category term="vercel" scheme="http://example.com/tags/vercel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客中next添加背景图片</title>
+    <link href="http://example.com/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</id>
+    <published>2023-06-24T11:59:17.000Z</published>
+    <updated>2023-06-24T12:06:13.814Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;hexo博客中next添加背景图片&quot;&gt;&lt;a href=&quot;#hexo博客中next添加背景图片&quot; class=&quot;headerlink&quot; title=&quot;hexo博客中next添加背景图片&quot;&gt;&lt;/a&gt;hexo博客中next添加背景图片&lt;/h1&gt;&lt;h3 id=&quot;1、-设置</summary>
+      
+    
+    
+    
+    <category term="问题" scheme="http://example.com/categories/%E9%97%AE%E9%A2%98/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="next" scheme="http://example.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python学习</title>
+    <link href="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-06-24T11:52:46.000Z</published>
+    <updated>2023-06-24T11:54:13.057Z</updated>
     
     
       
@@ -31,6 +81,10 @@
     
     
     
+    <category term="编程语言学习" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -53,11 +107,11 @@
   </entry>
   
   <entry>
-    <title>tags</title>
+    <title>关于</title>
     <link href="http://example.com/2023/06/19/tags/"/>
     <id>http://example.com/2023/06/19/tags/</id>
     <published>2023-06-19T12:44:19.000Z</published>
-    <updated>2023-06-19T12:50:52.124Z</updated>
+    <updated>2023-06-24T11:56:44.099Z</updated>
     
     
       
@@ -82,7 +136,7 @@
     <link href="http://example.com/2023/06/16/%E5%8F%A4%E8%AF%97/"/>
     <id>http://example.com/2023/06/16/%E5%8F%A4%E8%AF%97/</id>
     <published>2023-06-16T08:56:44.000Z</published>
-    <updated>2023-06-24T09:28:40.033Z</updated>
+    <updated>2023-06-24T11:51:05.541Z</updated>
     
     
       
@@ -92,6 +146,12 @@
     
     
     
+    <category term="古文鉴赏" scheme="http://example.com/categories/%E5%8F%A4%E6%96%87%E9%89%B4%E8%B5%8F/"/>
+    
+    
+    <category term="李白" scheme="http://example.com/tags/%E6%9D%8E%E7%99%BD/"/>
+    
+    <category term="白玉京" scheme="http://example.com/tags/%E7%99%BD%E7%8E%89%E4%BA%AC/"/>
     
   </entry>
   
@@ -100,7 +160,7 @@
     <link href="http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/"/>
     <id>http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</id>
     <published>2023-06-14T09:47:01.000Z</published>
-    <updated>2023-06-16T10:45:07.339Z</updated>
+    <updated>2023-06-24T11:50:16.290Z</updated>
     
     
       
@@ -110,17 +170,21 @@
     
     
     
-    <category term="PyQt5学习" scheme="http://example.com/categories/PyQt5%E5%AD%A6%E4%B9%A0/"/>
+    <category term="工具学习" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/"/>
     
+    
+    <category term="PyQt5" scheme="http://example.com/tags/PyQt5/"/>
+    
+    <category term="Qt Designer" scheme="http://example.com/tags/Qt-Designer/"/>
     
   </entry>
   
   <entry>
-    <title>你来了，进屋坐</title>
+    <title>文案</title>
     <link href="http://example.com/2020/05/05/%E6%96%87%E6%A1%88/"/>
     <id>http://example.com/2020/05/05/%E6%96%87%E6%A1%88/</id>
     <published>2020-05-05T13:39:53.000Z</published>
-    <updated>2023-06-24T09:31:23.430Z</updated>
+    <updated>2023-06-24T11:56:16.608Z</updated>
     
     
       
@@ -129,6 +193,8 @@
       
     
     
+    
+    <category term="文案" scheme="http://example.com/categories/%E6%96%87%E6%A1%88/"/>
     
     
   </entry>
