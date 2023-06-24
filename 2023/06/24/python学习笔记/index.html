@@ -22,30 +22,52 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="邀一夜星河，去你梦里做客。">
-<meta property="og:type" content="website">
+  <meta name="description" content="一、编程语言的执行方式编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念之前，先介绍以下几种概念： 源代码：采用某种编程语言编写的计算机程序，人类可读，例如：res &#x3D; 1 + 1； 目标代码：指计算机可以执行，但人类不可读（专家除外），例如一组由0和1组成的字符串。 而怎么把人类编写的程序，变成机器可以执行的目标代码呢？ 这里就出现了程序执行的两种方式：编译和解释。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="MQ的博客">
-<meta property="og:url" content="http://example.com/intro/index.html">
+<meta property="og:url" content="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="MQ的博客">
-<meta property="og:description" content="邀一夜星河，去你梦里做客。">
+<meta property="og:description" content="一、编程语言的执行方式编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念之前，先介绍以下几种概念： 源代码：采用某种编程语言编写的计算机程序，人类可读，例如：res &#x3D; 1 + 1； 目标代码：指计算机可以执行，但人类不可读（专家除外），例如一组由0和1组成的字符串。 而怎么把人类编写的程序，变成机器可以执行的目标代码呢？ 这里就出现了程序执行的两种方式：编译和解释。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102191247279.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195001094.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109195137055.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230109201015805.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102202721791.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116191014028.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192507944.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116192542008.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116195549837.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200201034.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200243831.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116200431952.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201034174.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201057342.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201311422.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230116201329007.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192036142.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130192522717.png">
+<meta property="og:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230130200041345.png">
+<meta property="article:published_time" content="2023-06-24T07:24:03.907Z">
+<meta property="article:modified_time" content="2023-05-23T16:41:29.431Z">
 <meta property="article:author" content="踏上星辰梦">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\Dell\AppData\Roaming\Typora\typora-user-images\image-20230102191247279.png">
 
-<link rel="canonical" href="http://example.com/intro/">
+<link rel="canonical" href="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>MQ的博客</title>
+  <title> | MQ的博客</title>
   
 
 
@@ -187,13 +209,14 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/19/tags/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/1.jpg">
@@ -205,91 +228,9 @@
       <meta itemprop="name" content="MQ的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2023/06/19/tags/" class="post-title-link" itemprop="url">tags</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-06-19 20:44:19 / 修改时间：20:50:52" itemprop="dateCreated datePublished" datetime="2023-06-19T20:44:19+08:00">2023-06-19</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>198</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#x33;&#48;&#x37;&#51;&#53;&#x34;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#50;&#55;&#x37;&#x33;&#48;&#x37;&#51;&#53;&#x34;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></p>
-<hr>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/16/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.jpg">
-      <meta itemprop="name" content="踏上星辰梦">
-      <meta itemprop="description" content="邀一夜星河，去你梦里做客。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MQ的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/16/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -298,7 +239,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-06-16 18:42:28" itemprop="dateCreated datePublished" datetime="2023-06-16T18:42:28+08:00">2023-06-16</time>
+              <time title="创建时间：2023-06-24 15:24:03" itemprop="dateCreated datePublished" datetime="2023-06-24T15:24:03+08:00">2023-06-24</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -308,7 +249,14 @@
                 <time title="修改时间：2023-05-24 00:41:29" itemprop="dateModified" datetime="2023-05-24T00:41:29+08:00">2023-05-24</time>
               </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -333,7 +281,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="一、编程语言的执行方式"><a href="#一、编程语言的执行方式" class="headerlink" title="一、编程语言的执行方式"></a>一、编程语言的执行方式</h1><p>编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念之前，先介绍以下几种概念：</p>
+        <h1 id="一、编程语言的执行方式"><a href="#一、编程语言的执行方式" class="headerlink" title="一、编程语言的执行方式"></a>一、编程语言的执行方式</h1><p>编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念之前，先介绍以下几种概念：</p>
 <p><strong>源代码：</strong>采用某种编程语言编写的计算机程序，人类可读，例如：res &#x3D; 1 + 1；</p>
 <p><strong>目标代码：</strong>指计算机可以执行，但人类不可读（专家除外），例如一组由0和1组成的字符串。</p>
 <p>而怎么把人类编写的程序，变成机器可以执行的目标代码呢？ 这里就出现了程序执行的两种方式：编译和解释。</p>
@@ -733,242 +681,73 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">a=input(&#x27;请输入被除数：&#x27;)</span><br><span class="line">b=input(&#x27;请输入除数：&#x27;)</span><br><span class="line">try:</span><br><span class="line">    a = int(eval(a))</span><br><span class="line">    b = int(eval(b))</span><br><span class="line">    c = a/b</span><br><span class="line">    print(&quot;商为：%g&quot; % c)</span><br><span class="line">except ValueError:</span><br><span class="line">    print(&quot;输入类型有误&quot;)</span><br><span class="line">except ZeroDivisionError:</span><br><span class="line">    print(&quot;除数不能为0&quot;)</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div>技术分享，感谢您的支持，您的支持将鼓励我创作</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechat.png" alt="踏上星辰梦 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>踏上星辰梦
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="">http://example.com/2023/06/24/python学习笔记/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.jpg">
-      <meta itemprop="name" content="踏上星辰梦">
-      <meta itemprop="description" content="邀一夜星河，去你梦里做客。">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MQ的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">PyQt5学习</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-06-14 17:47:01" itemprop="dateCreated datePublished" datetime="2023-06-14T17:47:01+08:00">2023-06-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-16 18:45:07" itemprop="dateModified" datetime="2023-06-16T18:45:07+08:00">2023-06-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PyQt5%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">PyQt5学习</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a target="_blank" rel="noopener" href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
-<p>[]: <a target="_blank" rel="noopener" href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
-<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
-<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
-<p>自己：使用pip安装，</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
-
-<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
-<p>这里我们还是采用脚本安装的方式。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
-
-<p>使用镜像下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
-<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
-<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
-<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
-<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
-<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
-<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
-<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
-<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204740522.png" alt="image-20230605204740522"></p>
-<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204807155.png" alt="image-20230605204807155"></p>
-<p><img src="C:\Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204835064.png" alt="image-20230605204835064"></p>
-<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
-<li>架构的构建（需求文档）</li>
-<li>设计图出稿</li>
-<li>设计图复原（designer）</li>
-<li>编写核心代码</li>
-</ol>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/06/24/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/1.jpg">
-      <meta itemprop="name" content="踏上星辰梦">
-      <meta itemprop="description" content="邀一夜星河，去你梦里做客。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MQ的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/06/14/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-06-14 16:13:41 / 修改时间：17:52:16" itemprop="dateCreated datePublished" datetime="2023-06-14T16:13:41+08:00">2023-06-14</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>404</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81ODU5Ny8zNTA1OQ=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1015,6 +794,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%9A%84%E6%89%A7%E8%A1%8C%E6%96%B9%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">一、编程语言的执行方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E9%87%8A%E4%B8%8E%E7%BC%96%E8%AF%91"><span class="nav-number">2.</span> <span class="nav-text">解释与编译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BF%9D%E7%95%99%E5%AD%97"><span class="nav-number">3.</span> <span class="nav-text">保留字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81print-%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">二、print()函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%8D%95%E5%BC%95%E5%8F%B7"><span class="nav-number">4.1.</span> <span class="nav-text">1.单引号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%8F%8C%E5%BC%95%E5%8F%B7"><span class="nav-number">4.2.</span> <span class="nav-text">2.双引号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%8D%95%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8C%E5%BC%95%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">4.3.</span> <span class="nav-text">3.单引号、双引号的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E4%B8%89%E5%BC%95%E5%8F%B7"><span class="nav-number">4.4.</span> <span class="nav-text">4.三引号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E6%80%BB%E7%BB%93"><span class="nav-number">4.5.</span> <span class="nav-text">5.转义字符总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E5%8D%A0%E4%BD%8D%E7%AC%A6"><span class="nav-number">4.6.</span> <span class="nav-text">6.占位符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">5.</span> <span class="nav-text">三、数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B"><span class="nav-number">5.1.</span> <span class="nav-text">1.数字类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B4%E6%95%B0int"><span class="nav-number">5.1.1.</span> <span class="nav-text">整数int</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0float"><span class="nav-number">5.1.2.</span> <span class="nav-text">浮点数float</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E6%95%B0%E7%B1%BB%E5%9E%8B"><span class="nav-number">5.1.3.</span> <span class="nav-text">复数类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%9B%9B%E5%88%99%E8%BF%90%E7%AE%97"><span class="nav-number">5.2.</span> <span class="nav-text">2.四则运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E8%BF%90%E7%AE%97%E5%87%BD%E6%95%B0"><span class="nav-number">5.3.</span> <span class="nav-text">数值运算函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9C%9F%E5%81%87%E6%97%A0%E5%80%BC%E6%88%96%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97"><span class="nav-number">5.4.</span> <span class="nav-text">真假无值或逻辑运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9C%9F%E5%81%87%E5%80%BC%EF%BC%9ATrue%E4%B8%8EFalse"><span class="nav-number">5.4.1.</span> <span class="nav-text">真假值：True与False</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E5%80%BC%EF%BC%9ANone"><span class="nav-number">5.4.2.</span> <span class="nav-text">无值：None</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%EF%BC%9Aand-%EF%BC%8Cor-%EF%BC%8Cnot"><span class="nav-number">5.4.3.</span> <span class="nav-text">逻辑运算：and ，or ，not</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2str"><span class="nav-number">5.5.</span> <span class="nav-text">3、字符串str</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#eval-%E5%87%BD%E6%95%B0"><span class="nav-number">5.5.1.</span> <span class="nav-text">eval()函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E7%B4%A2%E5%BC%95-%E5%90%8C%E5%88%97%E8%A1%A8%E7%9A%84%E7%B4%A2%E5%BC%95%E4%B8%80%E6%A0%B7"><span class="nav-number">5.5.2.</span> <span class="nav-text">字符串的索引(同列表的索引一样)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="nav-number">5.5.3.</span> <span class="nav-text">字符串的基本格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%A0%BC%E5%BC%8F%E6%8E%A7%E5%88%B6"><span class="nav-number">5.5.4.</span> <span class="nav-text">字符串的格式控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">5.5.5.</span> <span class="nav-text">字符串类型的操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8B%BC%E6%8E%A5"><span class="nav-number">5.5.6.</span> <span class="nav-text">字符串的拼接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%87%8D%E5%A4%8D"><span class="nav-number">5.5.7.</span> <span class="nav-text">字符串的重复</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%AD%90%E4%B8%B2in%E6%93%8D%E4%BD%9C"><span class="nav-number">5.5.8.</span> <span class="nav-text">字符串的子串in操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0"><span class="nav-number">5.5.9.</span> <span class="nav-text">字符串函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%9F%A5%E8%AF%A2%E2%80%94%E2%80%94type-%E5%87%BD%E6%95%B0"><span class="nav-number">5.6.</span> <span class="nav-text">数据类型的查询——type()函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E8%BD%AC%E6%8D%A2"><span class="nav-number">5.7.</span> <span class="nav-text">数据转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%88%97%E8%A1%A8list"><span class="nav-number">5.8.</span> <span class="nav-text">4.列表list</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%EF%BC%88list%EF%BC%89%E7%9A%84%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F"><span class="nav-number">5.9.</span> <span class="nav-text">列表（list）的代码格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%88%97%E8%A1%A8%E6%8F%90%E5%8F%96%E5%8D%95%E4%B8%AA%E5%85%83%E7%B4%A0"><span class="nav-number">5.10.</span> <span class="nav-text">从列表提取单个元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%88%97%E8%A1%A8%E6%8F%90%E5%8F%96%E5%A4%9A%E4%B8%AA%E5%85%83%E7%B4%A0"><span class="nav-number">5.11.</span> <span class="nav-text">从列表提取多个元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">5.12.</span> <span class="nav-text">列表的基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%99%E5%88%97%E8%A1%A8%E5%A2%9E%E5%8A%A0%E5%85%83%E7%B4%A0"><span class="nav-number">5.12.1.</span> <span class="nav-text">给列表增加元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%99%E5%88%97%E8%A1%A8%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0"><span class="nav-number">5.12.2.</span> <span class="nav-text">给列表删除元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C%E7%9A%84%E5%85%B6%E4%BB%96%E6%96%B9%E6%B3%95"><span class="nav-number">5.12.3.</span> <span class="nav-text">列表操作的其他方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%AD%97%E5%85%B8dictionary"><span class="nav-number">5.13.</span> <span class="nav-text">5.字典dictionary</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%AD%97%E5%85%B8%E5%8F%96%E5%85%83%E7%B4%A0"><span class="nav-number">5.14.</span> <span class="nav-text">从字典取元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%99%E5%AD%97%E5%85%B8%E5%A2%9E%E5%8A%A0-x2F-%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0"><span class="nav-number">5.15.</span> <span class="nav-text">给字典增加&#x2F;删除元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E4%B8%8E%E5%AD%97%E5%85%B8%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">5.16.</span> <span class="nav-text">列表与字典的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B"><span class="nav-number">5.17.</span> <span class="nav-text">6.集合类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-number">5.18.</span> <span class="nav-text">集合的创建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%9B%86%E5%90%88%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%E6%96%B9%E5%BC%8F"><span class="nav-number">5.18.1.</span> <span class="nav-text">创建集合的两种方式方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">5.19.</span> <span class="nav-text">集合的操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%B1%BB%E5%9E%8B%E7%9A%844%E4%B8%AA%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="nav-number">5.19.1.</span> <span class="nav-text">集合类型的4个操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E7%9A%84%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0"><span class="nav-number">5.19.2.</span> <span class="nav-text">集合的操作函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%85%83%E7%BB%84tuple"><span class="nav-number">5.20.</span> <span class="nav-text">7.元组tuple</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%ADif"><span class="nav-number">6.</span> <span class="nav-text">四、条件判断if</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E5%90%91%E5%88%A4%E6%96%AD%EF%BC%9Aif"><span class="nav-number">6.1.</span> <span class="nav-text">单向判断：if</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8C%E5%90%91%E5%88%A4%E6%96%AD%EF%BC%9Aif%E2%80%A6else%E2%80%A6"><span class="nav-number">6.2.</span> <span class="nav-text">双向判断：if…else…</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%88%A4%E6%96%AD%EF%BC%9Aif-elif-else"><span class="nav-number">6.3.</span> <span class="nav-text">多项判断：if  elif  else</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#if%E5%B5%8C%E5%A5%97"><span class="nav-number">7.</span> <span class="nav-text">if嵌套</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E3%80%81input-%E5%87%BD%E6%95%B0"><span class="nav-number">8.</span> <span class="nav-text">五、input()函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#input-%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">8.1.</span> <span class="nav-text">input()函数的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#input-%E5%87%BD%E6%95%B0%E7%BB%93%E6%9E%9C%E7%9A%84%E8%B5%8B%E5%80%BC"><span class="nav-number">8.2.</span> <span class="nav-text">input()函数结果的赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#input-%E5%87%BD%E6%95%B0%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%BA%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="nav-number">8.3.</span> <span class="nav-text">input()函数的数据类型和强制转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD%E3%80%81for%E5%BE%AA%E7%8E%AF"><span class="nav-number">9.</span> <span class="nav-text">六、for循环</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#range-%E5%87%BD%E6%95%B0"><span class="nav-number">10.</span> <span class="nav-text">range()函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%83%E3%80%81while%E5%BE%AA%E7%8E%AF"><span class="nav-number">11.</span> <span class="nav-text">七、while循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E9%AA%8C%E8%AF%81%E7%B4%A0%E6%95%B0"><span class="nav-number">11.0.1.</span> <span class="nav-text">实例：验证素数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E6%95%B0%E7%BB%84%E7%9B%B8%E5%8A%A0"><span class="nav-number">11.0.2.</span> <span class="nav-text">实例：数组相加</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#for%E5%92%8Cwhile%E4%B8%A4%E7%A7%8D%E5%BE%AA%E7%8E%AF%E5%AF%B9%E6%AF%94"><span class="nav-number">12.</span> <span class="nav-text">for和while两种循环对比</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%A8%E6%95%B0%E6%8D%AE%E5%81%9A%E5%88%A4%E6%96%AD%EF%BC%9A%E5%B8%83%E5%B0%94%E5%80%BC"><span class="nav-number">13.</span> <span class="nav-text">用数据做判断：布尔值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B4%E6%8E%A5%E7%94%A8%E6%95%B0%E5%80%BC%E5%81%9A%E8%BF%90%E7%AE%97"><span class="nav-number">13.1.</span> <span class="nav-text">直接用数值做运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%80%BC%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-number">13.2.</span> <span class="nav-text">布尔值之间的运算</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#break%E8%AF%AD%E5%8F%A5"><span class="nav-number">14.</span> <span class="nav-text">break语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pass%E8%AF%AD%E5%8F%A5"><span class="nav-number">15.</span> <span class="nav-text">pass语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#else%E8%AF%AD%E5%8F%A5"><span class="nav-number">16.</span> <span class="nav-text">else语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F"><span class="nav-number">16.0.1.</span> <span class="nav-text">实例：猜数字游戏</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AB%E3%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">17.</span> <span class="nav-text">八、函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E8%B0%83%E7%94%A8"><span class="nav-number">17.1.</span> <span class="nav-text">函数的定义和调用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E8%AE%BE%E7%BD%AE%E8%AE%A1%E6%95%B0%E5%99%A8"><span class="nav-number">17.1.1.</span> <span class="nav-text">实例：设置计数器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="nav-number">17.1.2.</span> <span class="nav-text">函数的返回值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E4%B8%AAreturn%E8%AF%AD%E5%8F%A5"><span class="nav-number">17.1.3.</span> <span class="nav-text">多个return语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">17.2.</span> <span class="nav-text">变量的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E9%80%92%E5%BD%92"><span class="nav-number">17.3.</span> <span class="nav-text">函数的递归</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E8%AE%A1%E7%AE%97%E9%98%B6%E4%B9%98"><span class="nav-number">17.3.1.</span> <span class="nav-text">实例：计算阶乘</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B9%9D%E3%80%81%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="nav-number">18.</span> <span class="nav-text">九、文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%BB%E5%8F%96"><span class="nav-number">18.1.</span> <span class="nav-text">文件的读取</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E5%AD%97%E7%AC%A6%E6%9D%A5%E8%AF%BB%E5%8F%96"><span class="nav-number">18.1.1.</span> <span class="nav-text">按字符来读取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E8%A1%8C%E8%AF%BB%E5%8F%96"><span class="nav-number">18.1.2.</span> <span class="nav-text">按行读取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E6%95%B4%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="nav-number">18.1.3.</span> <span class="nav-text">取整个文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E5%85%A5%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%BA%93"><span class="nav-number">18.1.4.</span> <span class="nav-text">引入文件操作库</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%81%E3%80%81%E6%A8%A1%E5%9D%97"><span class="nav-number">19.</span> <span class="nav-text">十、模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%86%E7%B1%BB%EF%BC%9A"><span class="nav-number">19.1.</span> <span class="nav-text">模块的分类：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5%E6%A0%87%E5%87%86%E5%BA%93"><span class="nav-number">19.2.</span> <span class="nav-text">引入标准库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E7%8C%9C%E6%95%B0%E5%AD%97%E6%B8%B8%E6%88%8F%EF%BC%88%E9%9A%8F%E6%9C%BA%E6%95%B0%EF%BC%89"><span class="nav-number">19.2.1.</span> <span class="nav-text">实例：猜数字游戏（随机数）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">20.</span> <span class="nav-text">异常处理</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1230,6 +1010,21 @@ setInterval("createtime()",250);
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
   <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
   <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>          
