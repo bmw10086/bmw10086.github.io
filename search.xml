@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
-    <url>/2023/06/24/3-5%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<h1 id="使用Github-Vercel无服务器搭建ChatGPT-3-5网站"><a href="#使用Github-Vercel无服务器搭建ChatGPT-3-5网站" class="headerlink" title="使用Github+Vercel无服务器搭建ChatGPT 3.5网站"></a>使用Github+Vercel无服务器搭建ChatGPT 3.5网站</h1><p>需要：</p>
-<ol>
-<li><h3 id="ChatGPT账号key"><a href="#ChatGPT账号key" class="headerlink" title="ChatGPT账号key"></a>ChatGPT账号key</h3></li>
-<li><h3 id="Github账号"><a href="#Github账号" class="headerlink" title="Github账号"></a>Github账号</h3></li>
-<li><h3 id="Vercel账号"><a href="#Vercel账号" class="headerlink" title="Vercel账号"></a>Vercel账号</h3></li>
-<li><h3 id="项目作者的GitHub"><a href="#项目作者的GitHub" class="headerlink" title="项目作者的GitHub"></a>项目作者的GitHub</h3></li>
-</ol>
-<p>开始搭建：</p>
-<p>1、打开项目，点击项目左下侧的Deploy进入Vercel页面</p>
-<p><img src="/./3-5%E7%BD%91%E7%AB%99/1.png" alt="vercel页面"></p>
-<p>2、然后用github登录成功(需要验证手机号)，选择github，然后自定义一个自己的名称-点击创建</p>
-<p><img src="/./3-5%E7%BD%91%E7%AB%99/2.png" alt="验证"></p>
-<p>3、填入自己的chatgpt的api-key，部署完成</p>
-<p><img src="/./3-5%E7%BD%91%E7%AB%99/3.png" alt="成功"></p>
-<p>4、点击Continue To Dashboard进入管理页面</p>
-<p><img src="/./3-5%E7%BD%91%E7%AB%99/4.png" alt="管理界面"></p>
-<p>5、访问vercel分配的网址即可，输入网址：</p>
-<p><img src="/./3-5%E7%BD%91%E7%AB%99/5.png" alt="网页"></p>
-]]></content>
-      <categories>
-        <category>搭建教程</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-        <tag>chatgpt</tag>
-        <tag>vercel</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -87,6 +56,37 @@
       </tags>
   </entry>
   <entry>
+    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
+    <url>/2023/06/24/3-5%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="使用Github-Vercel无服务器搭建ChatGPT-3-5网站"><a href="#使用Github-Vercel无服务器搭建ChatGPT-3-5网站" class="headerlink" title="使用Github+Vercel无服务器搭建ChatGPT 3.5网站"></a>使用Github+Vercel无服务器搭建ChatGPT 3.5网站</h1><p>需要：</p>
+<ol>
+<li><h3 id="ChatGPT账号key"><a href="#ChatGPT账号key" class="headerlink" title="ChatGPT账号key"></a>ChatGPT账号key</h3></li>
+<li><h3 id="Github账号"><a href="#Github账号" class="headerlink" title="Github账号"></a>Github账号</h3></li>
+<li><h3 id="Vercel账号"><a href="#Vercel账号" class="headerlink" title="Vercel账号"></a>Vercel账号</h3></li>
+<li><h3 id="项目作者的GitHub"><a href="#项目作者的GitHub" class="headerlink" title="项目作者的GitHub"></a>项目作者的GitHub</h3></li>
+</ol>
+<p>开始搭建：</p>
+<p>1、打开项目，点击项目左下侧的Deploy进入Vercel页面</p>
+<p><img src="/./3-5%E7%BD%91%E7%AB%99/1.png" alt="vercel页面"></p>
+<p>2、然后用github登录成功(需要验证手机号)，选择github，然后自定义一个自己的名称-点击创建</p>
+<p><img src="/./3-5%E7%BD%91%E7%AB%99/2.png" alt="验证"></p>
+<p>3、填入自己的chatgpt的api-key，部署完成</p>
+<p><img src="/./3-5%E7%BD%91%E7%AB%99/3.png" alt="成功"></p>
+<p>4、点击Continue To Dashboard进入管理页面</p>
+<p><img src="/./3-5%E7%BD%91%E7%AB%99/4.png" alt="管理界面"></p>
+<p>5、访问vercel分配的网址即可，输入网址：</p>
+<p><img src="/./3-5%E7%BD%91%E7%AB%99/5.png" alt="网页"></p>
+]]></content>
+      <categories>
+        <category>搭建教程</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>chatgpt</tag>
+        <tag>vercel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/06/24/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -103,45 +103,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
-  </entry>
-  <entry>
-    <title>hexo博客中next添加背景图片</title>
-    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
-<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617202559584.png" alt="image-20230617202559584"></p>
-<blockquote>
-<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
-</blockquote>
-<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
-
-<p>然后新建一个<code>styles.styl</code>文件</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
-
-<p>改完之后就会出现我上面的问题：</p>
-<p><img src="Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617203121562.png" alt="image-20230617203121562"></p>
-<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
-
-<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
-<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一样也行。</p>
-]]></content>
-      <categories>
-        <category>问题</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
   </entry>
   <entry>
     <title>hexo新建页面</title>
@@ -601,12 +562,68 @@
 <p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
 <p>​	3、分享给他人，希望对你们有所帮助。</p>
 <p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#x32;&#55;&#55;&#x33;&#48;&#55;&#x33;&#53;&#x34;&#50;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x32;&#55;&#55;&#x33;&#48;&#55;&#x33;&#53;&#x34;&#50;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#x33;&#48;&#x37;&#x33;&#53;&#52;&#x32;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;">&#50;&#55;&#x37;&#x33;&#48;&#x37;&#x33;&#53;&#52;&#x32;&#64;&#x71;&#113;&#46;&#x63;&#111;&#109;</a></p>
 <hr>
 ]]></content>
       <tags>
         <tag>tags</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>hexo博客中next添加背景图片</title>
+    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617202559584.png" alt="image-20230617202559584"></p>
+<blockquote>
+<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
+</blockquote>
+<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
+
+<p>然后新建一个<code>styles.styl</code>文件</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
+
+<p>改完之后就会出现我上面的问题：</p>
+<p><img src="Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617203121562.png" alt="image-20230617203121562"></p>
+<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
+
+<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
+<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一样也行。</p>
+]]></content>
+      <categories>
+        <category>问题</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/2023/06/25/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p><img src="Blog2.0\source_posts\测试\1.png" alt="aa"></p>
+]]></content>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文案</title>
+    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
+    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>]]></content>
+      <categories>
+        <category>文案</category>
+      </categories>
   </entry>
   <entry>
     <title>古诗</title>
@@ -706,13 +723,5 @@
         <tag>李白</tag>
         <tag>白玉京</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>文案</title>
-    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
-    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>]]></content>
-      <categories>
-        <category>文案</category>
-      </categories>
   </entry>
 </search>
