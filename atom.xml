@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-06-25T11:39:34.672Z</updated>
+  <updated>2023-06-25T11:59:51.088Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo新建页面</title>
+    <link href="http://example.com/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/"/>
+    <id>http://example.com/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</id>
+    <published>2023-06-25T11:50:56.000Z</published>
+    <updated>2023-06-25T11:59:51.088Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;hexo新建&quot;&gt;&lt;a href=&quot;#hexo新建&quot; class=&quot;headerlink&quot; title=&quot;hexo新建&quot;&gt;&lt;/a&gt;hexo新建&lt;/h1&gt;&lt;h2 id=&quot;一、hexo新建标签、分类、归档页面，步骤都是类似的：&quot;&gt;&lt;a href=&quot;#一、hexo新建标签</summary>
+      
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
     <link href="http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/"/>
     <id>http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/</id>
     <published>2023-06-24T12:07:05.000Z</published>
-    <updated>2023-06-25T11:39:34.672Z</updated>
+    <updated>2023-06-25T11:42:57.510Z</updated>
     
     
       
