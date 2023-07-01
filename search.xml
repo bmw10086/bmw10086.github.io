@@ -12,8 +12,7 @@
 </ol>
 <p>开始搭建：</p>
 <p>1、打开项目，点击项目左下侧的Deploy进入Vercel页面</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% asset<span class="emphasis">_img 1.jpg 页面 %&#125;</span></span><br></pre></td></tr></table></figure>
-
+<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/1.png" alt="vercel页面"></p>
 <p>2、然后用github登录成功(需要验证手机号)，选择github，然后自定义一个自己的名称-点击创建</p>
 <p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/2.png" alt="验证"></p>
 <p>3、填入自己的chatgpt的api-key，部署完成</p>
@@ -116,7 +115,7 @@
 
 <ol start="3">
 <li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
-<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/a.png" alt="验证"></p>
+<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
 </li>
 </ol>
 ]]></content>
