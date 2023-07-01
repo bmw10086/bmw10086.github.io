@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
+    <url>/2023/06/24/3-5%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="使用Github-Vercel无服务器搭建ChatGPT-3-5网站"><a href="#使用Github-Vercel无服务器搭建ChatGPT-3-5网站" class="headerlink" title="使用Github+Vercel无服务器搭建ChatGPT 3.5网站"></a>使用Github+Vercel无服务器搭建ChatGPT 3.5网站</h1><p>需要：</p>
+<ol>
+<li><h3 id="ChatGPT账号key"><a href="#ChatGPT账号key" class="headerlink" title="ChatGPT账号key"></a>ChatGPT账号key</h3></li>
+<li><h3 id="Github账号"><a href="#Github账号" class="headerlink" title="Github账号"></a>Github账号</h3></li>
+<li><h3 id="Vercel账号"><a href="#Vercel账号" class="headerlink" title="Vercel账号"></a>Vercel账号</h3></li>
+<li><h3 id="项目作者的GitHub"><a href="#项目作者的GitHub" class="headerlink" title="项目作者的GitHub"></a>项目作者的GitHub</h3></li>
+</ol>
+<p>开始搭建：</p>
+<p>1、打开项目，点击项目左下侧的Deploy进入Vercel页面</p>
+<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/1.png" alt="vercel页面"></p>
+<p>2、然后用github登录成功(需要验证手机号)，选择github，然后自定义一个自己的名称-点击创建</p>
+<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/2.png" alt="验证"></p>
+<p>3、填入自己的chatgpt的api-key，部署完成</p>
+<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/3.png" alt="成功"></p>
+<p>4、点击Continue To Dashboard进入管理页面</p>
+<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/4.png" alt="管理界面"></p>
+<p>5、访问vercel分配的网址即可，输入网址：</p>
+<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/5.png" alt="网页"></p>
+]]></content>
+      <categories>
+        <category>搭建教程</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>chatgpt</tag>
+        <tag>vercel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -53,37 +84,6 @@
       <tags>
         <tag>PyQt5</tag>
         <tag>Qt Designer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
-    <url>/2023/06/24/3-5%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<h1 id="使用Github-Vercel无服务器搭建ChatGPT-3-5网站"><a href="#使用Github-Vercel无服务器搭建ChatGPT-3-5网站" class="headerlink" title="使用Github+Vercel无服务器搭建ChatGPT 3.5网站"></a>使用Github+Vercel无服务器搭建ChatGPT 3.5网站</h1><p>需要：</p>
-<ol>
-<li><h3 id="ChatGPT账号key"><a href="#ChatGPT账号key" class="headerlink" title="ChatGPT账号key"></a>ChatGPT账号key</h3></li>
-<li><h3 id="Github账号"><a href="#Github账号" class="headerlink" title="Github账号"></a>Github账号</h3></li>
-<li><h3 id="Vercel账号"><a href="#Vercel账号" class="headerlink" title="Vercel账号"></a>Vercel账号</h3></li>
-<li><h3 id="项目作者的GitHub"><a href="#项目作者的GitHub" class="headerlink" title="项目作者的GitHub"></a>项目作者的GitHub</h3></li>
-</ol>
-<p>开始搭建：</p>
-<p>1、打开项目，点击项目左下侧的Deploy进入Vercel页面</p>
-<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/1.png" alt="vercel页面"></p>
-<p>2、然后用github登录成功(需要验证手机号)，选择github，然后自定义一个自己的名称-点击创建</p>
-<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/2.png" alt="验证"></p>
-<p>3、填入自己的chatgpt的api-key，部署完成</p>
-<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/3.png" alt="成功"></p>
-<p>4、点击Continue To Dashboard进入管理页面</p>
-<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/4.png" alt="管理界面"></p>
-<p>5、访问vercel分配的网址即可，输入网址：</p>
-<p><img src="/2023/06/24/3-5%E7%BD%91%E7%AB%99/5.png" alt="网页"></p>
-]]></content>
-      <categories>
-        <category>搭建教程</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-        <tag>chatgpt</tag>
-        <tag>vercel</tag>
       </tags>
   </entry>
   <entry>
@@ -191,7 +191,7 @@
 <p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
 <p>​	3、分享给他人，希望对你们有所帮助。</p>
 <p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#55;&#55;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#50;&#64;&#x71;&#x71;&#46;&#99;&#111;&#109;">&#50;&#55;&#55;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#50;&#64;&#x71;&#x71;&#46;&#99;&#111;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#x32;&#x37;&#x37;&#51;&#48;&#x37;&#51;&#x35;&#x34;&#50;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;">&#x32;&#x37;&#x37;&#51;&#48;&#x37;&#51;&#x35;&#x34;&#50;&#64;&#113;&#113;&#46;&#99;&#x6f;&#109;</a></p>
 <hr>
 ]]></content>
       <tags>
@@ -609,6 +609,90 @@
       </tags>
   </entry>
   <entry>
+    <title>文案</title>
+    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
+    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>
+
+<p><img src="https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5c"></p>
+<blockquote>
+<p><strong>哪怕是一只萤火虫喜欢上月亮，它也会想把自己所有的光都给它。跟喜欢的人多强大没关系，这是跳动不止的心意。——《春日宴》</strong></p>
+</blockquote>
+<blockquote>
+<p>别偷偷拆开那信件 落笔的人红了脸 ——《小尖尖》</p>
+</blockquote>
+<blockquote>
+<p>我偶尔爱你，爱你人前光鲜、璀璨，像是流星； 我永远爱你，爱你人后的脆弱、用心，自然而然。—— 《<a href="https://www.zhihu.com/search?q=%E4%BA%BA%E5%88%B0%E4%BA%86%E7%BE%8E%E6%9C%AF%E9%A6%86%E4%BC%9A%E5%A5%BD%E7%9C%8B%E8%B5%B7%E6%9D%A5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">人到了美术馆会好看起来</a>》 </p>
+</blockquote>
+<blockquote>
+<p>悲喜交替 无有终点——《<a href="https://www.zhihu.com/search?q=%E6%A9%98%E5%AD%90%E4%B8%8D%E6%98%AF%E5%94%AF%E4%B8%80%E7%9A%84%E6%B0%B4%E6%9E%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">橘子不是唯一的水果</a>》</p>
+</blockquote>
+<blockquote>
+<p> 他们站在噼啪作响的炉火旁，拥抱亲吻，断断续续地讲胡话，窃窃私语，笑着，吻了又吻。——《战争风云》</p>
+</blockquote>
+<blockquote>
+<p> 行路难，不在山，不在水，只在人情反覆间。——白居易《<a href="https://www.zhihu.com/search?q=%E5%A4%AA%E8%A1%8C%E8%B7%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">太行路</a>》</p>
+</blockquote>
+<blockquote>
+<p>我想我今生顶天立地，来生必仗剑天涯，看明月天山外，苍茫云海间，风景不殊，山河尤是。——《<a href="https://www.zhihu.com/search?q=%E5%8C%97%E4%BA%AC%E6%B3%95%E6%BA%90%E5%AF%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">北京法源寺</a>》**</p>
+</blockquote>
+<blockquote>
+<p>世界上有那么多的城镇，城镇中有那么多的酒馆，她却走进了我的。——《卡萨布兰卡》</p>
+</blockquote>
+<blockquote>
+<p> 我想这个世界里，虽然没有最美好的相遇，但一定有为了相遇或者重逢，所做的最美好的努力。——《<a href="https://www.zhihu.com/search?q=%E6%B5%81%E6%B5%AA%E7%9A%84%E6%98%9F%E6%98%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">流浪的星星</a>》</p>
+</blockquote>
+<blockquote>
+<p> 时时觉得自己仿佛孤单一人坐在深深的井底，谁也不会赶来相救。——村上春树《<a href="https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E8%81%8C%E4%B8%9A%E6%98%AF%E5%B0%8F%E8%AF%B4%E5%AE%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">我的职业是小说家</a>》</p>
+</blockquote>
+<blockquote>
+<p>因为我们活过的刹那 前后皆是黑夜。 ——<a href="https://www.zhihu.com/search?q=%E8%B4%B9%E5%B0%94%E5%8D%97%E5%A4%9A%E4%BD%A9%E7%B4%A2%E9%98%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">费尔南多佩索阿</a></p>
+</blockquote>
+<blockquote>
+<p>喜欢就是骨头里都在冒泡泡。——《尘埃落尽》</p>
+</blockquote>
+<blockquote>
+<p>那就折一张阔些的荷叶 包一片月光回去 回去夹在唐诗里 扁扁的 像压过的相思——余光中**</p>
+</blockquote>
+<blockquote>
+<p> 我衰老，也年轻。 我愚蠢，也睿智。 对他人我漠视，也不失关心。 母性与父性，共集一身。 我是孩子，也是大人。 我粗俗，也有文雅。——《<a href="https://www.zhihu.com/search?q=%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">布鲁克林有棵树</a>》</p>
+</blockquote>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2a7371032d2c622cab7dc691bd1a76ad?rik=QG9CWpF8vrxhmA&riu=http://pic.bizhi360.com/bbpic/15/3915.jpg&ehk=oirjjC5Q+hHF4N0w0Vxipk+tWp/jE/RCgb4mGvYw/tI=&risl=&pid=ImgRaw&r=0"></p>
+<blockquote>
+<p> 很多人不需要再见，因为只是路过而已，遗忘就是我们给彼此最好的纪念。  ——林徽因</p>
+</blockquote>
+<blockquote>
+<p>一个人，一本书，一杯茶，一帘梦。有时候，寂寞是这样叫人心动，也只有此刻，世事才会如此波澜不惊。</p>
+</blockquote>
+<blockquote>
+<p>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</p>
+</blockquote>
+<blockquote>
+<p>在广袤的空间和无限的时间中，能与你共享同一颗行星和同一段时光是我的荣幸。</p>
+</blockquote>
+<blockquote>
+<p>温柔要有，但不是妥协，我们要在安静中不慌不忙的坚强。</p>
+</blockquote>
+<blockquote>
+<p>时间或许像灯光，日照褪尽了才能看见，彼此靠近但是没有关联，一盏熄灭了，另一盏刚好亮了。</p>
+</blockquote>
+<blockquote>
+<p>努力让自己发光，对的人才会迎光而来。</p>
+</blockquote>
+<blockquote>
+<p>哪来的天生优秀，都是一步一个坑踩过来的。</p>
+</blockquote>
+<blockquote>
+<p>你未必万丈光芒，但你温暖有光。</p>
+</blockquote>
+<blockquote>
+<p>你的眸是深情的海，满山的花，堕落了我所有的温情。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>文案</category>
+      </categories>
+  </entry>
+  <entry>
     <title>古诗</title>
     <url>/2023/06/16/%E5%8F%A4%E8%AF%97/</url>
     <content><![CDATA[<h1 id="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"><a href="#经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰" class="headerlink" title="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"></a><center>经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰</center></h1><div align="center">
@@ -706,89 +790,5 @@
         <tag>李白</tag>
         <tag>白玉京</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>文案</title>
-    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
-    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>
-
-<p><img src="https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5c"></p>
-<blockquote>
-<p><strong>哪怕是一只萤火虫喜欢上月亮，它也会想把自己所有的光都给它。跟喜欢的人多强大没关系，这是跳动不止的心意。——《春日宴》</strong></p>
-</blockquote>
-<blockquote>
-<p>别偷偷拆开那信件 落笔的人红了脸 ——《小尖尖》</p>
-</blockquote>
-<blockquote>
-<p>我偶尔爱你，爱你人前光鲜、璀璨，像是流星； 我永远爱你，爱你人后的脆弱、用心，自然而然。—— 《<a href="https://www.zhihu.com/search?q=%E4%BA%BA%E5%88%B0%E4%BA%86%E7%BE%8E%E6%9C%AF%E9%A6%86%E4%BC%9A%E5%A5%BD%E7%9C%8B%E8%B5%B7%E6%9D%A5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">人到了美术馆会好看起来</a>》 </p>
-</blockquote>
-<blockquote>
-<p>悲喜交替 无有终点——《<a href="https://www.zhihu.com/search?q=%E6%A9%98%E5%AD%90%E4%B8%8D%E6%98%AF%E5%94%AF%E4%B8%80%E7%9A%84%E6%B0%B4%E6%9E%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">橘子不是唯一的水果</a>》</p>
-</blockquote>
-<blockquote>
-<p> 他们站在噼啪作响的炉火旁，拥抱亲吻，断断续续地讲胡话，窃窃私语，笑着，吻了又吻。——《战争风云》</p>
-</blockquote>
-<blockquote>
-<p> 行路难，不在山，不在水，只在人情反覆间。——白居易《<a href="https://www.zhihu.com/search?q=%E5%A4%AA%E8%A1%8C%E8%B7%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">太行路</a>》</p>
-</blockquote>
-<blockquote>
-<p>我想我今生顶天立地，来生必仗剑天涯，看明月天山外，苍茫云海间，风景不殊，山河尤是。——《<a href="https://www.zhihu.com/search?q=%E5%8C%97%E4%BA%AC%E6%B3%95%E6%BA%90%E5%AF%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">北京法源寺</a>》**</p>
-</blockquote>
-<blockquote>
-<p>世界上有那么多的城镇，城镇中有那么多的酒馆，她却走进了我的。——《卡萨布兰卡》</p>
-</blockquote>
-<blockquote>
-<p> 我想这个世界里，虽然没有最美好的相遇，但一定有为了相遇或者重逢，所做的最美好的努力。——《<a href="https://www.zhihu.com/search?q=%E6%B5%81%E6%B5%AA%E7%9A%84%E6%98%9F%E6%98%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">流浪的星星</a>》</p>
-</blockquote>
-<blockquote>
-<p> 时时觉得自己仿佛孤单一人坐在深深的井底，谁也不会赶来相救。——村上春树《<a href="https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E8%81%8C%E4%B8%9A%E6%98%AF%E5%B0%8F%E8%AF%B4%E5%AE%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">我的职业是小说家</a>》</p>
-</blockquote>
-<blockquote>
-<p>因为我们活过的刹那 前后皆是黑夜。 ——<a href="https://www.zhihu.com/search?q=%E8%B4%B9%E5%B0%94%E5%8D%97%E5%A4%9A%E4%BD%A9%E7%B4%A2%E9%98%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">费尔南多佩索阿</a></p>
-</blockquote>
-<blockquote>
-<p>喜欢就是骨头里都在冒泡泡。——《尘埃落尽》</p>
-</blockquote>
-<blockquote>
-<p>那就折一张阔些的荷叶 包一片月光回去 回去夹在唐诗里 扁扁的 像压过的相思——余光中**</p>
-</blockquote>
-<blockquote>
-<p> 我衰老，也年轻。 我愚蠢，也睿智。 对他人我漠视，也不失关心。 母性与父性，共集一身。 我是孩子，也是大人。 我粗俗，也有文雅。——《<a href="https://www.zhihu.com/search?q=%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">布鲁克林有棵树</a>》</p>
-</blockquote>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2a7371032d2c622cab7dc691bd1a76ad?rik=QG9CWpF8vrxhmA&riu=http://pic.bizhi360.com/bbpic/15/3915.jpg&ehk=oirjjC5Q+hHF4N0w0Vxipk+tWp/jE/RCgb4mGvYw/tI=&risl=&pid=ImgRaw&r=0"></p>
-<blockquote>
-<p> 很多人不需要再见，因为只是路过而已，遗忘就是我们给彼此最好的纪念。  ——林徽因</p>
-</blockquote>
-<blockquote>
-<p>一个人，一本书，一杯茶，一帘梦。有时候，寂寞是这样叫人心动，也只有此刻，世事才会如此波澜不惊。</p>
-</blockquote>
-<blockquote>
-<p>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</p>
-</blockquote>
-<blockquote>
-<p>在广袤的空间和无限的时间中，能与你共享同一颗行星和同一段时光是我的荣幸。</p>
-</blockquote>
-<blockquote>
-<p>温柔要有，但不是妥协，我们要在安静中不慌不忙的坚强。</p>
-</blockquote>
-<blockquote>
-<p>时间或许像灯光，日照褪尽了才能看见，彼此靠近但是没有关联，一盏熄灭了，另一盏刚好亮了。</p>
-</blockquote>
-<blockquote>
-<p>努力让自己发光，对的人才会迎光而来。</p>
-</blockquote>
-<blockquote>
-<p>哪来的天生优秀，都是一步一个坑踩过来的。</p>
-</blockquote>
-<blockquote>
-<p>你未必万丈光芒，但你温暖有光。</p>
-</blockquote>
-<blockquote>
-<p>你的眸是深情的海，满山的花，堕落了我所有的温情。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>文案</category>
-      </categories>
   </entry>
 </search>
