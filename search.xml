@@ -32,24 +32,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/24/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
-  </entry>
-  <entry>
     <title>hexo博客中next添加背景图片</title>
     <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
@@ -89,42 +71,22 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo新建页面</title>
-    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
-<li><p>新建页面</p>
-</li>
-<li><p>设置页面的类型</p>
-</li>
-<li><p>打开主题中的相关设置</p>
-</li>
-</ol>
-<p>几个主要的新建页面：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>Hello World</title>
+    <url>/2023/06/24/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>比如新建标签页：</p>
-<ol>
-<li>用命令行新建一个页面：（页面名称可以任意）</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
-<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
   </entry>
   <entry>
     <title>PyQt5学习</title>
@@ -182,6 +144,44 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo新建页面</title>
+    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
+<li><p>新建页面</p>
+</li>
+<li><p>设置页面的类型</p>
+</li>
+<li><p>打开主题中的相关设置</p>
+</li>
+</ol>
+<p>几个主要的新建页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>比如新建标签页：</p>
+<ol>
+<li>用命令行新建一个页面：（页面名称可以任意）</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
+<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于</title>
     <url>/2023/06/19/tags/</url>
     <content><![CDATA[<hr>
@@ -191,7 +191,7 @@
 <p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
 <p>​	3、分享给他人，希望对你们有所帮助。</p>
 <p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#55;&#55;&#51;&#48;&#55;&#51;&#53;&#x34;&#50;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#50;&#55;&#55;&#51;&#48;&#55;&#51;&#53;&#x34;&#50;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#50;&#x37;&#55;&#x33;&#x30;&#55;&#51;&#53;&#52;&#50;&#x40;&#x71;&#x71;&#46;&#x63;&#111;&#109;">&#50;&#x37;&#55;&#x33;&#x30;&#55;&#51;&#53;&#52;&#50;&#x40;&#x71;&#x71;&#46;&#x63;&#111;&#109;</a></p>
 <hr>
 ]]></content>
       <tags>
@@ -296,14 +296,6 @@
         <tag>李白</tag>
         <tag>白玉京</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>文案</title>
-    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
-    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>]]></content>
-      <categories>
-        <category>文案</category>
-      </categories>
   </entry>
   <entry>
     <title>python学习</title>
@@ -714,5 +706,13 @@
       <tags>
         <tag>python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>文案</title>
+    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
+    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>]]></content>
+      <categories>
+        <category>文案</category>
+      </categories>
   </entry>
 </search>
