@@ -53,7 +53,7 @@
     <title>hexo博客中next添加背景图片</title>
     <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
-<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617202559584.png" alt="image-20230617202559584"></p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
 <blockquote>
 <p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
 </blockquote>
@@ -67,7 +67,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
 
 <p>改完之后就会出现我上面的问题：</p>
-<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/Blog2.0\source_posts\hexo博客中next添加背景图片.assets\image-20230617203121562.png" alt="image-20230617203121562"></p>
+<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
 <p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
 
@@ -163,9 +163,9 @@
 <p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
 <p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
 <p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204740522.png" alt="image-20230605204740522"></p>
-<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204807155.png" alt="image-20230605204807155"></p>
-<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230605204835064.png" alt="image-20230605204835064"></p>
+<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/1.png"></p>
+<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/2.png"></p>
+<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/3.png"></p>
 <h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
 <li>架构的构建（需求文档）</li>
 <li>设计图出稿</li>
