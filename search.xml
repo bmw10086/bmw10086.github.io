@@ -50,6 +50,321 @@
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
   </entry>
   <entry>
+    <title>Git的使用</title>
+    <url>/2023/09/05/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h1><p>1、了解Git基本概念</p>
+<p>2、概述Git工作流程</p>
+<p>3、能够使用Git常用命令</p>
+<p>4、熟悉Git代码托管服务</p>
+<p>5、使用IDEA操作Git</p>
+<h2 id="一、版本控制"><a href="#一、版本控制" class="headerlink" title="一、版本控制"></a>一、版本控制</h2><h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><blockquote>
+<p>什么是版本控制    版本迭代   ，新的版本|版本管理器</p>
+</blockquote>
+<p>版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。</p>
+<ul>
+<li>实现跨区域多人协同开发</li>
+<li>追踪和记载一个或者多个文件的历史记录</li>
+<li>组织和保护你的源代码和文档</li>
+<li>统计工作量</li>
+<li>并行开发、提高开发效率</li>
+<li>跟踪记录整个软件的开发过程</li>
+<li>减轻开发人员的负担，节省时间，同时降低人为错误</li>
+</ul>
+<p>简单说就是用于管理多人协同开发项目的技术。</p>
+<p>没有进行版本控制或者版本控制本身缺乏正确的流程管理，在软件开发过程中将会引入很多问题，如软件代码的一致性、软件内容的冗余、软件过程的事物性、软件开发过程中的并发性、软件源代码的安全性，以及软件的整合等问题。</p>
+<p>无论是工作还是学习，或者是自己做笔记，都经历过这样一个阶段！我们就迫切需要一个版本控制工具！</p>
+<p>多人开发就必须要使用版本控制！</p>
+<blockquote>
+<p>常见的版本控制工具</p>
+</blockquote>
+<p>我们学习的东西，一定是当下最流行的！主流的版本控制器有如下这些：</p>
+<ul>
+<li><strong>Git</strong></li>
+<li><strong>SVN</strong>（Subversion）</li>
+<li><strong>CVS</strong>（Concurrent Versions System）</li>
+<li><strong>VSS</strong>（Micorosoft Visual SourceSafe）</li>
+<li><strong>TFS</strong>（Team Foundation Server）</li>
+<li>Visual Studio Online</li>
+</ul>
+<p>版本控制产品非常的多（Perforce、Rational ClearCase、RCS（GNU Revision Control System）、Serena Dimention、SVK、BitKeeper、Monotone、Bazaar、Mercurial、SourceGear Vault），现在影响力最大且使用最广泛的是<strong>Git与SVN</strong></p>
+<blockquote>
+<p>版本控制分类</p>
+</blockquote>
+<p>1、本地版本控制</p>
+<p>记录文件每次的更新，可以对每个版本做一个快照，或是记录补丁文件，适合个人用，如RCS。</p>
+<p>![image-20230706152323107](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706152323107.png)</p>
+<p><strong>2、集中版本控制  SVN</strong></p>
+<p>所有的版本数据都保存在服务器上，协同开发者从服务器上同步更新或上传自己的修改</p>
+<p>![image-20230706152440603](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706152440603.png)</p>
+<p>所有的版本数据都存在服务器上，用户的本地只有自己以前所同步的版本，如果不连网的话，用户就看不到历史版本，也无法切换版本验证问题，或在不同分支工作。而且，所有数据都保存在单一的服务器上，有很大的风险这个服务器会损坏，这样就会丢失所有的数据，当然可以定期备份。代表产品：SVN、CVS、VSS</p>
+<p><strong>3、分布式版本控制 	Git</strong></p>
+<p>每个人都拥有全部的代码！安全隐患！</p>
+<p>所有版本信息仓库全部同步到本地的每个用户，这样就可以在本地查看所有版本历史，可以离线在本地提交，只需在连网时push到相应的服务器或其他用户那里。由于每个用户那里保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但这增加了本地存储空间的占用。</p>
+<p>不会因为服务器损坏或者网络问题，造成不能工作的情况！</p>
+<p>![image-20230706152533733](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706152533733.png)</p>
+<blockquote>
+<h2 id="Git与SVN的主要区别"><a href="#Git与SVN的主要区别" class="headerlink" title="Git与SVN的主要区别"></a>Git与SVN的主要区别</h2></blockquote>
+<p>SVN是<strong>集中式版本控制系统</strong>，版本库是集中放在中央服务器的，而工作的时候，用的都是自己的电脑，所以首先要从中央服务器得到最新的版本，然后工作，完成工作后，需要把自己做完的活推送到中央服务器。集中式版本控制系统是必须联网才能工作，对网络带宽要求较高。</p>
+<p>Git是<strong>分布式版本控制系统</strong>，没有中央服务器，每个人的电脑就是一个完整的版本库，工作的时候不需要联网了，因为版本都在自己电脑上。协同的方法是这样的：比如说自己在电脑上改了文件A，其他人也在电脑上改了文件A，这时，你们两之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。Git可以直接看到更新了哪些代码和文件！</p>
+<blockquote>
+<p><strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p>
+</blockquote>
+<h2 id="二、Git历史"><a href="#二、Git历史" class="headerlink" title="二、Git历史"></a>二、Git历史</h2><p>同生活中的许多伟大事物一样，Git 诞生于一个极富纷争大举创新的年代。</p>
+<p>Linux 内核开源项目有着为数众广的参与者。绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上(1991－2002年间)。到 2002 年，整个项目组开始启用一个专有的分布式版本控制系统 BitKeeper 来管理和维护代码。</p>
+<p>Linux社区中存在很多的大佬！破解研究 BitKeeper ！</p>
+<p>到了 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了 Linux 内核社区免费使用 BitKeeper 的权力。这就迫使 Linux 开源社区(特别是 Linux 的缔造者 Linus Torvalds)基于使用 BitKeeper 时的经验教训，开发出自己的版本系统。（2周左右！） 也就是后来的 Git！</p>
+<p><strong>Git是目前世界上最先进的分布式版本控制系统。</strong></p>
+<p>Git是免费、开源的，最初Git是为辅助 Linux 内核开发的，来替代 BitKeeper！</p>
+<p>![image-20230706152923019](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706152923019.png)</p>
+<p>Linux和Git之父李纳斯·托沃兹（Linus Benedic Torvalds）1969、芬兰</p>
+<h2 id="三、Git环境配置"><a href="#三、Git环境配置" class="headerlink" title="三、Git环境配置"></a>三、Git环境配置</h2><blockquote>
+<p>软件下载</p>
+</blockquote>
+<p>打开 [git官网] <a href="https://git-scm.com/%EF%BC%8C%E4%B8%8B%E8%BD%BDgit%E5%AF%B9%E5%BA%94%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%88%E6%9C%AC%E3%80%82">https://git-scm.com/，下载git对应操作系统的版本。</a></p>
+<p>所有东西下载慢的话就可以去找镜像！</p>
+<p>官网下载太慢，我们可以使用淘宝镜像下载：<a href="http://npm.taobao.org/mirrors/git-for-windows/">http://npm.taobao.org/mirrors/git-for-windows/</a></p>
+<p>![image-20230706153054423](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153054423.png)</p>
+<p>下载对应的版本即可安装！</p>
+<p>安装：无脑下一步即可！安装完毕就可以使用了！</p>
+<blockquote>
+<p>启动Git</p>
+</blockquote>
+<p>安装成功后在开始菜单中会有Git项，菜单下有3个程序：任意文件夹下右键也可以看到对应的程序！</p>
+<p>![image-20230706153151665](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153151665.png)</p>
+<p><strong>Git Bash：</strong>Unix与Linux风格的命令行，使用最多，推荐最多    clear，window   cls</p>
+<p><strong>Git CMD：</strong>Windows风格的命令行</p>
+<p><strong>Git GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
+<blockquote>
+<p>常用的Linux命令</p>
+</blockquote>
+<p>平时一定要多使用这些基础的命令！</p>
+<p>1）、cd : 改变目录。</p>
+<p>2）、cd . . 回退到上一个目录，直接cd进入默认目录</p>
+<p>3）、pwd : 显示当前所在的目录路径。</p>
+<p>4）、ls(ll):  都是列出当前目录中的所有文件，只不过ll(两个ll)列出的内容更为详细。</p>
+<p>5）、touch : 新建一个文件 如 touch index.js 就会在当前目录下新建一个index.js文件。</p>
+<p>6）、rm:  删除一个文件, rm index.js 就会把index.js文件删除。</p>
+<p>7）、mkdir:  新建一个目录,就是新建一个文件夹。</p>
+<p>8）、rm -r :  删除一个文件夹, rm -r src 删除src目录</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rm -rf / 切勿在Linux中尝试！删除电脑中全部文件！</span><br></pre></td></tr></table></figure>
+
+<p>9）、mv 移动文件, mv index.html src index.html 是我们要移动的文件, src 是目标文件夹,当然, 这样写,必须保证文件和目标文件夹在同一目录下。</p>
+<p>10）、reset 重新初始化终端&#x2F;清屏。</p>
+<p>11）、clear 清屏。</p>
+<p>12）、history 查看命令历史。</p>
+<p>13）、help 帮助。</p>
+<p>14）、exit 退出。</p>
+<p>15）、#表示注释</p>
+<blockquote>
+<p>Git配置</p>
+</blockquote>
+<p>所有的配置文件，其实都保存在本地</p>
+<p>查看配置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config -l</span><br></pre></td></tr></table></figure>
+
+<p>![image-20230706153408392](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153408392.png)</p>
+<p>查看不同级别的配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查看系统config</span></span><br><span class="line">git config --system --list</span><br><span class="line">　　</span><br><span class="line"><span class="comment">#查看当前用户（global）配置</span></span><br><span class="line">git config --global  --list</span><br></pre></td></tr></table></figure>
+
+<p><strong>Git相关的配置文件：</strong></p>
+<p>1）、Git\etc\gitconfig  ：Git 安装目录下的 gitconfig   –system 系统级</p>
+<p>2）、C:\Users\Administrator\ .gitconfig   只适用于当前登录用户的配置  –global 全局</p>
+<p>注：也可以在配置文件里直接修改。</p>
+<blockquote>
+<p>设置用户名与邮箱（用户标识，必要）</p>
+</blockquote>
+<p>当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;kuangshen&quot;</span>  <span class="comment">#名称</span></span><br><span class="line">git config --global user.email 24736743@qq.com   <span class="comment">#邮箱</span></span><br></pre></td></tr></table></figure>
+
+<p>只需要做一次这个设置，如果你传递了–global 选项，因为Git将总是会使用该信息来处理你在系统中所做的一切操作。如果你希望在一个特定的项目中使用不同的名称或e-mail地址，你可以在该项目中运行该命令而不要–global选项。总之–global为全局配置，不加为某个项目的特定配置。</p>
+<p>![image-20230706153659180](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153659180.png)</p>
+<h2 id="四、Git基本理论"><a href="#四、Git基本理论" class="headerlink" title="四、Git基本理论"></a>四、Git基本理论</h2><blockquote>
+<p>三个区域</p>
+</blockquote>
+<p>Git本地有三个工作区域：工作目录（Working Directory）、暂存区(Stage&#x2F;Index)、资源库(Repository或Git Directory)。如果在加上远程的git仓库(Remote Directory)就可以分为四个工作区域。文件在这四个区域之间的转换关系如下：</p>
+<p>![image-20230706153740300](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153740300.png)</p>
+<ul>
+<li>Workspace：工作区，就是你平时存放项目代码的地方</li>
+<li>Index &#x2F; Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息</li>
+<li>Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本</li>
+<li>Remote：远程仓库，托管代码的服务器，可以简单的认为是你项目组中的一台电脑用于远程数据交换</li>
+</ul>
+<p>本地的三个区域确切的说应该是git仓库中HEAD指向的版本：</p>
+<p>![image-20230706153816936](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153816936.png)</p>
+<ul>
+<li>Directory：使用Git管理的一个目录，也就是一个仓库，包含我们的工作空间和Git的管理空间。</li>
+<li>WorkSpace：需要通过Git进行版本控制的目录和文件，这些目录和文件组成了工作空间。</li>
+<li>.git：存放Git管理信息的目录，初始化仓库的时候自动创建。</li>
+<li>Index&#x2F;Stage：暂存区，或者叫待提交更新区，在提交进入repo之前，我们可以把所有的更新放在暂存区。</li>
+<li>Local Repo：本地仓库，一个存放在本地的版本库；HEAD会只是当前的开发分支（branch）。</li>
+<li>Stash：隐藏，是一个工作状态保存栈，用于保存&#x2F;恢复WorkSpace中的临时状态。</li>
+</ul>
+<blockquote>
+<p>工作流程</p>
+</blockquote>
+<p>git的工作流程一般是这样的：</p>
+<p>１、在工作目录中添加、修改文件；</p>
+<p>２、将需要进行版本管理的文件放入暂存区域；</p>
+<p>３、将暂存区域的文件提交到git仓库。</p>
+<p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交(committed)</p>
+<p>![image-20230706153910018](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706153910018.png)</p>
+<h2 id="五、Git项目搭建"><a href="#五、Git项目搭建" class="headerlink" title="五、Git项目搭建"></a>五、Git项目搭建</h2><blockquote>
+<p>创建工作目录与常用指令</p>
+</blockquote>
+<p>工作目录（WorkSpace)一般就是你希望Git帮助你管理的文件夹，可以是你项目的目录，也可以是一个空目录，建议不要有中文。</p>
+<p>日常使用只要记住下图6个命令：</p>
+<p>![image-20230706154008795](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706154008795.png)</p>
+<blockquote>
+<p>本地仓库</p>
+</blockquote>
+<p>创建本地仓库的方法有两种：一种是创建全新的仓库，另一种是克隆远程仓库。</p>
+<p>1、创建全新的仓库，需要用GIT管理的项目的根目录执行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 在当前目录新建一个Git代码库</span></span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
+
+<p>2、执行后可以看到，仅仅在项目目录多出了一个.git目录，关于版本等的所有信息都在这个目录里面。</p>
+<blockquote>
+<p>克隆远程仓库</p>
+</blockquote>
+<p>1、另一种方式是克隆远程目录，由于是将远程服务器上的仓库完全镜像一份至本地！</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 克隆一个项目和它的整个代码历史(版本信息)</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url]  <span class="comment"># https://gitee.com/kuangstudy/openclass.git</span></span><br></pre></td></tr></table></figure>
+
+<p>2、去 gitee 或者 github 上克隆一个测试！</p>
+<h2 id="六、Git文件操作"><a href="#六、Git文件操作" class="headerlink" title="六、Git文件操作"></a>六、Git文件操作</h2><blockquote>
+<p>文件的四种状态</p>
+</blockquote>
+<p>版本控制就是对文件的版本控制，要对文件进行修改、提交等操作，首先要知道文件当前在什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。</p>
+<ul>
+<li>Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库, 不参与版本控制. 通过git add 状态变为Staged.</li>
+<li>Unmodify: 文件已经入库, 未修改, 即版本库中的文件快照内容与文件夹中完全一致. 这种类型的文件有两种去处, 如果它被修改, 而变为Modified. 如果使用git rm移出版本库, 则成为Untracked文件</li>
+<li>Modified: 文件已修改, 仅仅是修改, 并没有进行其他的操作. 这个文件也有两个去处, 通过git add可进入暂存staged状态, 使用git checkout 则丢弃修改过, 返回到unmodify状态, 这个git checkout即从库中取出文件, 覆盖当前修改 !</li>
+<li>Staged: 暂存状态. 执行git commit则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为Unmodify状态. 执行git reset HEAD filename取消暂存, 文件状态为Modified</li>
+</ul>
+<blockquote>
+<p>查看文件状态</p>
+</blockquote>
+<p>上面说文件有4种状态，通过如下命令可以查看到文件的状态：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#查看指定文件状态</span></span><br><span class="line">git status [filename]</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看所有文件状态</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># git add .                  添加所有文件到暂存区</span></span><br><span class="line"><span class="comment"># git commit -m &quot;消息内容&quot;    提交暂存区中的内容到本地仓库 -m 提交信息</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>忽略文件</p>
+</blockquote>
+<p>有些时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</p>
+<p>在主目录下建立”.gitignore”文件，此文件有如下规则：</p>
+<ol>
+<li>忽略文件中的空行或以井号（#）开始的行将会被忽略。</li>
+<li>可以使用Linux通配符。例如：星号（*）代表任意多个字符，问号（？）代表一个字符，方括号（[abc]）代表可选字符范围，大括号（{string1,string2,…}）代表可选的字符串等。</li>
+<li>如果名称的最前面有一个感叹号（!），表示例外规则，将不被忽略。</li>
+<li>如果名称的最前面是一个路径分隔符（&#x2F;），表示要忽略的文件在此目录下，而子目录中的文件不忽略。</li>
+<li>如果名称的最后面是一个路径分隔符（&#x2F;），表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#为注释</span></span><br><span class="line">*.txt        <span class="comment">#忽略所有 .txt结尾的文件,这样的话上传就不会被选中！</span></span><br><span class="line">!lib.txt     <span class="comment">#但lib.txt除外</span></span><br><span class="line">/temp        <span class="comment">#仅忽略项目根目录下的TODO文件,不包括其它目录temp</span></span><br><span class="line">build/       <span class="comment">#忽略build/目录下的所有文件</span></span><br><span class="line">doc/*.txt    <span class="comment">#会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="七、使用码云Gitee"><a href="#七、使用码云Gitee" class="headerlink" title="七、使用码云Gitee"></a>七、使用码云Gitee</h2><blockquote>
+<p>github 是有墙的，比较慢，在国内的话，我们一般使用 gitee ，公司中有时候会搭建自己的gitlab服务器</p>
+</blockquote>
+<p>这个其实可以作为大家未来找工作的一个重要信息！</p>
+<p>1、注册登录码云，完善个人信息</p>
+<p>2、设置本机绑定SSH公钥，实现免密码登录！（免密码登录，这一步挺重要的，码云是远程仓库，我们是平时工作在本地仓库！)</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入 C:\Users\Administrator\.ssh 目录</span></span><br><span class="line"><span class="comment"># 生成公钥</span></span><br><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
+
+<p>3、将公钥信息public key 添加到码云账户中即可！</p>
+<p>4、使用码云创建一个自己的仓库！</p>
+<p>许可证：开源是否可以随意转载，开源但是不能商业使用，不能转载，…  限制！</p>
+<h2 id="八、IDEA中集成Git"><a href="#八、IDEA中集成Git" class="headerlink" title="八、IDEA中集成Git"></a>八、IDEA中集成Git</h2><p>1、新建项目，绑定git。</p>
+<p>2、修改文件，使用IDEA操作git。</p>
+<ul>
+<li>添加到暂存区</li>
+<li>commit 提交</li>
+<li>push到远程仓库</li>
+</ul>
+<p>3、提交测试</p>
+<h2 id="九、说明：GIt分支"><a href="#九、说明：GIt分支" class="headerlink" title="九、说明：GIt分支"></a>九、说明：GIt分支</h2><p>分支在GIT中相对较难，分支就是科幻电影里面的平行宇宙，如果两个平行宇宙互不干扰，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，我们就需要处理一些问题了！</p>
+<p>![image-20230706154634230](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706154634230.png)</p>
+<p>![image-20230706154659704](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706154659704.png)</p>
+<p>git分支中常用指令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 列出所有本地分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列出所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，但依然停留在当前分支</span></span><br><span class="line">git branch [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个分支，并切换到该分支</span></span><br><span class="line">git checkout -b [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并指定分支到当前分支</span></span><br><span class="line">$ git merge [branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除分支</span></span><br><span class="line">$ git branch -d [branch-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除远程分支</span></span><br><span class="line">$ git push origin --delete [branch-name]</span><br><span class="line">$ git branch -dr [remote/branch]</span><br></pre></td></tr></table></figure>
+
+<p>IDEA中操作</p>
+<p>![image-20230706155024799](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\Git的使用\image-20230706155024799.png)</p>
+<p>如果同一个文件在合并分支时都被修改了则会引起冲突：解决的办法是我们可以修改冲突文件后重新提交！选择要保留他的代码还是你的代码！</p>
+<p>master主分支应该非常稳定，用来发布新版本，一般情况下不允许在上面工作，工作一般情况下在新建的dev分支上工作，工作完后，比如上要发布，或者说dev分支代码稳定后可以合并到主分支master上来。</p>
+<h2 id="十、Sourcetree-使用教程"><a href="#十、Sourcetree-使用教程" class="headerlink" title="十、Sourcetree 使用教程"></a>十、Sourcetree 使用教程</h2><p>Git 有很多图形界面工具 ( GUI )，比如 SourceTree、Github Desktop、TortoiseGit 等。</p>
+<p>SourceTree 是一个 Git 客户端管理工具，适用于 Windows 和 Mac 系统。</p>
+<p>SourceTree 简化了开发者与代码仓库之间的 Git 操作方式，我们可以通过界面菜单很方便的处理 Git 操作，而不需要通过命令。</p>
+<p>通过 SourceTree，我们可以管理所有的 Git 库，无论是远程还是本地的。SourceTree 支持 Bitbucket、GitHub 以及 Gitlab 等远程仓库。</p>
+<p>Sourcetree 官网 <a href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a> 直接点击下载按钮来下载。</p>
+<p>其他版本可以查看：<a href="https://www.sourcetreeapp.com/download-archives">https://www.sourcetreeapp.com/download-archives</a></p>
+<p>下载完成后，解压 ZIP 文件，双击应用程序文件（Windows 为 EXE 或 Mac 为 DMG）进行安装。</p>
+<p>安装过程中，我们只需要同意 Atlassian 客户协议并点击 Continue 即可。</p>
+<h2 id="十一、其他知识"><a href="#十一、其他知识" class="headerlink" title="十一、其他知识"></a>十一、其他知识</h2><p>Git学习：<a href="https://oschina.gitee.io/learn-git-branching/">Learn Git Branching (gitee.io)</a></p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>拉取项目，并上传</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone 项目地址</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git status  //查看状态</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git commit -m &#x27;第一次提交&#x27;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>工具学习</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客中next添加背景图片</title>
+    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
+<blockquote>
+<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
+</blockquote>
+<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
+
+<p>然后新建一个<code>styles.styl</code>文件</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
+
+<p>改完之后就会出现我上面的问题：</p>
+<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
+<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
+
+<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
+<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一样也行。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -105,45 +420,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客中next添加背景图片</title>
-    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
-<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
-<blockquote>
-<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
-</blockquote>
-<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
-
-<p>然后新建一个<code>styles.styl</code>文件</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
-
-<p>改完之后就会出现我上面的问题：</p>
-<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
-<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
-
-<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
-<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一样也行。</p>
-]]></content>
-      <categories>
-        <category>问题</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo新建页面</title>
     <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
     <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
@@ -179,6 +455,104 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo命令</title>
+    <url>/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h1><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean   //清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br></pre></td></tr></table></figure>
+
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate  //生成静态文件。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo deploy  //部署网站。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server   //启动服务器</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
+<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo version   //显示 Hexo 版本。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;   //列出网站资料。</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/2023/06/19/tags/</url>
+    <content><![CDATA[<hr>
+<p>本人大二，正在学习阶段。</p>
+<p>写博客的目的：</p>
+<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
+<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
+<p>​	3、分享给他人，希望对你们有所帮助。</p>
+<p>联系方式：</p>
+<p>邮箱：<a href="mailto:&#50;&#x37;&#x37;&#x33;&#x30;&#x37;&#51;&#53;&#52;&#x32;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#50;&#x37;&#x37;&#x33;&#x30;&#x37;&#51;&#53;&#52;&#x32;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<hr>
+]]></content>
+      <tags>
+        <tag>tags</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown语法学习</title>
+    <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
+<p>标题      #+空格+标题    一级标题，依次类推</p>
+</blockquote>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
+<p>字体    粗体：  <strong>字体</strong>      斜体 ：   <em>字体</em>    斜体加粗   前后个***</p>
+<p>删除线：两边加~~</p>
+</blockquote>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>引用：&gt;加</p>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
+<p>分割线：—    或***</p>
+</blockquote>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><blockquote>
+<p>图片：   ！[图片名]（路径）</p>
+</blockquote>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><blockquote>
+<p>超链接：[点击跳转]（地址）</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><blockquote>
+<p>1.空格     有序列表</p>
+<ul>
+<li>​       无序列表       -+空格</li>
+</ul>
+</blockquote>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>![image-20230707111754929](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\markdown语法学习\image-20230707111754929.png)</p>
+<p>启动源代码删除空格或直接右键插入</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>tab键上三个点</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">ctrl+shift+k  快捷键</span><br></pre></td></tr></table></figure>
+
+<h2 id="额外：Git-bash快捷键"><a href="#额外：Git-bash快捷键" class="headerlink" title="额外：Git bash快捷键"></a>额外：Git bash快捷键</h2><blockquote>
+<p>复制: ctrl + insert</p>
+</blockquote>
+<blockquote>
+<p>粘贴: shift + insert</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具学习</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>文本编辑</tag>
       </tags>
   </entry>
   <entry>
@@ -592,107 +966,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/2023/06/19/tags/</url>
-    <content><![CDATA[<hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#x37;&#x37;&#x33;&#48;&#55;&#51;&#53;&#x34;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;">&#50;&#x37;&#x37;&#x33;&#48;&#55;&#51;&#53;&#x34;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
-<hr>
-]]></content>
-      <tags>
-        <tag>tags</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文案</title>
-    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
-    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>
-
-<p><img src="https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5c"></p>
-<blockquote>
-<p><strong>哪怕是一只萤火虫喜欢上月亮，它也会想把自己所有的光都给它。跟喜欢的人多强大没关系，这是跳动不止的心意。——《春日宴》</strong></p>
-</blockquote>
-<blockquote>
-<p>别偷偷拆开那信件 落笔的人红了脸 ——《小尖尖》</p>
-</blockquote>
-<blockquote>
-<p>我偶尔爱你，爱你人前光鲜、璀璨，像是流星； 我永远爱你，爱你人后的脆弱、用心，自然而然。—— 《<a href="https://www.zhihu.com/search?q=%E4%BA%BA%E5%88%B0%E4%BA%86%E7%BE%8E%E6%9C%AF%E9%A6%86%E4%BC%9A%E5%A5%BD%E7%9C%8B%E8%B5%B7%E6%9D%A5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">人到了美术馆会好看起来</a>》 </p>
-</blockquote>
-<blockquote>
-<p>悲喜交替 无有终点——《<a href="https://www.zhihu.com/search?q=%E6%A9%98%E5%AD%90%E4%B8%8D%E6%98%AF%E5%94%AF%E4%B8%80%E7%9A%84%E6%B0%B4%E6%9E%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">橘子不是唯一的水果</a>》</p>
-</blockquote>
-<blockquote>
-<p> 他们站在噼啪作响的炉火旁，拥抱亲吻，断断续续地讲胡话，窃窃私语，笑着，吻了又吻。——《战争风云》</p>
-</blockquote>
-<blockquote>
-<p> 行路难，不在山，不在水，只在人情反覆间。——白居易《<a href="https://www.zhihu.com/search?q=%E5%A4%AA%E8%A1%8C%E8%B7%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">太行路</a>》</p>
-</blockquote>
-<blockquote>
-<p>我想我今生顶天立地，来生必仗剑天涯，看明月天山外，苍茫云海间，风景不殊，山河尤是。——《<a href="https://www.zhihu.com/search?q=%E5%8C%97%E4%BA%AC%E6%B3%95%E6%BA%90%E5%AF%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">北京法源寺</a>》**</p>
-</blockquote>
-<blockquote>
-<p>世界上有那么多的城镇，城镇中有那么多的酒馆，她却走进了我的。——《卡萨布兰卡》</p>
-</blockquote>
-<blockquote>
-<p> 我想这个世界里，虽然没有最美好的相遇，但一定有为了相遇或者重逢，所做的最美好的努力。——《<a href="https://www.zhihu.com/search?q=%E6%B5%81%E6%B5%AA%E7%9A%84%E6%98%9F%E6%98%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">流浪的星星</a>》</p>
-</blockquote>
-<blockquote>
-<p> 时时觉得自己仿佛孤单一人坐在深深的井底，谁也不会赶来相救。——村上春树《<a href="https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E8%81%8C%E4%B8%9A%E6%98%AF%E5%B0%8F%E8%AF%B4%E5%AE%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">我的职业是小说家</a>》</p>
-</blockquote>
-<blockquote>
-<p>因为我们活过的刹那 前后皆是黑夜。 ——<a href="https://www.zhihu.com/search?q=%E8%B4%B9%E5%B0%94%E5%8D%97%E5%A4%9A%E4%BD%A9%E7%B4%A2%E9%98%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">费尔南多佩索阿</a></p>
-</blockquote>
-<blockquote>
-<p>喜欢就是骨头里都在冒泡泡。——《尘埃落尽》</p>
-</blockquote>
-<blockquote>
-<p>那就折一张阔些的荷叶 包一片月光回去 回去夹在唐诗里 扁扁的 像压过的相思——余光中**</p>
-</blockquote>
-<blockquote>
-<p> 我衰老，也年轻。 我愚蠢，也睿智。 对他人我漠视，也不失关心。 母性与父性，共集一身。 我是孩子，也是大人。 我粗俗，也有文雅。——《<a href="https://www.zhihu.com/search?q=%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">布鲁克林有棵树</a>》</p>
-</blockquote>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2a7371032d2c622cab7dc691bd1a76ad?rik=QG9CWpF8vrxhmA&riu=http://pic.bizhi360.com/bbpic/15/3915.jpg&ehk=oirjjC5Q+hHF4N0w0Vxipk+tWp/jE/RCgb4mGvYw/tI=&risl=&pid=ImgRaw&r=0"></p>
-<blockquote>
-<p> 很多人不需要再见，因为只是路过而已，遗忘就是我们给彼此最好的纪念。  ——林徽因</p>
-</blockquote>
-<blockquote>
-<p>一个人，一本书，一杯茶，一帘梦。有时候，寂寞是这样叫人心动，也只有此刻，世事才会如此波澜不惊。</p>
-</blockquote>
-<blockquote>
-<p>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</p>
-</blockquote>
-<blockquote>
-<p>在广袤的空间和无限的时间中，能与你共享同一颗行星和同一段时光是我的荣幸。</p>
-</blockquote>
-<blockquote>
-<p>温柔要有，但不是妥协，我们要在安静中不慌不忙的坚强。</p>
-</blockquote>
-<blockquote>
-<p>时间或许像灯光，日照褪尽了才能看见，彼此靠近但是没有关联，一盏熄灭了，另一盏刚好亮了。</p>
-</blockquote>
-<blockquote>
-<p>努力让自己发光，对的人才会迎光而来。</p>
-</blockquote>
-<blockquote>
-<p>哪来的天生优秀，都是一步一个坑踩过来的。</p>
-</blockquote>
-<blockquote>
-<p>你未必万丈光芒，但你温暖有光。</p>
-</blockquote>
-<blockquote>
-<p>你的眸是深情的海，满山的花，堕落了我所有的温情。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>文案</category>
-      </categories>
-  </entry>
-  <entry>
     <title>古诗</title>
     <url>/2023/06/16/%E5%8F%A4%E8%AF%97/</url>
     <content><![CDATA[<h1 id="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"><a href="#经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰" class="headerlink" title="经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰"></a><center>经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰</center></h1><div align="center">
@@ -789,6 +1062,114 @@
       <tags>
         <tag>李白</tag>
         <tag>白玉京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文案</title>
+    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
+    <content><![CDATA[<center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>
+
+<p><img src="https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5c"></p>
+<blockquote>
+<p><strong>哪怕是一只萤火虫喜欢上月亮，它也会想把自己所有的光都给它。跟喜欢的人多强大没关系，这是跳动不止的心意。——《春日宴》</strong></p>
+</blockquote>
+<blockquote>
+<p>别偷偷拆开那信件 落笔的人红了脸 ——《小尖尖》</p>
+</blockquote>
+<blockquote>
+<p>我偶尔爱你，爱你人前光鲜、璀璨，像是流星； 我永远爱你，爱你人后的脆弱、用心，自然而然。—— 《<a href="https://www.zhihu.com/search?q=%E4%BA%BA%E5%88%B0%E4%BA%86%E7%BE%8E%E6%9C%AF%E9%A6%86%E4%BC%9A%E5%A5%BD%E7%9C%8B%E8%B5%B7%E6%9D%A5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">人到了美术馆会好看起来</a>》 </p>
+</blockquote>
+<blockquote>
+<p>悲喜交替 无有终点——《<a href="https://www.zhihu.com/search?q=%E6%A9%98%E5%AD%90%E4%B8%8D%E6%98%AF%E5%94%AF%E4%B8%80%E7%9A%84%E6%B0%B4%E6%9E%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">橘子不是唯一的水果</a>》</p>
+</blockquote>
+<blockquote>
+<p> 他们站在噼啪作响的炉火旁，拥抱亲吻，断断续续地讲胡话，窃窃私语，笑着，吻了又吻。——《战争风云》</p>
+</blockquote>
+<blockquote>
+<p> 行路难，不在山，不在水，只在人情反覆间。——白居易《<a href="https://www.zhihu.com/search?q=%E5%A4%AA%E8%A1%8C%E8%B7%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">太行路</a>》</p>
+</blockquote>
+<blockquote>
+<p>我想我今生顶天立地，来生必仗剑天涯，看明月天山外，苍茫云海间，风景不殊，山河尤是。——《<a href="https://www.zhihu.com/search?q=%E5%8C%97%E4%BA%AC%E6%B3%95%E6%BA%90%E5%AF%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">北京法源寺</a>》**</p>
+</blockquote>
+<blockquote>
+<p>世界上有那么多的城镇，城镇中有那么多的酒馆，她却走进了我的。——《卡萨布兰卡》</p>
+</blockquote>
+<blockquote>
+<p> 我想这个世界里，虽然没有最美好的相遇，但一定有为了相遇或者重逢，所做的最美好的努力。——《<a href="https://www.zhihu.com/search?q=%E6%B5%81%E6%B5%AA%E7%9A%84%E6%98%9F%E6%98%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">流浪的星星</a>》</p>
+</blockquote>
+<blockquote>
+<p> 时时觉得自己仿佛孤单一人坐在深深的井底，谁也不会赶来相救。——村上春树《<a href="https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E8%81%8C%E4%B8%9A%E6%98%AF%E5%B0%8F%E8%AF%B4%E5%AE%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">我的职业是小说家</a>》</p>
+</blockquote>
+<blockquote>
+<p>因为我们活过的刹那 前后皆是黑夜。 ——<a href="https://www.zhihu.com/search?q=%E8%B4%B9%E5%B0%94%E5%8D%97%E5%A4%9A%E4%BD%A9%E7%B4%A2%E9%98%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">费尔南多佩索阿</a></p>
+</blockquote>
+<blockquote>
+<p>喜欢就是骨头里都在冒泡泡。——《尘埃落尽》</p>
+</blockquote>
+<blockquote>
+<p>那就折一张阔些的荷叶 包一片月光回去 回去夹在唐诗里 扁扁的 像压过的相思——余光中**</p>
+</blockquote>
+<blockquote>
+<p> 我衰老，也年轻。 我愚蠢，也睿智。 对他人我漠视，也不失关心。 母性与父性，共集一身。 我是孩子，也是大人。 我粗俗，也有文雅。——《<a href="https://www.zhihu.com/search?q=%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">布鲁克林有棵树</a>》</p>
+</blockquote>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2a7371032d2c622cab7dc691bd1a76ad?rik=QG9CWpF8vrxhmA&riu=http://pic.bizhi360.com/bbpic/15/3915.jpg&ehk=oirjjC5Q+hHF4N0w0Vxipk+tWp/jE/RCgb4mGvYw/tI=&risl=&pid=ImgRaw&r=0"></p>
+<blockquote>
+<p> 很多人不需要再见，因为只是路过而已，遗忘就是我们给彼此最好的纪念。  ——林徽因</p>
+</blockquote>
+<blockquote>
+<p>一个人，一本书，一杯茶，一帘梦。有时候，寂寞是这样叫人心动，也只有此刻，世事才会如此波澜不惊。</p>
+</blockquote>
+<blockquote>
+<p>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</p>
+</blockquote>
+<blockquote>
+<p>在广袤的空间和无限的时间中，能与你共享同一颗行星和同一段时光是我的荣幸。</p>
+</blockquote>
+<blockquote>
+<p>温柔要有，但不是妥协，我们要在安静中不慌不忙的坚强。</p>
+</blockquote>
+<blockquote>
+<p>时间或许像灯光，日照褪尽了才能看见，彼此靠近但是没有关联，一盏熄灭了，另一盏刚好亮了。</p>
+</blockquote>
+<blockquote>
+<p>努力让自己发光，对的人才会迎光而来。</p>
+</blockquote>
+<blockquote>
+<p>哪来的天生优秀，都是一步一个坑踩过来的。</p>
+</blockquote>
+<blockquote>
+<p>你未必万丈光芒，但你温暖有光。</p>
+</blockquote>
+<blockquote>
+<p>你的眸是深情的海，满山的花，堕落了我所有的温情。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>文案</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>软件推荐</title>
+    <url>/2023/09/05/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<h1 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h1><h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a><strong>软件</strong></h2><h3 id="1、Obsidian（黑曜石）"><a href="#1、Obsidian（黑曜石）" class="headerlink" title="1、Obsidian（黑曜石）"></a>1、Obsidian（黑曜石）</h3><p>一款完美的科研笔记&#x2F;知识管理软件，基于<strong>Markdown文件</strong>的<strong>本地</strong>知识管理软件。</p>
+<p>[官网](<a href="https://obsidian.md/">Obsidian - Sharpen your thinking</a>)</p>
+<img src="/2023/09/05/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/Users\阿伟的Computer\AppData\Roaming\Typora\typora-user-images\image-20230709075748493.png" alt="image-20230709075748493" style="zoom:67%;">
+
+<p>[基本使用](<a href="https://zhuanlan.zhihu.com/p/398625612">Obsidian知识体系搭建：小白入门篇 - 知乎 (zhihu.com)</a>)</p>
+<p><strong>优点：</strong></p>
+<ul>
+<li>Obsidian是基于<strong>Markdown文件</strong>的<strong>本地</strong>知识管理软件，并且开发者承诺Obsidian对于个人使用者<strong>永久免费</strong>。</li>
+<li>Obsidian本地储存的特性不仅使得【<strong>信息安全</strong>】得到一定保障而且能够更好地和其他本地软件联动。</li>
+<li>（第二大脑）使用标签系统、Moc、双链，可以将非线性知识模块连接起来，形成属于自己的脑图。</li>
+<li>（双向链接）用<code>[[]]</code> 可以将关键词联系起来，只要点击关键词就可以跳转到与关键词相连的内容。</li>
+<li>基于Markdown文件的本地存储，可以很方便的转移自己的笔记，并且是本地存储的，所以安全性十足。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>推荐</category>
+      </categories>
+      <tags>
+        <tag>软件推荐</tag>
       </tags>
   </entry>
 </search>
