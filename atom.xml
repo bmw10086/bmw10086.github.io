@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MQ的博客</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-09-05T07:35:39.359Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>踏上星辰梦</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo命令</title>
+    <link href="http://example.com/2023/09/05/hexo%E5%91%BD%E4%BB%A4/"/>
+    <id>http://example.com/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</id>
+    <published>2023-09-05T07:34:45.000Z</published>
+    <updated>2023-09-05T07:35:39.359Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Hexo命令&quot;&gt;&lt;a href=&quot;#Hexo命令&quot; class=&quot;headerlink&quot; title=&quot;Hexo命令&quot;&gt;&lt;/a&gt;Hexo命令&lt;/h1&gt;&lt;h2 id=&quot;clean&quot;&gt;&lt;a href=&quot;#clean&quot; class=&quot;headerlink&quot; title=</summary>
+      
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="命令" scheme="http://example.com/tags/%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件推荐</title>
+    <link href="http://example.com/2023/09/05/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://example.com/2023/09/05/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
+    <published>2023-09-05T07:33:02.000Z</published>
+    <updated>2023-09-05T07:34:08.113Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;软件推荐&quot;&gt;&lt;a href=&quot;#软件推荐&quot; class=&quot;headerlink&quot; title=&quot;软件推荐&quot;&gt;&lt;/a&gt;软件推荐&lt;/h1&gt;&lt;h2 id=&quot;软件&quot;&gt;&lt;a href=&quot;#软件&quot; class=&quot;headerlink&quot; title=&quot;软件&quot;&gt;&lt;/a&gt;&lt;stro</summary>
+      
+    
+    
+    
+    <category term="推荐" scheme="http://example.com/categories/%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="软件推荐" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown语法学习</title>
+    <link href="http://example.com/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-09-05T07:26:02.000Z</published>
+    <updated>2023-09-05T07:31:32.594Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;markdown语法学习&quot;&gt;&lt;a href=&quot;#markdown语法学习&quot; class=&quot;headerlink&quot; title=&quot;markdown语法学习&quot;&gt;&lt;/a&gt;markdown语法学习&lt;/h1&gt;&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;</summary>
+      
+    
+    
+    
+    <category term="工具学习" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="markdown" scheme="http://example.com/tags/markdown/"/>
+    
+    <category term="文本编辑" scheme="http://example.com/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git的使用</title>
+    <link href="http://example.com/2023/09/05/Git%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://example.com/2023/09/05/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2023-09-05T07:19:35.000Z</published>
+    <updated>2023-09-05T07:23:22.766Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Git的使用&quot;&gt;&lt;a href=&quot;#Git的使用&quot; class=&quot;headerlink&quot; title=&quot;Git的使用&quot;&gt;&lt;/a&gt;Git的使用&lt;/h1&gt;&lt;p&gt;1、了解Git基本概念&lt;/p&gt;
+&lt;p&gt;2、概述Git工作流程&lt;/p&gt;
+&lt;p&gt;3、能够使用Git常用命令&lt;/p</summary>
+      
+    
+    
+    
+    <category term="工具学习" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Git" scheme="http://example.com/tags/Git/"/>
+    
+    <category term="Github" scheme="http://example.com/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo新建页面</title>
+    <link href="http://example.com/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/"/>
+    <id>http://example.com/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</id>
+    <published>2023-06-25T11:50:56.000Z</published>
+    <updated>2023-07-01T00:37:00.189Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;hexo新建&quot;&gt;&lt;a href=&quot;#hexo新建&quot; class=&quot;headerlink&quot; title=&quot;hexo新建&quot;&gt;&lt;/a&gt;hexo新建&lt;/h1&gt;&lt;h2 id=&quot;一、hexo新建标签、分类、归档页面，步骤都是类似的：&quot;&gt;&lt;a href=&quot;#一、hexo新建标签</summary>
+      
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用github+vercel无服务器搭建chatgpt3.5网站</title>
+    <link href="http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/"/>
+    <id>http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/</id>
+    <published>2023-06-24T12:07:05.000Z</published>
+    <updated>2023-07-01T00:39:23.937Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用Github-Vercel无服务器搭建ChatGPT-3-5网站&quot;&gt;&lt;a href=&quot;#使用Github-Vercel无服务器搭建ChatGPT-3-5网站&quot; class=&quot;headerlink&quot; title=&quot;使用Github+Vercel无服务器搭建Cha</summary>
+      
+    
+    
+    
+    <category term="搭建教程" scheme="http://example.com/categories/%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="GitHub" scheme="http://example.com/tags/GitHub/"/>
+    
+    <category term="chatgpt" scheme="http://example.com/tags/chatgpt/"/>
+    
+    <category term="vercel" scheme="http://example.com/tags/vercel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo博客中next添加背景图片</title>
+    <link href="http://example.com/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/"/>
+    <id>http://example.com/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</id>
+    <published>2023-06-24T11:59:17.000Z</published>
+    <updated>2023-07-24T02:32:52.942Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;hexo博客中next添加背景图片&quot;&gt;&lt;a href=&quot;#hexo博客中next添加背景图片&quot; class=&quot;headerlink&quot; title=&quot;hexo博客中next添加背景图片&quot;&gt;&lt;/a&gt;hexo博客中next添加背景图片&lt;/h1&gt;&lt;h3 id=&quot;1、-设置</summary>
+      
+    
+    
+    
+    <category term="hexo" scheme="http://example.com/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="next" scheme="http://example.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python学习</title>
+    <link href="http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2023/06/24/python%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-06-24T11:52:46.000Z</published>
+    <updated>2023-07-01T00:39:55.690Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、编程语言的执行方式&quot;&gt;&lt;a href=&quot;#一、编程语言的执行方式&quot; class=&quot;headerlink&quot; title=&quot;一、编程语言的执行方式&quot;&gt;&lt;/a&gt;一、编程语言的执行方式&lt;/h1&gt;&lt;p&gt;编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念</summary>
+      
+    
+    
+    
+    <category term="编程语言学习" scheme="http://example.com/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2023/06/24/hello-world/"/>
+    <id>http://example.com/2023/06/24/hello-world/</id>
+    <published>2023-06-24T07:24:03.904Z</published>
+    <updated>2023-07-01T00:45:33.762Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于</title>
+    <link href="http://example.com/2023/06/19/tags/"/>
+    <id>http://example.com/2023/06/19/tags/</id>
+    <published>2023-06-19T12:44:19.000Z</published>
+    <updated>2023-07-01T00:59:51.253Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;本人大二，正在学习阶段。&lt;/p&gt;
+&lt;p&gt;写博客的目的：&lt;/p&gt;
+&lt;p&gt;​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。&lt;/p&gt;
+&lt;p&gt;​	2、记录学习中遇到的问题，并解决总结解决问题的经验。&lt;/p&gt;
+&lt;p&gt;​	3、分享给他人，希望对你们有所帮助。&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="tags" scheme="http://example.com/tags/tags/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>古诗</title>
+    <link href="http://example.com/2023/06/16/%E5%8F%A4%E8%AF%97/"/>
+    <id>http://example.com/2023/06/16/%E5%8F%A4%E8%AF%97/</id>
+    <published>2023-06-16T08:56:44.000Z</published>
+    <updated>2023-07-01T00:46:46.205Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰&quot;&gt;&lt;a href=&quot;#经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰&quot; class=&quot;headerlink&quot; title=&quot;经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰&quot;&gt;&lt;/a&gt;&lt;center&gt;经乱离后天恩流夜郎忆旧游</summary>
+      
+    
+    
+    
+    <category term="古文鉴赏" scheme="http://example.com/categories/%E5%8F%A4%E6%96%87%E9%89%B4%E8%B5%8F/"/>
+    
+    
+    <category term="李白" scheme="http://example.com/tags/%E6%9D%8E%E7%99%BD/"/>
+    
+    <category term="白玉京" scheme="http://example.com/tags/%E7%99%BD%E7%8E%89%E4%BA%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PyQt5学习</title>
+    <link href="http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-06-14T09:47:01.000Z</published>
+    <updated>2023-07-01T00:38:24.004Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;PyQt5学习&quot;&gt;&lt;a href=&quot;#PyQt5学习&quot; class=&quot;headerlink&quot; title=&quot;PyQt5学习&quot;&gt;&lt;/a&gt;PyQt5学习&lt;/h1&gt;&lt;h2 id=&quot;一、PyQt5安装&quot;&gt;&lt;a href=&quot;#一、PyQt5安装&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="工具学习" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="PyQt5" scheme="http://example.com/tags/PyQt5/"/>
+    
+    <category term="Qt Designer" scheme="http://example.com/tags/Qt-Designer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文案</title>
+    <link href="http://example.com/2020/05/05/%E6%96%87%E6%A1%88/"/>
+    <id>http://example.com/2020/05/05/%E6%96%87%E6%A1%88/</id>
+    <published>2020-05-05T13:39:53.000Z</published>
+    <updated>2023-07-01T00:57:28.599Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;center&gt;我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。&lt;/center&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5</summary>
+      
+    
+    
+    
+    <category term="文案" scheme="http://example.com/categories/%E6%96%87%E6%A1%88/"/>
+    
+    
+  </entry>
+  
+</feed>
