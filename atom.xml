@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-30T08:30:51.502Z</updated>
+  <updated>2023-10-30T09:05:31.668Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,76 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA问题</title>
+    <link href="http://example.com/2023/10/30/IDEA%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2023/10/30/IDEA%E9%97%AE%E9%A2%98/</id>
+    <published>2023-10-30T09:03:34.000Z</published>
+    <updated>2023-10-30T09:05:31.668Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、IDEA抽取方法快捷键打不开&quot;&gt;&lt;a href=&quot;#一、IDEA抽取方法快捷键打不开&quot; class=&quot;headerlink&quot; title=&quot;一、IDEA抽取方法快捷键打不开&quot;&gt;&lt;/a&gt;一、IDEA抽取方法快捷键打不开&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;C</summary>
+      
+    
+    
+    
+    
+    <category term="IDEA" scheme="http://example.com/tags/IDEA/"/>
+    
+    <category term="Question" scheme="http://example.com/tags/Question/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>程序的安装</title>
+    <link href="http://example.com/2023/10/30/%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>http://example.com/2023/10/30/%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AE%89%E8%A3%85/</id>
+    <published>2023-10-30T08:56:35.000Z</published>
+    <updated>2023-10-30T08:59:40.408Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;程序的安装&quot;&gt;&lt;a href=&quot;#程序的安装&quot; class=&quot;headerlink&quot; title=&quot;程序的安装&quot;&gt;&lt;/a&gt;程序的安装&lt;/h1&gt;&lt;h3 id=&quot;一、安装python开发环境&quot;&gt;&lt;a href=&quot;#一、安装python开发环境&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    
+    <category term="安装" scheme="http://example.com/tags/%E5%AE%89%E8%A3%85/"/>
+    
+    <category term="开发环境" scheme="http://example.com/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>修改任务栏中工具颜色</title>
+    <link href="http://example.com/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/"/>
+    <id>http://example.com/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</id>
+    <published>2023-10-30T08:51:10.000Z</published>
+    <updated>2023-10-30T08:55:36.597Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;修改任务栏中工具的颜色&quot;&gt;&lt;a href=&quot;#修改任务栏中工具的颜色&quot; class=&quot;headerlink&quot; title=&quot;修改任务栏中工具的颜色&quot;&gt;&lt;/a&gt;修改任务栏中工具的颜色&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开注册表编辑器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p</summary>
+      
+    
+    
+    
+    
+    <category term="工具" scheme="http://example.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="Windows" scheme="http://example.com/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>python基础（一）</title>
@@ -57,7 +127,7 @@
     <link href="http://example.com/2023/09/05/hexo%E5%91%BD%E4%BB%A4/"/>
     <id>http://example.com/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</id>
     <published>2023-09-05T07:34:45.000Z</published>
-    <updated>2023-09-05T07:35:39.359Z</updated>
+    <updated>2023-10-30T08:44:48.056Z</updated>
     
     
       
@@ -81,7 +151,7 @@
     <link href="http://example.com/2023/09/05/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     <id>http://example.com/2023/09/05/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</id>
     <published>2023-09-05T07:33:02.000Z</published>
-    <updated>2023-09-05T07:34:08.113Z</updated>
+    <updated>2023-10-30T08:41:22.536Z</updated>
     
     
       
@@ -153,7 +223,7 @@
     <link href="http://example.com/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/"/>
     <id>http://example.com/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</id>
     <published>2023-06-25T11:50:56.000Z</published>
-    <updated>2023-07-01T00:37:00.189Z</updated>
+    <updated>2023-10-30T08:39:09.348Z</updated>
     
     
       
@@ -175,7 +245,7 @@
     <link href="http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/"/>
     <id>http://example.com/2023/06/24/3-5%E7%BD%91%E7%AB%99/</id>
     <published>2023-06-24T12:07:05.000Z</published>
-    <updated>2023-07-01T00:39:23.937Z</updated>
+    <updated>2023-10-30T08:46:03.920Z</updated>
     
     
       
