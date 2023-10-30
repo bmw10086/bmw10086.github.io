@@ -478,44 +478,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo新建页面</title>
-    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
-<li><p>新建页面</p>
-</li>
-<li><p>设置页面的类型</p>
-</li>
-<li><p>打开主题中的相关设置</p>
-</li>
-</ol>
-<p>几个主要的新建页面：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>比如新建标签页：</p>
-<ol>
-<li>用命令行新建一个页面：（页面名称可以任意）</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
-<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown语法学习</title>
     <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
@@ -562,6 +524,253 @@
       <tags>
         <tag>markdown</tag>
         <tag>文本编辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo新建页面</title>
+    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
+<li><p>新建页面</p>
+</li>
+<li><p>设置页面的类型</p>
+</li>
+<li><p>打开主题中的相关设置</p>
+</li>
+</ol>
+<p>几个主要的新建页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>比如新建标签页：</p>
+<ol>
+<li>用命令行新建一个页面：（页面名称可以任意）</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
+<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python基础（一）</title>
+    <url>/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="一、注释"><a href="#一、注释" class="headerlink" title="一、注释"></a>一、注释</h2><p>作用：使用自己熟悉的语言，在程序中对某些代码进行标注说明，增强程序的可读性。</p>
+<p><strong>1.单行注释</strong></p>
+<blockquote>
+<p>#（可空格）注释内容  <strong>注：为了代码的可读性建议#后加个空格</strong></p>
+</blockquote>
+<p><strong>在代码后面增加单行注释</strong>   <strong>在代码与注释之间至少有两个空格</strong></p>
+<p><strong>2.多行注释</strong></p>
+<p><strong>‘’‘’‘’</strong></p>
+<p><strong>‘’‘’‘’</strong></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918212717905.png" alt="image-20230918212717905"></p>
+<p>3、中文编码声明注释</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 如果要指定字符编码类型为中文编码，需要在文件开头加上中文声明注释，不至于出现代码错误</span></span><br><span class="line"><span class="comment"># coding = 编码</span></span><br><span class="line"><span class="comment"># coding = utf-8</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="二、保留字（关键字）与标识符"><a href="#二、保留字（关键字）与标识符" class="headerlink" title="二、保留字（关键字）与标识符"></a>二、保留字（关键字）与标识符</h2><blockquote>
+<p>保留字是python语言中已经被赋予特定意义的一些单词，所有保留字都是区分字母大小写的</p>
+</blockquote>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171312652.png" alt="image-20231030171312652"></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> keyword</span><br><span class="line">keyword.kwlist</span><br></pre></td></tr></table></figure>
+
+<p>可以通过<strong>命令</strong>查看关键字：  import关键字可以导入一个工具包</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171354823.png" alt="image-20231030171354823"></p>
+<p>标识符可以理解一个名字，它主要用来标识变量、函数、类、模块和其他对象名称<strong>（起名字要见名知义）</strong></p>
+<ul>
+<li>由字母、下划线和数字组成，首字母不能是数字</li>
+<li>不能使用python保留字</li>
+<li>区分大小写</li>
+</ul>
+<p>变量的命名规范：</p>
+<ul>
+<li>见名知意</li>
+<li>下划线命名法</li>
+<li>英文字母全小写</li>
+</ul>
+<h2 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h2><p><strong>程序就是用来处理数据的，而变量就是用来存储数据的</strong></p>
+<blockquote>
+<p>变量名：通常用字母、数字、和下划线构成，不能以数字开头，并且区分打大小写</p>
+<p>python3支持中文，也可以做为变量名</p>
+<p>变量的格式：变量名 &#x3D; 变量值</p>
+</blockquote>
+<h3 id="1、变量的定义与命名"><a href="#1、变量的定义与命名" class="headerlink" title="1、变量的定义与命名"></a>1、变量的定义与命名</h3><ul>
+<li>在python中每个变量在使用前必须赋值，变量赋值以后该变量才会被创建</li>
+<li>等号（&#x3D;）用来给变量赋值</li>
+</ul>
+<p><strong>变量的命名规则</strong></p>
+<p>命名规则可以被视为一种惯例，并无绝对与强制，目的是为了增加代码的识别和可读性。</p>
+<ol>
+<li><p>在定义变量时，为了保证代码格式，“**&#x3D;**”的左右应该各保留一个空格</p>
+</li>
+<li><p>在Python中，如果变量名需要由<strong>二个或多个单词组成</strong>时，可以按照以下方式命名</p>
+</li>
+</ol>
+<ul>
+<li>每个单词都使用<strong>小写字母</strong>，</li>
+<li>单词与单词之间使用**_**<strong>下划线连接</strong></li>
+<li>例如：first_name、last_name、qq_number、qq_password</li>
+</ul>
+<hr>
+<p><strong>驼峰命名法</strong></p>
+<p>当变量名是由二个或多个单词组成时，还可以利用驼峰命名法来命名</p>
+<p><strong>小驼峰式命名法</strong></p>
+<p>   第一个单词以小写字母开始，后续单词的首字母大写</p>
+<p>   例如：firstName、lastlame</p>
+<p><strong>大驼峰式命名法</strong></p>
+<p>  每一个单词的首字母都采用大写字母</p>
+<p>   例如：FirstName、LastName、</p>
+<hr>
+<p>变量之间的交换可以用这个：</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230919194043392.png" alt="image-20230919194043392"></p>
+<h3 id="2、变量的类型"><a href="#2、变量的类型" class="headerlink" title="2、变量的类型"></a>2、变量的类型</h3><p>四种：</p>
+<ul>
+<li>str        字符串</li>
+<li>bool     布尔（真假）</li>
+<li>int    整型</li>
+<li>float   浮点数（小数）</li>
+</ul>
+<p><strong>注：python</strong>中定义变量时不需指定类型，python可以根据&#x3D;等号右侧的值，自动推导出变量中存储数据类型。（其他语言需要）</p>
+<blockquote>
+<p>使用内置函数type()可以返回变量类型</p>
+</blockquote>
+<h3 id="3、变量的格式化输出"><a href="#3、变量的格式化输出" class="headerlink" title="3、变量的格式化输出"></a>3、变量的格式化输出</h3><p>如果希望输出文字信息同时，一起输出数据，就需要使用到格式化操作符。</p>
+<p>%被称为格式化操作符，专门用于处理字符串的格式。</p>
+<ul>
+<li>包含%的字符串，被称为格式化字符串</li>
+<li>%和不同的字符连用，不同类型的数据需要使用不同的格式化字符</li>
+</ul>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171513124.png" alt="image-20231030171513124"></p>
+<p>语法格式：</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918213946647.png" alt="image-20230918213946647"></p>
+<h2 id="四、基本数据类型"><a href="#四、基本数据类型" class="headerlink" title="四、基本数据类型"></a>四、基本数据类型</h2><p>数据类型可以分为<strong>数字型</strong>和<strong>非数字型</strong></p>
+<h3 id="1、数字类型"><a href="#1、数字类型" class="headerlink" title="1、数字类型"></a>1、数字类型</h3><ul>
+<li><p>整数</p>
+</li>
+<li><p>浮点数</p>
+<blockquote>
+<p>精确计算浮点数：decimal模块</p>
+</blockquote>
+</li>
+<li><p>复数</p>
+<blockquote>
+<p>由实部和虚部组成，并且使用J和j表示虚部</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2、字符串类型"><a href="#2、字符串类型" class="headerlink" title="2、字符串类型"></a>2、字符串类型</h3><h3 id="3、布尔类型"><a href="#3、布尔类型" class="headerlink" title="3、布尔类型"></a>3、布尔类型</h3><p>布尔类型主要来表示真或假的值，在python中True   和   False被解释为布尔值</p>
+<p>在python中所有对象都可以进行真值测试，只有以下几种得到的值为假：</p>
+<ul>
+<li>False或None</li>
+<li>数值中的零。包括0、0.0、虚数0</li>
+<li>空序列，包括字符串、空元组、空列表、空字典</li>
+<li>自定义对象实例，对象的____bool____方法返回False或者_len_方法返回0</li>
+</ul>
+<p>变量是bool型，在计算时</p>
+<p>True对应的数字是1</p>
+<p>False对应的数字是0</p>
+<blockquote>
+<p>使用bool（）内置函数直接给出True和False</p>
+<p>使用type () 查看数据的类型，并且返回结果</p>
+<p>变量无类型，但是它存储的数据有</p>
+</blockquote>
+<h3 id="4、数据类型的转换"><a href="#4、数据类型的转换" class="headerlink" title="4、数据类型的转换"></a>4、数据类型的转换</h3><table>
+<thead>
+<tr>
+<th>语句（函数）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int(x)</td>
+<td>将x转换为整数</td>
+</tr>
+<tr>
+<td>float(x)</td>
+<td>将x转换为浮点数</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>将对象x转换为字符串</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>任何类型都可转换为字符串</li>
+<li>字符串不可以随意转换为数字，必须为数字</li>
+<li>浮点数转换为整数会丢失精度</li>
+</ul>
+<h2 id="五、运算符"><a href="#五、运算符" class="headerlink" title="五、运算符"></a>五、运算符</h2><h3 id="1、算数运算符"><a href="#1、算数运算符" class="headerlink" title="1、算数运算符"></a>1、算数运算符</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171619978.png" alt="image-20231030171619978"></p>
+<p>如：”hello” * 100</p>
+<p><strong>优先级：</strong></p>
+<p>先乘除后加减</p>
+<p>同级运算符是从左至右计算</p>
+<p>可以使用（）调整计算的优先级</p>
+<h3 id="2、赋值运算符"><a href="#2、赋值运算符" class="headerlink" title="2、赋值运算符"></a>2、赋值运算符</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171644917.png" alt="image-20231030171644917"></p>
+<p>在python中，使用 &#x3D; 可以给变量赋值</p>
+<p>注：赋值运算符中间不能使用空格</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918215008367.png" alt="image-20230918215008367"></p>
+<h3 id="3、比较（关系）运算符"><a href="#3、比较（关系）运算符" class="headerlink" title="3、比较（关系）运算符"></a>3、比较（关系）运算符</h3><blockquote>
+<p>通过比较的运算符得到的都是布尔类型 </p>
+</blockquote>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918213052509.png" alt="image-20230918213052509"></p>
+<h3 id="4、逻辑运算符"><a href="#4、逻辑运算符" class="headerlink" title="4、逻辑运算符"></a>4、逻辑运算符</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171724480.png" alt="image-20231030171724480">&gt;</p>
+<p><strong>一、and</strong></p>
+<p><strong>语法：</strong></p>
+<p>条件一 and 条件二</p>
+<ul>
+<li>与 并且</li>
+<li>两个条件同时满足，返回True</li>
+<li>只要有一个不满足，就返回Flase</li>
+</ul>
+<p><strong>二、or</strong></p>
+<p><strong>语法：</strong></p>
+<p>条件一  or 条件二</p>
+<ul>
+<li>或 或者</li>
+<li>两个条件只要有一个满足，返回True</li>
+<li>两个条件都不满足，返回Flase</li>
+</ul>
+<p><strong>三、not</strong></p>
+<p><strong>语法：</strong></p>
+<p>Not 条件</p>
+<ul>
+<li>非  不是</li>
+</ul>
+<h3 id="5、运算符优先级"><a href="#5、运算符优先级" class="headerlink" title="5、运算符优先级"></a>5、运算符优先级</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171747555.png" alt="image-20231030171747555"></p>
+<h2 id="六、数据的输入和输出"><a href="#六、数据的输入和输出" class="headerlink" title="六、数据的输入和输出"></a>六、数据的输入和输出</h2><ol>
+<li>使用print（）函数输出</li>
+<li>使用input（）函数输入</li>
+</ol>
+<blockquote>
+<p>注意：无论键盘输入什么类型的数据，获取的数据永远都是字符串类型</p>
+</blockquote>
+<h2 id="七、随机数的处理"><a href="#七、随机数的处理" class="headerlink" title="七、随机数的处理"></a>七、随机数的处理</h2><p>在Python中，要使用随机数，首先需要导入随机数的模块–”工具包”</p>
+<p><strong>Import   random</strong></p>
+<p><strong>导入模块</strong>后，可以直接在<strong>模块名称</strong>后面敲一个。然后按Tab键，会提示该模块中包含的所有函数</p>
+<p><strong>Random.r andint(a,b),返回[a,b]之间的整数，包含a和b</strong></p>
+<p><strong>前面一个整数必须小于后面一个整数</strong></p>
+]]></content>
+      <categories>
+        <category>编程语言学习</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -980,212 +1189,20 @@
       </tags>
   </entry>
   <entry>
-    <title>python基础（一）</title>
-    <url>/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="一、注释"><a href="#一、注释" class="headerlink" title="一、注释"></a>一、注释</h2><p>作用：使用自己熟悉的语言，在程序中对某些代码进行标注说明，增强程序的可读性。</p>
-<p><strong>1.单行注释</strong></p>
-<blockquote>
-<p>#（可空格）注释内容  <strong>注：为了代码的可读性建议#后加个空格</strong></p>
-</blockquote>
-<p><strong>在代码后面增加单行注释</strong>   <strong>在代码与注释之间至少有两个空格</strong></p>
-<p><strong>2.多行注释</strong></p>
-<p><strong>‘’‘’‘’</strong></p>
-<p><strong>‘’‘’‘’</strong></p>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918212717905.png" alt="image-20230918212717905"></p>
-<p>3、中文编码声明注释</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 如果要指定字符编码类型为中文编码，需要在文件开头加上中文声明注释，不至于出现代码错误</span></span><br><span class="line"><span class="comment"># coding = 编码</span></span><br><span class="line"><span class="comment"># coding = utf-8</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="二、保留字（关键字）与标识符"><a href="#二、保留字（关键字）与标识符" class="headerlink" title="二、保留字（关键字）与标识符"></a>二、保留字（关键字）与标识符</h2><blockquote>
-<p>保留字是python语言中已经被赋予特定意义的一些单词，所有保留字都是区分字母大小写的</p>
-</blockquote>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171312652.png" alt="image-20231030171312652"></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> keyword</span><br><span class="line">keyword.kwlist</span><br></pre></td></tr></table></figure>
-
-<p>可以通过<strong>命令</strong>查看关键字：  import关键字可以导入一个工具包</p>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171354823.png" alt="image-20231030171354823"></p>
-<p>标识符可以理解一个名字，它主要用来标识变量、函数、类、模块和其他对象名称<strong>（起名字要见名知义）</strong></p>
-<ul>
-<li>由字母、下划线和数字组成，首字母不能是数字</li>
-<li>不能使用python保留字</li>
-<li>区分大小写</li>
-</ul>
-<p>变量的命名规范：</p>
-<ul>
-<li>见名知意</li>
-<li>下划线命名法</li>
-<li>英文字母全小写</li>
-</ul>
-<h2 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h2><p><strong>程序就是用来处理数据的，而变量就是用来存储数据的</strong></p>
-<blockquote>
-<p>变量名：通常用字母、数字、和下划线构成，不能以数字开头，并且区分打大小写</p>
-<p>python3支持中文，也可以做为变量名</p>
-<p>变量的格式：变量名 &#x3D; 变量值</p>
-</blockquote>
-<h3 id="1、变量的定义与命名"><a href="#1、变量的定义与命名" class="headerlink" title="1、变量的定义与命名"></a>1、变量的定义与命名</h3><ul>
-<li>在python中每个变量在使用前必须赋值，变量赋值以后该变量才会被创建</li>
-<li>等号（&#x3D;）用来给变量赋值</li>
-</ul>
-<p><strong>变量的命名规则</strong></p>
-<p>命名规则可以被视为一种惯例，并无绝对与强制，目的是为了增加代码的识别和可读性。</p>
-<ol>
-<li><p>在定义变量时，为了保证代码格式，“**&#x3D;**”的左右应该各保留一个空格</p>
-</li>
-<li><p>在Python中，如果变量名需要由<strong>二个或多个单词组成</strong>时，可以按照以下方式命名</p>
-</li>
-</ol>
-<ul>
-<li>每个单词都使用<strong>小写字母</strong>，</li>
-<li>单词与单词之间使用**_**<strong>下划线连接</strong></li>
-<li>例如：first_name、last_name、qq_number、qq_password</li>
-</ul>
+    <title>关于</title>
+    <url>/2023/06/19/tags/</url>
+    <content><![CDATA[<hr>
+<p>本人大二，正在学习阶段。</p>
+<p>写博客的目的：</p>
+<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
+<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
+<p>​	3、分享给他人，希望对你们有所帮助。</p>
+<p>联系方式：</p>
+<p>邮箱：<a href="mailto:&#x32;&#x37;&#55;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#x32;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;">&#x32;&#x37;&#55;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#x32;&#64;&#113;&#113;&#46;&#99;&#x6f;&#x6d;</a></p>
 <hr>
-<p><strong>驼峰命名法</strong></p>
-<p>当变量名是由二个或多个单词组成时，还可以利用驼峰命名法来命名</p>
-<p><strong>小驼峰式命名法</strong></p>
-<p>   第一个单词以小写字母开始，后续单词的首字母大写</p>
-<p>   例如：firstName、lastlame</p>
-<p><strong>大驼峰式命名法</strong></p>
-<p>  每一个单词的首字母都采用大写字母</p>
-<p>   例如：FirstName、LastName、</p>
-<hr>
-<p>变量之间的交换可以用这个：</p>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230919194043392.png" alt="image-20230919194043392"></p>
-<h3 id="2、变量的类型"><a href="#2、变量的类型" class="headerlink" title="2、变量的类型"></a>2、变量的类型</h3><p>四种：</p>
-<ul>
-<li>str        字符串</li>
-<li>bool     布尔（真假）</li>
-<li>int    整型</li>
-<li>float   浮点数（小数）</li>
-</ul>
-<p><strong>注：python</strong>中定义变量时不需指定类型，python可以根据&#x3D;等号右侧的值，自动推导出变量中存储数据类型。（其他语言需要）</p>
-<blockquote>
-<p>使用内置函数type()可以返回变量类型</p>
-</blockquote>
-<h3 id="3、变量的格式化输出"><a href="#3、变量的格式化输出" class="headerlink" title="3、变量的格式化输出"></a>3、变量的格式化输出</h3><p>如果希望输出文字信息同时，一起输出数据，就需要使用到格式化操作符。</p>
-<p>%被称为格式化操作符，专门用于处理字符串的格式。</p>
-<ul>
-<li>包含%的字符串，被称为格式化字符串</li>
-<li>%和不同的字符连用，不同类型的数据需要使用不同的格式化字符</li>
-</ul>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171513124.png" alt="image-20231030171513124"></p>
-<p>语法格式：</p>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918213946647.png" alt="image-20230918213946647"></p>
-<h2 id="四、基本数据类型"><a href="#四、基本数据类型" class="headerlink" title="四、基本数据类型"></a>四、基本数据类型</h2><p>数据类型可以分为<strong>数字型</strong>和<strong>非数字型</strong></p>
-<h3 id="1、数字类型"><a href="#1、数字类型" class="headerlink" title="1、数字类型"></a>1、数字类型</h3><ul>
-<li><p>整数</p>
-</li>
-<li><p>浮点数</p>
-<blockquote>
-<p>精确计算浮点数：decimal模块</p>
-</blockquote>
-</li>
-<li><p>复数</p>
-<blockquote>
-<p>由实部和虚部组成，并且使用J和j表示虚部</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="2、字符串类型"><a href="#2、字符串类型" class="headerlink" title="2、字符串类型"></a>2、字符串类型</h3><h3 id="3、布尔类型"><a href="#3、布尔类型" class="headerlink" title="3、布尔类型"></a>3、布尔类型</h3><p>布尔类型主要来表示真或假的值，在python中True   和   False被解释为布尔值</p>
-<p>在python中所有对象都可以进行真值测试，只有以下几种得到的值为假：</p>
-<ul>
-<li>False或None</li>
-<li>数值中的零。包括0、0.0、虚数0</li>
-<li>空序列，包括字符串、空元组、空列表、空字典</li>
-<li>自定义对象实例，对象的____bool____方法返回False或者_len_方法返回0</li>
-</ul>
-<p>变量是bool型，在计算时</p>
-<p>True对应的数字是1</p>
-<p>False对应的数字是0</p>
-<blockquote>
-<p>使用bool（）内置函数直接给出True和False</p>
-<p>使用type () 查看数据的类型，并且返回结果</p>
-<p>变量无类型，但是它存储的数据有</p>
-</blockquote>
-<h3 id="4、数据类型的转换"><a href="#4、数据类型的转换" class="headerlink" title="4、数据类型的转换"></a>4、数据类型的转换</h3><table>
-<thead>
-<tr>
-<th>语句（函数）</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int(x)</td>
-<td>将x转换为整数</td>
-</tr>
-<tr>
-<td>float(x)</td>
-<td>将x转换为浮点数</td>
-</tr>
-<tr>
-<td>str(x)</td>
-<td>将对象x转换为字符串</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<ul>
-<li>任何类型都可转换为字符串</li>
-<li>字符串不可以随意转换为数字，必须为数字</li>
-<li>浮点数转换为整数会丢失精度</li>
-</ul>
-<h2 id="五、运算符"><a href="#五、运算符" class="headerlink" title="五、运算符"></a>五、运算符</h2><h3 id="1、算数运算符"><a href="#1、算数运算符" class="headerlink" title="1、算数运算符"></a>1、算数运算符</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171619978.png" alt="image-20231030171619978"></p>
-<p>如：”hello” * 100</p>
-<p><strong>优先级：</strong></p>
-<p>先乘除后加减</p>
-<p>同级运算符是从左至右计算</p>
-<p>可以使用（）调整计算的优先级</p>
-<h3 id="2、赋值运算符"><a href="#2、赋值运算符" class="headerlink" title="2、赋值运算符"></a>2、赋值运算符</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171644917.png" alt="image-20231030171644917"></p>
-<p>在python中，使用 &#x3D; 可以给变量赋值</p>
-<p>注：赋值运算符中间不能使用空格</p>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918215008367.png" alt="image-20230918215008367"></p>
-<h3 id="3、比较（关系）运算符"><a href="#3、比较（关系）运算符" class="headerlink" title="3、比较（关系）运算符"></a>3、比较（关系）运算符</h3><blockquote>
-<p>通过比较的运算符得到的都是布尔类型 </p>
-</blockquote>
-<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20230918213052509.png" alt="image-20230918213052509"></p>
-<h3 id="4、逻辑运算符"><a href="#4、逻辑运算符" class="headerlink" title="4、逻辑运算符"></a>4、逻辑运算符</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171724480.png" alt="image-20231030171724480">&gt;</p>
-<p><strong>一、and</strong></p>
-<p><strong>语法：</strong></p>
-<p>条件一 and 条件二</p>
-<ul>
-<li>与 并且</li>
-<li>两个条件同时满足，返回True</li>
-<li>只要有一个不满足，就返回Flase</li>
-</ul>
-<p><strong>二、or</strong></p>
-<p><strong>语法：</strong></p>
-<p>条件一  or 条件二</p>
-<ul>
-<li>或 或者</li>
-<li>两个条件只要有一个满足，返回True</li>
-<li>两个条件都不满足，返回Flase</li>
-</ul>
-<p><strong>三、not</strong></p>
-<p><strong>语法：</strong></p>
-<p>Not 条件</p>
-<ul>
-<li>非  不是</li>
-</ul>
-<h3 id="5、运算符优先级"><a href="#5、运算符优先级" class="headerlink" title="5、运算符优先级"></a>5、运算符优先级</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89/.%5Cpython%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%5Cimage-20231030171747555.png" alt="image-20231030171747555"></p>
-<h2 id="六、数据的输入和输出"><a href="#六、数据的输入和输出" class="headerlink" title="六、数据的输入和输出"></a>六、数据的输入和输出</h2><ol>
-<li>使用print（）函数输出</li>
-<li>使用input（）函数输入</li>
-</ol>
-<blockquote>
-<p>注意：无论键盘输入什么类型的数据，获取的数据永远都是字符串类型</p>
-</blockquote>
-<h2 id="七、随机数的处理"><a href="#七、随机数的处理" class="headerlink" title="七、随机数的处理"></a>七、随机数的处理</h2><p>在Python中，要使用随机数，首先需要导入随机数的模块–”工具包”</p>
-<p><strong>Import   random</strong></p>
-<p><strong>导入模块</strong>后，可以直接在<strong>模块名称</strong>后面敲一个。然后按Tab键，会提示该模块中包含的所有函数</p>
-<p><strong>Random.r andint(a,b),返回[a,b]之间的整数，包含a和b</strong></p>
-<p><strong>前面一个整数必须小于后面一个整数</strong></p>
 ]]></content>
-      <categories>
-        <category>编程语言学习</category>
-      </categories>
       <tags>
-        <tag>python</tag>
+        <tag>tags</tag>
       </tags>
   </entry>
   <entry>
@@ -1213,23 +1230,6 @@
       <tags>
         <tag>工具</tag>
         <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/2023/06/19/tags/</url>
-    <content><![CDATA[<hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#x32;&#55;&#55;&#x33;&#48;&#x37;&#x33;&#x35;&#x34;&#50;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;">&#x32;&#55;&#55;&#x33;&#48;&#x37;&#x33;&#x35;&#x34;&#50;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#109;</a></p>
-<hr>
-]]></content>
-      <tags>
-        <tag>tags</tag>
       </tags>
   </entry>
   <entry>
