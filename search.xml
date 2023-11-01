@@ -308,6 +308,36 @@
       </tags>
   </entry>
   <entry>
+    <title>IDEA问题</title>
+    <url>/2023/10/30/IDEA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="一、IDEA抽取方法快捷键打不开"><a href="#一、IDEA抽取方法快捷键打不开" class="headerlink" title="一、IDEA抽取方法快捷键打不开"></a>一、IDEA抽取方法快捷键打不开</h1><blockquote>
+<p>Ctrl  + Alt   +M：打开IDEA中抽取方法</p>
+</blockquote>
+<p>自动抽取方法使用Ctrl+Alt+M打不开快捷键。</p>
+<p>要么不是这个快捷键，</p>
+<p>要么就被电脑中的应用全局占用。</p>
+<p>如：</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172957384.png" alt="image-20230723172957384"></p>
+<p>1、NVIDIA GeForce Experience中有快捷键相同，更换或者去掉</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172645588.png"></p>
+<p>2、要不是网易云快捷键占用，去掉全局</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172919423.png" alt="image-20230723172919423"></p>
+<p>之后就OK了</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173008430.png" alt="image-20230723173008430"></p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173144089.png" alt="image-20230723173144089"></p>
+<h1 id="二、IDEA-插件和美观设置"><a href="#二、IDEA-插件和美观设置" class="headerlink" title="二、IDEA 插件和美观设置"></a>二、IDEA 插件和美观设置</h1><p>1、IDEA运行进度条改变</p>
+<p>2、写代码特效</p>
+]]></content>
+      <categories>
+        <category>IDEA</category>
+        <category>Question</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+        <tag>Question</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -381,36 +411,6 @@
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
   </entry>
   <entry>
-    <title>IDEA问题</title>
-    <url>/2023/10/30/IDEA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="一、IDEA抽取方法快捷键打不开"><a href="#一、IDEA抽取方法快捷键打不开" class="headerlink" title="一、IDEA抽取方法快捷键打不开"></a>一、IDEA抽取方法快捷键打不开</h1><blockquote>
-<p>Ctrl  + Alt   +M：打开IDEA中抽取方法</p>
-</blockquote>
-<p>自动抽取方法使用Ctrl+Alt+M打不开快捷键。</p>
-<p>要么不是这个快捷键，</p>
-<p>要么就被电脑中的应用全局占用。</p>
-<p>如：</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172957384.png" alt="image-20230723172957384"></p>
-<p>1、NVIDIA GeForce Experience中有快捷键相同，更换或者去掉</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172645588.png"></p>
-<p>2、要不是网易云快捷键占用，去掉全局</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172919423.png" alt="image-20230723172919423"></p>
-<p>之后就OK了</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173008430.png" alt="image-20230723173008430"></p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173144089.png" alt="image-20230723173144089"></p>
-<h1 id="二、IDEA-插件和美观设置"><a href="#二、IDEA-插件和美观设置" class="headerlink" title="二、IDEA 插件和美观设置"></a>二、IDEA 插件和美观设置</h1><p>1、IDEA运行进度条改变</p>
-<p>2、写代码特效</p>
-]]></content>
-      <categories>
-        <category>IDEA</category>
-        <category>Question</category>
-      </categories>
-      <tags>
-        <tag>IDEA</tag>
-        <tag>Question</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客中next添加背景图片</title>
     <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
@@ -447,48 +447,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo博客问题</title>
-    <url>/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="hexo博客问题"><a href="#hexo博客问题" class="headerlink" title="hexo博客问题"></a>hexo博客问题</h1><h2 id="1、长时间未使用会出现报错-bash-hexo-command-not-found问题"><a href="#1、长时间未使用会出现报错-bash-hexo-command-not-found问题" class="headerlink" title="1、长时间未使用会出现报错 bash: hexo: command not found问题"></a>1、长时间未使用会出现报错 bash: hexo: command not found问题</h2><ol>
-<li>检查node和npm是否正常</li>
-<li>重新配置环境变量</li>
-<li>博客文件中的环境变量重新配置</li>
-<li>配置好后hexo clean —hexo  g—–hexo  deploy</li>
-<li>实在不行重新安装hexo</li>
-</ol>
-<h2 id="2、hexo博客部署到GitHub上，博客网页没有更新，hexo-server正常"><a href="#2、hexo博客部署到GitHub上，博客网页没有更新，hexo-server正常" class="headerlink" title="2、hexo博客部署到GitHub上，博客网页没有更新，hexo server正常"></a>2、hexo博客部署到GitHub上，博客网页没有更新，hexo server正常</h2><ol>
-<li><p>进入GitHub查看有没有成功更新，网络延迟问题</p>
-</li>
-<li><p>查看项目的分支是main还是master，并且自己博客文件是提交到哪个分支</p>
-</li>
-<li><p>进入GitHub提交分支界面合并分支</p>
-</li>
-<li><p>就可以查看更新了</p>
-<p><img src="/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/image-20231031171928721.png" alt="image-20231031171928721"></p>
-</li>
-</ol>
-<h2 id="3、hexo博客无法显示图片问题，在网页和本地都无法显示"><a href="#3、hexo博客无法显示图片问题，在网页和本地都无法显示" class="headerlink" title="3、hexo博客无法显示图片问题，在网页和本地都无法显示"></a>3、hexo博客无法显示图片问题，在网页和本地都无法显示</h2><ol>
-<li><p>安装插件hexo-asset-image</p>
-<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">npm</span> install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改图片路径</p>
-<p><img src="/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/image-20231031173343986.png" alt="image-20231031173343986"></p>
-</li>
-</ol>
-<blockquote>
-<p>注意图片路径中的是反斜杠  &#x2F;   ，如果之前的是 \斜杠会出现图片无法加载问题</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo</category>
-        <category>Question</category>
-      </categories>
-      <tags>
-        <tag>Question</tag>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -562,52 +520,45 @@
       </tags>
   </entry>
   <entry>
-    <title>markdown语法学习</title>
-    <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
-<p>标题      #+空格+标题    一级标题，依次类推</p>
-</blockquote>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
-<p>字体    粗体：  <strong>字体</strong>      斜体 ：   <em>字体</em>    斜体加粗   前后个***</p>
-<p>删除线：两边加~~</p>
-</blockquote>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
-<p>引用：&gt;加</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
-<p>分割线：—    或***</p>
-</blockquote>
-<hr>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><blockquote>
-<p>图片：   ！[图片名]（路径）</p>
-</blockquote>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><blockquote>
-<p>超链接：[点击跳转]（地址）</p>
-</blockquote>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><blockquote>
-<p>1.空格     有序列表</p>
-<ul>
-<li>​       无序列表       -+空格</li>
-</ul>
-</blockquote>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>![image-20230707111754929](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\markdown语法学习\image-20230707111754929.png)</p>
-<p>启动源代码删除空格或直接右键插入</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>tab键上三个点</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">ctrl+shift+k  快捷键</span><br></pre></td></tr></table></figure>
-
-<h2 id="额外：Git-bash快捷键"><a href="#额外：Git-bash快捷键" class="headerlink" title="额外：Git bash快捷键"></a>额外：Git bash快捷键</h2><blockquote>
-<p>复制: ctrl + insert</p>
-</blockquote>
+    <title>hexo博客问题</title>
+    <url>/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="hexo博客问题"><a href="#hexo博客问题" class="headerlink" title="hexo博客问题"></a>hexo博客问题</h1><h2 id="1、长时间未使用会出现报错-bash-hexo-command-not-found问题"><a href="#1、长时间未使用会出现报错-bash-hexo-command-not-found问题" class="headerlink" title="1、长时间未使用会出现报错 bash: hexo: command not found问题"></a>1、长时间未使用会出现报错 bash: hexo: command not found问题</h2><ol>
+<li>检查node和npm是否正常</li>
+<li>重新配置环境变量</li>
+<li>博客文件中的环境变量重新配置</li>
+<li>配置好后hexo clean —hexo  g—–hexo  deploy</li>
+<li>实在不行重新安装hexo</li>
+</ol>
+<h2 id="2、hexo博客部署到GitHub上，博客网页没有更新，hexo-server正常"><a href="#2、hexo博客部署到GitHub上，博客网页没有更新，hexo-server正常" class="headerlink" title="2、hexo博客部署到GitHub上，博客网页没有更新，hexo server正常"></a>2、hexo博客部署到GitHub上，博客网页没有更新，hexo server正常</h2><ol>
+<li><p>进入GitHub查看有没有成功更新，网络延迟问题</p>
+</li>
+<li><p>查看项目的分支是main还是master，并且自己博客文件是提交到哪个分支</p>
+</li>
+<li><p>进入GitHub提交分支界面合并分支</p>
+</li>
+<li><p>就可以查看更新了</p>
+<p><img src="/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/image-20231031171928721.png" alt="image-20231031171928721"></p>
+</li>
+</ol>
+<h2 id="3、hexo博客无法显示图片问题，在网页和本地都无法显示"><a href="#3、hexo博客无法显示图片问题，在网页和本地都无法显示" class="headerlink" title="3、hexo博客无法显示图片问题，在网页和本地都无法显示"></a>3、hexo博客无法显示图片问题，在网页和本地都无法显示</h2><ol>
+<li><p>安装插件hexo-asset-image</p>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="attribute">npm</span> install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改图片路径</p>
+<p><img src="/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/image-20231031173343986.png" alt="image-20231031173343986"></p>
+</li>
+</ol>
 <blockquote>
-<p>粘贴: shift + insert</p>
+<p>注意图片路径中的是反斜杠  &#x2F;   ，如果之前的是 \斜杠会出现图片无法加载问题</p>
 </blockquote>
 ]]></content>
       <categories>
-        <category>工具学习</category>
+        <category>hexo</category>
+        <category>Question</category>
       </categories>
       <tags>
-        <tag>markdown</tag>
-        <tag>文本编辑</tag>
+        <tag>Question</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -817,6 +768,55 @@
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown语法学习</title>
+    <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
+<p>标题      #+空格+标题    一级标题，依次类推</p>
+</blockquote>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
+<p>字体    粗体：  <strong>字体</strong>      斜体 ：   <em>字体</em>    斜体加粗   前后个***</p>
+<p>删除线：两边加~~</p>
+</blockquote>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>引用：&gt;加</p>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
+<p>分割线：—    或***</p>
+</blockquote>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><blockquote>
+<p>图片：   ！[图片名]（路径）</p>
+</blockquote>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><blockquote>
+<p>超链接：[点击跳转]（地址）</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><blockquote>
+<p>1.空格     有序列表</p>
+<ul>
+<li>​       无序列表       -+空格</li>
+</ul>
+</blockquote>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>![image-20230707111754929](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\markdown语法学习\image-20230707111754929.png)</p>
+<p>启动源代码删除空格或直接右键插入</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>tab键上三个点</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">ctrl+shift+k  快捷键</span><br></pre></td></tr></table></figure>
+
+<h2 id="额外：Git-bash快捷键"><a href="#额外：Git-bash快捷键" class="headerlink" title="额外：Git bash快捷键"></a>额外：Git bash快捷键</h2><blockquote>
+<p>复制: ctrl + insert</p>
+</blockquote>
+<blockquote>
+<p>粘贴: shift + insert</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具学习</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>文本编辑</tag>
       </tags>
   </entry>
   <entry>
@@ -1244,11 +1244,41 @@
 <p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
 <p>​	3、分享给他人，希望对你们有所帮助。</p>
 <p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#x32;&#x37;&#55;&#51;&#48;&#55;&#51;&#x35;&#x34;&#50;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#x32;&#x37;&#55;&#51;&#48;&#55;&#51;&#x35;&#x34;&#50;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p>邮箱：<a href="mailto:&#x32;&#55;&#x37;&#51;&#48;&#55;&#51;&#x35;&#52;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#x32;&#55;&#x37;&#51;&#48;&#55;&#51;&#x35;&#52;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a></p>
 <hr>
 ]]></content>
       <tags>
         <tag>tags</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改任务栏中工具颜色</title>
+    <url>/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</url>
+    <content><![CDATA[<h1 id="修改任务栏中工具的颜色"><a href="#修改任务栏中工具的颜色" class="headerlink" title="修改任务栏中工具的颜色"></a>修改任务栏中工具的颜色</h1><ol>
+<li><p>打开注册表编辑器</p>
+</li>
+<li><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize</span><br></pre></td></tr></table></figure>
+
+<p>打开更改ColorPrevalence中数值，然后重启就行。</p>
+</li>
+</ol>
+<p>重启：</p>
+<ol>
+<li>关机重启</li>
+<li><img src="/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/image-20230728103547408.png" alt="image-20230728103547408"></li>
+</ol>
+<p>重新启动</p>
+<p> 命名：Personalize，后缀reg方式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]</span><br><span class="line">&quot;ColorPrevalence&quot;=dword:00000002</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Question</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -1348,36 +1378,6 @@
       <tags>
         <tag>李白</tag>
         <tag>白玉京</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改任务栏中工具颜色</title>
-    <url>/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</url>
-    <content><![CDATA[<h1 id="修改任务栏中工具的颜色"><a href="#修改任务栏中工具的颜色" class="headerlink" title="修改任务栏中工具的颜色"></a>修改任务栏中工具的颜色</h1><ol>
-<li><p>打开注册表编辑器</p>
-</li>
-<li><p>输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize</span><br></pre></td></tr></table></figure>
-
-<p>打开更改ColorPrevalence中数值，然后重启就行。</p>
-</li>
-</ol>
-<p>重启：</p>
-<ol>
-<li>关机重启</li>
-<li><img src="/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/image-20230728103547408.png" alt="image-20230728103547408"></li>
-</ol>
-<p>重新启动</p>
-<p> 命名：Personalize，后缀reg方式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]</span><br><span class="line">&quot;ColorPrevalence&quot;=dword:00000002</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Question</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
