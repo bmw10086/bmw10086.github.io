@@ -450,76 +450,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo命令</title>
-    <url>/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h1><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean   //清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br></pre></td></tr></table></figure>
-
-<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate  //生成静态文件。</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo deploy  //部署网站。</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server   //启动服务器</span><br></pre></td></tr></table></figure>
-
-<p>默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
-<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo version   //显示 Hexo 版本。</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;   //列出网站资料。</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo新建页面</title>
-    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
-<li><p>新建页面</p>
-</li>
-<li><p>设置页面的类型</p>
-</li>
-<li><p>打开主题中的相关设置</p>
-</li>
-</ol>
-<p>几个主要的新建页面：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>比如新建标签页：</p>
-<ol>
-<li>用命令行新建一个页面：（页面名称可以任意）</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
-<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客问题</title>
     <url>/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="hexo博客问题"><a href="#hexo博客问题" class="headerlink" title="hexo博客问题"></a>hexo博客问题</h1><h2 id="1、长时间未使用会出现报错-bash-hexo-command-not-found问题"><a href="#1、长时间未使用会出现报错-bash-hexo-command-not-found问题" class="headerlink" title="1、长时间未使用会出现报错 bash: hexo: command not found问题"></a>1、长时间未使用会出现报错 bash: hexo: command not found问题</h2><ol>
@@ -558,6 +488,125 @@
       </categories>
       <tags>
         <tag>Question</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo命令</title>
+    <url>/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h1><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean   //清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br></pre></td></tr></table></figure>
+
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate  //生成静态文件。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo deploy  //部署网站。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server   //启动服务器</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
+<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo version   //显示 Hexo 版本。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;   //列出网站资料。</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown语法学习</title>
+    <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
+<p>标题      #+空格+标题    一级标题，依次类推</p>
+</blockquote>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
+<p>字体    粗体：  <strong>字体</strong>      斜体 ：   <em>字体</em>    斜体加粗   前后个***</p>
+<p>删除线：两边加~~</p>
+</blockquote>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
+<p>引用：&gt;加</p>
+</blockquote>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
+<p>分割线：—    或***</p>
+</blockquote>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><blockquote>
+<p>图片：   ！[图片名]（路径）</p>
+</blockquote>
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><blockquote>
+<p>超链接：[点击跳转]（地址）</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><blockquote>
+<p>1.空格     有序列表</p>
+<ul>
+<li>​       无序列表       -+空格</li>
+</ul>
+</blockquote>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>![image-20230707111754929](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\markdown语法学习\image-20230707111754929.png)</p>
+<p>启动源代码删除空格或直接右键插入</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>tab键上三个点</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">ctrl+shift+k  快捷键</span><br></pre></td></tr></table></figure>
+
+<h2 id="额外：Git-bash快捷键"><a href="#额外：Git-bash快捷键" class="headerlink" title="额外：Git bash快捷键"></a>额外：Git bash快捷键</h2><blockquote>
+<p>复制: ctrl + insert</p>
+</blockquote>
+<blockquote>
+<p>粘贴: shift + insert</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具学习</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+        <tag>文本编辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo新建页面</title>
+    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
+<li><p>新建页面</p>
+</li>
+<li><p>设置页面的类型</p>
+</li>
+<li><p>打开主题中的相关设置</p>
+</li>
+</ol>
+<p>几个主要的新建页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>比如新建标签页：</p>
+<ol>
+<li>用命令行新建一个页面：（页面名称可以任意）</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
+<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
         <tag>hexo</tag>
       </tags>
   </entry>
@@ -768,55 +817,6 @@
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>markdown语法学习</title>
-    <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
-<p>标题      #+空格+标题    一级标题，依次类推</p>
-</blockquote>
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><blockquote>
-<p>字体    粗体：  <strong>字体</strong>      斜体 ：   <em>字体</em>    斜体加粗   前后个***</p>
-<p>删除线：两边加~~</p>
-</blockquote>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
-<p>引用：&gt;加</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><blockquote>
-<p>分割线：—    或***</p>
-</blockquote>
-<hr>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><blockquote>
-<p>图片：   ！[图片名]（路径）</p>
-</blockquote>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><blockquote>
-<p>超链接：[点击跳转]（地址）</p>
-</blockquote>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><blockquote>
-<p>1.空格     有序列表</p>
-<ul>
-<li>​       无序列表       -+空格</li>
-</ul>
-</blockquote>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>![image-20230707111754929](C:\Users\阿伟的Computer\Desktop\桌面\Typora data\开发工具学习\markdown语法学习\image-20230707111754929.png)</p>
-<p>启动源代码删除空格或直接右键插入</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>tab键上三个点</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">ctrl+shift+k  快捷键</span><br></pre></td></tr></table></figure>
-
-<h2 id="额外：Git-bash快捷键"><a href="#额外：Git-bash快捷键" class="headerlink" title="额外：Git bash快捷键"></a>额外：Git bash快捷键</h2><blockquote>
-<p>复制: ctrl + insert</p>
-</blockquote>
-<blockquote>
-<p>粘贴: shift + insert</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>工具学习</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-        <tag>文本编辑</tag>
       </tags>
   </entry>
   <entry>
@@ -1244,7 +1244,7 @@
 <p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
 <p>​	3、分享给他人，希望对你们有所帮助。</p>
 <p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#x32;&#55;&#x37;&#51;&#48;&#55;&#51;&#x35;&#52;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;">&#x32;&#55;&#x37;&#51;&#48;&#55;&#51;&#x35;&#52;&#50;&#x40;&#x71;&#113;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#x33;&#x30;&#55;&#51;&#x35;&#x34;&#x32;&#64;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#50;&#55;&#x37;&#x33;&#x30;&#55;&#51;&#x35;&#x34;&#x32;&#64;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
 <hr>
 ]]></content>
       <tags>
