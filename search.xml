@@ -411,45 +411,6 @@
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
   </entry>
   <entry>
-    <title>hexo博客中next添加背景图片</title>
-    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
-<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
-<blockquote>
-<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
-</blockquote>
-<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
-
-<p>然后新建一个<code>styles.styl</code>文件</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
-
-<p>改完之后就会出现我上面的问题：</p>
-<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
-<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
-
-<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
-<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一样也行。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo博客问题</title>
     <url>/2023/10/31/hexo%E5%8D%9A%E5%AE%A2%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h1 id="hexo博客问题"><a href="#hexo博客问题" class="headerlink" title="hexo博客问题"></a>hexo博客问题</h1><h2 id="1、长时间未使用会出现报错-bash-hexo-command-not-found问题"><a href="#1、长时间未使用会出现报错-bash-hexo-command-not-found问题" class="headerlink" title="1、长时间未使用会出现报错 bash: hexo: command not found问题"></a>1、长时间未使用会出现报错 bash: hexo: command not found问题</h2><ol>
@@ -521,6 +482,45 @@
       <tags>
         <tag>hexo</tag>
         <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客中next添加背景图片</title>
+    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
+<blockquote>
+<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
+</blockquote>
+<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
+
+<p>然后新建一个<code>styles.styl</code>文件</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
+
+<p>改完之后就会出现我上面的问题：</p>
+<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
+<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
+
+<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
+<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一样也行。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -822,7 +822,568 @@
   <entry>
     <title>python基础（二）</title>
     <url>/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h1 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h1><h2 id="一、程序的三大流程"><a href="#一、程序的三大流程" class="headerlink" title="一、程序的三大流程"></a>一、程序的三大流程</h2><p><strong>顺序——</strong>从上向下，顺序执行代码</p>
+<p><strong>分支——</strong>根据条件判断，决定执行代码的分支</p>
+<p><strong>循环——</strong>让特定代码重复执行</p>
+<h2 id="二、判断语句（if）"><a href="#二、判断语句（if）" class="headerlink" title="二、判断语句（if）"></a>二、判断语句（if）</h2><p>如果条件满足，才能做某件事情，</p>
+<p>如果条件不满足，就做另外一件事情，或者什么也不做</p>
+<p><strong>判断语句</strong> <strong>又被称为“分支语句”，正是因为有了判断，才让程序有了很多的分支。</strong></p>
+<p><strong>1）if语句体验</strong></p>
+<p><strong>一、if判断语句基本语法</strong></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918214356921.png" alt="image-20230918214356921"></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918214412107.png" alt="image-20230918214412107"></p>
+<p><strong>注：</strong>if和e1se语句以及各自的缩进部分共同是一个<strong>完整的代码块</strong></p>
+<p><strong>3）elif</strong></p>
+<p>但是，如果希望再增加一些条件，条件不同，需要执行的代码也不回时，就可以<strong>使用elif</strong>。</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918214543463.png" alt="image-20230918214543463"></p>
+<p><strong>注：</strong></p>
+<p><strong>elif和else都必须和if联合使用，而不能单独使用</strong></p>
+<p><strong>可以将if、elif和else，以及各自缩进的代码，看成一个完整的代码块）</strong></p>
+<p><strong>4）if的嵌套</strong></p>
+<p>elif的应用场景是：同时判断多个条件，所有的条件是平级的</p>
+<p>在开发中，使用if进行条件判断，如果希望在条件成立的执行语句中再增加条件判断，就可以使用if的嵌套。</p>
+<p>if的嵌套的应用场景就是：在之前条件满足的前提下，再增加额外的判断</p>
+<p>if的嵌套的语法格式，除了缩进之外和之前的没有区别</p>
+<p><strong>语法格式如下：</strong></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918214659985.png" alt="image-20230918214659985"></p>
+<p>条件表达式：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = <span class="number">10</span></span><br><span class="line">b = <span class="number">6</span></span><br><span class="line">r = a <span class="keyword">if</span> a&gt;b <span class="keyword">else</span> b</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三、循环语句"><a href="#三、循环语句" class="headerlink" title="三、循环语句"></a>三、循环语句</h2><h3 id="1、While循环"><a href="#1、While循环" class="headerlink" title="1、While循环"></a>1、While循环</h3><h4 id="1、while循环基本使用"><a href="#1、while循环基本使用" class="headerlink" title="1、while循环基本使用"></a>1、while循环基本使用</h4><p>循环作用就是让<strong>指定代码重复的执行</strong>，循环条件自定义，自行控制循环条件</p>
+<p><strong>while</strong>循环<strong>最常用的应用场景就是让执行的代码按照</strong>指定的次数重复执行。</p>
+<p>语法：</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918214939756.png" alt="image-20230918214939756"></p>
+<p><strong>注意：</strong></p>
+<p><strong>while语句以及缩进部分是一个完整的代码块</strong></p>
+<h4 id="2、死循环"><a href="#2、死循环" class="headerlink" title="2、死循环"></a><strong>2、死循环</strong></h4><p>由于程序员的原因，<strong>忘记</strong>在循环内部<strong>修改循环的判断条件</strong>，导致循环持续执行，程序无法终止！</p>
+<h4 id="3、python中的计数方法"><a href="#3、python中的计数方法" class="headerlink" title="3、python中的计数方法"></a><strong>3、python中的计数方法</strong></h4><p>常见的计数方法<strong>有两种</strong>，可以分为：</p>
+<ul>
+<li><strong>自然计数法</strong>（从1开始）——符合人类的习惯</li>
+<li><strong>程序计数法</strong>（从0开始）——几乎所有的程序语言都选择从0开始</li>
+</ul>
+<h4 id="4、循环嵌套"><a href="#4、循环嵌套" class="headerlink" title="4、循环嵌套"></a><strong>4、循环嵌套</strong></h4><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918215056391.png" alt="image-20230918215056391"></p>
+<h4 id="5、字符串中的转义字符"><a href="#5、字符串中的转义字符" class="headerlink" title="5、字符串中的转义字符"></a><strong>5、字符串中的转义字符</strong></h4><ul>
+<li><strong>\t</strong> 在控制台输出一个制表符，协助在输出文本时垂直方向保持对齐</li>
+<li><strong>\n</strong>     在控制台输出一个换行符</li>
+</ul>
+<p><strong>制表符的功能</strong>是在不使用表格的情况下<strong>在垂直方向按列对其文本</strong></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230918215126783.png" alt="image-20230918215126783"></p>
+<blockquote>
+<p>注意事项：</p>
+<p>1、条件需要提供布尔类型结构，True继续，False停止</p>
+<p>2、空格缩进不能忘记</p>
+<p>3、规划好循环终止条件，否则会陷入死循环</p>
+</blockquote>
+<h3 id="2、for循环"><a href="#2、for循环" class="headerlink" title="2、for循环"></a>2、for循环</h3><ul>
+<li><p>基础语法</p>
+</li>
+<li><p>range语句</p>
+<p>获取一个数字序列</p>
+</li>
+<li><p>变量作用域</p>
+<p>for循环中临时变量，其作用域限定为循环内</p>
+<p>是编程规范限定，非强制的</p>
+</li>
+</ul>
+<blockquote>
+<p>for循环是一个计次循环，一般应用在循环次数已知的情况下。是一种“轮询”机制，对一批内容逐个处理</p>
+<p>理论上，python的for循环是无法构建成无限循环（被处理的数据集不可能无限大）</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> 迭代变量 <span class="keyword">in</span> 对象：</span><br><span class="line">	循环体</span><br></pre></td></tr></table></figure>
+
+<p>作用：</p>
+<ol>
+<li><p>进行数值循环</p>
+<p>range(start,end,step)</p>
+<p>range(num),从0开始到num结束（不包含num）</p>
+</li>
+<li><p>遍历字符串</p>
+</li>
+</ol>
+<h4 id="循环的嵌套"><a href="#循环的嵌套" class="headerlink" title="循环的嵌套"></a>循环的嵌套</h4><p>在python中for循环和while循环都可以进行循环嵌套</p>
+<h4 id><a href="#" class="headerlink" title></a><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230923234225607.png" alt="image-20230923234225607"></h4><blockquote>
+<p>注意事项：</p>
+<p>1、无法定义循环条件，只能被动取出数据处理</p>
+<p>2、注意空格缩进</p>
+<p>3、for循环可以和while循环相互嵌套使用</p>
+</blockquote>
+<h3 id="3、跳转语句"><a href="#3、跳转语句" class="headerlink" title="3、跳转语句"></a>3、跳转语句</h3><h4 id="break-和-comtinue"><a href="#break-和-comtinue" class="headerlink" title="break 和 comtinue"></a>break <strong>和</strong> <strong>comtinue</strong></h4><p>两个<strong>关键字</strong>是专门在<strong>循环</strong>使用的。</p>
+<ul>
+<li><strong>Break</strong> 某一条件满足时，退出循环，不在执行后续重复代码                （直接结束）</li>
+<li><strong>Comtinue</strong> 某一条件满足时，不在执行后续重复的代码，中断本次循环（临时跳过）</li>
+</ul>
+<p>注：break 和comtinue 只针对<strong>当前所在循环</strong>有效，并且在for和while循环中作用一致</p>
+<p>pass空语句：不做任何事，一般起到占位作用</p>
+<h1 id="数据容器"><a href="#数据容器" class="headerlink" title="数据容器"></a>数据容器</h1><blockquote>
+<p>一个可以存储多个元素的python数据类型，每个元素可以是任意类型的数据</p>
+</blockquote>
+<h3 id="1、特点"><a href="#1、特点" class="headerlink" title="1、特点"></a>1、特点</h3><p>数据容器根据特点的不同：</p>
+<ul>
+<li>是否支持重复元素</li>
+<li>是否可以修改</li>
+<li>是否有序</li>
+</ul>
+<p>分为五类：列表、元组、字典、集合、字符串</p>
+<h1 id="序列的应用"><a href="#序列的应用" class="headerlink" title="序列的应用"></a>序列的应用</h1><h2 id="一、序列"><a href="#一、序列" class="headerlink" title="一、序列"></a>一、序列</h2><p>在python中，序列结构主要有列表、元组、集合和字典、字符串。</p>
+<p>可以分为可变序列和不可变序列</p>
+<p>可变序列：列表</p>
+<p>不可变序列：元组、字符串</p>
+<p>序列是指：内容连续、有序，可使用下标索引的一类数据容器</p>
+<p>在python中通过下标访问的：</p>
+<ul>
+<li>从前向后，下标从零开始</li>
+<li>从后向前，下标从-1开始</li>
+<li>并且都是左闭右开区间</li>
+</ul>
+<h3 id="1、索引（Indexing）"><a href="#1、索引（Indexing）" class="headerlink" title="1、索引（Indexing）"></a>1、索引（Indexing）</h3><blockquote>
+<p>序列中的每一个元素都有一个编号，也称为索引。索引从0开始，最后一个元素的索引值为-1</p>
+</blockquote>
+<h3 id="2、切片（slicing）"><a href="#2、切片（slicing）" class="headerlink" title="2、切片（slicing）"></a>2、切片（slicing）</h3><blockquote>
+<p>切片操作是访问序列元素中元素的另一种方法，它可以访问一定范围内的元素</p>
+</blockquote>
+<blockquote>
+<p>sname[start : end : step]</p>
+<p>序列[起始：结束：步长]</p>
+<p>起始可省略，省略从头开始</p>
+<p>结束可省略，省略到尾结束</p>
+<p>步长可省略，省略步长为1（可为负数，表示倒序执行）</p>
+<p>sname:序列名称</p>
+<p>start：表示切片的开始位置，如不指定则默认为0</p>
+<p>end：表示切片的截至位置</p>
+<p>step：表示切片的步长</p>
+</blockquote>
+<h3 id="3、序列相加"><a href="#3、序列相加" class="headerlink" title="3、序列相加"></a>3、序列相加</h3><p>在python中，支持两种相同类型的序列相加操作，即两个序列进行连接，使用+运算符实现。</p>
+<h2 id="二、列表（list）"><a href="#二、列表（list）" class="headerlink" title="二、列表（list）"></a>二、列表（list）</h2><p>定义：在形式上，列表的所有元素都放在一对中括号“[]”内，两个相邻元素间使用“，”进行分隔。</p>
+<p>在内容上，可以将整数、实数、字符串、列表、元组等任何类型的内容放在列表中，并在同一列表中，元素的类型可以不同，因为它们之间没有任何关系，也可以进行嵌套列表。</p>
+<p>下标索引：</p>
+<p>取出列表中的元素可以使用列表的下标索引进行取出</p>
+<ul>
+<li>从前向后，编号从0开始递增</li>
+<li>从后向前，编号从-1开始递减</li>
+<li>注意下标索引的取值范围，超出则报错</li>
+</ul>
+<p>常用操作： </p>
+<h3 id="1、空列表"><a href="#1、空列表" class="headerlink" title="1、空列表"></a>1、空列表</h3><blockquote>
+<p>emptylist &#x3D; []</p>
+<p>变量名 &#x3D; list()</p>
+</blockquote>
+<h3 id="2、删除列表"><a href="#2、删除列表" class="headerlink" title="2、删除列表"></a>2、删除列表</h3><blockquote>
+<p>del listname</p>
+<p>清空列表的内容，语法：列表.clear()</p>
+</blockquote>
+<h3 id="3、增"><a href="#3、增" class="headerlink" title="3、增"></a>3、增</h3><blockquote>
+<p>listname.append(obj)             在列表的末尾添加指定的元素，一次只能添加一个元素</p>
+</blockquote>
+<blockquote>
+<p>listname.extend(seq)               将一个列表添加到另一个列表中，添加可迭代对象，追加列表的后面</p>
+</blockquote>
+<blockquote>
+<p>listname.insert(index  ,  元素	)                  指定位置添加元素</p>
+</blockquote>
+<h3 id="4、删"><a href="#4、删" class="headerlink" title="4、删"></a>4、删</h3><blockquote>
+<p>del listname[index]</p>
+<p>列表.pop(下标)</p>
+</blockquote>
+<blockquote>
+<p>listname.remove(obj)</p>
+</blockquote>
+<p>如果存在多个相同匹配的元素，它会删除下标索引最小的元素，remove（）如果要删除的元素不存在，就会报错</p>
+<blockquote>
+<p>清空列表    listname.clear()</p>
+</blockquote>
+<h3 id="5、改"><a href="#5、改" class="headerlink" title="5、改"></a>5、改</h3><blockquote>
+<p>列表和字符串的区别是：列表是可变的，字符串是不可变的</p>
+</blockquote>
+<blockquote>
+<p>listname[index] &#x3D; element</p>
+<p>排序列表中的数字 ，调用sort()方法（从小到大），reverse()(从大到小排序)</p>
+<p>修改特定位置的元素值</p>
+<p>语法：列表[下标] &#x3D; 值</p>
+</blockquote>
+<h3 id="6、查"><a href="#6、查" class="headerlink" title="6、查"></a>6、查</h3><blockquote>
+<p>统计某元素在列表中的数量，语法:list.count(元素)</p>
+<p>复制列表copy（）</p>
+<p>查询某元素在列表中下标，语法：列表.index(元素)</p>
+<p>统计列表内有多少个元素，语法：len(列表)</p>
+</blockquote>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231031234351024.png" alt="image-20231031234351024"></p>
+<h3 id="7、列表的遍历"><a href="#7、列表的遍历" class="headerlink" title="7、列表的遍历"></a>7、列表的遍历</h3><ul>
+<li>while循环</li>
+<li>for循环</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">index = <span class="number">0</span> </span><br><span class="line"><span class="keyword">while</span> index &lt; <span class="built_in">len</span>(列表):</span><br><span class="line">	元素 = 列表[index]</span><br><span class="line">	对元素进行处理</span><br><span class="line">	index += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><figcaption><span>pyj</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> element <span class="keyword">in</span> listname:</span><br><span class="line">	<span class="built_in">print</span>(element)</span><br></pre></td></tr></table></figure>
+
+<h3 id="8、列表的加法和乘法"><a href="#8、列表的加法和乘法" class="headerlink" title="8、列表的加法和乘法"></a>8、列表的加法和乘法</h3><blockquote>
+<p>加法：使用运算符+</p>
+<p>乘法：使用运算符*</p>
+</blockquote>
+<h3 id="9、嵌套列表"><a href="#9、嵌套列表" class="headerlink" title="9、嵌套列表"></a>9、嵌套列表</h3><p>嵌套列表也可以成为二维列表，直接应用举证（matrix）</p>
+<h3 id="10、访问嵌套列表"><a href="#10、访问嵌套列表" class="headerlink" title="10、访问嵌套列表"></a>10、访问嵌套列表</h3><p>1、直接使用for循环实现</p>
+<p>2、使用for循环和enumerate（）函数实现</p>
+<p>可以同时输出索引值和元素内容</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 输出index 和 element</span></span><br><span class="line"><span class="keyword">for</span> index,item <span class="keyword">in</span> <span class="built_in">enumerate</span>(listname):</span><br></pre></td></tr></table></figure>
+
+<h3 id="11、浅拷贝和深拷贝"><a href="#11、浅拷贝和深拷贝" class="headerlink" title="11、浅拷贝和深拷贝"></a>11、浅拷贝和深拷贝</h3><p>python中的变量不是一个盒子，而是引用</p>
+<blockquote>
+<p>浅拷贝：使用copy（）方法，和切片。但对列表的嵌套就无法起作用了</p>
+</blockquote>
+<blockquote>
+<p>深拷贝：使用copy模块有两个函数，一个是浅拷贝另一个是深拷贝（deepcopy（））</p>
+</blockquote>
+<h3 id="12、列表推导式"><a href="#12、列表推导式" class="headerlink" title="12、列表推导式"></a>12、列表推导式</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230924174136255.png" alt="image-20230924174136255"></p>
+<blockquote>
+<p>listname &#x3D; [ i  for i in listname]</p>
+<p>同时二维列表同理</p>
+</blockquote>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230924174735636.png" alt="image-20230924174735636"></p>
+<p>列表推导式：</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230924175515851.png" alt="image-20230924175515851"></p>
+<h3 id="13、列表的特点："><a href="#13、列表的特点：" class="headerlink" title="13、列表的特点："></a>13、列表的特点：</h3><ul>
+<li>可容纳多个元素</li>
+<li>可容纳不同类型的元素</li>
+<li>数据有序存储（有下标）</li>
+<li>允许重复数据存在</li>
+<li>可以修改</li>
+</ul>
+<h2 id="三、元组（tuple）"><a href="#三、元组（tuple）" class="headerlink" title="三、元组（tuple）"></a>三、元组（tuple）</h2><p>定义：元组也称为不可变的列表，它是不可变的序列，元组所有元素存放在一对（）（可以省略圆括号）里面，使用逗号分隔</p>
+<p>在内容上可以将整数、实数、字符串、列表、元组等任何类型的内容放入元组中，同一元组中它的元素类型可以不同。</p>
+<blockquote>
+<p>通常情况下，元组用于保存程序中不可修改的内容</p>
+</blockquote>
+<p>也可以使用下标获取元组元素，也可以进行切片操作，切片不是修改对象本身，而是以某种特定的组合导出一个新的对象</p>
+<blockquote>
+<p>定义空元组：</p>
+<p>变量名 &#x3D; （）</p>
+<p>变量名 &#x3D; tuple()</p>
+</blockquote>
+<h3 id="1、常见操作"><a href="#1、常见操作" class="headerlink" title="1、常见操作"></a>1、常见操作</h3><blockquote>
+<p>1、index()  查找某个元素，如果存在则返回对应的下标，否则报错</p>
+<p>2、count()  统计某个数据在当前元素出现的次数</p>
+<p>3、len()    统计元组内的元素个数</p>
+</blockquote>
+<blockquote>
+<p>元组的嵌套使用逗号，同时支持迭代</p>
+</blockquote>
+<blockquote>
+<p>生成只有一个元素的元组，在元素后加上逗号</p>
+</blockquote>
+<h3 id="2、元组的特点"><a href="#2、元组的特点" class="headerlink" title="2、元组的特点"></a>2、元组的特点</h3><ul>
+<li>可以容纳多个数据</li>
+<li>可以容纳不同类型的数据</li>
+<li>数据有序存储</li>
+<li>允许重复数据</li>
+<li>不可修改</li>
+<li>支持while和for循环</li>
+</ul>
+<blockquote>
+<p>如果元组内嵌套list里面的元素是可以修改的</p>
+</blockquote>
+<h3 id="3-、打包和解包"><a href="#3-、打包和解包" class="headerlink" title="3 、打包和解包"></a>3 、打包和解包</h3><p>生成一个元组也称为元组的打包</p>
+<p>将它们一次性赋值给三个变量名的行为称为解包</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230924181156881.png" alt="image-20230924181156881"></p>
+<blockquote>
+<p>注：元组中的元素是不可变的，但如果元组中的元素指向可变的列表，是可以修变的里面的内容的</p>
+</blockquote>
+<h2 id="四、字典（dictionary）"><a href="#四、字典（dictionary）" class="headerlink" title="四、字典（dictionary）"></a>四、字典（dictionary）</h2><blockquote>
+<p>字典是无序的可变序列，保存的内容是以“键-值对”的形式存放的，所有元素放在一个大括号  {  }中，以逗号分隔</p>
+<p>key  ———value     键是唯一的，值可以有很多个</p>
+</blockquote>
+<p> 主要特点：</p>
+<ul>
+<li>通过键而不是通过索引来读取</li>
+<li>字典是任意对象的无序集合</li>
+<li>字典是可变的，而且可以任意嵌套</li>
+<li>字典中的键必须唯一</li>
+<li>字典中的键必须不可变</li>
+<li>键值对中的key和value是任意类型（key不可为字典）</li>
+<li>字典中的key不允许重复，重复添加等同于覆盖原有数据</li>
+<li>字典不可用下标索引</li>
+</ul>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231012213321455.png" alt="image-20231012213321455"></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231101184902551.png" alt="image-20231101184902551"></p>
+<h3 id="1、通过映射函数创建字典"><a href="#1、通过映射函数创建字典" class="headerlink" title="1、通过映射函数创建字典"></a>1、通过映射函数创建字典</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">dictionary = <span class="built_in">dict</span>(<span class="built_in">zip</span>(list1,list2))</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231012213307793.png" alt="image-20231012213307793"></p>
+<h3 id="2、通过给定的“键—值对”创建字典"><a href="#2、通过给定的“键—值对”创建字典" class="headerlink" title="2、通过给定的“键—值对”创建字典"></a>2、通过给定的“键—值对”创建字典</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">dictionary = <span class="built_in">dict</span>(key1 = value1,key2 = value2,....,keyn = valuen)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231012213044511.png" alt="image-20231012213044511"></p>
+<h3 id="3、通过键-值对访问字典"><a href="#3、通过键-值对访问字典" class="headerlink" title="3、通过键-值对访问字典"></a>3、通过键-值对访问字典</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">print</span>(dictionary[key])</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、遍历字典"><a href="#4、遍历字典" class="headerlink" title="4、遍历字典"></a>4、遍历字典</h3><p>使用字典对象items()方法可以获取字典的键-值对列表：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">dictionary.items()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> key,value <span class="keyword">in</span> dictionary.items():</span><br><span class="line">	<span class="built_in">print</span>(key,value)</span><br></pre></td></tr></table></figure>
+
+<h3 id="5、增"><a href="#5、增" class="headerlink" title="5、增"></a>5、增</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">dictionary[key] = value</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如果新添加的元素的键与已存在的键重复，那么将使用新的值替换原来键的值，相当于修改字典的元素</p>
+</blockquote>
+<h3 id="6、删"><a href="#6、删" class="headerlink" title="6、删"></a>6、删</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">del</span> dictionary[key]</span><br><span class="line">d.pop(key)</span><br></pre></td></tr></table></figure>
+
+<h3 id="7、改"><a href="#7、改" class="headerlink" title="7、改"></a>7、改</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span>[key] = value</span><br><span class="line">修改多个</span><br><span class="line"><span class="built_in">dict</span>.update(&#123;<span class="string">&quot;key&quot;</span>:vlaue,<span class="string">&quot;key&quot;</span>:value&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="8、查"><a href="#8、查" class="headerlink" title="8、查"></a>8、查</h3><p>已知存在</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">dict</span>[key]</span><br><span class="line">传入不存在就会报错</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">get(key[.default])</span><br></pre></td></tr></table></figure>
+
+<h3 id="9、视图对象"><a href="#9、视图对象" class="headerlink" title="9、视图对象"></a>9、视图对象</h3><blockquote>
+<p>dict.items()</p>
+<p>dict.keys()</p>
+<p>dict.values()</p>
+</blockquote>
+<h3 id="10、字典推导式"><a href="#10、字典推导式" class="headerlink" title="10、字典推导式"></a>10、字典推导式</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">randomdict = &#123;i:random.randint(<span class="number">10</span>,<span class="number">100</span>) <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>)&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;生成的字典为：&quot;</span>,randomdict)</span><br></pre></td></tr></table></figure>
+
+<p>字典的特点：</p>
+<ul>
+<li>可容纳多个数据</li>
+<li>可容纳不同类型的数据</li>
+<li>每一份数据是key、value键值对</li>
+<li>通过key获得value，key不可重复（重复会覆盖）</li>
+<li>不支持下标索引</li>
+<li>可以修改</li>
+<li>支持for循环，不支持while循环</li>
+</ul>
+<h2 id="五、集合"><a href="#五、集合" class="headerlink" title="五、集合"></a>五、集合</h2><blockquote>
+<p>集合中所有元素都是独一无二的，并且都是无序的。    唯一性、无序性</p>
+<p>{“ ”}</p>
+</blockquote>
+<h3 id="1、创建集合"><a href="#1、创建集合" class="headerlink" title="1、创建集合"></a>1、创建集合</h3><p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231012220016432.png" alt="image-20231012220016432"></p>
+<blockquote>
+<p>定义空集合：变量名 &#x3D;  set() </p>
+</blockquote>
+<blockquote>
+<p>也可以使用set（）函数去重列表中的元素</p>
+</blockquote>
+<p>集合分为可变和不可变两种对象</p>
+<p>可变的：set（）</p>
+<p>不可变的：frozenset（）  可以用集合的嵌套</p>
+<p>随机重集合中弹出一个元素：pop（）</p>
+<blockquote>
+<p>正确的创建集合和字典，需要有个刚性需求，可哈希。哈希值必须在整个生命周期中保持不变</p>
+</blockquote>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231101183731862.png" alt="image-20231101183731862"></p>
+<p>集合的特点：</p>
+<ul>
+<li>可容纳多个数据</li>
+<li>可容纳不同类型的数据</li>
+<li>数据是无序存储（不支持下标索引）</li>
+<li>不允许重复数据存在</li>
+<li>可以修改</li>
+<li>支持for循环，不可使用while循环</li>
+</ul>
+<h2 id="六、字符串"><a href="#六、字符串" class="headerlink" title="六、字符串"></a>六、字符串</h2><p>字符串的三种定义：</p>
+<ul>
+<li>单引号定义</li>
+<li>双引号定义</li>
+<li>三引号定义</li>
+<li>引号的嵌套可以相互，并且可以使用转义字符\</li>
+</ul>
+<p>字符串的拼接使用 ： +       并且只能字符串和字符串拼接</p>
+<p>特点：</p>
+<ul>
+<li>不可修改</li>
+<li>只可存储字符串</li>
+<li>支持下标索引</li>
+<li>允许重复</li>
+<li>支持遍历</li>
+</ul>
+<h3 id="1、字符串"><a href="#1、字符串" class="headerlink" title="1、字符串"></a>1、字符串</h3><blockquote>
+<p>使用 “ ”，字符串是不可变序列，字符串是连续的字符序列</p>
+</blockquote>
+<p>python中的字符串还支持转义字符：</p>
+<blockquote>
+<p>\n ：换行符</p>
+<p>\t ：制表符</p>
+<p>字符串的下标：</p>
+<ul>
+<li>从前相互，下标从零开始</li>
+<li>从后向前，下标从-1开始</li>
+</ul>
+</blockquote>
+<p>原始字符串：r</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20230919195007351.png" alt="image-20230919195007351"></p>
+<p>长字符串：”””     “””     不需要使用反斜杠实现换行</p>
+<h3 id="2、拼接字符串"><a href="#2、拼接字符串" class="headerlink" title="2、拼接字符串"></a>2、拼接字符串</h3><blockquote>
+<p>使用“+”运算符可以完成多个字符串的拼接</p>
+</blockquote>
+<h3 id="3、计算字符串的长度"><a href="#3、计算字符串的长度" class="headerlink" title="3、计算字符串的长度"></a>3、计算字符串的长度</h3><blockquote>
+<p>python中提供len（）函数计算字符串长度</p>
+</blockquote>
+<h3 id="4、截取字符串"><a href="#4、截取字符串" class="headerlink" title="4、截取字符串"></a>4、截取字符串</h3><blockquote>
+<p>string[start  :  end  :  step]</p>
+</blockquote>
+<h3 id="5、分搁字符串"><a href="#5、分搁字符串" class="headerlink" title="5、分搁字符串"></a>5、分搁字符串</h3><blockquote>
+<p>str.split(sep,maxsplit)</p>
+<p>str:要分隔字符串</p>
+<p>sep:指定分割符</p>
+<p>maxsplit:指定分隔次数</p>
+</blockquote>
+<h3 id="6、大小写字母转换"><a href="#6、大小写字母转换" class="headerlink" title="6、大小写字母转换"></a>6、大小写字母转换</h3><blockquote>
+<p>1、str.capitalize()            首字母大写，其余小写</p>
+<p>2、str.casefold()             返回都是小写字母的字符串，也可以处理其他语言的字符</p>
+<p>3、str.title()                    每个单词的首字母大写，其余小写</p>
+<p>4、str.swapcase()          大小写翻转，大写变小写，小写变大写</p>
+<p>5、str.upper()                将所有字母变大写</p>
+<p>6、str.lower()                将所有字母变小写，只能处理英文字母</p>
+</blockquote>
+<h3 id="7、左右中对齐"><a href="#7、左右中对齐" class="headerlink" title="7、左右中对齐"></a>7、左右中对齐</h3><blockquote>
+<p>1、str.center()             居中</p>
+<p>2、str.ljust()                 左对齐</p>
+<p>3、str.rjust()                  右对齐</p>
+<p>4、str.zfill()                   数字填充</p>
+</blockquote>
+<h3 id="8、查找"><a href="#8、查找" class="headerlink" title="8、查找"></a>8、查找</h3><blockquote>
+<p>str.count()          查找</p>
+<p>str.find()           从左往右找，返回索引下标</p>
+<p>str.rfind()             从右往左找 ，返回索引下标</p>
+<p>str.index()</p>
+<p>str.rindex()       与上相似，如果找不到会出现异常</p>
+</blockquote>
+<h3 id="9、替换"><a href="#9、替换" class="headerlink" title="9、替换"></a>9、替换</h3><blockquote>
+<p>str.expandtabs()           将tab替换空格</p>
+<p>str.replace(old,new,count&#x3D;1)         替换字符串，count替换次数，不设置默认替换全部</p>
+</blockquote>
+<h3 id="10、去除字符串中的空格和特殊字符"><a href="#10、去除字符串中的空格和特殊字符" class="headerlink" title="10、去除字符串中的空格和特殊字符"></a>10、去除字符串中的空格和特殊字符</h3><blockquote>
+<p>1、str.strip()          去掉字符串左右两侧的空格和特殊字符</p>
+<p>2、str.lstrip()       去掉左侧的空格和特殊字符</p>
+<p>3、str.rstrip()        去掉右侧的空格和特殊字符</p>
+</blockquote>
+<h3 id="11、格式化字符串"><a href="#11、格式化字符串" class="headerlink" title="11、格式化字符串"></a>11、格式化字符串</h3><p>意思：先定制一个模板，在模板中预留几个空位，然后根据需要填上相应的内容。这些空位需要通过指定的符号标记（占位符）这些符号还不会显示出来。</p>
+<p>在python中，格式化字符串三种方法：</p>
+<ol>
+<li><p>使用%占位符      （字符串 ：%s   整数：%d  浮点数：%f）</p>
+</li>
+<li><p>使用字符串对象的format()方法</p>
+</li>
+<li><p>使用f”内容{变量}”</p>
+<blockquote>
+<p>str.format(args)</p>
+</blockquote>
+</li>
+</ol>
+<p>数字的精度控制：m.n</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231103192607126.png" alt="image-20231103192607126"></p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231028212330264.png" alt="image-20231028212330264"></p>
+<p>字符串的特点：</p>
+<ul>
+<li>只可存储字符串</li>
+<li>长度任意</li>
+<li>支持索引下标</li>
+<li>允许重复字符串</li>
+<li>不可修改（修改得到的是新字符串）</li>
+<li>支持for、while循环</li>
+</ul>
+<h2 id="七、数据容器的总结"><a href="#七、数据容器的总结" class="headerlink" title="七、数据容器的总结"></a>七、数据容器的总结</h2><h3 id="1、数据容器的分类："><a href="#1、数据容器的分类：" class="headerlink" title="1、数据容器的分类："></a>1、数据容器的分类：</h3><ul>
+<li><p>是否支持下标索引</p>
+<p>支持：列表、元组、字符串</p>
+<p>不支持：集合、字典</p>
+</li>
+<li><p>是否支持重复元素</p>
+<p>支持：列表、元组、字符串</p>
+<p>不支持：集合、字典</p>
+</li>
+<li><p>是否可以修改</p>
+<p>支持：列表、集合、字典</p>
+<p>不支持：元组、字符串</p>
+</li>
+</ul>
+<h3 id="2、应用场景："><a href="#2、应用场景：" class="headerlink" title="2、应用场景："></a>2、应用场景：</h3><ol>
+<li>列表：一批数据，可修改、可重复的存储场景</li>
+<li>元组：一批数据，不可修改，可重复的存储场景</li>
+<li>字符串：一串字符的存储场景</li>
+<li>集合：一批数据，去重存储场景</li>
+<li>字典：一批数据，可用key检索value的存储场景</li>
+</ol>
+<h3 id="3、数据容器的通用操作："><a href="#3、数据容器的通用操作：" class="headerlink" title="3、数据容器的通用操作："></a>3、数据容器的通用操作：</h3><ul>
+<li>都可遍历（集合、字典不支持while遍历，且字典遍历的是key）</li>
+<li>统计功能  len(容器) 、max(容器)、min(容器)</li>
+<li>容器的通用转换功能。list(容器)、str(容器)、tuple(容器)、set(容器)</li>
+<li>容器排序功能。sorted(容器,[reverse &#x3D; True])   True:表示将结果进行反转</li>
+</ul>
+<h2 id="八、正则表达式"><a href="#八、正则表达式" class="headerlink" title="八、正则表达式"></a>八、正则表达式</h2><blockquote>
+<p>正则表达式就是记录文本规则的代码</p>
+</blockquote>
+<h3 id="1、行定位符"><a href="#1、行定位符" class="headerlink" title="1、行定位符"></a>1、行定位符</h3><blockquote>
+<p>“^”表示行的开始，“&amp;”表示行的结尾</p>
+</blockquote>
+<h3 id="2、元字符"><a href="#2、元字符" class="headerlink" title="2、元字符"></a>2、元字符</h3><blockquote>
+<p>.匹配除换行符以外的任意字符</p>
+<p>\w：匹配字母、数字、下划线或汉字</p>
+<p>\s:匹配任意的空格符</p>
+<p>\d:匹配数字</p>
+<p>\b:匹配单词的开始或结尾</p>
+</blockquote>
+<h4 id="3、限定符"><a href="#3、限定符" class="headerlink" title="3、限定符"></a>3、限定符</h4><h4 id="4、字符类"><a href="#4、字符类" class="headerlink" title="4、字符类"></a>4、字符类</h4><h4 id="5、排除字符"><a href="#5、排除字符" class="headerlink" title="5、排除字符"></a>5、排除字符</h4><h4 id="6、选择字符"><a href="#6、选择字符" class="headerlink" title="6、选择字符"></a>6、选择字符</h4><h4 id="7、转义字符"><a href="#7、转义字符" class="headerlink" title="7、转义字符"></a>7、转义字符</h4><h4 id="8、分组"><a href="#8、分组" class="headerlink" title="8、分组"></a>8、分组</h4><p>9、在python中使用正则表达式语法</p>
+<p>10、使用re模块实现正则表达式操作</p>
+<p>匹配：</p>
+<ul>
+<li><p>使用match()方法进行匹配</p>
+<blockquote>
+<p>re.match(pattern,string,[flags])</p>
+</blockquote>
+</li>
+<li><p>使用search()方法进行匹配</p>
+<blockquote>
+<p>re.search(pattern,string,[flags])</p>
+</blockquote>
+</li>
+<li><p>使用findall()方法进行匹配</p>
+<blockquote>
+<p>re.findall(pattern,string,[flags])</p>
+</blockquote>
+</li>
+</ul>
+<p>替换：</p>
+<ul>
+<li><p>sub()方法替换字符串</p>
+<blockquote>
+<p>re.sub(pattern,repl,string,count,flags)</p>
+</blockquote>
+</li>
+</ul>
+<p>使用正则表达式分隔字符串</p>
+<ul>
+<li><p>split()方法分隔字符串</p>
+<blockquote>
+<p>re.split(pattern,string,[maxsplit],[flags])</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="九、字符串大小比较（扩展）"><a href="#九、字符串大小比较（扩展）" class="headerlink" title="九、字符串大小比较（扩展）"></a>九、字符串大小比较（扩展）</h2><p>ASCII码表：</p>
+<p><img src="/2023/10/29/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%BA%8C%EF%BC%89/image-20231101191240653.png" alt="image-20231101191240653"></p>
+<p>详细请见：[菜鸟](<a href="https://www.runoob.com/w3cnote/ascii.html">ASCII 表 | 菜鸟教程 (runoob.com)</a>)</p>
+<p>字符串比较：</p>
+<p>字符串是按位比较，也就是一位位进行对比，只要有一位大，那么整体就大。</p>
+<blockquote>
+<p>单个字符之间通过ASCII码表，确定字符对应的码值数字来确定大小</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于</title>
+    <url>/2023/06/19/tags/</url>
+    <content><![CDATA[<hr>
+<p>本人大二，正在学习阶段。</p>
+<p>写博客的目的：</p>
+<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
+<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
+<p>​	3、分享给他人，希望对你们有所帮助。</p>
+<p>联系方式：</p>
+<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#x33;&#48;&#x37;&#x33;&#53;&#x34;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#109;">&#50;&#55;&#x37;&#x33;&#48;&#x37;&#x33;&#53;&#x34;&#50;&#x40;&#113;&#113;&#x2e;&#99;&#x6f;&#109;</a></p>
+<hr>
+]]></content>
+      <tags>
+        <tag>tags</tag>
+      </tags>
   </entry>
   <entry>
     <title>python学习</title>
@@ -1232,23 +1793,6 @@
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于</title>
-    <url>/2023/06/19/tags/</url>
-    <content><![CDATA[<hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#x33;&#x30;&#55;&#51;&#x35;&#x34;&#x32;&#64;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#50;&#55;&#x37;&#x33;&#x30;&#55;&#51;&#x35;&#x34;&#x32;&#64;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
-<hr>
-]]></content>
-      <tags>
-        <tag>tags</tag>
       </tags>
   </entry>
   <entry>
