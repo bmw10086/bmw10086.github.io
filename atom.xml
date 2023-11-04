@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-10-31T09:55:31.102Z</updated>
+  <updated>2023-11-04T10:26:31.817Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python题目练习</title>
+    <link href="http://example.com/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/"/>
+    <id>http://example.com/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/</id>
+    <published>2023-11-04T10:20:05.000Z</published>
+    <updated>2023-11-04T10:26:31.817Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;python题目&quot;&gt;&lt;a href=&quot;#python题目&quot; class=&quot;headerlink&quot; title=&quot;python题目&quot;&gt;&lt;/a&gt;python题目&lt;/h1&gt;&lt;h3 id=&quot;1、判断从键盘输入的整数是否在-0-100-之间&quot;&gt;&lt;a href=&quot;#1、判断从</summary>
+      
+    
+    
+    
+    <category term="python" scheme="http://example.com/categories/python/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="题目" scheme="http://example.com/tags/%E9%A2%98%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python基础（三）</title>
+    <link href="http://example.com/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/"/>
+    <id>http://example.com/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/</id>
+    <published>2023-11-04T10:08:47.000Z</published>
+    <updated>2023-11-04T10:11:31.868Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;一、函数（1）&quot;&gt;&lt;a href=&quot;#一、函数（1）&quot; class=&quot;headerlink&quot; title=&quot;一、函数（1）&quot;&gt;&lt;/a&gt;一、函数（1）&lt;/h1&gt;&lt;p&gt;所谓&lt;strong&gt;函数&lt;/strong&gt;，就是把&lt;strong&gt;具有独立功能的代码块&lt;/stron</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客问题</title>
@@ -443,28 +487,6 @@
     <category term="PyQt5" scheme="http://example.com/tags/PyQt5/"/>
     
     <category term="Qt Designer" scheme="http://example.com/tags/Qt-Designer/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>文案</title>
-    <link href="http://example.com/2020/05/05/%E6%96%87%E6%A1%88/"/>
-    <id>http://example.com/2020/05/05/%E6%96%87%E6%A1%88/</id>
-    <published>2020-05-05T13:39:53.000Z</published>
-    <updated>2023-07-01T00:57:28.599Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;center&gt;我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。&lt;/center&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5</summary>
-      
-    
-    
-    
-    <category term="文案" scheme="http://example.com/categories/%E6%96%87%E6%A1%88/"/>
-    
     
   </entry>
   
