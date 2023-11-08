@@ -32,36 +32,6 @@
       </tags>
   </entry>
   <entry>
-    <title>IDEA问题</title>
-    <url>/2023/10/30/IDEA%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、IDEA抽取方法快捷键打不开"><a href="#一、IDEA抽取方法快捷键打不开" class="headerlink" title="一、IDEA抽取方法快捷键打不开"></a>一、IDEA抽取方法快捷键打不开</h1><blockquote>
-<p>Ctrl  + Alt   +M：打开IDEA中抽取方法</p>
-</blockquote>
-<p>自动抽取方法使用Ctrl+Alt+M打不开快捷键。</p>
-<p>要么不是这个快捷键，</p>
-<p>要么就被电脑中的应用全局占用。</p>
-<p>如：</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172957384.png" alt="image-20230723172957384"></p>
-<p>1、NVIDIA GeForce Experience中有快捷键相同，更换或者去掉</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172645588.png"></p>
-<p>2、要不是网易云快捷键占用，去掉全局</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172919423.png" alt="image-20230723172919423"></p>
-<p>之后就OK了</p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173008430.png" alt="image-20230723173008430"></p>
-<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173144089.png" alt="image-20230723173144089"></p>
-<h1 id="二、IDEA-插件和美观设置"><a href="#二、IDEA-插件和美观设置" class="headerlink" title="二、IDEA 插件和美观设置"></a>二、IDEA 插件和美观设置</h1><p>1、IDEA运行进度条改变</p>
-<p>2、写代码特效</p>
-]]></content>
-      <categories>
-        <category>IDEA</category>
-        <category>Question</category>
-      </categories>
-      <tags>
-        <tag>IDEA</tag>
-        <tag>Question</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git的使用</title>
     <url>/2023/09/05/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h1><p>1、了解Git基本概念</p>
@@ -338,6 +308,59 @@
       </tags>
   </entry>
   <entry>
+    <title>IDEA问题</title>
+    <url>/2023/10/30/IDEA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、IDEA抽取方法快捷键打不开"><a href="#一、IDEA抽取方法快捷键打不开" class="headerlink" title="一、IDEA抽取方法快捷键打不开"></a>一、IDEA抽取方法快捷键打不开</h1><blockquote>
+<p>Ctrl  + Alt   +M：打开IDEA中抽取方法</p>
+</blockquote>
+<p>自动抽取方法使用Ctrl+Alt+M打不开快捷键。</p>
+<p>要么不是这个快捷键，</p>
+<p>要么就被电脑中的应用全局占用。</p>
+<p>如：</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172957384.png" alt="image-20230723172957384"></p>
+<p>1、NVIDIA GeForce Experience中有快捷键相同，更换或者去掉</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172645588.png"></p>
+<p>2、要不是网易云快捷键占用，去掉全局</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723172919423.png" alt="image-20230723172919423"></p>
+<p>之后就OK了</p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173008430.png" alt="image-20230723173008430"></p>
+<p><img src="/2023/10/30/IDEA%E9%97%AE%E9%A2%98/image-20230723173144089.png" alt="image-20230723173144089"></p>
+<h1 id="二、IDEA-插件和美观设置"><a href="#二、IDEA-插件和美观设置" class="headerlink" title="二、IDEA 插件和美观设置"></a>二、IDEA 插件和美观设置</h1><p>1、IDEA运行进度条改变</p>
+<p>2、写代码特效</p>
+]]></content>
+      <categories>
+        <category>IDEA</category>
+        <category>Question</category>
+      </categories>
+      <tags>
+        <tag>IDEA</tag>
+        <tag>Question</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>beauty</title>
+    <url>/2023/11/06/beauty/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/06/24/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
+  </entry>
+  <entry>
     <title>PyQt5学习</title>
     <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
@@ -391,29 +414,6 @@
         <tag>PyQt5</tag>
         <tag>Qt Designer</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>beauty</title>
-    <url>/2023/11/06/beauty/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/06/24/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
   </entry>
   <entry>
     <title>hexo博客中next添加背景图片</title>
@@ -529,44 +529,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo新建页面</title>
-    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
-<li><p>新建页面</p>
-</li>
-<li><p>设置页面的类型</p>
-</li>
-<li><p>打开主题中的相关设置</p>
-</li>
-</ol>
-<p>几个主要的新建页面：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>比如新建标签页：</p>
-<ol>
-<li>用命令行新建一个页面：（页面名称可以任意）</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
-<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>markdown语法学习</title>
     <url>/2023/09/05/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="markdown语法学习"><a href="#markdown语法学习" class="headerlink" title="markdown语法学习"></a>markdown语法学习</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><blockquote>
@@ -613,6 +575,44 @@
       <tags>
         <tag>markdown</tag>
         <tag>文本编辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo新建页面</title>
+    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
+<li><p>新建页面</p>
+</li>
+<li><p>设置页面的类型</p>
+</li>
+<li><p>打开主题中的相关设置</p>
+</li>
+</ol>
+<p>几个主要的新建页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>比如新建标签页：</p>
+<ol>
+<li>用命令行新建一个页面：（页面名称可以任意）</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
+<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1544,6 +1544,23 @@
       </tags>
   </entry>
   <entry>
+    <title>关于</title>
+    <url>/2023/06/19/tags/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<p>本人大二，正在学习阶段。</p>
+<p>写博客的目的：</p>
+<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
+<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
+<p>​	3、分享给他人，希望对你们有所帮助。</p>
+<p>联系方式：</p>
+<p>邮箱：<a href="mailto:&#x32;&#55;&#x37;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#x32;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x32;&#55;&#x37;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#x32;&#64;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<hr>
+]]></content>
+      <tags>
+        <tag>tags</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python题目练习</title>
     <url>/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="python题目"><a href="#python题目" class="headerlink" title="python题目"></a>python题目</h1><h3 id="1、判断从键盘输入的整数是否在-0-100-之间"><a href="#1、判断从键盘输入的整数是否在-0-100-之间" class="headerlink" title="1、判断从键盘输入的整数是否在[0,100]之间"></a>1、判断从键盘输入的整数是否在[0,100]之间</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入你的整数：&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> num&lt;<span class="number">100</span> <span class="keyword">and</span> num&gt;<span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你的整数在这之间。&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你输入不在此区间。&quot;</span>)</span><br></pre></td></tr></table></figure>
@@ -2086,23 +2103,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/2023/06/19/tags/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#x32;&#x37;&#55;&#51;&#x30;&#55;&#x33;&#53;&#x34;&#x32;&#64;&#113;&#x71;&#46;&#x63;&#111;&#109;">&#x32;&#x37;&#55;&#51;&#x30;&#55;&#x33;&#53;&#x34;&#x32;&#64;&#113;&#x71;&#46;&#x63;&#111;&#109;</a></p>
-<hr>
-]]></content>
-      <tags>
-        <tag>tags</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>修改任务栏中工具颜色</title>
     <url>/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="修改任务栏中工具的颜色"><a href="#修改任务栏中工具的颜色" class="headerlink" title="修改任务栏中工具的颜色"></a>修改任务栏中工具的颜色</h1><ol>
@@ -2131,6 +2131,90 @@
         <tag>工具</tag>
         <tag>Windows</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>文案</title>
+    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>
+
+<p><img src="https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5c"></p>
+<blockquote>
+<p><strong>哪怕是一只萤火虫喜欢上月亮，它也会想把自己所有的光都给它。跟喜欢的人多强大没关系，这是跳动不止的心意。——《春日宴》</strong></p>
+</blockquote>
+<blockquote>
+<p>别偷偷拆开那信件 落笔的人红了脸 ——《小尖尖》</p>
+</blockquote>
+<blockquote>
+<p>我偶尔爱你，爱你人前光鲜、璀璨，像是流星； 我永远爱你，爱你人后的脆弱、用心，自然而然。—— 《<a href="https://www.zhihu.com/search?q=%E4%BA%BA%E5%88%B0%E4%BA%86%E7%BE%8E%E6%9C%AF%E9%A6%86%E4%BC%9A%E5%A5%BD%E7%9C%8B%E8%B5%B7%E6%9D%A5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">人到了美术馆会好看起来</a>》 </p>
+</blockquote>
+<blockquote>
+<p>悲喜交替 无有终点——《<a href="https://www.zhihu.com/search?q=%E6%A9%98%E5%AD%90%E4%B8%8D%E6%98%AF%E5%94%AF%E4%B8%80%E7%9A%84%E6%B0%B4%E6%9E%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">橘子不是唯一的水果</a>》</p>
+</blockquote>
+<blockquote>
+<p> 他们站在噼啪作响的炉火旁，拥抱亲吻，断断续续地讲胡话，窃窃私语，笑着，吻了又吻。——《战争风云》</p>
+</blockquote>
+<blockquote>
+<p> 行路难，不在山，不在水，只在人情反覆间。——白居易《<a href="https://www.zhihu.com/search?q=%E5%A4%AA%E8%A1%8C%E8%B7%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">太行路</a>》</p>
+</blockquote>
+<blockquote>
+<p>我想我今生顶天立地，来生必仗剑天涯，看明月天山外，苍茫云海间，风景不殊，山河尤是。——《<a href="https://www.zhihu.com/search?q=%E5%8C%97%E4%BA%AC%E6%B3%95%E6%BA%90%E5%AF%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">北京法源寺</a>》**</p>
+</blockquote>
+<blockquote>
+<p>世界上有那么多的城镇，城镇中有那么多的酒馆，她却走进了我的。——《卡萨布兰卡》</p>
+</blockquote>
+<blockquote>
+<p> 我想这个世界里，虽然没有最美好的相遇，但一定有为了相遇或者重逢，所做的最美好的努力。——《<a href="https://www.zhihu.com/search?q=%E6%B5%81%E6%B5%AA%E7%9A%84%E6%98%9F%E6%98%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">流浪的星星</a>》</p>
+</blockquote>
+<blockquote>
+<p> 时时觉得自己仿佛孤单一人坐在深深的井底，谁也不会赶来相救。——村上春树《<a href="https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E8%81%8C%E4%B8%9A%E6%98%AF%E5%B0%8F%E8%AF%B4%E5%AE%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">我的职业是小说家</a>》</p>
+</blockquote>
+<blockquote>
+<p>因为我们活过的刹那 前后皆是黑夜。 ——<a href="https://www.zhihu.com/search?q=%E8%B4%B9%E5%B0%94%E5%8D%97%E5%A4%9A%E4%BD%A9%E7%B4%A2%E9%98%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">费尔南多佩索阿</a></p>
+</blockquote>
+<blockquote>
+<p>喜欢就是骨头里都在冒泡泡。——《尘埃落尽》</p>
+</blockquote>
+<blockquote>
+<p>那就折一张阔些的荷叶 包一片月光回去 回去夹在唐诗里 扁扁的 像压过的相思——余光中**</p>
+</blockquote>
+<blockquote>
+<p> 我衰老，也年轻。 我愚蠢，也睿智。 对他人我漠视，也不失关心。 母性与父性，共集一身。 我是孩子，也是大人。 我粗俗，也有文雅。——《<a href="https://www.zhihu.com/search?q=%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">布鲁克林有棵树</a>》</p>
+</blockquote>
+<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2a7371032d2c622cab7dc691bd1a76ad?rik=QG9CWpF8vrxhmA&riu=http://pic.bizhi360.com/bbpic/15/3915.jpg&ehk=oirjjC5Q+hHF4N0w0Vxipk+tWp/jE/RCgb4mGvYw/tI=&risl=&pid=ImgRaw&r=0"></p>
+<blockquote>
+<p> 很多人不需要再见，因为只是路过而已，遗忘就是我们给彼此最好的纪念。  ——林徽因</p>
+</blockquote>
+<blockquote>
+<p>一个人，一本书，一杯茶，一帘梦。有时候，寂寞是这样叫人心动，也只有此刻，世事才会如此波澜不惊。</p>
+</blockquote>
+<blockquote>
+<p>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</p>
+</blockquote>
+<blockquote>
+<p>在广袤的空间和无限的时间中，能与你共享同一颗行星和同一段时光是我的荣幸。</p>
+</blockquote>
+<blockquote>
+<p>温柔要有，但不是妥协，我们要在安静中不慌不忙的坚强。</p>
+</blockquote>
+<blockquote>
+<p>时间或许像灯光，日照褪尽了才能看见，彼此靠近但是没有关联，一盏熄灭了，另一盏刚好亮了。</p>
+</blockquote>
+<blockquote>
+<p>努力让自己发光，对的人才会迎光而来。</p>
+</blockquote>
+<blockquote>
+<p>哪来的天生优秀，都是一步一个坑踩过来的。</p>
+</blockquote>
+<blockquote>
+<p>你未必万丈光芒，但你温暖有光。</p>
+</blockquote>
+<blockquote>
+<p>你的眸是深情的海，满山的花，堕落了我所有的温情。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>文案</category>
+      </categories>
   </entry>
   <entry>
     <title>古诗</title>
@@ -2230,90 +2314,6 @@
         <tag>李白</tag>
         <tag>白玉京</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>文案</title>
-    <url>/2020/05/05/%E6%96%87%E6%A1%88/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center>我拥向宇宙吹来的风，于九月盛景，是初秋相逢。而你，随风来。</center>
-
-<p><img src="https://pic1.zhimg.com/v2-3ce49aa01f7e83ebab1278904f1eb544_r.jpg?source=1940ef5c"></p>
-<blockquote>
-<p><strong>哪怕是一只萤火虫喜欢上月亮，它也会想把自己所有的光都给它。跟喜欢的人多强大没关系，这是跳动不止的心意。——《春日宴》</strong></p>
-</blockquote>
-<blockquote>
-<p>别偷偷拆开那信件 落笔的人红了脸 ——《小尖尖》</p>
-</blockquote>
-<blockquote>
-<p>我偶尔爱你，爱你人前光鲜、璀璨，像是流星； 我永远爱你，爱你人后的脆弱、用心，自然而然。—— 《<a href="https://www.zhihu.com/search?q=%E4%BA%BA%E5%88%B0%E4%BA%86%E7%BE%8E%E6%9C%AF%E9%A6%86%E4%BC%9A%E5%A5%BD%E7%9C%8B%E8%B5%B7%E6%9D%A5&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">人到了美术馆会好看起来</a>》 </p>
-</blockquote>
-<blockquote>
-<p>悲喜交替 无有终点——《<a href="https://www.zhihu.com/search?q=%E6%A9%98%E5%AD%90%E4%B8%8D%E6%98%AF%E5%94%AF%E4%B8%80%E7%9A%84%E6%B0%B4%E6%9E%9C&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">橘子不是唯一的水果</a>》</p>
-</blockquote>
-<blockquote>
-<p> 他们站在噼啪作响的炉火旁，拥抱亲吻，断断续续地讲胡话，窃窃私语，笑着，吻了又吻。——《战争风云》</p>
-</blockquote>
-<blockquote>
-<p> 行路难，不在山，不在水，只在人情反覆间。——白居易《<a href="https://www.zhihu.com/search?q=%E5%A4%AA%E8%A1%8C%E8%B7%AF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">太行路</a>》</p>
-</blockquote>
-<blockquote>
-<p>我想我今生顶天立地，来生必仗剑天涯，看明月天山外，苍茫云海间，风景不殊，山河尤是。——《<a href="https://www.zhihu.com/search?q=%E5%8C%97%E4%BA%AC%E6%B3%95%E6%BA%90%E5%AF%BA&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">北京法源寺</a>》**</p>
-</blockquote>
-<blockquote>
-<p>世界上有那么多的城镇，城镇中有那么多的酒馆，她却走进了我的。——《卡萨布兰卡》</p>
-</blockquote>
-<blockquote>
-<p> 我想这个世界里，虽然没有最美好的相遇，但一定有为了相遇或者重逢，所做的最美好的努力。——《<a href="https://www.zhihu.com/search?q=%E6%B5%81%E6%B5%AA%E7%9A%84%E6%98%9F%E6%98%9F&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">流浪的星星</a>》</p>
-</blockquote>
-<blockquote>
-<p> 时时觉得自己仿佛孤单一人坐在深深的井底，谁也不会赶来相救。——村上春树《<a href="https://www.zhihu.com/search?q=%E6%88%91%E7%9A%84%E8%81%8C%E4%B8%9A%E6%98%AF%E5%B0%8F%E8%AF%B4%E5%AE%B6&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">我的职业是小说家</a>》</p>
-</blockquote>
-<blockquote>
-<p>因为我们活过的刹那 前后皆是黑夜。 ——<a href="https://www.zhihu.com/search?q=%E8%B4%B9%E5%B0%94%E5%8D%97%E5%A4%9A%E4%BD%A9%E7%B4%A2%E9%98%BF&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">费尔南多佩索阿</a></p>
-</blockquote>
-<blockquote>
-<p>喜欢就是骨头里都在冒泡泡。——《尘埃落尽》</p>
-</blockquote>
-<blockquote>
-<p>那就折一张阔些的荷叶 包一片月光回去 回去夹在唐诗里 扁扁的 像压过的相思——余光中**</p>
-</blockquote>
-<blockquote>
-<p> 我衰老，也年轻。 我愚蠢，也睿智。 对他人我漠视，也不失关心。 母性与父性，共集一身。 我是孩子，也是大人。 我粗俗，也有文雅。——《<a href="https://www.zhihu.com/search?q=%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91&search_source=Entity&hybrid_search_source=Entity&hybrid_search_extra=%7B%22sourceType%22:%22answer%22,%22sourceId%22:1854684457%7D">布鲁克林有棵树</a>》</p>
-</blockquote>
-<p><img src="https://ts1.cn.mm.bing.net/th/id/R-C.2a7371032d2c622cab7dc691bd1a76ad?rik=QG9CWpF8vrxhmA&riu=http://pic.bizhi360.com/bbpic/15/3915.jpg&ehk=oirjjC5Q+hHF4N0w0Vxipk+tWp/jE/RCgb4mGvYw/tI=&risl=&pid=ImgRaw&r=0"></p>
-<blockquote>
-<p> 很多人不需要再见，因为只是路过而已，遗忘就是我们给彼此最好的纪念。  ——林徽因</p>
-</blockquote>
-<blockquote>
-<p>一个人，一本书，一杯茶，一帘梦。有时候，寂寞是这样叫人心动，也只有此刻，世事才会如此波澜不惊。</p>
-</blockquote>
-<blockquote>
-<p>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</p>
-</blockquote>
-<blockquote>
-<p>在广袤的空间和无限的时间中，能与你共享同一颗行星和同一段时光是我的荣幸。</p>
-</blockquote>
-<blockquote>
-<p>温柔要有，但不是妥协，我们要在安静中不慌不忙的坚强。</p>
-</blockquote>
-<blockquote>
-<p>时间或许像灯光，日照褪尽了才能看见，彼此靠近但是没有关联，一盏熄灭了，另一盏刚好亮了。</p>
-</blockquote>
-<blockquote>
-<p>努力让自己发光，对的人才会迎光而来。</p>
-</blockquote>
-<blockquote>
-<p>哪来的天生优秀，都是一步一个坑踩过来的。</p>
-</blockquote>
-<blockquote>
-<p>你未必万丈光芒，但你温暖有光。</p>
-</blockquote>
-<blockquote>
-<p>你的眸是深情的海，满山的花，堕落了我所有的温情。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>文案</category>
-      </categories>
   </entry>
   <entry>
     <title>程序的安装</title>
