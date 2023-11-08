@@ -62,6 +62,61 @@
       </tags>
   </entry>
   <entry>
+    <title>PyQt5学习</title>
+    <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
+<p>[]: <a href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
+<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
+<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
+<p>自己：使用pip安装，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
+
+<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+
+<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
+<p>这里我们还是采用脚本安装的方式。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
+
+<p>使用镜像下载：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+
+<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
+<p><code>PyQt 5.15.x</code> 之前的版本：</p>
+<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
+<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
+<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
+<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
+<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
+<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
+<p><code>PyQt 5.15.x</code> 之前的版本：</p>
+<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
+<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
+<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
+<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
+<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
+<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
+<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
+<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174257188.png" alt="image-20231031174257188"></p>
+<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174320657.png" alt="image-20231031174320657"></p>
+<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174343735.png" alt="image-20231031174343735"></p>
+<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
+<li>架构的构建（需求文档）</li>
+<li>设计图出稿</li>
+<li>设计图复原（designer）</li>
+<li>编写核心代码</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具学习</category>
+      </categories>
+      <tags>
+        <tag>PyQt5</tag>
+        <tag>Qt Designer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git的使用</title>
     <url>/2023/09/05/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h1><p>1、了解Git基本概念</p>
@@ -338,61 +393,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PyQt5学习</title>
-    <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
-<p>[]: <a href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
-<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
-<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
-<p>自己：使用pip安装，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
-
-<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
-<p>这里我们还是采用脚本安装的方式。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
-
-<p>使用镜像下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
-<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
-<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
-<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
-<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
-<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
-<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
-<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
-<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174257188.png" alt="image-20231031174257188"></p>
-<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174320657.png" alt="image-20231031174320657"></p>
-<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174343735.png" alt="image-20231031174343735"></p>
-<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
-<li>架构的构建（需求文档）</li>
-<li>设计图出稿</li>
-<li>设计图复原（designer）</li>
-<li>编写核心代码</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具学习</category>
-      </categories>
-      <tags>
-        <tag>PyQt5</tag>
-        <tag>Qt Designer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>beauty</title>
     <url>/2023/11/06/beauty/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
@@ -414,45 +414,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
-  </entry>
-  <entry>
-    <title>hexo博客中next添加背景图片</title>
-    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
-<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
-<blockquote>
-<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
-</blockquote>
-<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
-
-<p>然后新建一个<code>styles.styl</code>文件</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
-
-<p>改完之后就会出现我上面的问题：</p>
-<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
-<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
-
-<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
-<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一样也行。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
   </entry>
   <entry>
     <title>hexo博客问题</title>
@@ -497,35 +458,80 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo命令</title>
-    <url>/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h1><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean   //清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br></pre></td></tr></table></figure>
+    <title>hexo博客中next添加背景图片</title>
+    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
+<blockquote>
+<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
+</blockquote>
+<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
 
-<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate  //生成静态文件。</span><br></pre></td></tr></table></figure>
+<p>然后新建一个<code>styles.styl</code>文件</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
 
+<p>改完之后就会出现我上面的问题：</p>
+<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
+<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
 
-<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo deploy  //部署网站。</span><br></pre></td></tr></table></figure>
+<p>然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
 
+<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
+<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server   //启动服务器</span><br></pre></td></tr></table></figure>
-
-<p>默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
-<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo version   //显示 Hexo 版本。</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;   //列出网站资料。</span><br></pre></td></tr></table></figure>
-
+<p>一样也行。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
-        <tag>命令</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo新建页面</title>
+    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
+<li><p>新建页面</p>
+</li>
+<li><p>设置页面的类型</p>
+</li>
+<li><p>打开主题中的相关设置</p>
+</li>
+</ol>
+<p>几个主要的新建页面：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>比如新建标签页：</p>
+<ol>
+<li>用命令行新建一个页面：（页面名称可以任意）</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
+<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -578,41 +584,205 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo新建页面</title>
-    <url>/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo新建"><a href="#hexo新建" class="headerlink" title="hexo新建"></a>hexo新建</h1><h2 id="一、hexo新建标签、分类、归档页面，步骤都是类似的："><a href="#一、hexo新建标签、分类、归档页面，步骤都是类似的：" class="headerlink" title="一、hexo新建标签、分类、归档页面，步骤都是类似的："></a>一、<a href="https://so.csdn.net/so/search?q=hexo&spm=1001.2101.3001.7020">hexo</a>新建标签、分类、归档页面，步骤都是类似的：</h2><ol>
-<li><p>新建页面</p>
-</li>
-<li><p>设置页面的类型</p>
-</li>
-<li><p>打开主题中的相关设置</p>
-</li>
-</ol>
-<p>几个主要的新建页面：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;about&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>hexo命令</title>
+    <url>/2023/09/05/hexo%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hexo命令"><a href="#Hexo命令" class="headerlink" title="Hexo命令"></a>Hexo命令</h1><h2 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean   //清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br></pre></td></tr></table></figure>
 
-<p>比如新建标签页：</p>
-<ol>
-<li>用命令行新建一个页面：（页面名称可以任意）</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page &quot;tages&quot; </span><br></pre></td></tr></table></figure>
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate  //生成静态文件。</span><br></pre></td></tr></table></figure>
 
-<ol start="2">
-<li>打开 <strong>&#x2F;source&#x2F;tages&#x2F;index.md</strong>，设置其类型 type 值为“tages”</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: <span class="number">2019</span>-<span class="number">07</span>-<span class="number">26</span> <span class="number">00</span>:<span class="number">33</span>:<span class="number">58</span></span><br><span class="line">type: <span class="string">&quot;tags&quot;</span></span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li><p>打开 <strong>&#x2F;themes&#x2F;主题&#x2F;_config.yml</strong>，把tages标签那项取消注释即可，下面的是已经取消注释了的。</p>
-<p><img src="/2023/06/25/hexo%E6%96%B0%E5%BB%BA%E9%A1%B5%E9%9D%A2/1.png" alt="验证"></p>
-</li>
-</ol>
+
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo deploy  //部署网站。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server   //启动服务器</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，访问网址为： <code>http://localhost:4000/</code>。</p>
+<h2 id="version"><a href="#version" class="headerlink" title="version"></a>version</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo version   //显示 Hexo 版本。</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="list"><a href="#list" class="headerlink" title="list"></a>list</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo list &lt;type&gt;   //列出网站资料。</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
+        <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python基础（三）</title>
+    <url>/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、函数（1）"><a href="#一、函数（1）" class="headerlink" title="一、函数（1）"></a>一、函数（1）</h1><p>所谓<strong>函数</strong>，就是把<strong>具有独立功能的代码块</strong>组织为一个小模块。在需要的时候<strong>调用函数</strong>的使用包含两个步骤：</p>
+<p>1.<strong>定义函数</strong>一一封装独立的功能</p>
+<p>2.<strong>调用函数</strong>一一享受封装的成果</p>
+<p>函数的作用，在开发程序时，使用函数可以提高写的效率以及代码的<strong>重用</strong></p>
+<h3 id="1、定义函数"><a href="#1、定义函数" class="headerlink" title="1、定义函数"></a><strong>1、定义函数</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">函数的定义</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215201107.png" alt="image-20230918215201107"></p>
+<blockquote>
+<p>在函数中的参数和返回值不需要，都可省略</p>
+</blockquote>
+<h3 id="2、函数的调用"><a href="#2、函数的调用" class="headerlink" title="2、函数的调用"></a>2、函数的调用</h3><p>通过 <strong>函数名（）</strong> 即可完成对函数调用</p>
+<p>问题：能否将函数调用放在函数定义的上方？</p>
+<p>  不能！</p>
+<ul>
+<li>因为在使用函数名调用函数之前，必须要保证Python已经知道函数的存在</li>
+<li>否则控制台会提示NaneError:name’say_hello’is     not defined(名称错误：say_helo这个名字没有被定义）</li>
+</ul>
+<blockquote>
+<p>函数的嵌套调用：在一个函数里面调用另外一个函数</p>
+</blockquote>
+<h3 id="3、函数的参数"><a href="#3、函数的参数" class="headerlink" title="3、函数的参数"></a>3、函数的参数</h3><p>传入参数的功能：在函数计算的时候，接收外部（调用时)提供的数据</p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215250955.png" alt="image-20230918215250955"></p>
+<blockquote>
+<p>在函数中存在两种参数：形参和实参</p>
+<p>传入的参数的数量不受限制，可以不使用，也可以使用多个</p>
+<p>传入参数的时候要和形参一一对应，逗号隔开</p>
+</blockquote>
+<h3 id="4、参数的作用"><a href="#4、参数的作用" class="headerlink" title="4、参数的作用"></a>4、参数的作用</h3><p>函数的<strong>参数</strong>，增加函数的<strong>通用性</strong>，针对相同的数据处理逻辑。能够适应更多的数据</p>
+<p>1.在函数<strong>内部</strong>，把参数当做<strong>变量</strong>使用，进行需要的<strong>数据处理</strong></p>
+<p>2.函数调用时，按服函数定义的<strong>参数顺序</strong>。把希望在<strong>函数内部处理的数据</strong>，通过参数<strong>传递。</strong></p>
+<h3 id="5、形参和实参"><a href="#5、形参和实参" class="headerlink" title="5、形参和实参"></a>5、形参和实参</h3><p><strong>形参</strong>：定义函数时，小括号中的参数，是用来接收参数用的，在函数内部作为变量使用</p>
+<p><strong>实参</strong>：调用函数时，小括号中的参数，是用来把数据传递到函数内部用的</p>
+<h3 id="6、函数的返回值"><a href="#6、函数的返回值" class="headerlink" title="6、函数的返回值"></a>6、函数的返回值</h3><p>1、返回值</p>
+<p>在程序开发中，有时候，会希望<strong>一个函数执行结束后</strong>，告诉调用者一个结果，以便调用者针对具体的结果做后续的处理</p>
+<p><strong>返回值</strong>是函数完成工作后，最后给调用者的一个<strong>结果</strong></p>
+<p>在函数中使用<strong>return关键字</strong>可以返回结果</p>
+<p>调用函数一方，可以使用变量来接收函数的返回结果</p>
+<p>注意：return表示返回，后续的代码都不会被执行，并且return出现在函数什么位置，只要得到执行，将会直接结束函数的执行</p>
+<p>2、None类型</p>
+<p>&lt;class ‘NoneType’&gt;</p>
+<p>无返回值的函数，实际就返回:None这个字面量，表示空的意思</p>
+<p>作用场景：</p>
+<p>1、用在函数无返回值上</p>
+<p>2、用在if判断上None也等同于False</p>
+<p>3、用于声明无内容的变量上</p>
+<h3 id="7、函数的文档注释"><a href="#7、函数的文档注释" class="headerlink" title="7、函数的文档注释"></a><strong>7、函数的文档注释</strong></h3><ul>
+<li>在开发中，如果希望给<strong>函数添加注释</strong>，应该在<strong>定义函数的下方</strong>，使用连续的<strong>三对引号</strong></li>
+<li>在连续的<strong>三对引号之间编写对函数</strong>的说明文字</li>
+<li>在函数调用位置，使用<strong>快捷键CL+Q</strong>可以查看图数的说明信息</li>
+</ul>
+<p>注意：<strong>因为函数体相对比较独立，函数定义的上方，应该和其他代码（包括注释）保留</strong></p>
+<p><strong>两个空行</strong></p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20231030205214556.png" alt="image-20231030205214556"></p>
+<h3 id="8、函数的嵌套调用"><a href="#8、函数的嵌套调用" class="headerlink" title="8、函数的嵌套调用"></a>8、函数的嵌套调用</h3><p>一个函数里面又调用了另外一个函数，这就是<strong>函数嵌套调用</strong></p>
+<p>如果函数test2中，调用了另外一个图数test1</p>
+<p>  那么执行到调用test1函数时，会先把函数test1中的任务都执行完</p>
+<p>  才会回到test2中调用函数test1的位置，继续执行后续的代码</p>
+<h3 id="9、变量的作用域"><a href="#9、变量的作用域" class="headerlink" title="9、变量的作用域"></a>9、变量的作用域</h3><p>变量的作用域是指程序代码能够访问改变量的区域，如果超出该区域就会出现错误，在程序中，一般会根据变量的有效范围将变量分为全局变量和局部变量</p>
+<p>1、局部变量</p>
+<p>局部变量是指在程序内部定义并使用的变量，它只在函数内部有效，在函数外部使用函数内部定义的变量，就会抛出NameError异常。</p>
+<p>作用：在函数体内部，临时保存数据，当函数调用完成后，则销毁局部变量</p>
+<p>2、全局变量</p>
+<p>全局变量为能够作用与函数内外的变量，主要有两种情况：</p>
+<ol>
+<li>如果一个变量在函数体外定义，那么不仅在函数外可以访问到，在函数内也可以访问到</li>
+<li>如果一个变量在函数体内定义，并且使用global关键字修饰，该变量也就变为全局变量，在函数体外可以访问该变量，并且在函数体内还可以进行修改</li>
+</ol>
+<blockquote>
+<p>内部修改外部函数作用域的值：使用nonlocal关键字</p>
+<p>LEGB规则</p>
+</blockquote>
+<h3 id="10、PyCharm的调试工具"><a href="#10、PyCharm的调试工具" class="headerlink" title="10、PyCharm的调试工具**"></a>10、PyCharm的调试工具**</h3><p><strong>F8 Step Over</strong>可以单步执行代码，会把<strong>函数调用</strong>看作是一行代码直接执行</p>
+<p><strong>F7 Step Into</strong>可以单步执行代码，如果是<strong>函数</strong>。会进入<strong>函数内部</strong></p>
+<h3 id="11、使用模块中的函数"><a href="#11、使用模块中的函数" class="headerlink" title="11、使用模块中的函数"></a><strong>11、使用模块中的函数</strong></h3><p><strong>一、模块是python程序架构的一个核心概念</strong></p>
+<p><strong>模块</strong>就好比是工具包<strong>，要想使用这个工具包中的工具，就需要导入</strong>import这个模块**</p>
+<p>每一个以<strong>扩展名py</strong>结尾的Python源代码文件都是一个<strong>模块</strong></p>
+<p>在模块中定义的<strong>全局变量、函数</strong>都是模块能够提供给外界直接使用的工具</p>
+<p><strong>二、体验小结</strong></p>
+<p>可以在 <strong>一个<strong><strong>Python</strong></strong>文件</strong> 中   <strong>定义变量或者函数</strong></p>
+<p>然后在另外一个文件中使用 <strong>i****mport</strong>导入这个模块</p>
+<p>导入之后，就可以使用<strong>模块名.变量</strong> &#x2F; <strong>模块名.函数</strong>的方式，使用这个模块中定义的<strong>变量或者函数</strong></p>
+<p><strong>模块</strong>可以让<strong>曾经编写过的代码</strong>方便的被<strong>复用</strong>！</p>
+<h3 id="12、模块名（文件名）也是一种标识符"><a href="#12、模块名（文件名）也是一种标识符" class="headerlink" title="12、模块名（文件名）也是一种标识符"></a><strong>12、模块名（文件名）也是一种标识符</strong></h3><p><strong>标示符</strong>可以由<strong>字母、下划线和数字</strong>组成</p>
+<p>不能以数字开头</p>
+<p>不能与关键字重名</p>
+<p>注意：如果在给Python.文件起名时，以数字开头是无法在PyCharm中通过导入这个模</p>
+<p>块的</p>
+<h3 id="13、Pyc文件（了解）"><a href="#13、Pyc文件（了解）" class="headerlink" title="13、Pyc文件（了解）"></a><strong>13、Pyc文件（了解）</strong></h3><p><strong>C是</strong> <strong>compiled</strong> <strong>编译过的意思</strong></p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215355042.png" alt="image-20230918215355042"></p>
+<h3 id="补充扩展"><a href="#补充扩展" class="headerlink" title="补充扩展"></a>补充扩展</h3><blockquote>
+<p>Radom生成的随机数是可以被重现的</p>
+</blockquote>
+<p>默认情况下使用当前操作系统时间来作为随机数的种子，radom.getstate()获取随机数种子加工后随机数生成 的内部状态</p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230921213134552.png" alt="image-20230921213134552"></p>
+<h1 id="二、函数（2）"><a href="#二、函数（2）" class="headerlink" title="二、函数（2）"></a>二、函数（2）</h1><h3 id="1、函数的多返回值"><a href="#1、函数的多返回值" class="headerlink" title="1、函数的多返回值"></a>1、函数的多返回值</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text_return</span>():</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line">x,y,z = text_return()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、函数多种传参方式"><a href="#2、函数多种传参方式" class="headerlink" title="2、函数多种传参方式"></a>2、函数多种传参方式</h3><ul>
+<li>位置参数</li>
+<li>关键字参数</li>
+<li>不定长参数</li>
+<li>缺省参数</li>
+</ul>
+<p>1、位置参数</p>
+<p>位置参数也称为必备参数，必须按照正确的顺序传到函数中，即调用时的数量和位置必须和定义时一样</p>
+<ul>
+<li><p>数量必须与定义时一致</p>
+</li>
+<li><p>位置必须与定义时一致</p>
+</li>
+</ul>
+<p>2、关键字参数</p>
+<p>函数调用通过“键值对”形式传递参数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name,age,gender</span>):</span><br><span class="line">	<span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;name&#125;</span>,年龄：<span class="subst">&#123;age&#125;</span>岁，性别：<span class="subst">&#123;gender&#125;</span>&quot;</span>)</span><br><span class="line">user_info(name=<span class="string">&quot;小王&quot;</span>,age=<span class="number">18</span>,gender = <span class="string">&quot;男&quot;</span>)</span><br><span class="line">user_info(age=<span class="number">19</span>,name=<span class="string">&#x27;小花&#x27;</span>,性别=<span class="string">&#x27;女&#x27;</span>)</span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>,gender=<span class="string">&#x27;男&#x27;</span>,age=<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>可以不按照固定顺序</p>
+<p>可以与位置参数混用</p>
+<p>如果同时使用位置参数和关键字参数，那么使用顺序是位置参数必须在关键字参数之前，但关键字参数之间不存在先后顺序</p>
+</blockquote>
+<p>3、缺省参数（默认参数）</p>
+<p>在调用函数时，如果没有指定某个参数将抛出异常，即在定义函数时，直接指定形式参数的默认值。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">functionname</span>(<span class="params">...,[paremeterl = defaultvalue1]</span>):</span><br><span class="line">	[functionbody]</span><br></pre></td></tr></table></figure>
+
+<p>注意：在定义函数时，指定默认参数的形式参数必须在所有参数的最后，否则将产生语法错误</p>
+<blockquote>
+<p>在python中，可以使用函数名.____default____查看函数的默认值参数的当前值，其结果是一个元组</p>
+<p>函数调用时，如果为缺省参数传值则修改默认参数值，否则使用这个默认值</p>
+</blockquote>
+<p>4、不定长参数</p>
+<p>可变参数也称为不定长参数，即传入函数中的实际参数可以是零个、一个、两个到任意个。</p>
+<p>类型：</p>
+<ol>
+<li>位置传递</li>
+<li>关键字传递</li>
+</ol>
+<p>在定义可变参数时，主要有两种形式，一种是：*parameter，另一种是：**paramter</p>
+<p>1、*args</p>
+<p>这种形式表示接收任意多个实际参数并将其放到一个（元组）中。</p>
+<p>2、**kwargs</p>
+<p>这种形式表示接收任意多个类似关键字参数一样显示赋值的实际参数，并将其放到一个（字典）中。</p>
+<h3 id="3、匿名函数"><a href="#3、匿名函数" class="headerlink" title="3、匿名函数"></a>3、匿名函数</h3><p>匿名函数是指没有名字的函数，应用在需要一个函数，但是又不想去命名这个函数的场合。通常情况下，这样的函数只使用一次。在python中使用lambda表达式创建匿名函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">result = <span class="keyword">lambda</span> [arg1 [,arg2,,,,,]]:expression</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>函数作为参数传递</li>
+</ul>
+<blockquote>
+<p>这是一种计算逻辑的传入，而非数据到传入</p>
+</blockquote>
+<ul>
+<li><p>lambda匿名函数</p>
+<p>函数的定义</p>
+<ul>
+<li>def关键字，可以定义带有名称的函数</li>
+<li>lambda关键字，可以定义匿名函数（无名称）</li>
+</ul>
+<p>有名称的函数，可以基于名称重复使用</p>
+<p>无名称的匿名函数，只可临时使用一次</p>
+</li>
+<li><p>定义语法：lambda 传入参数：函数体（一行代码）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">test_func</span>(<span class="params">compute</span>):</span><br><span class="line">	result = compute(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">	<span class="built_in">print</span>(result)</span><br><span class="line">test_func(<span class="keyword">lambda</span> x,y:x+y)    <span class="comment">#结果为3</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -820,176 +990,6 @@
       <categories>
         <category>编程语言学习</category>
       </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python基础（三）</title>
-    <url>/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、函数（1）"><a href="#一、函数（1）" class="headerlink" title="一、函数（1）"></a>一、函数（1）</h1><p>所谓<strong>函数</strong>，就是把<strong>具有独立功能的代码块</strong>组织为一个小模块。在需要的时候<strong>调用函数</strong>的使用包含两个步骤：</p>
-<p>1.<strong>定义函数</strong>一一封装独立的功能</p>
-<p>2.<strong>调用函数</strong>一一享受封装的成果</p>
-<p>函数的作用，在开发程序时，使用函数可以提高写的效率以及代码的<strong>重用</strong></p>
-<h3 id="1、定义函数"><a href="#1、定义函数" class="headerlink" title="1、定义函数"></a><strong>1、定义函数</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">函数的定义</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215201107.png" alt="image-20230918215201107"></p>
-<blockquote>
-<p>在函数中的参数和返回值不需要，都可省略</p>
-</blockquote>
-<h3 id="2、函数的调用"><a href="#2、函数的调用" class="headerlink" title="2、函数的调用"></a>2、函数的调用</h3><p>通过 <strong>函数名（）</strong> 即可完成对函数调用</p>
-<p>问题：能否将函数调用放在函数定义的上方？</p>
-<p>  不能！</p>
-<ul>
-<li>因为在使用函数名调用函数之前，必须要保证Python已经知道函数的存在</li>
-<li>否则控制台会提示NaneError:name’say_hello’is     not defined(名称错误：say_helo这个名字没有被定义）</li>
-</ul>
-<blockquote>
-<p>函数的嵌套调用：在一个函数里面调用另外一个函数</p>
-</blockquote>
-<h3 id="3、函数的参数"><a href="#3、函数的参数" class="headerlink" title="3、函数的参数"></a>3、函数的参数</h3><p>传入参数的功能：在函数计算的时候，接收外部（调用时)提供的数据</p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215250955.png" alt="image-20230918215250955"></p>
-<blockquote>
-<p>在函数中存在两种参数：形参和实参</p>
-<p>传入的参数的数量不受限制，可以不使用，也可以使用多个</p>
-<p>传入参数的时候要和形参一一对应，逗号隔开</p>
-</blockquote>
-<h3 id="4、参数的作用"><a href="#4、参数的作用" class="headerlink" title="4、参数的作用"></a>4、参数的作用</h3><p>函数的<strong>参数</strong>，增加函数的<strong>通用性</strong>，针对相同的数据处理逻辑。能够适应更多的数据</p>
-<p>1.在函数<strong>内部</strong>，把参数当做<strong>变量</strong>使用，进行需要的<strong>数据处理</strong></p>
-<p>2.函数调用时，按服函数定义的<strong>参数顺序</strong>。把希望在<strong>函数内部处理的数据</strong>，通过参数<strong>传递。</strong></p>
-<h3 id="5、形参和实参"><a href="#5、形参和实参" class="headerlink" title="5、形参和实参"></a>5、形参和实参</h3><p><strong>形参</strong>：定义函数时，小括号中的参数，是用来接收参数用的，在函数内部作为变量使用</p>
-<p><strong>实参</strong>：调用函数时，小括号中的参数，是用来把数据传递到函数内部用的</p>
-<h3 id="6、函数的返回值"><a href="#6、函数的返回值" class="headerlink" title="6、函数的返回值"></a>6、函数的返回值</h3><p>1、返回值</p>
-<p>在程序开发中，有时候，会希望<strong>一个函数执行结束后</strong>，告诉调用者一个结果，以便调用者针对具体的结果做后续的处理</p>
-<p><strong>返回值</strong>是函数完成工作后，最后给调用者的一个<strong>结果</strong></p>
-<p>在函数中使用<strong>return关键字</strong>可以返回结果</p>
-<p>调用函数一方，可以使用变量来接收函数的返回结果</p>
-<p>注意：return表示返回，后续的代码都不会被执行，并且return出现在函数什么位置，只要得到执行，将会直接结束函数的执行</p>
-<p>2、None类型</p>
-<p>&lt;class ‘NoneType’&gt;</p>
-<p>无返回值的函数，实际就返回:None这个字面量，表示空的意思</p>
-<p>作用场景：</p>
-<p>1、用在函数无返回值上</p>
-<p>2、用在if判断上None也等同于False</p>
-<p>3、用于声明无内容的变量上</p>
-<h3 id="7、函数的文档注释"><a href="#7、函数的文档注释" class="headerlink" title="7、函数的文档注释"></a><strong>7、函数的文档注释</strong></h3><ul>
-<li>在开发中，如果希望给<strong>函数添加注释</strong>，应该在<strong>定义函数的下方</strong>，使用连续的<strong>三对引号</strong></li>
-<li>在连续的<strong>三对引号之间编写对函数</strong>的说明文字</li>
-<li>在函数调用位置，使用<strong>快捷键CL+Q</strong>可以查看图数的说明信息</li>
-</ul>
-<p>注意：<strong>因为函数体相对比较独立，函数定义的上方，应该和其他代码（包括注释）保留</strong></p>
-<p><strong>两个空行</strong></p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20231030205214556.png" alt="image-20231030205214556"></p>
-<h3 id="8、函数的嵌套调用"><a href="#8、函数的嵌套调用" class="headerlink" title="8、函数的嵌套调用"></a>8、函数的嵌套调用</h3><p>一个函数里面又调用了另外一个函数，这就是<strong>函数嵌套调用</strong></p>
-<p>如果函数test2中，调用了另外一个图数test1</p>
-<p>  那么执行到调用test1函数时，会先把函数test1中的任务都执行完</p>
-<p>  才会回到test2中调用函数test1的位置，继续执行后续的代码</p>
-<h3 id="9、变量的作用域"><a href="#9、变量的作用域" class="headerlink" title="9、变量的作用域"></a>9、变量的作用域</h3><p>变量的作用域是指程序代码能够访问改变量的区域，如果超出该区域就会出现错误，在程序中，一般会根据变量的有效范围将变量分为全局变量和局部变量</p>
-<p>1、局部变量</p>
-<p>局部变量是指在程序内部定义并使用的变量，它只在函数内部有效，在函数外部使用函数内部定义的变量，就会抛出NameError异常。</p>
-<p>作用：在函数体内部，临时保存数据，当函数调用完成后，则销毁局部变量</p>
-<p>2、全局变量</p>
-<p>全局变量为能够作用与函数内外的变量，主要有两种情况：</p>
-<ol>
-<li>如果一个变量在函数体外定义，那么不仅在函数外可以访问到，在函数内也可以访问到</li>
-<li>如果一个变量在函数体内定义，并且使用global关键字修饰，该变量也就变为全局变量，在函数体外可以访问该变量，并且在函数体内还可以进行修改</li>
-</ol>
-<blockquote>
-<p>内部修改外部函数作用域的值：使用nonlocal关键字</p>
-<p>LEGB规则</p>
-</blockquote>
-<h3 id="10、PyCharm的调试工具"><a href="#10、PyCharm的调试工具" class="headerlink" title="10、PyCharm的调试工具**"></a>10、PyCharm的调试工具**</h3><p><strong>F8 Step Over</strong>可以单步执行代码，会把<strong>函数调用</strong>看作是一行代码直接执行</p>
-<p><strong>F7 Step Into</strong>可以单步执行代码，如果是<strong>函数</strong>。会进入<strong>函数内部</strong></p>
-<h3 id="11、使用模块中的函数"><a href="#11、使用模块中的函数" class="headerlink" title="11、使用模块中的函数"></a><strong>11、使用模块中的函数</strong></h3><p><strong>一、模块是python程序架构的一个核心概念</strong></p>
-<p><strong>模块</strong>就好比是工具包<strong>，要想使用这个工具包中的工具，就需要导入</strong>import这个模块**</p>
-<p>每一个以<strong>扩展名py</strong>结尾的Python源代码文件都是一个<strong>模块</strong></p>
-<p>在模块中定义的<strong>全局变量、函数</strong>都是模块能够提供给外界直接使用的工具</p>
-<p><strong>二、体验小结</strong></p>
-<p>可以在 <strong>一个<strong><strong>Python</strong></strong>文件</strong> 中   <strong>定义变量或者函数</strong></p>
-<p>然后在另外一个文件中使用 <strong>i****mport</strong>导入这个模块</p>
-<p>导入之后，就可以使用<strong>模块名.变量</strong> &#x2F; <strong>模块名.函数</strong>的方式，使用这个模块中定义的<strong>变量或者函数</strong></p>
-<p><strong>模块</strong>可以让<strong>曾经编写过的代码</strong>方便的被<strong>复用</strong>！</p>
-<h3 id="12、模块名（文件名）也是一种标识符"><a href="#12、模块名（文件名）也是一种标识符" class="headerlink" title="12、模块名（文件名）也是一种标识符"></a><strong>12、模块名（文件名）也是一种标识符</strong></h3><p><strong>标示符</strong>可以由<strong>字母、下划线和数字</strong>组成</p>
-<p>不能以数字开头</p>
-<p>不能与关键字重名</p>
-<p>注意：如果在给Python.文件起名时，以数字开头是无法在PyCharm中通过导入这个模</p>
-<p>块的</p>
-<h3 id="13、Pyc文件（了解）"><a href="#13、Pyc文件（了解）" class="headerlink" title="13、Pyc文件（了解）"></a><strong>13、Pyc文件（了解）</strong></h3><p><strong>C是</strong> <strong>compiled</strong> <strong>编译过的意思</strong></p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215355042.png" alt="image-20230918215355042"></p>
-<h3 id="补充扩展"><a href="#补充扩展" class="headerlink" title="补充扩展"></a>补充扩展</h3><blockquote>
-<p>Radom生成的随机数是可以被重现的</p>
-</blockquote>
-<p>默认情况下使用当前操作系统时间来作为随机数的种子，radom.getstate()获取随机数种子加工后随机数生成 的内部状态</p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230921213134552.png" alt="image-20230921213134552"></p>
-<h1 id="二、函数（2）"><a href="#二、函数（2）" class="headerlink" title="二、函数（2）"></a>二、函数（2）</h1><h3 id="1、函数的多返回值"><a href="#1、函数的多返回值" class="headerlink" title="1、函数的多返回值"></a>1、函数的多返回值</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text_return</span>():</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line">x,y,z = text_return()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、函数多种传参方式"><a href="#2、函数多种传参方式" class="headerlink" title="2、函数多种传参方式"></a>2、函数多种传参方式</h3><ul>
-<li>位置参数</li>
-<li>关键字参数</li>
-<li>不定长参数</li>
-<li>缺省参数</li>
-</ul>
-<p>1、位置参数</p>
-<p>位置参数也称为必备参数，必须按照正确的顺序传到函数中，即调用时的数量和位置必须和定义时一样</p>
-<ul>
-<li><p>数量必须与定义时一致</p>
-</li>
-<li><p>位置必须与定义时一致</p>
-</li>
-</ul>
-<p>2、关键字参数</p>
-<p>函数调用通过“键值对”形式传递参数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name,age,gender</span>):</span><br><span class="line">	<span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;name&#125;</span>,年龄：<span class="subst">&#123;age&#125;</span>岁，性别：<span class="subst">&#123;gender&#125;</span>&quot;</span>)</span><br><span class="line">user_info(name=<span class="string">&quot;小王&quot;</span>,age=<span class="number">18</span>,gender = <span class="string">&quot;男&quot;</span>)</span><br><span class="line">user_info(age=<span class="number">19</span>,name=<span class="string">&#x27;小花&#x27;</span>,性别=<span class="string">&#x27;女&#x27;</span>)</span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>,gender=<span class="string">&#x27;男&#x27;</span>,age=<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>可以不按照固定顺序</p>
-<p>可以与位置参数混用</p>
-<p>如果同时使用位置参数和关键字参数，那么使用顺序是位置参数必须在关键字参数之前，但关键字参数之间不存在先后顺序</p>
-</blockquote>
-<p>3、缺省参数（默认参数）</p>
-<p>在调用函数时，如果没有指定某个参数将抛出异常，即在定义函数时，直接指定形式参数的默认值。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">functionname</span>(<span class="params">...,[paremeterl = defaultvalue1]</span>):</span><br><span class="line">	[functionbody]</span><br></pre></td></tr></table></figure>
-
-<p>注意：在定义函数时，指定默认参数的形式参数必须在所有参数的最后，否则将产生语法错误</p>
-<blockquote>
-<p>在python中，可以使用函数名.____default____查看函数的默认值参数的当前值，其结果是一个元组</p>
-<p>函数调用时，如果为缺省参数传值则修改默认参数值，否则使用这个默认值</p>
-</blockquote>
-<p>4、不定长参数</p>
-<p>可变参数也称为不定长参数，即传入函数中的实际参数可以是零个、一个、两个到任意个。</p>
-<p>类型：</p>
-<ol>
-<li>位置传递</li>
-<li>关键字传递</li>
-</ol>
-<p>在定义可变参数时，主要有两种形式，一种是：*parameter，另一种是：**paramter</p>
-<p>1、*args</p>
-<p>这种形式表示接收任意多个实际参数并将其放到一个（元组）中。</p>
-<p>2、**kwargs</p>
-<p>这种形式表示接收任意多个类似关键字参数一样显示赋值的实际参数，并将其放到一个（字典）中。</p>
-<h3 id="3、匿名函数"><a href="#3、匿名函数" class="headerlink" title="3、匿名函数"></a>3、匿名函数</h3><p>匿名函数是指没有名字的函数，应用在需要一个函数，但是又不想去命名这个函数的场合。通常情况下，这样的函数只使用一次。在python中使用lambda表达式创建匿名函数。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">result = <span class="keyword">lambda</span> [arg1 [,arg2,,,,,]]:expression</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>函数作为参数传递</li>
-</ul>
-<blockquote>
-<p>这是一种计算逻辑的传入，而非数据到传入</p>
-</blockquote>
-<ul>
-<li><p>lambda匿名函数</p>
-<p>函数的定义</p>
-<ul>
-<li>def关键字，可以定义带有名称的函数</li>
-<li>lambda关键字，可以定义匿名函数（无名称）</li>
-</ul>
-<p>有名称的函数，可以基于名称重复使用</p>
-<p>无名称的匿名函数，只可临时使用一次</p>
-</li>
-<li><p>定义语法：lambda 传入参数：函数体（一行代码）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">test_func</span>(<span class="params">compute</span>):</span><br><span class="line">	result = compute(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">	<span class="built_in">print</span>(result)</span><br><span class="line">test_func(<span class="keyword">lambda</span> x,y:x+y)    <span class="comment">#结果为3</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
       <tags>
         <tag>python</tag>
       </tags>
@@ -1544,135 +1544,20 @@
       </tags>
   </entry>
   <entry>
-    <title>python题目练习</title>
-    <url>/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="python题目"><a href="#python题目" class="headerlink" title="python题目"></a>python题目</h1><h3 id="1、判断从键盘输入的整数是否在-0-100-之间"><a href="#1、判断从键盘输入的整数是否在-0-100-之间" class="headerlink" title="1、判断从键盘输入的整数是否在[0,100]之间"></a>1、判断从键盘输入的整数是否在[0,100]之间</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入你的整数：&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> num&lt;<span class="number">100</span> <span class="keyword">and</span> num&gt;<span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你的整数在这之间。&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你输入不在此区间。&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num=<span class="built_in">eval</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入一个整数：&#x27;</span>))</span><br><span class="line"><span class="keyword">if</span> num&gt;<span class="number">100</span> <span class="keyword">or</span> num&lt;<span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;输入整数小于0或大于100&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;输入整数在0到100之间&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、斐波那契数列（黄金分割数列）"><a href="#2、斐波那契数列（黄金分割数列）" class="headerlink" title="2、斐波那契数列（黄金分割数列）"></a>2、斐波那契数列（黄金分割数列）</h3><p>每个数是前两个数之和。要求，输出斐波那契数列，输出不大于1000的序列元素，以逗号分隔。</p>
-<p>F(0)&#x3D;0,F(1)&#x3D;1……F(n)&#x3D;F(n-2)+F(n-1)，其中n&gt;&#x3D;2</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a,b=<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> a&lt;<span class="number">1000</span>:</span><br><span class="line">    <span class="built_in">print</span>(a,end=<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line">    a,b=b,a+b</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、圆面积的计算"><a href="#3、圆面积的计算" class="headerlink" title="3、圆面积的计算"></a>3、圆面积的计算</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">方法一</span><br><span class="line">r=<span class="number">25</span></span><br><span class="line">area=<span class="number">3.1415</span>*r*r</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;area=&#123;:.2f&#125;&#x27;</span>.<span class="built_in">format</span>(area))</span><br><span class="line"></span><br><span class="line">方法二：</span><br><span class="line"><span class="keyword">import</span> math <span class="keyword">as</span> M</span><br><span class="line">r=<span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入圆的半径：&#x27;</span>))</span><br><span class="line">area=M.pi*r*r</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;圆的面积为：&quot;</span>,area)</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、绘制五角红星"><a href="#4、绘制五角红星" class="headerlink" title="4、绘制五角红星"></a>4、绘制五角红星</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> turtle <span class="keyword">import</span> *   <span class="comment">#通过这个例子尝试绘制圆、正方形等</span></span><br><span class="line">color(<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;red&#x27;</span>)  <span class="comment">#设置笔和填充的颜色</span></span><br><span class="line">begin_fill()  <span class="comment">#开始填充</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    fd(<span class="number">200</span>)  <span class="comment">#forward就是线条的长度，而right则表示转向的角度是多少</span></span><br><span class="line">    rt(<span class="number">144</span>) <span class="comment">#因为五角星每个角为36度,即旋转180-36度，所以使用循环语句重复5次，画出5个角</span></span><br><span class="line">end_fill()</span><br><span class="line">done()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Python绘图Turtle库详解：https://blog.csdn.net/zengxiantao1994/article/details/76588580</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="5、绘制七彩圆圈"><a href="#5、绘制七彩圆圈" class="headerlink" title="5、绘制七彩圆圈"></a>5、绘制七彩圆圈</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">colors=[<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;orange&#x27;</span>,<span class="string">&#x27;yellow&#x27;</span>,<span class="string">&#x27;green&#x27;</span>,<span class="string">&#x27;blue&#x27;</span>,<span class="string">&#x27;indigo&#x27;</span>,<span class="string">&#x27;purple&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">7</span>):</span><br><span class="line">    c=colors[i]</span><br><span class="line">    turtle.color(c,c) <span class="comment">#同时设置pencolor, fillcolor</span></span><br><span class="line">    turtle.begin_fill()</span><br><span class="line">    turtle.rt(<span class="number">360</span>/<span class="number">7</span>)</span><br><span class="line">    turtle.circle(<span class="number">50</span>) <span class="comment">#画圆，给出半径，表示圆心在画笔的左边(右边)画圆</span></span><br><span class="line">    <span class="comment">#circle(r,extent)，第一个参数r代表的是半径，第二个参数extent代表的是角度，所以可以画弧线</span></span><br><span class="line">    turtle.end_fill()</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure>
-
-<h3 id="6、绘制同心圆"><a href="#6、绘制同心圆" class="headerlink" title="6、绘制同心圆"></a>6、绘制同心圆</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">turtle.pensize(<span class="number">3</span>)</span><br><span class="line">turtle.circle(<span class="number">20</span>) <span class="comment">#绘制半径为20像素的圆</span></span><br><span class="line">turtle.circle(<span class="number">40</span>)</span><br><span class="line">turtle.circle(<span class="number">80</span>)</span><br><span class="line">turtle.circle(<span class="number">160</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果"><a href="#7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果" class="headerlink" title="7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果"></a>7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">str1=<span class="built_in">input</span>(<span class="string">&#x27;请输入你的名字：&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Hello！&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(str1))</span><br><span class="line">guard=<span class="built_in">ord</span>(str1[<span class="number">0</span>])%<span class="number">100</span></span><br><span class="line"><span class="comment">#ord() 函数是 chr() 函数（对于8位的ASCII字符串）或 unichr() 函数（对于Unicode对象）的配对函数，</span></span><br><span class="line"><span class="comment"># 它以一个字符（长度为1的字符串）作为参数，返回对应的 ASCII 数值，或者 Unicode 数值</span></span><br><span class="line"><span class="comment"># 如果所给的 Unicode 字符超出了你的 Python 定义范围，则会引发一个 TypeError 的异常。</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;你的幸运数字是&#x27;</span>,random.choice(<span class="built_in">range</span>(guard)))</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-<h3 id="8、获得用户输入的一个整数N，计算并输出N的32次方"><a href="#8、获得用户输入的一个整数N，计算并输出N的32次方" class="headerlink" title="8、获得用户输入的一个整数N，计算并输出N的32次方"></a>8、获得用户输入的一个整数N，计算并输出N的32次方</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数N：&quot;</span>))</span><br><span class="line">result = N ** <span class="number">32</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125;的32次方为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(N, result))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="9、获得用户输入的一段文字，将这段文字进行垂直输出"><a href="#9、获得用户输入的一段文字，将这段文字进行垂直输出" class="headerlink" title="9、获得用户输入的一段文字，将这段文字进行垂直输出"></a>9、获得用户输入的一段文字，将这段文字进行垂直输出</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">text = <span class="built_in">input</span>(<span class="string">&quot;请输入一段文字：&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> ch <span class="keyword">in</span> text:</span><br><span class="line">    <span class="built_in">print</span>(ch)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="10、获得用户输入的一个合法算式，例如：1-2-3-4，输出运算结果"><a href="#10、获得用户输入的一个合法算式，例如：1-2-3-4，输出运算结果" class="headerlink" title="10、获得用户输入的一个合法算式，例如：1.2+3.4，输出运算结果"></a>10、获得用户输入的一个合法算式，例如：1.2+3.4，输出运算结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">expression = <span class="built_in">input</span>(<span class="string">&quot;请输入一个合法算式：&quot;</span>)</span><br><span class="line">result = <span class="built_in">eval</span>(expression)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;结果为：&quot;</span>, result)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="11、获得用户输入的一个小数，提取并输出其整数部分"><a href="#11、获得用户输入的一个小数，提取并输出其整数部分" class="headerlink" title="11、获得用户输入的一个小数，提取并输出其整数部分"></a>11、获得用户输入的一个小数，提取并输出其整数部分</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个小数：&quot;</span>))</span><br><span class="line">int_part = <span class="built_in">int</span>(num)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;小数&#123;&#125;的整数部分为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(num, int_part))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="12、下面代码存在多处错误，请指出"><a href="#12、下面代码存在多处错误，请指出" class="headerlink" title="12、下面代码存在多处错误，请指出"></a>12、下面代码存在多处错误，请指出</h3><p>题目：用户输入一个整数N，计算并输出1到N相加的和。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n=<span class="built_in">input</span>(<span class="string">&#x27;请输入整数N：&#x27;</span>);</span><br><span class="line"><span class="built_in">sum</span>=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n)</span><br><span class="line">    <span class="built_in">sum</span>+=i+<span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;1到N求和结果：&#x27;</span>.<span class="built_in">format</span>(<span class="built_in">sum</span>))</span><br></pre></td></tr></table></figure>
-
-<p>正确：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数N：&quot;</span>))</span><br><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">sum</span> += i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1到&#123;&#125;相加的和为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(N, <span class="built_in">sum</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="13、输出该整数百位及以上的数字。"><a href="#13、输出该整数百位及以上的数字。" class="headerlink" title="13、输出该整数百位及以上的数字。"></a>13、输出该整数百位及以上的数字。</h3><p>获得用户输入的一个整数，输出该整数百位及以上的数字</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数：&quot;</span>))</span><br><span class="line"><span class="keyword">while</span> num &gt;= <span class="number">100</span>:</span><br><span class="line">    num //= <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;该整数百位及以上的数字为：&quot;</span>, num)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>首先读入用户输入的整数num，然后使用while循环判断num是否大于等于100，如果是则将num除以10，直到num小于100为止。最后输出num的值即为百位及以上的数字。</p>
-<h3 id="14、将字符串按照空格分隔并逐行打印。"><a href="#14、将字符串按照空格分隔并逐行打印。" class="headerlink" title="14、将字符串按照空格分隔并逐行打印。"></a>14、将字符串按照空格分隔并逐行打印。</h3><p>获得用户输入的一个字符串，将字符串按照空格分隔，然后逐行打印出来。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;请输入一段字符串：&quot;</span>)</span><br><span class="line">words = s.split()</span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">    <span class="built_in">print</span>(word)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>首先读入用户输入的字符串s，然后使用split()函数将其按照空格分隔成多个单词，存储到列表words中。接下来使用for循环遍历words列表，逐行打印其中的每个单词。</p>
-<h3 id="15、输出对应的数字的星期字符串名称"><a href="#15、输出对应的数字的星期字符串名称" class="headerlink" title="15、输出对应的数字的星期字符串名称"></a>15、输出对应的数字的星期字符串名称</h3><p>程序读入一个表示星期几的数字（1至7），输出对应的星期字符串名称。例如：输入3，返回：星期三。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个数字（1-7）：&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> num == <span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期一&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">2</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期二&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">3</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期三&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">4</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期四&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期五&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">6</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期六&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">7</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期日&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;输入错误&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>根据题目要求，输入数字1至7对应输出星期一至星期日。因此可以使用if-elif-else语句判断输入数字的值，并输出对应的星期字符串名称。注意，这里的代码只考虑了数字1至7的情况，如果输入其他数字，会输出“输入错误”。</p>
-<h3 id="16、5位回文数"><a href="#16、5位回文数" class="headerlink" title="16、5位回文数"></a>16、5位回文数</h3><p>设n是一个任意自然数，如果n的各位数字反向排列所得自然数与n相等，则n被称为回文数。从键盘输入一个5位数字，请编写程序判断这个数字是不是回文数。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">input</span>(<span class="string">&quot;请输入一个5位数字：&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> num == num[::-<span class="number">1</span>]:</span><br><span class="line">    <span class="built_in">print</span>(num, <span class="string">&quot;是回文数&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(num, <span class="string">&quot;不是回文数&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>首先读入用户输入的5位数字，存储到字符串变量num中。然后使用字符串的切片[::-1]可以将num反转，判断反转后的字符串是否与原字符串相等，如果相等则说明num是回文数，否则不是。</p>
-<h3 id="17、输出其二进制、八进制、十六进制字符串"><a href="#17、输出其二进制、八进制、十六进制字符串" class="headerlink" title="17、输出其二进制、八进制、十六进制字符串"></a>17、输出其二进制、八进制、十六进制字符串</h3><p>输入一个十进制整数，分别输出其二进制、八进制、十六进制字符串。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数：&quot;</span>))</span><br><span class="line">binary_str = <span class="built_in">bin</span>(num)[<span class="number">2</span>:]</span><br><span class="line">octal_str = <span class="built_in">oct</span>(num)[<span class="number">2</span>:]</span><br><span class="line">hexadecimal_str = <span class="built_in">hex</span>(num)[<span class="number">2</span>:]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;二进制：&quot;</span>, binary_str)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;八进制：&quot;</span>, octal_str)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;十六进制：&quot;</span>, hexadecimal_str)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>首先读入用户输入的整数num，然后使用bin()函数、oct()函数、hex()函数将num转换成对应的二进制、八进制、十六进制字符串。其中，这些函数返回的字符串包含了前缀“0b”、“0o”、“0x”，因此需要使用字符串切片取出字符串</p>
-<h5 id><a href="#" class="headerlink" title></a></h5><h3 id="18、python判断闰年"><a href="#18、python判断闰年" class="headerlink" title="18、python判断闰年"></a>18、python判断闰年</h3><p>闰年的标准算法：</p>
-<ul>
-<li>如果一个年份能被4整除但不能被100整除，那么它是闰年。</li>
-<li>如果一个年份能被400整除，那么它是闰年。</li>
-</ul>
-<p>如果年份满足以上任一条件，则将其判定为闰年。否则，将其判定为不是闰年。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">year = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个年份：&quot;</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (year % <span class="number">4</span> == <span class="number">0</span> <span class="keyword">and</span> year % <span class="number">100</span> != <span class="number">0</span>) <span class="keyword">or</span> (year % <span class="number">400</span> == <span class="number">0</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;year&#125;</span>是闰年&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;year&#125;</span>不是闰年&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="19、最大公约数计算。"><a href="#19、最大公约数计算。" class="headerlink" title="19、最大公约数计算。"></a>19、最大公约数计算。</h3><p>使用辗转相除法求出两个整数的最大公约数，并使用最大公约数求出最小公倍数。最大公约数可以使用辗转相除法求出，最小公倍数是两个数的乘积除以最大公约数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">gcd</span>(<span class="params">a, b</span>):</span><br><span class="line">    <span class="keyword">while</span> b != <span class="number">0</span>:</span><br><span class="line">        a, b = b, a % b</span><br><span class="line">    <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lcm</span>(<span class="params">a, b</span>):</span><br><span class="line">    <span class="keyword">return</span> a * b // gcd(a, b)</span><br><span class="line"></span><br><span class="line">num1 = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入第一个整数：&quot;</span>))</span><br><span class="line">num2 = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入第二个整数：&quot;</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;最大公约数：<span class="subst">&#123;gcd(num1, num2)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;最小公倍数：<span class="subst">&#123;lcm(num1, num2)&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h3 id="20、统计不同字符个数"><a href="#20、统计不同字符个数" class="headerlink" title="20、统计不同字符个数"></a>20、统计不同字符个数</h3><p>该程序首先从用户键入的字符串中逐个提取字符，并使用Python内置的函数<code>isalpha</code>、<code>isdigit</code>和<code>isspace</code>来判断字符是否为英文字符、数字、空格，如果不属于以上三种，则计入其他字符。最后，程序输出各种字符的个数。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;请输入一行字符：&quot;</span>)</span><br><span class="line"></span><br><span class="line">letters = <span class="number">0</span></span><br><span class="line">digits = <span class="number">0</span></span><br><span class="line">spaces = <span class="number">0</span></span><br><span class="line">others = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> c <span class="keyword">in</span> s:</span><br><span class="line">    <span class="keyword">if</span> c.isalpha():</span><br><span class="line">        letters += <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> c.isdigit():</span><br><span class="line">        digits += <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> c.isspace():</span><br><span class="line">        spaces += <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        others += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;字母数：<span class="subst">&#123;letters&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;数字数：<span class="subst">&#123;digits&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;空格数：<span class="subst">&#123;spaces&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;其他字符数：<span class="subst">&#123;others&#125;</span>&quot;</span>)</span><br><span class="line">该程序首先从用户键入的字符串中逐个提取字符，并使用Python内置的函数isalpha、isdigit和isspace来判断字符是否为英文字符、数字、空格，如果不属于以上三种，则计入其他字符。最后，程序输出各种字符的个数。</span><br></pre></td></tr></table></figure>
-
-<h3 id="21、羊车门问题"><a href="#21、羊车门问题" class="headerlink" title="21、羊车门问题"></a>21、羊车门问题</h3><p>首先主持人开启羊门后，对于交换没有任何影响。开始三个门中，两羊一车，那么任意选择一个门，是车门的概率是1&#x2F;3。在主持人开启羊门后，车肯定在剩下的两个门中，而自己选择的门是车门的概率是1&#x2F;3，那么交换后是车门的概率就是2&#x2F;3。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">car=random.randint(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">a=b=<span class="number">0</span>  <span class="comment">#a不换的可能数，b换的可能数</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10001</span>):  <span class="comment">#可以定义一个变量n=10000，作为输入样本的数量</span></span><br><span class="line">    guess=random.randint(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">    <span class="keyword">if</span> guess==car:</span><br><span class="line">        a=a+<span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        b=b+<span class="number">1</span></span><br><span class="line">rate1=a/<span class="number">10000</span></span><br><span class="line">rate2=b/<span class="number">10000</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;不改猜中的概率为：&#123;&#125;，更改猜中的概率为：&#123;&#125;.&quot;</span>.<span class="built_in">format</span>(rate1,rate2))</span><br></pre></td></tr></table></figure>
-
-<h3 id="22、实现函数"><a href="#22、实现函数" class="headerlink" title="22、实现函数"></a>22、实现函数</h3><h6 id="1、实现isNum-函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。"><a href="#1、实现isNum-函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。" class="headerlink" title="1、实现isNum()函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。"></a>1、实现isNum()函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。</h6><p>2、实现isPrime()函数，参数位整数有1，2，3，4个数字，请问能组成多少个互不相同且无重复数字的三位数？分别是哪些数字？</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">            <span class="keyword">if</span> (i != j) <span class="keyword">and</span> (j != k) <span class="keyword">and</span> (i != k):</span><br><span class="line">                <span class="built_in">print</span>(i,j,k)</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;能组成%d个互不相同且无重复数字的三位数&quot;</span> % count)</span><br><span class="line"></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="number">1</span> <span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span> <span class="number">4</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">4</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">1</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">4</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">4</span> <span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">4</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span> <span class="number">3</span> <span class="number">1</span></span><br><span class="line"><span class="number">4</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line">能组成<span class="number">24</span>个互不相同且无重复数字的三位数</span><br></pre></td></tr></table></figure>
-
-<h3 id="23、剪刀石头布游戏"><a href="#23、剪刀石头布游戏" class="headerlink" title="23、剪刀石头布游戏"></a>23、剪刀石头布游戏</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义游戏结果信息字典</span></span><br><span class="line">result_dict = &#123;<span class="number">0</span>: <span class="string">&#x27;平局&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;你赢了&#x27;</span>, -<span class="number">1</span>: <span class="string">&#x27;你输了&#x27;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取用户输入的数字</span></span><br><span class="line">user_input = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请出拳：0-剪刀，1-石头，2-布\n&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成系统随机数字</span></span><br><span class="line">system_input = random.randint(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 根据用户输入的数字和系统随机数字计算游戏结果</span></span><br><span class="line">result = (user_input - system_input) % <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出游戏结果信息</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;你出的是：%d，系统出的是：%d，结果是：%s&#x27;</span> % (user_input, system_input, result_dict[result]))</span><br></pre></td></tr></table></figure>
-
-<h3 id="24、计算1-100的累积和"><a href="#24、计算1-100的累积和" class="headerlink" title="24、计算1~100的累积和"></a>24、计算1~100的累积和</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">101</span>):</span><br><span class="line">    <span class="built_in">sum</span> += i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1~100的累积和为：&quot;</span>,<span class="built_in">sum</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="25、计算1-100的偶数的累积和"><a href="#25、计算1-100的偶数的累积和" class="headerlink" title="25、计算1~100的偶数的累积和"></a>25、计算1~100的偶数的累积和</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="number">101</span>,<span class="number">2</span>):</span><br><span class="line">    <span class="built_in">sum</span> += i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1~100的偶数的累积和为：&quot;</span>,<span class="built_in">sum</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="26、函数题目"><a href="#26、函数题目" class="headerlink" title="26、函数题目"></a>26、函数题目</h3><p>现有商品列表如下： products &#x3D; [[“iphone”,6888],[“MacPro”,14800],[“小米6”,2499],[“Coffee”,31],[“Book”,60], [“Nike”,699]]，需打印出以下格式：</p>
-<p>0 iphone 6888 </p>
-<p>1 MacPro 14800</p>
-<p> 2 小米6 2499 </p>
-<p>3 Coffee 31 </p>
-<p>4 Book 60 </p>
-<p>5 Nike 699</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">products = [[<span class="string">&quot;iphone&quot;</span>,<span class="number">6888</span>],[<span class="string">&quot;MacPro&quot;</span>,<span class="number">14800</span>],[<span class="string">&quot;小米6&quot;</span>,<span class="number">2499</span>],[<span class="string">&quot;Coffee&quot;</span>,<span class="number">31</span>],[<span class="string">&quot;Book&quot;</span>,<span class="number">60</span>],[<span class="string">&quot;Nike&quot;</span>,<span class="number">699</span>]]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(products)):</span><br><span class="line">    <span class="built_in">print</span>(i, products[i][<span class="number">0</span>], products[i][<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>根据上面的products列表写一个循环，不断询问用户想买什么，用户选择一个商品编号，就把对应</p>
-<p>的商品添加到购物车里，最终用户输入q退出时，打印购买的商品列表。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">products = [[<span class="string">&quot;iphone&quot;</span>,<span class="number">6888</span>],[<span class="string">&quot;MacPro&quot;</span>,<span class="number">14800</span>],[<span class="string">&quot;小米6&quot;</span>,<span class="number">2499</span>],[<span class="string">&quot;Coffee&quot;</span>,<span class="number">31</span>],[<span class="string">&quot;Book&quot;</span>,<span class="number">60</span>],[<span class="string">&quot;Nike&quot;</span>,<span class="number">699</span>]]</span><br><span class="line">shopping_list = []   <span class="comment"># 初始化购物车</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(products)):</span><br><span class="line">        <span class="built_in">print</span>(i, products[i][<span class="number">0</span>], products[i][<span class="number">1</span>])</span><br><span class="line">    </span><br><span class="line">    user_input = <span class="built_in">input</span>(<span class="string">&quot;请输入想购买的商品编号，输入q退出：&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> user_input == <span class="string">&#x27;q&#x27;</span>:</span><br><span class="line">        <span class="keyword">break</span>   <span class="comment"># 退出循环</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        product_id = <span class="built_in">int</span>(user_input)</span><br><span class="line">        <span class="keyword">if</span> product_id &lt; <span class="number">0</span> <span class="keyword">or</span> product_id &gt;= <span class="built_in">len</span>(products):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;商品编号不存在，请重新输入！&quot;</span>)</span><br><span class="line">            <span class="keyword">continue</span>   <span class="comment"># 跳过本次循环，重新输入商品编号</span></span><br><span class="line">        </span><br><span class="line">        shopping_list.append(products[product_id])</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;已添加商品：%s，价格：%d&quot;</span> % (products[product_id][<span class="number">0</span>], products[product_id][<span class="number">1</span>]))</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">except</span> ValueError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;输入错误，请重新输入！&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出购物清单</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;购物清单：&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(shopping_list)):</span><br><span class="line">    <span class="built_in">print</span>(i, shopping_list[i][<span class="number">0</span>], shopping_list[i][<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>1.写一个打印一条横线的函数。（提示：横线是若干个“-”组成）</p>
-<p>2.写一个函数，可以通过输入的参数，打印出自定义行数的横线。（提示：调用上面的函数）</p>
-<p>3.写一个函数求三个数的和</p>
-<p>4.写一个函数求三个数的平均值（提示：调用上面的函数）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_line</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;-&quot;</span> * <span class="number">50</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_lines</span>(<span class="params">num</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        print_line()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sum_of_three_numbers</span>(<span class="params">a, b, c</span>):</span><br><span class="line">    <span class="keyword">return</span> a + b + c</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">average_of_three_numbers</span>(<span class="params">a, b, c</span>):</span><br><span class="line">    <span class="keyword">return</span> sum_of_three_numbers(a, b, c) / <span class="number">3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ol>
-<li><p>应用文件操作的相关知识，通过Python新建一个文件gushi.txt，选择一首古诗写入文件中</p>
-</li>
-<li><p>另外写一个函数，读取指定文件gushi.txt，将内容复制到copy.txt中，并在控制台输出“复制完</p>
-</li>
-</ol>
-<p>毕”。</p>
-<ol start="3">
-<li>提示：分别定义两个函数，完成读文件和写文件的操作</li>
-</ol>
-<p>尽可能完善代码，添加异常处理。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">write_poem_to_file</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;gushi.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            poem = <span class="string">&quot;床前明月光，疑是地上霜。举头望明月，低头思故乡。&quot;</span></span><br><span class="line">            f.write(poem)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;写入文件出错：&quot;</span>, e)</span><br><span class="line">这个函数中，我们使用了<span class="keyword">with</span>语句来打开文件，并以写入模式(<span class="string">&quot;w&quot;</span>)打开。然后，将一首古诗字符串赋值给变量poem，并将其写入文件。注意，我们指定了文件的编码为UTF-<span class="number">8</span>。</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">copy_file</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;gushi.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f1:</span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;copy.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f2:</span><br><span class="line">                content = f1.read()</span><br><span class="line">                f2.write(content)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;复制完毕&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;读写文件出错：&quot;</span>, e)</span><br><span class="line">这个函数中，我们使用了嵌套的<span class="keyword">with</span>语句来打开两个文件。首先，以读取模式(<span class="string">&quot;r&quot;</span>)打开gushi.txt，并将其中的内容读入到变量content中。然后，以写入模式(<span class="string">&quot;w&quot;</span>)打开copy.txt，并将content写入到其中。最后，在控制台输出<span class="string">&quot;复制完毕&quot;</span>。注意，在操作文件时，我们也添加了异常处理。</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">write_poem_to_file</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;gushi.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            poem = <span class="string">&#x27;静夜思\n床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。\n&#x27;</span></span><br><span class="line">            f.write(poem)</span><br><span class="line">    <span class="keyword">except</span> IOError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;写入文件失败&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">copy_file_content</span>(<span class="params">src_file, dest_file</span>):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(src_file, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f1, <span class="built_in">open</span>(dest_file, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f2:</span><br><span class="line">            content = f1.read()</span><br><span class="line">            f2.write(content)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;复制完成&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span> IOError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;读取或写入文件失败&#x27;</span>)</span><br><span class="line">在上面的代码中，write_poem_to_file函数用于创建文件并写入古诗内容，copy_file_content函数用于复制指定文件内容并保存到另一个文件中。</span><br><span class="line"></span><br><span class="line">以下是函数的调用示例：</span><br><span class="line">write_poem_to_file()  <span class="comment"># 写入古诗到文件gushi.txt中</span></span><br><span class="line">copy_file_content(<span class="string">&#x27;gushi.txt&#x27;</span>, <span class="string">&#x27;copy.txt&#x27;</span>)  <span class="comment"># 复制gushi.txt的内容到copy.txt中</span></span><br><span class="line">当程序运行时，如果文件操作遇到问题，就会抛出异常，程序会在控制台上输出相应的提示信息。</span><br><span class="line">接下来可以测试一下代码的运行情况。</span><br><span class="line"></span><br><span class="line">先运行write_poem_to_file()函数，将古诗写入文件gushi.txt：</span><br><span class="line">write_poem_to_file()</span><br><span class="line">然后再运行copy_file_content()函数，将gushi.txt的内容复制到copy.txt中：</span><br><span class="line">copy_file_content(<span class="string">&#x27;gushi.txt&#x27;</span>, <span class="string">&#x27;copy.txt&#x27;</span>)</span><br><span class="line">如果一切正常，控制台上会输出“复制完成”的提示信息。我们可以打开copy.txt文件，查看复制后的内容是否与gushi.txt中的内容一致。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h5 id="总体概括"><a href="#总体概括" class="headerlink" title="总体概括"></a>总体概括</h5><h6 id="内含二级python编程题"><a href="#内含二级python编程题" class="headerlink" title="内含二级python编程题"></a>内含二级python编程题</h6><p><img src="/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/1.png"></p>
-<p><img src="/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/image-20231104181758079.png" alt="image-20231104181758079"></p>
+    <title>关于</title>
+    <url>/2023/06/19/tags/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<p>本人大二，正在学习阶段。</p>
+<p>写博客的目的：</p>
+<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
+<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
+<p>​	3、分享给他人，希望对你们有所帮助。</p>
+<p>联系方式：</p>
+<p>邮箱：<a href="mailto:&#x32;&#x37;&#x37;&#x33;&#48;&#x37;&#51;&#53;&#52;&#x32;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#x32;&#x37;&#x37;&#x33;&#48;&#x37;&#51;&#53;&#52;&#x32;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<hr>
 ]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
       <tags>
-        <tag>python</tag>
-        <tag>题目</tag>
+        <tag>tags</tag>
       </tags>
   </entry>
   <entry>
@@ -2086,23 +1971,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于</title>
-    <url>/2023/06/19/tags/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<p>本人大二，正在学习阶段。</p>
-<p>写博客的目的：</p>
-<p>​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。</p>
-<p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
-<p>​	3、分享给他人，希望对你们有所帮助。</p>
-<p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#x37;&#55;&#51;&#48;&#55;&#51;&#53;&#52;&#x32;&#x40;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#50;&#x37;&#55;&#51;&#48;&#55;&#51;&#53;&#52;&#x32;&#x40;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a></p>
-<hr>
-]]></content>
-      <tags>
-        <tag>tags</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>修改任务栏中工具颜色</title>
     <url>/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="修改任务栏中工具的颜色"><a href="#修改任务栏中工具的颜色" class="headerlink" title="修改任务栏中工具的颜色"></a>修改任务栏中工具的颜色</h1><ol>
@@ -2229,6 +2097,138 @@
       <tags>
         <tag>李白</tag>
         <tag>白玉京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python题目练习</title>
+    <url>/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="python题目"><a href="#python题目" class="headerlink" title="python题目"></a>python题目</h1><h3 id="1、判断从键盘输入的整数是否在-0-100-之间"><a href="#1、判断从键盘输入的整数是否在-0-100-之间" class="headerlink" title="1、判断从键盘输入的整数是否在[0,100]之间"></a>1、判断从键盘输入的整数是否在[0,100]之间</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入你的整数：&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> num&lt;<span class="number">100</span> <span class="keyword">and</span> num&gt;<span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你的整数在这之间。&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;你输入不在此区间。&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num=<span class="built_in">eval</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入一个整数：&#x27;</span>))</span><br><span class="line"><span class="keyword">if</span> num&gt;<span class="number">100</span> <span class="keyword">or</span> num&lt;<span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;输入整数小于0或大于100&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;输入整数在0到100之间&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、斐波那契数列（黄金分割数列）"><a href="#2、斐波那契数列（黄金分割数列）" class="headerlink" title="2、斐波那契数列（黄金分割数列）"></a>2、斐波那契数列（黄金分割数列）</h3><p>每个数是前两个数之和。要求，输出斐波那契数列，输出不大于1000的序列元素，以逗号分隔。</p>
+<p>F(0)&#x3D;0,F(1)&#x3D;1……F(n)&#x3D;F(n-2)+F(n-1)，其中n&gt;&#x3D;2</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a,b=<span class="number">0</span>,<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> a&lt;<span class="number">1000</span>:</span><br><span class="line">    <span class="built_in">print</span>(a,end=<span class="string">&#x27;,&#x27;</span>)</span><br><span class="line">    a,b=b,a+b</span><br></pre></td></tr></table></figure>
+
+<h3 id="3、圆面积的计算"><a href="#3、圆面积的计算" class="headerlink" title="3、圆面积的计算"></a>3、圆面积的计算</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">方法一</span><br><span class="line">r=<span class="number">25</span></span><br><span class="line">area=<span class="number">3.1415</span>*r*r</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;area=&#123;:.2f&#125;&#x27;</span>.<span class="built_in">format</span>(area))</span><br><span class="line"></span><br><span class="line">方法二：</span><br><span class="line"><span class="keyword">import</span> math <span class="keyword">as</span> M</span><br><span class="line">r=<span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">&#x27;请输入圆的半径：&#x27;</span>))</span><br><span class="line">area=M.pi*r*r</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;圆的面积为：&quot;</span>,area)</span><br></pre></td></tr></table></figure>
+
+<h3 id="4、绘制五角红星"><a href="#4、绘制五角红星" class="headerlink" title="4、绘制五角红星"></a>4、绘制五角红星</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> turtle <span class="keyword">import</span> *   <span class="comment">#通过这个例子尝试绘制圆、正方形等</span></span><br><span class="line">color(<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;red&#x27;</span>)  <span class="comment">#设置笔和填充的颜色</span></span><br><span class="line">begin_fill()  <span class="comment">#开始填充</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    fd(<span class="number">200</span>)  <span class="comment">#forward就是线条的长度，而right则表示转向的角度是多少</span></span><br><span class="line">    rt(<span class="number">144</span>) <span class="comment">#因为五角星每个角为36度,即旋转180-36度，所以使用循环语句重复5次，画出5个角</span></span><br><span class="line">end_fill()</span><br><span class="line">done()</span><br><span class="line"></span><br><span class="line"><span class="comment">#Python绘图Turtle库详解：https://blog.csdn.net/zengxiantao1994/article/details/76588580</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5、绘制七彩圆圈"><a href="#5、绘制七彩圆圈" class="headerlink" title="5、绘制七彩圆圈"></a>5、绘制七彩圆圈</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">colors=[<span class="string">&#x27;red&#x27;</span>,<span class="string">&#x27;orange&#x27;</span>,<span class="string">&#x27;yellow&#x27;</span>,<span class="string">&#x27;green&#x27;</span>,<span class="string">&#x27;blue&#x27;</span>,<span class="string">&#x27;indigo&#x27;</span>,<span class="string">&#x27;purple&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">7</span>):</span><br><span class="line">    c=colors[i]</span><br><span class="line">    turtle.color(c,c) <span class="comment">#同时设置pencolor, fillcolor</span></span><br><span class="line">    turtle.begin_fill()</span><br><span class="line">    turtle.rt(<span class="number">360</span>/<span class="number">7</span>)</span><br><span class="line">    turtle.circle(<span class="number">50</span>) <span class="comment">#画圆，给出半径，表示圆心在画笔的左边(右边)画圆</span></span><br><span class="line">    <span class="comment">#circle(r,extent)，第一个参数r代表的是半径，第二个参数extent代表的是角度，所以可以画弧线</span></span><br><span class="line">    turtle.end_fill()</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure>
+
+<h3 id="6、绘制同心圆"><a href="#6、绘制同心圆" class="headerlink" title="6、绘制同心圆"></a>6、绘制同心圆</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">turtle.pensize(<span class="number">3</span>)</span><br><span class="line">turtle.circle(<span class="number">20</span>) <span class="comment">#绘制半径为20像素的圆</span></span><br><span class="line">turtle.circle(<span class="number">40</span>)</span><br><span class="line">turtle.circle(<span class="number">80</span>)</span><br><span class="line">turtle.circle(<span class="number">160</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果"><a href="#7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果" class="headerlink" title="7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果"></a>7、系统提示输入用户名字，并随机生成一个幸运数字，输出结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">str1=<span class="built_in">input</span>(<span class="string">&#x27;请输入你的名字：&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Hello！&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(str1))</span><br><span class="line">guard=<span class="built_in">ord</span>(str1[<span class="number">0</span>])%<span class="number">100</span></span><br><span class="line"><span class="comment">#ord() 函数是 chr() 函数（对于8位的ASCII字符串）或 unichr() 函数（对于Unicode对象）的配对函数，</span></span><br><span class="line"><span class="comment"># 它以一个字符（长度为1的字符串）作为参数，返回对应的 ASCII 数值，或者 Unicode 数值</span></span><br><span class="line"><span class="comment"># 如果所给的 Unicode 字符超出了你的 Python 定义范围，则会引发一个 TypeError 的异常。</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;你的幸运数字是&#x27;</span>,random.choice(<span class="built_in">range</span>(guard)))</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h3 id="8、获得用户输入的一个整数N，计算并输出N的32次方"><a href="#8、获得用户输入的一个整数N，计算并输出N的32次方" class="headerlink" title="8、获得用户输入的一个整数N，计算并输出N的32次方"></a>8、获得用户输入的一个整数N，计算并输出N的32次方</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数N：&quot;</span>))</span><br><span class="line">result = N ** <span class="number">32</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125;的32次方为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(N, result))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="9、获得用户输入的一段文字，将这段文字进行垂直输出"><a href="#9、获得用户输入的一段文字，将这段文字进行垂直输出" class="headerlink" title="9、获得用户输入的一段文字，将这段文字进行垂直输出"></a>9、获得用户输入的一段文字，将这段文字进行垂直输出</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">text = <span class="built_in">input</span>(<span class="string">&quot;请输入一段文字：&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> ch <span class="keyword">in</span> text:</span><br><span class="line">    <span class="built_in">print</span>(ch)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="10、获得用户输入的一个合法算式，例如：1-2-3-4，输出运算结果"><a href="#10、获得用户输入的一个合法算式，例如：1-2-3-4，输出运算结果" class="headerlink" title="10、获得用户输入的一个合法算式，例如：1.2+3.4，输出运算结果"></a>10、获得用户输入的一个合法算式，例如：1.2+3.4，输出运算结果</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">expression = <span class="built_in">input</span>(<span class="string">&quot;请输入一个合法算式：&quot;</span>)</span><br><span class="line">result = <span class="built_in">eval</span>(expression)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;结果为：&quot;</span>, result)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="11、获得用户输入的一个小数，提取并输出其整数部分"><a href="#11、获得用户输入的一个小数，提取并输出其整数部分" class="headerlink" title="11、获得用户输入的一个小数，提取并输出其整数部分"></a>11、获得用户输入的一个小数，提取并输出其整数部分</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">float</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个小数：&quot;</span>))</span><br><span class="line">int_part = <span class="built_in">int</span>(num)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;小数&#123;&#125;的整数部分为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(num, int_part))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="12、下面代码存在多处错误，请指出"><a href="#12、下面代码存在多处错误，请指出" class="headerlink" title="12、下面代码存在多处错误，请指出"></a>12、下面代码存在多处错误，请指出</h3><p>题目：用户输入一个整数N，计算并输出1到N相加的和。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n=<span class="built_in">input</span>(<span class="string">&#x27;请输入整数N：&#x27;</span>);</span><br><span class="line"><span class="built_in">sum</span>=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n)</span><br><span class="line">    <span class="built_in">sum</span>+=i+<span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;1到N求和结果：&#x27;</span>.<span class="built_in">format</span>(<span class="built_in">sum</span>))</span><br></pre></td></tr></table></figure>
+
+<p>正确：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数N：&quot;</span>))</span><br><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N+<span class="number">1</span>):</span><br><span class="line">    <span class="built_in">sum</span> += i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1到&#123;&#125;相加的和为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(N, <span class="built_in">sum</span>))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="13、输出该整数百位及以上的数字。"><a href="#13、输出该整数百位及以上的数字。" class="headerlink" title="13、输出该整数百位及以上的数字。"></a>13、输出该整数百位及以上的数字。</h3><p>获得用户输入的一个整数，输出该整数百位及以上的数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数：&quot;</span>))</span><br><span class="line"><span class="keyword">while</span> num &gt;= <span class="number">100</span>:</span><br><span class="line">    num //= <span class="number">10</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;该整数百位及以上的数字为：&quot;</span>, num)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>首先读入用户输入的整数num，然后使用while循环判断num是否大于等于100，如果是则将num除以10，直到num小于100为止。最后输出num的值即为百位及以上的数字。</p>
+<h3 id="14、将字符串按照空格分隔并逐行打印。"><a href="#14、将字符串按照空格分隔并逐行打印。" class="headerlink" title="14、将字符串按照空格分隔并逐行打印。"></a>14、将字符串按照空格分隔并逐行打印。</h3><p>获得用户输入的一个字符串，将字符串按照空格分隔，然后逐行打印出来。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;请输入一段字符串：&quot;</span>)</span><br><span class="line">words = s.split()</span><br><span class="line"><span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">    <span class="built_in">print</span>(word)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>首先读入用户输入的字符串s，然后使用split()函数将其按照空格分隔成多个单词，存储到列表words中。接下来使用for循环遍历words列表，逐行打印其中的每个单词。</p>
+<h3 id="15、输出对应的数字的星期字符串名称"><a href="#15、输出对应的数字的星期字符串名称" class="headerlink" title="15、输出对应的数字的星期字符串名称"></a>15、输出对应的数字的星期字符串名称</h3><p>程序读入一个表示星期几的数字（1至7），输出对应的星期字符串名称。例如：输入3，返回：星期三。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个数字（1-7）：&quot;</span>))</span><br><span class="line"><span class="keyword">if</span> num == <span class="number">1</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期一&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">2</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期二&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">3</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期三&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">4</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期四&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">5</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期五&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">6</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期六&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> num == <span class="number">7</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;星期日&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;输入错误&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>根据题目要求，输入数字1至7对应输出星期一至星期日。因此可以使用if-elif-else语句判断输入数字的值，并输出对应的星期字符串名称。注意，这里的代码只考虑了数字1至7的情况，如果输入其他数字，会输出“输入错误”。</p>
+<h3 id="16、5位回文数"><a href="#16、5位回文数" class="headerlink" title="16、5位回文数"></a>16、5位回文数</h3><p>设n是一个任意自然数，如果n的各位数字反向排列所得自然数与n相等，则n被称为回文数。从键盘输入一个5位数字，请编写程序判断这个数字是不是回文数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">input</span>(<span class="string">&quot;请输入一个5位数字：&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> num == num[::-<span class="number">1</span>]:</span><br><span class="line">    <span class="built_in">print</span>(num, <span class="string">&quot;是回文数&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(num, <span class="string">&quot;不是回文数&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>首先读入用户输入的5位数字，存储到字符串变量num中。然后使用字符串的切片[::-1]可以将num反转，判断反转后的字符串是否与原字符串相等，如果相等则说明num是回文数，否则不是。</p>
+<h3 id="17、输出其二进制、八进制、十六进制字符串"><a href="#17、输出其二进制、八进制、十六进制字符串" class="headerlink" title="17、输出其二进制、八进制、十六进制字符串"></a>17、输出其二进制、八进制、十六进制字符串</h3><p>输入一个十进制整数，分别输出其二进制、八进制、十六进制字符串。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个整数：&quot;</span>))</span><br><span class="line">binary_str = <span class="built_in">bin</span>(num)[<span class="number">2</span>:]</span><br><span class="line">octal_str = <span class="built_in">oct</span>(num)[<span class="number">2</span>:]</span><br><span class="line">hexadecimal_str = <span class="built_in">hex</span>(num)[<span class="number">2</span>:]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;二进制：&quot;</span>, binary_str)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;八进制：&quot;</span>, octal_str)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;十六进制：&quot;</span>, hexadecimal_str)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>首先读入用户输入的整数num，然后使用bin()函数、oct()函数、hex()函数将num转换成对应的二进制、八进制、十六进制字符串。其中，这些函数返回的字符串包含了前缀“0b”、“0o”、“0x”，因此需要使用字符串切片取出字符串</p>
+<h5 id><a href="#" class="headerlink" title></a></h5><h3 id="18、python判断闰年"><a href="#18、python判断闰年" class="headerlink" title="18、python判断闰年"></a>18、python判断闰年</h3><p>闰年的标准算法：</p>
+<ul>
+<li>如果一个年份能被4整除但不能被100整除，那么它是闰年。</li>
+<li>如果一个年份能被400整除，那么它是闰年。</li>
+</ul>
+<p>如果年份满足以上任一条件，则将其判定为闰年。否则，将其判定为不是闰年。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">year = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入一个年份：&quot;</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (year % <span class="number">4</span> == <span class="number">0</span> <span class="keyword">and</span> year % <span class="number">100</span> != <span class="number">0</span>) <span class="keyword">or</span> (year % <span class="number">400</span> == <span class="number">0</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;year&#125;</span>是闰年&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;year&#125;</span>不是闰年&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="19、最大公约数计算。"><a href="#19、最大公约数计算。" class="headerlink" title="19、最大公约数计算。"></a>19、最大公约数计算。</h3><p>使用辗转相除法求出两个整数的最大公约数，并使用最大公约数求出最小公倍数。最大公约数可以使用辗转相除法求出，最小公倍数是两个数的乘积除以最大公约数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">gcd</span>(<span class="params">a, b</span>):</span><br><span class="line">    <span class="keyword">while</span> b != <span class="number">0</span>:</span><br><span class="line">        a, b = b, a % b</span><br><span class="line">    <span class="keyword">return</span> a</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lcm</span>(<span class="params">a, b</span>):</span><br><span class="line">    <span class="keyword">return</span> a * b // gcd(a, b)</span><br><span class="line"></span><br><span class="line">num1 = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入第一个整数：&quot;</span>))</span><br><span class="line">num2 = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入第二个整数：&quot;</span>))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;最大公约数：<span class="subst">&#123;gcd(num1, num2)&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;最小公倍数：<span class="subst">&#123;lcm(num1, num2)&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="20、统计不同字符个数"><a href="#20、统计不同字符个数" class="headerlink" title="20、统计不同字符个数"></a>20、统计不同字符个数</h3><p>该程序首先从用户键入的字符串中逐个提取字符，并使用Python内置的函数<code>isalpha</code>、<code>isdigit</code>和<code>isspace</code>来判断字符是否为英文字符、数字、空格，如果不属于以上三种，则计入其他字符。最后，程序输出各种字符的个数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s = <span class="built_in">input</span>(<span class="string">&quot;请输入一行字符：&quot;</span>)</span><br><span class="line"></span><br><span class="line">letters = <span class="number">0</span></span><br><span class="line">digits = <span class="number">0</span></span><br><span class="line">spaces = <span class="number">0</span></span><br><span class="line">others = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> c <span class="keyword">in</span> s:</span><br><span class="line">    <span class="keyword">if</span> c.isalpha():</span><br><span class="line">        letters += <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> c.isdigit():</span><br><span class="line">        digits += <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> c.isspace():</span><br><span class="line">        spaces += <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        others += <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;字母数：<span class="subst">&#123;letters&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;数字数：<span class="subst">&#123;digits&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;空格数：<span class="subst">&#123;spaces&#125;</span>&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;其他字符数：<span class="subst">&#123;others&#125;</span>&quot;</span>)</span><br><span class="line">该程序首先从用户键入的字符串中逐个提取字符，并使用Python内置的函数isalpha、isdigit和isspace来判断字符是否为英文字符、数字、空格，如果不属于以上三种，则计入其他字符。最后，程序输出各种字符的个数。</span><br></pre></td></tr></table></figure>
+
+<h3 id="21、羊车门问题"><a href="#21、羊车门问题" class="headerlink" title="21、羊车门问题"></a>21、羊车门问题</h3><p>首先主持人开启羊门后，对于交换没有任何影响。开始三个门中，两羊一车，那么任意选择一个门，是车门的概率是1&#x2F;3。在主持人开启羊门后，车肯定在剩下的两个门中，而自己选择的门是车门的概率是1&#x2F;3，那么交换后是车门的概率就是2&#x2F;3。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line">car=random.randint(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">a=b=<span class="number">0</span>  <span class="comment">#a不换的可能数，b换的可能数</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10001</span>):  <span class="comment">#可以定义一个变量n=10000，作为输入样本的数量</span></span><br><span class="line">    guess=random.randint(<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line">    <span class="keyword">if</span> guess==car:</span><br><span class="line">        a=a+<span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        b=b+<span class="number">1</span></span><br><span class="line">rate1=a/<span class="number">10000</span></span><br><span class="line">rate2=b/<span class="number">10000</span></span><br><span class="line"><span class="built_in">print</span> (<span class="string">&quot;不改猜中的概率为：&#123;&#125;，更改猜中的概率为：&#123;&#125;.&quot;</span>.<span class="built_in">format</span>(rate1,rate2))</span><br></pre></td></tr></table></figure>
+
+<h3 id="22、实现函数"><a href="#22、实现函数" class="headerlink" title="22、实现函数"></a>22、实现函数</h3><h6 id="1、实现isNum-函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。"><a href="#1、实现isNum-函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。" class="headerlink" title="1、实现isNum()函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。"></a>1、实现isNum()函数，参数为一个字符串，如果这个字符串属于整数、浮点数或复数的表示，则返回True，否则返回False。</h6><p>2、实现isPrime()函数，参数位整数有1，2，3，4个数字，请问能组成多少个互不相同且无重复数字的三位数？分别是哪些数字？</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">            <span class="keyword">if</span> (i != j) <span class="keyword">and</span> (j != k) <span class="keyword">and</span> (i != k):</span><br><span class="line">                <span class="built_in">print</span>(i,j,k)</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;能组成%d个互不相同且无重复数字的三位数&quot;</span> % count)</span><br><span class="line"></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="number">1</span> <span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">2</span> <span class="number">1</span> <span class="number">4</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span> <span class="number">1</span></span><br><span class="line"><span class="number">2</span> <span class="number">4</span> <span class="number">3</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">3</span> <span class="number">1</span> <span class="number">4</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">4</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">1</span></span><br><span class="line"><span class="number">3</span> <span class="number">4</span> <span class="number">2</span></span><br><span class="line"><span class="number">4</span> <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">4</span> <span class="number">1</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span> <span class="number">2</span> <span class="number">1</span></span><br><span class="line"><span class="number">4</span> <span class="number">2</span> <span class="number">3</span></span><br><span class="line"><span class="number">4</span> <span class="number">3</span> <span class="number">1</span></span><br><span class="line"><span class="number">4</span> <span class="number">3</span> <span class="number">2</span></span><br><span class="line">能组成<span class="number">24</span>个互不相同且无重复数字的三位数</span><br></pre></td></tr></table></figure>
+
+<h3 id="23、剪刀石头布游戏"><a href="#23、剪刀石头布游戏" class="headerlink" title="23、剪刀石头布游戏"></a>23、剪刀石头布游戏</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义游戏结果信息字典</span></span><br><span class="line">result_dict = &#123;<span class="number">0</span>: <span class="string">&#x27;平局&#x27;</span>, <span class="number">1</span>: <span class="string">&#x27;你赢了&#x27;</span>, -<span class="number">1</span>: <span class="string">&#x27;你输了&#x27;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取用户输入的数字</span></span><br><span class="line">user_input = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&#x27;请出拳：0-剪刀，1-石头，2-布\n&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成系统随机数字</span></span><br><span class="line">system_input = random.randint(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 根据用户输入的数字和系统随机数字计算游戏结果</span></span><br><span class="line">result = (user_input - system_input) % <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出游戏结果信息</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;你出的是：%d，系统出的是：%d，结果是：%s&#x27;</span> % (user_input, system_input, result_dict[result]))</span><br></pre></td></tr></table></figure>
+
+<h3 id="24、计算1-100的累积和"><a href="#24、计算1-100的累积和" class="headerlink" title="24、计算1~100的累积和"></a>24、计算1~100的累积和</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">101</span>):</span><br><span class="line">    <span class="built_in">sum</span> += i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1~100的累积和为：&quot;</span>,<span class="built_in">sum</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="25、计算1-100的偶数的累积和"><a href="#25、计算1-100的偶数的累积和" class="headerlink" title="25、计算1~100的偶数的累积和"></a>25、计算1~100的偶数的累积和</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>,<span class="number">101</span>,<span class="number">2</span>):</span><br><span class="line">    <span class="built_in">sum</span> += i</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;1~100的偶数的累积和为：&quot;</span>,<span class="built_in">sum</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="26、函数题目"><a href="#26、函数题目" class="headerlink" title="26、函数题目"></a>26、函数题目</h3><p>现有商品列表如下： products &#x3D; [[“iphone”,6888],[“MacPro”,14800],[“小米6”,2499],[“Coffee”,31],[“Book”,60], [“Nike”,699]]，需打印出以下格式：</p>
+<p>0 iphone 6888 </p>
+<p>1 MacPro 14800</p>
+<p> 2 小米6 2499 </p>
+<p>3 Coffee 31 </p>
+<p>4 Book 60 </p>
+<p>5 Nike 699</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">products = [[<span class="string">&quot;iphone&quot;</span>,<span class="number">6888</span>],[<span class="string">&quot;MacPro&quot;</span>,<span class="number">14800</span>],[<span class="string">&quot;小米6&quot;</span>,<span class="number">2499</span>],[<span class="string">&quot;Coffee&quot;</span>,<span class="number">31</span>],[<span class="string">&quot;Book&quot;</span>,<span class="number">60</span>],[<span class="string">&quot;Nike&quot;</span>,<span class="number">699</span>]]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(products)):</span><br><span class="line">    <span class="built_in">print</span>(i, products[i][<span class="number">0</span>], products[i][<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>根据上面的products列表写一个循环，不断询问用户想买什么，用户选择一个商品编号，就把对应</p>
+<p>的商品添加到购物车里，最终用户输入q退出时，打印购买的商品列表。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">products = [[<span class="string">&quot;iphone&quot;</span>,<span class="number">6888</span>],[<span class="string">&quot;MacPro&quot;</span>,<span class="number">14800</span>],[<span class="string">&quot;小米6&quot;</span>,<span class="number">2499</span>],[<span class="string">&quot;Coffee&quot;</span>,<span class="number">31</span>],[<span class="string">&quot;Book&quot;</span>,<span class="number">60</span>],[<span class="string">&quot;Nike&quot;</span>,<span class="number">699</span>]]</span><br><span class="line">shopping_list = []   <span class="comment"># 初始化购物车</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(products)):</span><br><span class="line">        <span class="built_in">print</span>(i, products[i][<span class="number">0</span>], products[i][<span class="number">1</span>])</span><br><span class="line">    </span><br><span class="line">    user_input = <span class="built_in">input</span>(<span class="string">&quot;请输入想购买的商品编号，输入q退出：&quot;</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> user_input == <span class="string">&#x27;q&#x27;</span>:</span><br><span class="line">        <span class="keyword">break</span>   <span class="comment"># 退出循环</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        product_id = <span class="built_in">int</span>(user_input)</span><br><span class="line">        <span class="keyword">if</span> product_id &lt; <span class="number">0</span> <span class="keyword">or</span> product_id &gt;= <span class="built_in">len</span>(products):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;商品编号不存在，请重新输入！&quot;</span>)</span><br><span class="line">            <span class="keyword">continue</span>   <span class="comment"># 跳过本次循环，重新输入商品编号</span></span><br><span class="line">        </span><br><span class="line">        shopping_list.append(products[product_id])</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;已添加商品：%s，价格：%d&quot;</span> % (products[product_id][<span class="number">0</span>], products[product_id][<span class="number">1</span>]))</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">except</span> ValueError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;输入错误，请重新输入！&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出购物清单</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;购物清单：&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(shopping_list)):</span><br><span class="line">    <span class="built_in">print</span>(i, shopping_list[i][<span class="number">0</span>], shopping_list[i][<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>1.写一个打印一条横线的函数。（提示：横线是若干个“-”组成）</p>
+<p>2.写一个函数，可以通过输入的参数，打印出自定义行数的横线。（提示：调用上面的函数）</p>
+<p>3.写一个函数求三个数的和</p>
+<p>4.写一个函数求三个数的平均值（提示：调用上面的函数）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">print_line</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;-&quot;</span> * <span class="number">50</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_lines</span>(<span class="params">num</span>):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        print_line()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sum_of_three_numbers</span>(<span class="params">a, b, c</span>):</span><br><span class="line">    <span class="keyword">return</span> a + b + c</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">average_of_three_numbers</span>(<span class="params">a, b, c</span>):</span><br><span class="line">    <span class="keyword">return</span> sum_of_three_numbers(a, b, c) / <span class="number">3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>应用文件操作的相关知识，通过Python新建一个文件gushi.txt，选择一首古诗写入文件中</p>
+</li>
+<li><p>另外写一个函数，读取指定文件gushi.txt，将内容复制到copy.txt中，并在控制台输出“复制完</p>
+</li>
+</ol>
+<p>毕”。</p>
+<ol start="3">
+<li>提示：分别定义两个函数，完成读文件和写文件的操作</li>
+</ol>
+<p>尽可能完善代码，添加异常处理。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">write_poem_to_file</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;gushi.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            poem = <span class="string">&quot;床前明月光，疑是地上霜。举头望明月，低头思故乡。&quot;</span></span><br><span class="line">            f.write(poem)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;写入文件出错：&quot;</span>, e)</span><br><span class="line">这个函数中，我们使用了<span class="keyword">with</span>语句来打开文件，并以写入模式(<span class="string">&quot;w&quot;</span>)打开。然后，将一首古诗字符串赋值给变量poem，并将其写入文件。注意，我们指定了文件的编码为UTF-<span class="number">8</span>。</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">copy_file</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;gushi.txt&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f1:</span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;copy.txt&quot;</span>, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f2:</span><br><span class="line">                content = f1.read()</span><br><span class="line">                f2.write(content)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;复制完毕&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;读写文件出错：&quot;</span>, e)</span><br><span class="line">这个函数中，我们使用了嵌套的<span class="keyword">with</span>语句来打开两个文件。首先，以读取模式(<span class="string">&quot;r&quot;</span>)打开gushi.txt，并将其中的内容读入到变量content中。然后，以写入模式(<span class="string">&quot;w&quot;</span>)打开copy.txt，并将content写入到其中。最后，在控制台输出<span class="string">&quot;复制完毕&quot;</span>。注意，在操作文件时，我们也添加了异常处理。</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">write_poem_to_file</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;gushi.txt&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            poem = <span class="string">&#x27;静夜思\n床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。\n&#x27;</span></span><br><span class="line">            f.write(poem)</span><br><span class="line">    <span class="keyword">except</span> IOError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;写入文件失败&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">copy_file_content</span>(<span class="params">src_file, dest_file</span>):</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(src_file, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f1, <span class="built_in">open</span>(dest_file, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f2:</span><br><span class="line">            content = f1.read()</span><br><span class="line">            f2.write(content)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;复制完成&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span> IOError:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;读取或写入文件失败&#x27;</span>)</span><br><span class="line">在上面的代码中，write_poem_to_file函数用于创建文件并写入古诗内容，copy_file_content函数用于复制指定文件内容并保存到另一个文件中。</span><br><span class="line"></span><br><span class="line">以下是函数的调用示例：</span><br><span class="line">write_poem_to_file()  <span class="comment"># 写入古诗到文件gushi.txt中</span></span><br><span class="line">copy_file_content(<span class="string">&#x27;gushi.txt&#x27;</span>, <span class="string">&#x27;copy.txt&#x27;</span>)  <span class="comment"># 复制gushi.txt的内容到copy.txt中</span></span><br><span class="line">当程序运行时，如果文件操作遇到问题，就会抛出异常，程序会在控制台上输出相应的提示信息。</span><br><span class="line">接下来可以测试一下代码的运行情况。</span><br><span class="line"></span><br><span class="line">先运行write_poem_to_file()函数，将古诗写入文件gushi.txt：</span><br><span class="line">write_poem_to_file()</span><br><span class="line">然后再运行copy_file_content()函数，将gushi.txt的内容复制到copy.txt中：</span><br><span class="line">copy_file_content(<span class="string">&#x27;gushi.txt&#x27;</span>, <span class="string">&#x27;copy.txt&#x27;</span>)</span><br><span class="line">如果一切正常，控制台上会输出“复制完成”的提示信息。我们可以打开copy.txt文件，查看复制后的内容是否与gushi.txt中的内容一致。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="总体概括"><a href="#总体概括" class="headerlink" title="总体概括"></a>总体概括</h5><h6 id="内含二级python编程题"><a href="#内含二级python编程题" class="headerlink" title="内含二级python编程题"></a>内含二级python编程题</h6><p><img src="/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/1.png"></p>
+<p><img src="/2023/11/04/python%E9%A2%98%E7%9B%AE%E7%BB%83%E4%B9%A0/image-20231104181758079.png" alt="image-20231104181758079"></p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>题目</tag>
       </tags>
   </entry>
   <entry>
