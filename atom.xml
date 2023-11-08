@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-04T10:26:31.817Z</updated>
+  <updated>2023-11-06T06:49:20.152Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>beauty</title>
+    <link href="http://example.com/2023/11/06/beauty/"/>
+    <id>http://example.com/2023/11/06/beauty/</id>
+    <published>2023-11-06T06:49:20.000Z</published>
+    <updated>2023-11-06T06:49:20.152Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>python题目练习</title>
@@ -26,7 +44,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;python题目&quot;&gt;&lt;a href=&quot;#python题目&quot; class=&quot;headerlink&quot; title=&quot;python题目&quot;&gt;&lt;/a&gt;python题目&lt;/h1&gt;&lt;h3 id=&quot;1、判断从键盘输入的整数是否在-0-100-之间&quot;&gt;&lt;a href=&quot;#1、判断从</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -50,7 +68,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;一、函数（1）&quot;&gt;&lt;a href=&quot;#一、函数（1）&quot; class=&quot;headerlink&quot; title=&quot;一、函数（1）&quot;&gt;&lt;/a&gt;一、函数（1）&lt;/h1&gt;&lt;p&gt;所谓&lt;strong&gt;函数&lt;/strong&gt;，就是把&lt;strong&gt;具有独立功能的代码块&lt;/stron</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -70,7 +88,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;hexo博客问题&quot;&gt;&lt;a href=&quot;#hexo博客问题&quot; class=&quot;headerlink&quot; title=&quot;hexo博客问题&quot;&gt;&lt;/a&gt;hexo博客问题&lt;/h1&gt;&lt;h2 id=&quot;1、长时间未使用会出现报错-bash-hexo-command-not-found</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -96,8 +114,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;一、IDEA抽取方法快捷键打不开&quot;&gt;&lt;a href=&quot;#一、IDEA抽取方法快捷键打不开&quot; class=&quot;headerlink&quot; title=&quot;一、IDEA抽取方法快捷键打不开&quot;&gt;&lt;/a&gt;一、IDEA抽取方法快捷键打不开&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;C</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -118,12 +135,12 @@
     <link href="http://example.com/2023/10/30/%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AE%89%E8%A3%85/"/>
     <id>http://example.com/2023/10/30/%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%AE%89%E8%A3%85/</id>
     <published>2023-10-30T08:56:35.000Z</published>
-    <updated>2023-10-31T09:56:42.464Z</updated>
+    <updated>2023-11-06T08:07:45.346Z</updated>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;程序的安装&quot;&gt;&lt;a href=&quot;#程序的安装&quot; class=&quot;headerlink&quot; title=&quot;程序的安装&quot;&gt;&lt;/a&gt;程序的安装&lt;/h1&gt;&lt;h3 id=&quot;一、安装python开发环境&quot;&gt;&lt;a href=&quot;#一、安装python开发环境&quot; class=&quot;head</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -149,10 +166,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;修改任务栏中工具的颜色&quot;&gt;&lt;a href=&quot;#修改任务栏中工具的颜色&quot; class=&quot;headerlink&quot; title=&quot;修改任务栏中工具的颜色&quot;&gt;&lt;/a&gt;修改任务栏中工具的颜色&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;打开注册表编辑器&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -176,8 +190,7 @@
     
       
       
-    <summary type="html">&lt;h2 id=&quot;一、注释&quot;&gt;&lt;a href=&quot;#一、注释&quot; class=&quot;headerlink&quot; title=&quot;一、注释&quot;&gt;&lt;/a&gt;一、注释&lt;/h2&gt;&lt;p&gt;作用：使用自己熟悉的语言，在程序中对某些代码进行标注说明，增强程序的可读性。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.单行注释&lt;/</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -199,7 +212,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;流程控制&quot;&gt;&lt;a href=&quot;#流程控制&quot; class=&quot;headerlink&quot; title=&quot;流程控制&quot;&gt;&lt;/a&gt;流程控制&lt;/h1&gt;&lt;h2 id=&quot;一、程序的三大流程&quot;&gt;&lt;a href=&quot;#一、程序的三大流程&quot; class=&quot;headerlink&quot; title=</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -219,7 +232,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Hexo命令&quot;&gt;&lt;a href=&quot;#Hexo命令&quot; class=&quot;headerlink&quot; title=&quot;Hexo命令&quot;&gt;&lt;/a&gt;Hexo命令&lt;/h1&gt;&lt;h2 id=&quot;clean&quot;&gt;&lt;a href=&quot;#clean&quot; class=&quot;headerlink&quot; title=</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -243,7 +256,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;软件推荐&quot;&gt;&lt;a href=&quot;#软件推荐&quot; class=&quot;headerlink&quot; title=&quot;软件推荐&quot;&gt;&lt;/a&gt;软件推荐&lt;/h1&gt;&lt;h2 id=&quot;软件&quot;&gt;&lt;a href=&quot;#软件&quot; class=&quot;headerlink&quot; title=&quot;软件&quot;&gt;&lt;/a&gt;&lt;stro</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -265,7 +278,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;markdown语法学习&quot;&gt;&lt;a href=&quot;#markdown语法学习&quot; class=&quot;headerlink&quot; title=&quot;markdown语法学习&quot;&gt;&lt;/a&gt;markdown语法学习&lt;/h1&gt;&lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -289,9 +302,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Git的使用&quot;&gt;&lt;a href=&quot;#Git的使用&quot; class=&quot;headerlink&quot; title=&quot;Git的使用&quot;&gt;&lt;/a&gt;Git的使用&lt;/h1&gt;&lt;p&gt;1、了解Git基本概念&lt;/p&gt;
-&lt;p&gt;2、概述Git工作流程&lt;/p&gt;
-&lt;p&gt;3、能够使用Git常用命令&lt;/p</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -315,7 +326,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;hexo新建&quot;&gt;&lt;a href=&quot;#hexo新建&quot; class=&quot;headerlink&quot; title=&quot;hexo新建&quot;&gt;&lt;/a&gt;hexo新建&lt;/h1&gt;&lt;h2 id=&quot;一、hexo新建标签、分类、归档页面，步骤都是类似的：&quot;&gt;&lt;a href=&quot;#一、hexo新建标签</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -337,7 +348,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;使用Github-Vercel无服务器搭建ChatGPT-3-5网站&quot;&gt;&lt;a href=&quot;#使用Github-Vercel无服务器搭建ChatGPT-3-5网站&quot; class=&quot;headerlink&quot; title=&quot;使用Github+Vercel无服务器搭建Cha</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -363,7 +374,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;hexo博客中next添加背景图片&quot;&gt;&lt;a href=&quot;#hexo博客中next添加背景图片&quot; class=&quot;headerlink&quot; title=&quot;hexo博客中next添加背景图片&quot;&gt;&lt;/a&gt;hexo博客中next添加背景图片&lt;/h1&gt;&lt;h3 id=&quot;1、-设置</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -387,7 +398,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;一、编程语言的执行方式&quot;&gt;&lt;a href=&quot;#一、编程语言的执行方式&quot; class=&quot;headerlink&quot; title=&quot;一、编程语言的执行方式&quot;&gt;&lt;/a&gt;一、编程语言的执行方式&lt;/h1&gt;&lt;p&gt;编程语言按执行方式来划分，分为：编译和解释两种。在介绍两种方式的概念</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -409,7 +420,7 @@
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -427,12 +438,7 @@
     
       
       
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;本人大二，正在学习阶段。&lt;/p&gt;
-&lt;p&gt;写博客的目的：&lt;/p&gt;
-&lt;p&gt;​	1、总结学习内容，梳理自己的知识体系，更加系统的学习知识。&lt;/p&gt;
-&lt;p&gt;​	2、记录学习中遇到的问题，并解决总结解决问题的经验。&lt;/p&gt;
-&lt;p&gt;​	3、分享给他人，希望对你们有所帮助。&lt;/</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -452,7 +458,7 @@
     
       
       
-    <summary type="html">&lt;h1 id=&quot;经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰&quot;&gt;&lt;a href=&quot;#经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰&quot; class=&quot;headerlink&quot; title=&quot;经乱离后天恩流夜郎忆旧游书怀赠江夏韦太守良宰&quot;&gt;&lt;/a&gt;&lt;center&gt;经乱离后天恩流夜郎忆旧游</summary>
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;&#92;assets&#92;css&#92;APlayer.min.css&quot;&gt;&lt;script src=&quot;&#92;assets&#92;js&#92;APlayer.min.js&quot; cla</summary>
       
     
     
@@ -463,30 +469,6 @@
     <category term="李白" scheme="http://example.com/tags/%E6%9D%8E%E7%99%BD/"/>
     
     <category term="白玉京" scheme="http://example.com/tags/%E7%99%BD%E7%8E%89%E4%BA%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PyQt5学习</title>
-    <link href="http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://example.com/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</id>
-    <published>2023-06-14T09:47:01.000Z</published>
-    <updated>2023-10-31T09:43:58.875Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;PyQt5学习&quot;&gt;&lt;a href=&quot;#PyQt5学习&quot; class=&quot;headerlink&quot; title=&quot;PyQt5学习&quot;&gt;&lt;/a&gt;PyQt5学习&lt;/h1&gt;&lt;h2 id=&quot;一、PyQt5安装&quot;&gt;&lt;a href=&quot;#一、PyQt5安装&quot; class=&quot;header</summary>
-      
-    
-    
-    
-    <category term="工具学习" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="PyQt5" scheme="http://example.com/tags/PyQt5/"/>
-    
-    <category term="Qt Designer" scheme="http://example.com/tags/Qt-Designer/"/>
     
   </entry>
   
