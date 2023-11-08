@@ -62,6 +62,61 @@
       </tags>
   </entry>
   <entry>
+    <title>PyQt5学习</title>
+    <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
+<p>[]: <a href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
+<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
+<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
+<p>自己：使用pip安装，</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
+
+<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+
+<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
+<p>这里我们还是采用脚本安装的方式。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
+
+<p>使用镜像下载：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+
+<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
+<p><code>PyQt 5.15.x</code> 之前的版本：</p>
+<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
+<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
+<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
+<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
+<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
+<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
+<p><code>PyQt 5.15.x</code> 之前的版本：</p>
+<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
+<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
+<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
+<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
+<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
+<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
+<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
+<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
+<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174257188.png" alt="image-20231031174257188"></p>
+<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174320657.png" alt="image-20231031174320657"></p>
+<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174343735.png" alt="image-20231031174343735"></p>
+<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
+<li>架构的构建（需求文档）</li>
+<li>设计图出稿</li>
+<li>设计图复原（designer）</li>
+<li>编写核心代码</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具学习</category>
+      </categories>
+      <tags>
+        <tag>PyQt5</tag>
+        <tag>Qt Designer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git的使用</title>
     <url>/2023/09/05/Git%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Git的使用"><a href="#Git的使用" class="headerlink" title="Git的使用"></a>Git的使用</h1><p>1、了解Git基本概念</p>
@@ -338,61 +393,6 @@
       </tags>
   </entry>
   <entry>
-    <title>PyQt5学习</title>
-    <url>/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="PyQt5学习"><a href="#PyQt5学习" class="headerlink" title="PyQt5学习"></a>PyQt5学习</h1><h2 id="一、PyQt5安装"><a href="#一、PyQt5安装" class="headerlink" title="一、PyQt5安装"></a>一、PyQt5安装</h2><h2 id="1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。"><a href="#1-PyQt5-是-Digia的一套-Qt5-应用框架与-python-的结合，同时支持-python2-x和-python3-x。" class="headerlink" title="1.PyQt5 是 Digia的一套 Qt5 应用框架与 python 的结合，同时支持 python2.x和 python3.x。"></a>1.<code>PyQt5</code> 是 <code>Digia</code>的一套 <code>Qt5</code> 应用框架与 <code>python</code> 的结合，同时支持 <code>python2.x和 python3.x</code>。</h2><h2 id="2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。"><a href="#2-这里使用的是Python-3-x。Qt库由-Riverbank-Computing开发，是最强大的GUI库之一-。" class="headerlink" title="2.这里使用的是Python 3.x。Qt库由 Riverbank Computing开发，是最强大的GUI库之一 。"></a>2.这里使用的是<code>Python 3.x</code>。<code>Qt</code>库由 <code>Riverbank Computing</code>开发，是最强大的<code>GUI</code>库之一 。</h2><h2 id="3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。"><a href="#3、PyQt5-是由一系列-Python-模块组成。超过-620-个类，6000-函数和方法。能在诸如-Unix、Windows-和Mac-OS-等主流操作系统上运行。PyQt5-有两种证书，GPL和-商业证书。" class="headerlink" title="3、PyQt5 是由一系列 Python 模块组成。超过 620 个类，6000 函数和方法。能在诸如 Unix、Windows 和Mac OS 等主流操作系统上运行。PyQt5 有两种证书，GPL和 商业证书。"></a>3、<code>PyQt5</code> 是由一系列 <code>Python</code> 模块组成。超过 <code>620</code> 个类，<code>6000</code> 函数和方法。能在诸如 <code>Unix</code>、<code>Windows</code> 和<code>Mac OS</code> 等主流操作系统上运行。<code>PyQt5</code> 有两种证书，<code>GPL</code>和 商业证书。</h2><h2 id="4、PyQt5官方网址"><a href="#4、PyQt5官方网址" class="headerlink" title="4、PyQt5官方网址"></a>4、PyQt5官方网址</h2><p><a href="https://pypi.org/project/PyQt5/">https://pypi.org/project/PyQt5/</a></p>
-<p>[]: <a href="https://www.qt.io/zh-cn/qt-for-python">https://www.qt.io/zh-cn/qt-for-python</a></p>
-<h2 id="5、安装PyQt5"><a href="#5、安装PyQt5" class="headerlink" title="5、安装PyQt5"></a>5、安装PyQt5</h2><p><code>PyQt5</code> 有两种安装方式，一种是从官网下载源码安装，另外一种是使用 <code>pip</code> 安装。</p>
-<p>推荐大家使用<code>pip</code> 安装。因为它会自动根据你的Python 版本来选择合适的 <code>PyQt5</code> 版本，如果是手动下载源码安装，难免会选择出错。建议使用比较稳妥的安装方式。</p>
-<p>自己：使用pip安装，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip3 install PyQt5 </span><br></pre></td></tr></table></figure>
-
-<p>如果你的网络访问外网不是很好的话建议使用豆瓣的镜像下载，不然会很很慢或者直接安装失败。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5 -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<h2 id="6、安装-PyQt5-tools"><a href="#6、安装-PyQt5-tools" class="headerlink" title="6、安装 PyQt5-tools"></a>6、安装 PyQt5-tools</h2><p><code>PyQt5</code> 不再提供常用Qt工具，比如图形界面开发工具Qt Designer、国际化翻译工具Liguist 如果开发中使用到这些，必须自行安装Qt工具。</p>
-<p>这里我们还是采用脚本安装的方式。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools</span><br></pre></td></tr></table></figure>
-
-<p>使用镜像下载：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install PyQt5-tools -i https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
-
-<p><code>PyQt5</code> 版本的不同，安装成功之后，PyQt5 相关文件夹以及目录也会存在一些差异。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code>目录中可以看到<code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 目录</p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>安装完成后在 <code>%Python_path%\Lib\site-packages</code> 目录中可以看到 <code>PyQt5</code>、<code>pyqt5-tools</code>、<code>PyQt5-sip</code> 、以及多了的 <code>qt_applications</code> <code>qt5-tools</code> 目录。</p>
-<h2 id="7、设置环境变量"><a href="#7、设置环境变量" class="headerlink" title="7、设置环境变量"></a>7、设置环境变量</h2><p>在桌面上右键单击“我的电脑”，在弹出的快捷菜单中选择“属性”-&gt;“高级系统设置”-&gt;“高级”，单击环境变量按钮，在系统变量Path中添加pyqt5-tools目录的绝对路径。</p>
-<p>在 <code>Windows</code> 命令行输入 <code>echo %Path%</code> 命令。如果一切正常，则会在返回的 <code>Path</code> 路径中看到刚才配置的路径。</p>
-<h2 id="8、QT-Designer"><a href="#8、QT-Designer" class="headerlink" title="8、QT Designer"></a>8、QT Designer</h2><p><code>window</code> 平台， <code>PyQt-tools</code> 默认安装 <code>QT Designer.exe</code>。</p>
-<p><code>PyQt 5.15.x</code> 之前的版本：</p>
-<p>路径在<code>%Python_path%\Lib\site-packages|pyqt5_tools\Qt\bin\desginer.exe</code></p>
-<p><code>PyQt 5.15.x</code> 以及之后的版本：</p>
-<p>路径在 <code>%Python_path%\Lib\site-packages\qt5_applications\Qt\bin\designer.exe</code></p>
-<p>双击 <code>designer.exe</code> 打开之后可以直接使用。</p>
-<h2 id="9、关于-QT"><a href="#9、关于-QT" class="headerlink" title="9、关于 QT"></a>9、关于 QT</h2><p><code>QT SDK</code> 包括<code>Qt</code>库、<code>Qt Creator IDE</code> 和<code>Qt-tools</code>，这些都集成在一个易于安装的文件包里。</p>
-<p><code>Qt Creator</code> 用户是不需要单独的 <code>Qt Designer</code> 程序，但是还有很多<code>Qt</code>的用户，他们是不使用<code>Qt Creator</code>的，此时编辑 <code>ui</code>文件的话，只能用 <code>Qt Designer</code>了。</p>
-<p>网上说安装PyQt5要先安装sip，就是pip install sip -i</p>
-<p>[]: <a href="http://link.zhihu.com/?target=https://pypi.tuna.tsinghua.edu.cn/simple">http://link.zhihu.com/?target=https%3A//pypi.tuna.tsinghua.edu.cn/simple</a></p>
-<h2 id="10、熟悉Qt-设计师（Qt-Designer）"><a href="#10、熟悉Qt-设计师（Qt-Designer）" class="headerlink" title="10、熟悉Qt 设计师（Qt Designer）"></a>10、熟悉Qt 设计师（Qt Designer）</h2><p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174257188.png" alt="image-20231031174257188"></p>
-<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174320657.png" alt="image-20231031174320657"></p>
-<p><img src="/2023/06/14/PyQt5%E5%AD%A6%E4%B9%A0/image-20231031174343735.png" alt="image-20231031174343735"></p>
-<h2 id="项目构建："><a href="#项目构建：" class="headerlink" title="项目构建："></a>项目构建：</h2><ol>
-<li>架构的构建（需求文档）</li>
-<li>设计图出稿</li>
-<li>设计图复原（designer）</li>
-<li>编写核心代码</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工具学习</category>
-      </categories>
-      <tags>
-        <tag>PyQt5</tag>
-        <tag>Qt Designer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>beauty</title>
     <url>/2023/11/06/beauty/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
@@ -414,45 +414,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><h4 id="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"><a href="#我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。" class="headerlink" title="我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。"></a>我想要的很简单：兜里有糖，肚里有墨，手里有活，卡里有钱，未来有你。</h4>]]></content>
-  </entry>
-  <entry>
-    <title>hexo博客中next添加背景图片</title>
-    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
-<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
-<blockquote>
-<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
-</blockquote>
-<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
-
-<p>然后新建一个<code>styles.styl</code>文件</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
-
-<p>改完之后就会出现我上面的问题：</p>
-<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
-<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
-
-<p>然后执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
-
-<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
-<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>一样也行。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
   </entry>
   <entry>
     <title>hexo博客问题</title>
@@ -526,6 +487,45 @@
       <tags>
         <tag>hexo</tag>
         <tag>命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客中next添加背景图片</title>
+    <url>/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="hexo博客中next添加背景图片"><a href="#hexo博客中next添加背景图片" class="headerlink" title="hexo博客中next添加背景图片"></a>hexo博客中next添加背景图片</h1><h3 id="1、-设置背景图片"><a href="#1、-设置背景图片" class="headerlink" title="1、 设置背景图片"></a>1、 设置背景图片</h3><p>将想要的背景图片命名为background.jpg放入 themes&#x2F;next&#x2F;source&#x2F;images中</p>
+<h3 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h3><p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/1.png" alt="修改"></p>
+<blockquote>
+<p>我看网上很多在styles.styl中配置，然后取消注解，出现错误。新建&#x2F;_data&#x2F;styles.styl,也不行。</p>
+</blockquote>
+<h3 id="2、新建文件夹配置"><a href="#2、新建文件夹配置" class="headerlink" title="2、新建文件夹配置"></a>2、新建文件夹配置</h3><p>在<code>themes/next/source/</code>下使用如下命令新建一个<code>_data</code>的文件夹：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mkdir _data</span><br></pre></td></tr></table></figure>
+
+<p>然后新建一个<code>styles.styl</code>文件</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">    background:url(/images/background.jpg); // 设定背景图片,images同处于source文件夹下</span><br><span class="line">    background-repeat: no-repeat; // 设定背景图片非重复填充</span><br><span class="line">    background-attachment:fixed; // 设置背景图片不随页面滚动</span><br><span class="line">    background-position:50% 50%; // 设置背景图片位置</span><br><span class="line">    // background-size: 100% 100%; // 设置保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小</span><br><span class="line">    background-size: cover;</span><br><span class="line">    -webkit-background-size: cover;</span><br><span class="line">    -o-background-size: cover;</span><br><span class="line">    -moz-background-size: cover;</span><br><span class="line">    -ms-background-size: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后将<code>themes/next/_config.yml</code>配置文<code>custom_file_path:</code>下的<code>#style: source/_data/styles.styl</code>#号去掉</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  #head: source/_data/head.swig</span><br><span class="line">  #header: source/_data/header.swig</span><br><span class="line">  #sidebar: source/_data/sidebar.swig</span><br><span class="line">  #postMeta: source/_data/post-meta.swig</span><br><span class="line">  #postBodyEnd: source/_data/post-body-end.swig</span><br><span class="line">  #footer: source/_data/footer.swig</span><br><span class="line">  #bodyEnd: source/_data/body-end.swig</span><br><span class="line">  #variable: source/_data/variables.styl</span><br><span class="line">  #mixin: source/_data/mixins.styl</span><br><span class="line">  style: source/_data/styles.styl  //更改</span><br></pre></td></tr></table></figure>
+
+<p>改完之后就会出现我上面的问题：</p>
+<p><img src="/2023/06/24/hexo%E5%8D%9A%E5%AE%A2%E4%B8%ADnext%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/2.png" alt="question"></p>
+<p>可以看出是CSS中问题，所以需要<code>/themes/next/source/css</code>下找到<code>main.styl</code>文件，并在最后一行添上如下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// Custom Layer</span><br><span class="line">// --------------------------------------------------</span><br><span class="line">for $inject_style in hexo-config(&#x27;injects.style&#x27;)</span><br><span class="line">  @import &#x27;../_data/styles.styl&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo</span><br></pre></td></tr></table></figure>
+
+<p>之后更换成功了，或许你可能不会碰到这个问题。</p>
+<h3 id="三、另一种方式："><a href="#三、另一种方式：" class="headerlink" title="三、另一种方式："></a>三、另一种方式：</h3><p>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt;main.styl ，找到路径下的main.styl文件，在文件的最上方加上一代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  background:url(/images/2.jpg);</span><br><span class="line">  background-repeat: repeat;</span><br><span class="line">  background-attachment fixed;</span><br><span class="line">  background-size cover;</span><br><span class="line">  background-position:100% 100%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一样也行。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
       </tags>
   </entry>
   <entry>
@@ -613,6 +613,176 @@
       <tags>
         <tag>markdown</tag>
         <tag>文本编辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python基础（三）</title>
+    <url>/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、函数（1）"><a href="#一、函数（1）" class="headerlink" title="一、函数（1）"></a>一、函数（1）</h1><p>所谓<strong>函数</strong>，就是把<strong>具有独立功能的代码块</strong>组织为一个小模块。在需要的时候<strong>调用函数</strong>的使用包含两个步骤：</p>
+<p>1.<strong>定义函数</strong>一一封装独立的功能</p>
+<p>2.<strong>调用函数</strong>一一享受封装的成果</p>
+<p>函数的作用，在开发程序时，使用函数可以提高写的效率以及代码的<strong>重用</strong></p>
+<h3 id="1、定义函数"><a href="#1、定义函数" class="headerlink" title="1、定义函数"></a><strong>1、定义函数</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">函数的定义</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215201107.png" alt="image-20230918215201107"></p>
+<blockquote>
+<p>在函数中的参数和返回值不需要，都可省略</p>
+</blockquote>
+<h3 id="2、函数的调用"><a href="#2、函数的调用" class="headerlink" title="2、函数的调用"></a>2、函数的调用</h3><p>通过 <strong>函数名（）</strong> 即可完成对函数调用</p>
+<p>问题：能否将函数调用放在函数定义的上方？</p>
+<p>  不能！</p>
+<ul>
+<li>因为在使用函数名调用函数之前，必须要保证Python已经知道函数的存在</li>
+<li>否则控制台会提示NaneError:name’say_hello’is     not defined(名称错误：say_helo这个名字没有被定义）</li>
+</ul>
+<blockquote>
+<p>函数的嵌套调用：在一个函数里面调用另外一个函数</p>
+</blockquote>
+<h3 id="3、函数的参数"><a href="#3、函数的参数" class="headerlink" title="3、函数的参数"></a>3、函数的参数</h3><p>传入参数的功能：在函数计算的时候，接收外部（调用时)提供的数据</p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215250955.png" alt="image-20230918215250955"></p>
+<blockquote>
+<p>在函数中存在两种参数：形参和实参</p>
+<p>传入的参数的数量不受限制，可以不使用，也可以使用多个</p>
+<p>传入参数的时候要和形参一一对应，逗号隔开</p>
+</blockquote>
+<h3 id="4、参数的作用"><a href="#4、参数的作用" class="headerlink" title="4、参数的作用"></a>4、参数的作用</h3><p>函数的<strong>参数</strong>，增加函数的<strong>通用性</strong>，针对相同的数据处理逻辑。能够适应更多的数据</p>
+<p>1.在函数<strong>内部</strong>，把参数当做<strong>变量</strong>使用，进行需要的<strong>数据处理</strong></p>
+<p>2.函数调用时，按服函数定义的<strong>参数顺序</strong>。把希望在<strong>函数内部处理的数据</strong>，通过参数<strong>传递。</strong></p>
+<h3 id="5、形参和实参"><a href="#5、形参和实参" class="headerlink" title="5、形参和实参"></a>5、形参和实参</h3><p><strong>形参</strong>：定义函数时，小括号中的参数，是用来接收参数用的，在函数内部作为变量使用</p>
+<p><strong>实参</strong>：调用函数时，小括号中的参数，是用来把数据传递到函数内部用的</p>
+<h3 id="6、函数的返回值"><a href="#6、函数的返回值" class="headerlink" title="6、函数的返回值"></a>6、函数的返回值</h3><p>1、返回值</p>
+<p>在程序开发中，有时候，会希望<strong>一个函数执行结束后</strong>，告诉调用者一个结果，以便调用者针对具体的结果做后续的处理</p>
+<p><strong>返回值</strong>是函数完成工作后，最后给调用者的一个<strong>结果</strong></p>
+<p>在函数中使用<strong>return关键字</strong>可以返回结果</p>
+<p>调用函数一方，可以使用变量来接收函数的返回结果</p>
+<p>注意：return表示返回，后续的代码都不会被执行，并且return出现在函数什么位置，只要得到执行，将会直接结束函数的执行</p>
+<p>2、None类型</p>
+<p>&lt;class ‘NoneType’&gt;</p>
+<p>无返回值的函数，实际就返回:None这个字面量，表示空的意思</p>
+<p>作用场景：</p>
+<p>1、用在函数无返回值上</p>
+<p>2、用在if判断上None也等同于False</p>
+<p>3、用于声明无内容的变量上</p>
+<h3 id="7、函数的文档注释"><a href="#7、函数的文档注释" class="headerlink" title="7、函数的文档注释"></a><strong>7、函数的文档注释</strong></h3><ul>
+<li>在开发中，如果希望给<strong>函数添加注释</strong>，应该在<strong>定义函数的下方</strong>，使用连续的<strong>三对引号</strong></li>
+<li>在连续的<strong>三对引号之间编写对函数</strong>的说明文字</li>
+<li>在函数调用位置，使用<strong>快捷键CL+Q</strong>可以查看图数的说明信息</li>
+</ul>
+<p>注意：<strong>因为函数体相对比较独立，函数定义的上方，应该和其他代码（包括注释）保留</strong></p>
+<p><strong>两个空行</strong></p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20231030205214556.png" alt="image-20231030205214556"></p>
+<h3 id="8、函数的嵌套调用"><a href="#8、函数的嵌套调用" class="headerlink" title="8、函数的嵌套调用"></a>8、函数的嵌套调用</h3><p>一个函数里面又调用了另外一个函数，这就是<strong>函数嵌套调用</strong></p>
+<p>如果函数test2中，调用了另外一个图数test1</p>
+<p>  那么执行到调用test1函数时，会先把函数test1中的任务都执行完</p>
+<p>  才会回到test2中调用函数test1的位置，继续执行后续的代码</p>
+<h3 id="9、变量的作用域"><a href="#9、变量的作用域" class="headerlink" title="9、变量的作用域"></a>9、变量的作用域</h3><p>变量的作用域是指程序代码能够访问改变量的区域，如果超出该区域就会出现错误，在程序中，一般会根据变量的有效范围将变量分为全局变量和局部变量</p>
+<p>1、局部变量</p>
+<p>局部变量是指在程序内部定义并使用的变量，它只在函数内部有效，在函数外部使用函数内部定义的变量，就会抛出NameError异常。</p>
+<p>作用：在函数体内部，临时保存数据，当函数调用完成后，则销毁局部变量</p>
+<p>2、全局变量</p>
+<p>全局变量为能够作用与函数内外的变量，主要有两种情况：</p>
+<ol>
+<li>如果一个变量在函数体外定义，那么不仅在函数外可以访问到，在函数内也可以访问到</li>
+<li>如果一个变量在函数体内定义，并且使用global关键字修饰，该变量也就变为全局变量，在函数体外可以访问该变量，并且在函数体内还可以进行修改</li>
+</ol>
+<blockquote>
+<p>内部修改外部函数作用域的值：使用nonlocal关键字</p>
+<p>LEGB规则</p>
+</blockquote>
+<h3 id="10、PyCharm的调试工具"><a href="#10、PyCharm的调试工具" class="headerlink" title="10、PyCharm的调试工具**"></a>10、PyCharm的调试工具**</h3><p><strong>F8 Step Over</strong>可以单步执行代码，会把<strong>函数调用</strong>看作是一行代码直接执行</p>
+<p><strong>F7 Step Into</strong>可以单步执行代码，如果是<strong>函数</strong>。会进入<strong>函数内部</strong></p>
+<h3 id="11、使用模块中的函数"><a href="#11、使用模块中的函数" class="headerlink" title="11、使用模块中的函数"></a><strong>11、使用模块中的函数</strong></h3><p><strong>一、模块是python程序架构的一个核心概念</strong></p>
+<p><strong>模块</strong>就好比是工具包<strong>，要想使用这个工具包中的工具，就需要导入</strong>import这个模块**</p>
+<p>每一个以<strong>扩展名py</strong>结尾的Python源代码文件都是一个<strong>模块</strong></p>
+<p>在模块中定义的<strong>全局变量、函数</strong>都是模块能够提供给外界直接使用的工具</p>
+<p><strong>二、体验小结</strong></p>
+<p>可以在 <strong>一个<strong><strong>Python</strong></strong>文件</strong> 中   <strong>定义变量或者函数</strong></p>
+<p>然后在另外一个文件中使用 <strong>i****mport</strong>导入这个模块</p>
+<p>导入之后，就可以使用<strong>模块名.变量</strong> &#x2F; <strong>模块名.函数</strong>的方式，使用这个模块中定义的<strong>变量或者函数</strong></p>
+<p><strong>模块</strong>可以让<strong>曾经编写过的代码</strong>方便的被<strong>复用</strong>！</p>
+<h3 id="12、模块名（文件名）也是一种标识符"><a href="#12、模块名（文件名）也是一种标识符" class="headerlink" title="12、模块名（文件名）也是一种标识符"></a><strong>12、模块名（文件名）也是一种标识符</strong></h3><p><strong>标示符</strong>可以由<strong>字母、下划线和数字</strong>组成</p>
+<p>不能以数字开头</p>
+<p>不能与关键字重名</p>
+<p>注意：如果在给Python.文件起名时，以数字开头是无法在PyCharm中通过导入这个模</p>
+<p>块的</p>
+<h3 id="13、Pyc文件（了解）"><a href="#13、Pyc文件（了解）" class="headerlink" title="13、Pyc文件（了解）"></a><strong>13、Pyc文件（了解）</strong></h3><p><strong>C是</strong> <strong>compiled</strong> <strong>编译过的意思</strong></p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215355042.png" alt="image-20230918215355042"></p>
+<h3 id="补充扩展"><a href="#补充扩展" class="headerlink" title="补充扩展"></a>补充扩展</h3><blockquote>
+<p>Radom生成的随机数是可以被重现的</p>
+</blockquote>
+<p>默认情况下使用当前操作系统时间来作为随机数的种子，radom.getstate()获取随机数种子加工后随机数生成 的内部状态</p>
+<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230921213134552.png" alt="image-20230921213134552"></p>
+<h1 id="二、函数（2）"><a href="#二、函数（2）" class="headerlink" title="二、函数（2）"></a>二、函数（2）</h1><h3 id="1、函数的多返回值"><a href="#1、函数的多返回值" class="headerlink" title="1、函数的多返回值"></a>1、函数的多返回值</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text_return</span>():</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line">x,y,z = text_return()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、函数多种传参方式"><a href="#2、函数多种传参方式" class="headerlink" title="2、函数多种传参方式"></a>2、函数多种传参方式</h3><ul>
+<li>位置参数</li>
+<li>关键字参数</li>
+<li>不定长参数</li>
+<li>缺省参数</li>
+</ul>
+<p>1、位置参数</p>
+<p>位置参数也称为必备参数，必须按照正确的顺序传到函数中，即调用时的数量和位置必须和定义时一样</p>
+<ul>
+<li><p>数量必须与定义时一致</p>
+</li>
+<li><p>位置必须与定义时一致</p>
+</li>
+</ul>
+<p>2、关键字参数</p>
+<p>函数调用通过“键值对”形式传递参数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name,age,gender</span>):</span><br><span class="line">	<span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;name&#125;</span>,年龄：<span class="subst">&#123;age&#125;</span>岁，性别：<span class="subst">&#123;gender&#125;</span>&quot;</span>)</span><br><span class="line">user_info(name=<span class="string">&quot;小王&quot;</span>,age=<span class="number">18</span>,gender = <span class="string">&quot;男&quot;</span>)</span><br><span class="line">user_info(age=<span class="number">19</span>,name=<span class="string">&#x27;小花&#x27;</span>,性别=<span class="string">&#x27;女&#x27;</span>)</span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>,gender=<span class="string">&#x27;男&#x27;</span>,age=<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>可以不按照固定顺序</p>
+<p>可以与位置参数混用</p>
+<p>如果同时使用位置参数和关键字参数，那么使用顺序是位置参数必须在关键字参数之前，但关键字参数之间不存在先后顺序</p>
+</blockquote>
+<p>3、缺省参数（默认参数）</p>
+<p>在调用函数时，如果没有指定某个参数将抛出异常，即在定义函数时，直接指定形式参数的默认值。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">functionname</span>(<span class="params">...,[paremeterl = defaultvalue1]</span>):</span><br><span class="line">	[functionbody]</span><br></pre></td></tr></table></figure>
+
+<p>注意：在定义函数时，指定默认参数的形式参数必须在所有参数的最后，否则将产生语法错误</p>
+<blockquote>
+<p>在python中，可以使用函数名.____default____查看函数的默认值参数的当前值，其结果是一个元组</p>
+<p>函数调用时，如果为缺省参数传值则修改默认参数值，否则使用这个默认值</p>
+</blockquote>
+<p>4、不定长参数</p>
+<p>可变参数也称为不定长参数，即传入函数中的实际参数可以是零个、一个、两个到任意个。</p>
+<p>类型：</p>
+<ol>
+<li>位置传递</li>
+<li>关键字传递</li>
+</ol>
+<p>在定义可变参数时，主要有两种形式，一种是：*parameter，另一种是：**paramter</p>
+<p>1、*args</p>
+<p>这种形式表示接收任意多个实际参数并将其放到一个（元组）中。</p>
+<p>2、**kwargs</p>
+<p>这种形式表示接收任意多个类似关键字参数一样显示赋值的实际参数，并将其放到一个（字典）中。</p>
+<h3 id="3、匿名函数"><a href="#3、匿名函数" class="headerlink" title="3、匿名函数"></a>3、匿名函数</h3><p>匿名函数是指没有名字的函数，应用在需要一个函数，但是又不想去命名这个函数的场合。通常情况下，这样的函数只使用一次。在python中使用lambda表达式创建匿名函数。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">result = <span class="keyword">lambda</span> [arg1 [,arg2,,,,,]]:expression</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>函数作为参数传递</li>
+</ul>
+<blockquote>
+<p>这是一种计算逻辑的传入，而非数据到传入</p>
+</blockquote>
+<ul>
+<li><p>lambda匿名函数</p>
+<p>函数的定义</p>
+<ul>
+<li>def关键字，可以定义带有名称的函数</li>
+<li>lambda关键字，可以定义匿名函数（无名称）</li>
+</ul>
+<p>有名称的函数，可以基于名称重复使用</p>
+<p>无名称的匿名函数，只可临时使用一次</p>
+</li>
+<li><p>定义语法：lambda 传入参数：函数体（一行代码）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">test_func</span>(<span class="params">compute</span>):</span><br><span class="line">	result = compute(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">	<span class="built_in">print</span>(result)</span><br><span class="line">test_func(<span class="keyword">lambda</span> x,y:x+y)    <span class="comment">#结果为3</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -820,176 +990,6 @@
       <categories>
         <category>编程语言学习</category>
       </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python基础（三）</title>
-    <url>/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、函数（1）"><a href="#一、函数（1）" class="headerlink" title="一、函数（1）"></a>一、函数（1）</h1><p>所谓<strong>函数</strong>，就是把<strong>具有独立功能的代码块</strong>组织为一个小模块。在需要的时候<strong>调用函数</strong>的使用包含两个步骤：</p>
-<p>1.<strong>定义函数</strong>一一封装独立的功能</p>
-<p>2.<strong>调用函数</strong>一一享受封装的成果</p>
-<p>函数的作用，在开发程序时，使用函数可以提高写的效率以及代码的<strong>重用</strong></p>
-<h3 id="1、定义函数"><a href="#1、定义函数" class="headerlink" title="1、定义函数"></a><strong>1、定义函数</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">函数的定义</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">函数名</span>(<span class="params">传入参数</span>)：</span><br><span class="line">	函数体</span><br><span class="line">	<span class="keyword">return</span> 返回值</span><br></pre></td></tr></table></figure>
-
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215201107.png" alt="image-20230918215201107"></p>
-<blockquote>
-<p>在函数中的参数和返回值不需要，都可省略</p>
-</blockquote>
-<h3 id="2、函数的调用"><a href="#2、函数的调用" class="headerlink" title="2、函数的调用"></a>2、函数的调用</h3><p>通过 <strong>函数名（）</strong> 即可完成对函数调用</p>
-<p>问题：能否将函数调用放在函数定义的上方？</p>
-<p>  不能！</p>
-<ul>
-<li>因为在使用函数名调用函数之前，必须要保证Python已经知道函数的存在</li>
-<li>否则控制台会提示NaneError:name’say_hello’is     not defined(名称错误：say_helo这个名字没有被定义）</li>
-</ul>
-<blockquote>
-<p>函数的嵌套调用：在一个函数里面调用另外一个函数</p>
-</blockquote>
-<h3 id="3、函数的参数"><a href="#3、函数的参数" class="headerlink" title="3、函数的参数"></a>3、函数的参数</h3><p>传入参数的功能：在函数计算的时候，接收外部（调用时)提供的数据</p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215250955.png" alt="image-20230918215250955"></p>
-<blockquote>
-<p>在函数中存在两种参数：形参和实参</p>
-<p>传入的参数的数量不受限制，可以不使用，也可以使用多个</p>
-<p>传入参数的时候要和形参一一对应，逗号隔开</p>
-</blockquote>
-<h3 id="4、参数的作用"><a href="#4、参数的作用" class="headerlink" title="4、参数的作用"></a>4、参数的作用</h3><p>函数的<strong>参数</strong>，增加函数的<strong>通用性</strong>，针对相同的数据处理逻辑。能够适应更多的数据</p>
-<p>1.在函数<strong>内部</strong>，把参数当做<strong>变量</strong>使用，进行需要的<strong>数据处理</strong></p>
-<p>2.函数调用时，按服函数定义的<strong>参数顺序</strong>。把希望在<strong>函数内部处理的数据</strong>，通过参数<strong>传递。</strong></p>
-<h3 id="5、形参和实参"><a href="#5、形参和实参" class="headerlink" title="5、形参和实参"></a>5、形参和实参</h3><p><strong>形参</strong>：定义函数时，小括号中的参数，是用来接收参数用的，在函数内部作为变量使用</p>
-<p><strong>实参</strong>：调用函数时，小括号中的参数，是用来把数据传递到函数内部用的</p>
-<h3 id="6、函数的返回值"><a href="#6、函数的返回值" class="headerlink" title="6、函数的返回值"></a>6、函数的返回值</h3><p>1、返回值</p>
-<p>在程序开发中，有时候，会希望<strong>一个函数执行结束后</strong>，告诉调用者一个结果，以便调用者针对具体的结果做后续的处理</p>
-<p><strong>返回值</strong>是函数完成工作后，最后给调用者的一个<strong>结果</strong></p>
-<p>在函数中使用<strong>return关键字</strong>可以返回结果</p>
-<p>调用函数一方，可以使用变量来接收函数的返回结果</p>
-<p>注意：return表示返回，后续的代码都不会被执行，并且return出现在函数什么位置，只要得到执行，将会直接结束函数的执行</p>
-<p>2、None类型</p>
-<p>&lt;class ‘NoneType’&gt;</p>
-<p>无返回值的函数，实际就返回:None这个字面量，表示空的意思</p>
-<p>作用场景：</p>
-<p>1、用在函数无返回值上</p>
-<p>2、用在if判断上None也等同于False</p>
-<p>3、用于声明无内容的变量上</p>
-<h3 id="7、函数的文档注释"><a href="#7、函数的文档注释" class="headerlink" title="7、函数的文档注释"></a><strong>7、函数的文档注释</strong></h3><ul>
-<li>在开发中，如果希望给<strong>函数添加注释</strong>，应该在<strong>定义函数的下方</strong>，使用连续的<strong>三对引号</strong></li>
-<li>在连续的<strong>三对引号之间编写对函数</strong>的说明文字</li>
-<li>在函数调用位置，使用<strong>快捷键CL+Q</strong>可以查看图数的说明信息</li>
-</ul>
-<p>注意：<strong>因为函数体相对比较独立，函数定义的上方，应该和其他代码（包括注释）保留</strong></p>
-<p><strong>两个空行</strong></p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20231030205214556.png" alt="image-20231030205214556"></p>
-<h3 id="8、函数的嵌套调用"><a href="#8、函数的嵌套调用" class="headerlink" title="8、函数的嵌套调用"></a>8、函数的嵌套调用</h3><p>一个函数里面又调用了另外一个函数，这就是<strong>函数嵌套调用</strong></p>
-<p>如果函数test2中，调用了另外一个图数test1</p>
-<p>  那么执行到调用test1函数时，会先把函数test1中的任务都执行完</p>
-<p>  才会回到test2中调用函数test1的位置，继续执行后续的代码</p>
-<h3 id="9、变量的作用域"><a href="#9、变量的作用域" class="headerlink" title="9、变量的作用域"></a>9、变量的作用域</h3><p>变量的作用域是指程序代码能够访问改变量的区域，如果超出该区域就会出现错误，在程序中，一般会根据变量的有效范围将变量分为全局变量和局部变量</p>
-<p>1、局部变量</p>
-<p>局部变量是指在程序内部定义并使用的变量，它只在函数内部有效，在函数外部使用函数内部定义的变量，就会抛出NameError异常。</p>
-<p>作用：在函数体内部，临时保存数据，当函数调用完成后，则销毁局部变量</p>
-<p>2、全局变量</p>
-<p>全局变量为能够作用与函数内外的变量，主要有两种情况：</p>
-<ol>
-<li>如果一个变量在函数体外定义，那么不仅在函数外可以访问到，在函数内也可以访问到</li>
-<li>如果一个变量在函数体内定义，并且使用global关键字修饰，该变量也就变为全局变量，在函数体外可以访问该变量，并且在函数体内还可以进行修改</li>
-</ol>
-<blockquote>
-<p>内部修改外部函数作用域的值：使用nonlocal关键字</p>
-<p>LEGB规则</p>
-</blockquote>
-<h3 id="10、PyCharm的调试工具"><a href="#10、PyCharm的调试工具" class="headerlink" title="10、PyCharm的调试工具**"></a>10、PyCharm的调试工具**</h3><p><strong>F8 Step Over</strong>可以单步执行代码，会把<strong>函数调用</strong>看作是一行代码直接执行</p>
-<p><strong>F7 Step Into</strong>可以单步执行代码，如果是<strong>函数</strong>。会进入<strong>函数内部</strong></p>
-<h3 id="11、使用模块中的函数"><a href="#11、使用模块中的函数" class="headerlink" title="11、使用模块中的函数"></a><strong>11、使用模块中的函数</strong></h3><p><strong>一、模块是python程序架构的一个核心概念</strong></p>
-<p><strong>模块</strong>就好比是工具包<strong>，要想使用这个工具包中的工具，就需要导入</strong>import这个模块**</p>
-<p>每一个以<strong>扩展名py</strong>结尾的Python源代码文件都是一个<strong>模块</strong></p>
-<p>在模块中定义的<strong>全局变量、函数</strong>都是模块能够提供给外界直接使用的工具</p>
-<p><strong>二、体验小结</strong></p>
-<p>可以在 <strong>一个<strong><strong>Python</strong></strong>文件</strong> 中   <strong>定义变量或者函数</strong></p>
-<p>然后在另外一个文件中使用 <strong>i****mport</strong>导入这个模块</p>
-<p>导入之后，就可以使用<strong>模块名.变量</strong> &#x2F; <strong>模块名.函数</strong>的方式，使用这个模块中定义的<strong>变量或者函数</strong></p>
-<p><strong>模块</strong>可以让<strong>曾经编写过的代码</strong>方便的被<strong>复用</strong>！</p>
-<h3 id="12、模块名（文件名）也是一种标识符"><a href="#12、模块名（文件名）也是一种标识符" class="headerlink" title="12、模块名（文件名）也是一种标识符"></a><strong>12、模块名（文件名）也是一种标识符</strong></h3><p><strong>标示符</strong>可以由<strong>字母、下划线和数字</strong>组成</p>
-<p>不能以数字开头</p>
-<p>不能与关键字重名</p>
-<p>注意：如果在给Python.文件起名时，以数字开头是无法在PyCharm中通过导入这个模</p>
-<p>块的</p>
-<h3 id="13、Pyc文件（了解）"><a href="#13、Pyc文件（了解）" class="headerlink" title="13、Pyc文件（了解）"></a><strong>13、Pyc文件（了解）</strong></h3><p><strong>C是</strong> <strong>compiled</strong> <strong>编译过的意思</strong></p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230918215355042.png" alt="image-20230918215355042"></p>
-<h3 id="补充扩展"><a href="#补充扩展" class="headerlink" title="补充扩展"></a>补充扩展</h3><blockquote>
-<p>Radom生成的随机数是可以被重现的</p>
-</blockquote>
-<p>默认情况下使用当前操作系统时间来作为随机数的种子，radom.getstate()获取随机数种子加工后随机数生成 的内部状态</p>
-<p><img src="/2023/11/04/python%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%89%EF%BC%89/image-20230921213134552.png" alt="image-20230921213134552"></p>
-<h1 id="二、函数（2）"><a href="#二、函数（2）" class="headerlink" title="二、函数（2）"></a>二、函数（2）</h1><h3 id="1、函数的多返回值"><a href="#1、函数的多返回值" class="headerlink" title="1、函数的多返回值"></a>1、函数的多返回值</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text_return</span>():</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span></span><br><span class="line">x,y,z = text_return()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br><span class="line"><span class="built_in">print</span>(y)</span><br><span class="line"><span class="built_in">print</span>(z)</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、函数多种传参方式"><a href="#2、函数多种传参方式" class="headerlink" title="2、函数多种传参方式"></a>2、函数多种传参方式</h3><ul>
-<li>位置参数</li>
-<li>关键字参数</li>
-<li>不定长参数</li>
-<li>缺省参数</li>
-</ul>
-<p>1、位置参数</p>
-<p>位置参数也称为必备参数，必须按照正确的顺序传到函数中，即调用时的数量和位置必须和定义时一样</p>
-<ul>
-<li><p>数量必须与定义时一致</p>
-</li>
-<li><p>位置必须与定义时一致</p>
-</li>
-</ul>
-<p>2、关键字参数</p>
-<p>函数调用通过“键值对”形式传递参数</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">user_info</span>(<span class="params">name,age,gender</span>):</span><br><span class="line">	<span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;name&#125;</span>,年龄：<span class="subst">&#123;age&#125;</span>岁，性别：<span class="subst">&#123;gender&#125;</span>&quot;</span>)</span><br><span class="line">user_info(name=<span class="string">&quot;小王&quot;</span>,age=<span class="number">18</span>,gender = <span class="string">&quot;男&quot;</span>)</span><br><span class="line">user_info(age=<span class="number">19</span>,name=<span class="string">&#x27;小花&#x27;</span>,性别=<span class="string">&#x27;女&#x27;</span>)</span><br><span class="line">user_info(<span class="string">&quot;小明&quot;</span>,gender=<span class="string">&#x27;男&#x27;</span>,age=<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>可以不按照固定顺序</p>
-<p>可以与位置参数混用</p>
-<p>如果同时使用位置参数和关键字参数，那么使用顺序是位置参数必须在关键字参数之前，但关键字参数之间不存在先后顺序</p>
-</blockquote>
-<p>3、缺省参数（默认参数）</p>
-<p>在调用函数时，如果没有指定某个参数将抛出异常，即在定义函数时，直接指定形式参数的默认值。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">functionname</span>(<span class="params">...,[paremeterl = defaultvalue1]</span>):</span><br><span class="line">	[functionbody]</span><br></pre></td></tr></table></figure>
-
-<p>注意：在定义函数时，指定默认参数的形式参数必须在所有参数的最后，否则将产生语法错误</p>
-<blockquote>
-<p>在python中，可以使用函数名.____default____查看函数的默认值参数的当前值，其结果是一个元组</p>
-<p>函数调用时，如果为缺省参数传值则修改默认参数值，否则使用这个默认值</p>
-</blockquote>
-<p>4、不定长参数</p>
-<p>可变参数也称为不定长参数，即传入函数中的实际参数可以是零个、一个、两个到任意个。</p>
-<p>类型：</p>
-<ol>
-<li>位置传递</li>
-<li>关键字传递</li>
-</ol>
-<p>在定义可变参数时，主要有两种形式，一种是：*parameter，另一种是：**paramter</p>
-<p>1、*args</p>
-<p>这种形式表示接收任意多个实际参数并将其放到一个（元组）中。</p>
-<p>2、**kwargs</p>
-<p>这种形式表示接收任意多个类似关键字参数一样显示赋值的实际参数，并将其放到一个（字典）中。</p>
-<h3 id="3、匿名函数"><a href="#3、匿名函数" class="headerlink" title="3、匿名函数"></a>3、匿名函数</h3><p>匿名函数是指没有名字的函数，应用在需要一个函数，但是又不想去命名这个函数的场合。通常情况下，这样的函数只使用一次。在python中使用lambda表达式创建匿名函数。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">result = <span class="keyword">lambda</span> [arg1 [,arg2,,,,,]]:expression</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>函数作为参数传递</li>
-</ul>
-<blockquote>
-<p>这是一种计算逻辑的传入，而非数据到传入</p>
-</blockquote>
-<ul>
-<li><p>lambda匿名函数</p>
-<p>函数的定义</p>
-<ul>
-<li>def关键字，可以定义带有名称的函数</li>
-<li>lambda关键字，可以定义匿名函数（无名称）</li>
-</ul>
-<p>有名称的函数，可以基于名称重复使用</p>
-<p>无名称的匿名函数，只可临时使用一次</p>
-</li>
-<li><p>定义语法：lambda 传入参数：函数体（一行代码）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">test_func</span>(<span class="params">compute</span>):</span><br><span class="line">	result = compute(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">	<span class="built_in">print</span>(result)</span><br><span class="line">test_func(<span class="keyword">lambda</span> x,y:x+y)    <span class="comment">#结果为3</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
       <tags>
         <tag>python</tag>
       </tags>
@@ -2095,41 +2095,11 @@
 <p>​	2、记录学习中遇到的问题，并解决总结解决问题的经验。</p>
 <p>​	3、分享给他人，希望对你们有所帮助。</p>
 <p>联系方式：</p>
-<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#50;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;">&#50;&#55;&#x37;&#51;&#x30;&#x37;&#51;&#53;&#x34;&#50;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p>邮箱：<a href="mailto:&#50;&#55;&#x37;&#51;&#48;&#55;&#51;&#x35;&#52;&#x32;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#50;&#55;&#x37;&#51;&#48;&#55;&#51;&#x35;&#52;&#x32;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a></p>
 <hr>
 ]]></content>
       <tags>
         <tag>tags</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>修改任务栏中工具颜色</title>
-    <url>/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="修改任务栏中工具的颜色"><a href="#修改任务栏中工具的颜色" class="headerlink" title="修改任务栏中工具的颜色"></a>修改任务栏中工具的颜色</h1><ol>
-<li><p>打开注册表编辑器</p>
-</li>
-<li><p>输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize</span><br></pre></td></tr></table></figure>
-
-<p>打开更改ColorPrevalence中数值，然后重启就行。</p>
-</li>
-</ol>
-<p>重启：</p>
-<ol>
-<li>关机重启</li>
-<li><img src="/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/image-20230728103547408.png" alt="image-20230728103547408"></li>
-</ol>
-<p>重新启动</p>
-<p> 命名：Personalize，后缀reg方式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]</span><br><span class="line">&quot;ColorPrevalence&quot;=dword:00000002</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Question</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -2229,6 +2199,36 @@
       <tags>
         <tag>李白</tag>
         <tag>白玉京</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>修改任务栏中工具颜色</title>
+    <url>/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="修改任务栏中工具的颜色"><a href="#修改任务栏中工具的颜色" class="headerlink" title="修改任务栏中工具的颜色"></a>修改任务栏中工具的颜色</h1><ol>
+<li><p>打开注册表编辑器</p>
+</li>
+<li><p>输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize</span><br></pre></td></tr></table></figure>
+
+<p>打开更改ColorPrevalence中数值，然后重启就行。</p>
+</li>
+</ol>
+<p>重启：</p>
+<ol>
+<li>关机重启</li>
+<li><img src="/2023/10/30/%E4%BF%AE%E6%94%B9%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%AD%E5%B7%A5%E5%85%B7%E9%A2%9C%E8%89%B2/image-20230728103547408.png" alt="image-20230728103547408"></li>
+</ol>
+<p>重新启动</p>
+<p> 命名：Personalize，后缀reg方式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line"></span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]</span><br><span class="line">&quot;ColorPrevalence&quot;=dword:00000002</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Question</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
